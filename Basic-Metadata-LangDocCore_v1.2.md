@@ -12,7 +12,7 @@ Projects are encouraged to provide and archive further, project-specific metadat
 
 ---------------------------------------
 
-[Profiles](#Profiles), [Components](#Components), [Elements](#Elements)
+[Profiles](#profiles), [Components](#Components), [Elements](#Elements)
 
 ---------------------------------------
 
