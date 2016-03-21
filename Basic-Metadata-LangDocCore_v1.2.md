@@ -95,8 +95,8 @@ Projects are encouraged to provide and archive further, project-specific metadat
 * [ProjectDescription] `Element`
 * [ProjectKeywords] `Element`
 
-**Comment:**
-	https://catalog.clarin.eu/ds/ComponentRegistry#/?itemId=clarin.eu%3Acr1%3Ac_1422885449330&registrySpace=public
+**Comments:** 
+- candidate component https://catalog.clarin.eu/ds/ComponentRegistry#/?itemId=clarin.eu%3Acr1%3Ac_1422885449330&registrySpace=public
 
 ### Legal
 * [ResponsiblePerson] `Component` `Number of occurrences: 1-1`
@@ -137,10 +137,12 @@ Projects are encouraged to provide and archive further, project-specific metadat
 * [Contact] `Component` `Number of occurrences: 1-unbounded`
 
 ### Contact
-* [Name] `Element`
+* [ContactName] `Element`
 * [PostalAdress] `Element`
 * [Email] `Element`
 
+**Comments:**
+- cadidate component: https://catalog.clarin.eu/ds/ComponentRegistry#/?itemId=clarin.eu%3Acr1%3Ac_1430905751602&registrySpace=public
 
 ### Files
 * [File Name] `Element`
@@ -452,8 +454,8 @@ Projects are encouraged to provide and archive further, project-specific metadat
 	Number of occurrences: 	1-1
 	Multilingual:			yes
 	CCR prefLabel@en:		location country
-	CCR URI:				http://hdl.handle.net/11459/CCR_C-2532_d004b0a6-fd1d-3ca3-abf1-1e6aeb3e37b2
-	VLO Facet: 				country
+	CCR URI:			http://hdl.handle.net/11459/CCR_C-2532_d004b0a6-fd1d-3ca3-abf1-1e6aeb3e37b2
+	VLO Facet: 			country
 	OLAC (DCMI):			—
 	ELDP-CMDI Element:			
 	IMDI-CMDI Element:
@@ -483,8 +485,8 @@ Projects are encouraged to provide and archive further, project-specific metadat
 	Number of occurrences: 	1-1
 	Multilingual:			no
 	CCR prefLabel@en:		participant full name
-	CCR URI:				http://hdl.handle.net/11459/CCR_C-2556_d852af6c-c978-30ab-45aa-31cb9eaf11c4
-	VLO Facet: 				—
+	CCR URI:			http://hdl.handle.net/11459/CCR_C-2556_d852af6c-c978-30ab-45aa-31cb9eaf11c4
+	VLO Facet: 			—
 	OLAC (DCMI):			—
 	ELDP-CMDI Element:			
 	IMDI-CMDI Element:
@@ -499,8 +501,8 @@ Projects are encouraged to provide and archive further, project-specific metadat
 	Number of occurrences: 	1-1
 	Multilingual:			no
 	CCR prefLabel@en:		—
-	CCR URI:				—
-	VLO Facet: 				—
+	CCR URI:			—
+	VLO Facet: 			—
 	OLAC (DCMI):			—
 	ELDP-CMDI Element:			
 	IMDI-CMDI Element:
@@ -515,8 +517,8 @@ Projects are encouraged to provide and archive further, project-specific metadat
 	Number of occurrences: 	1-1
 	Multilingual:			no
 	CCR prefLabel@en:		participant sex
-	CCR URI:				http://hdl.handle.net/11459/CCR_C-2560_ebb466e1-2b6b-6701-4e64-94618b4b455b
-	VLO Facet: 				—
+	CCR URI:			http://hdl.handle.net/11459/CCR_C-2560_ebb466e1-2b6b-6701-4e64-94618b4b455b
+	VLO Facet: 			—
 	OLAC (DCMI):			—
 	ELDP-CMDI Element:			
 	IMDI-CMDI Element:
@@ -531,8 +533,8 @@ Projects are encouraged to provide and archive further, project-specific metadat
 	Number of occurrences: 	1-1
 	Multilingual:			no
 	CCR prefLabel@en:		participant birthdate
-	CCR URI:				http://hdl.handle.net/11459/CCR_C-2551_6a3c9287-a92d-89e5-e537-9d0ff14bbdc2
-	VLO Facet: 				—
+	CCR URI:			http://hdl.handle.net/11459/CCR_C-2551_6a3c9287-a92d-89e5-e537-9d0ff14bbdc2
+	VLO Facet: 			—
 	OLAC (DCMI):			—
 	ELDP-CMDI Element:			
 	IMDI-CMDI Element:
@@ -547,16 +549,18 @@ Projects are encouraged to provide and archive further, project-specific metadat
 	Number of occurrences: 	1-unbounded
 	Multilingual:			no
 	CCR prefLabel@en:		participant role
-	CCR URI:				http://hdl.handle.net/11459/CCR_C-2559_edfe42c0-c0e0-9bf9-671d-60e3d075be81
-	VLO Facet: 				—
+	CCR URI:			http://hdl.handle.net/11459/CCR_C-2559_edfe42c0-c0e0-9bf9-671d-60e3d075be81
+	VLO Facet: 			—
 	OLAC (DCMI):			—
 	ELDP-CMDI Element:			
 	IMDI-CMDI Element:
 
 ### Contact
-#### Name
+#### ContactName
 
-	Description: 
+**Description:** The ContactName element contains the name of a person. The data provider determines what is the proper form of a name to reference a participant. If the name contains more than one name (e.g. given name and surname,) the culturally adequate order of names should be used.
+
+**Examples:** `George W. Bush` `Alexander von Humboldt` `Mao Zedong` 
 
 	ValueScheme:
 	Number of occurrences: 	
@@ -570,7 +574,7 @@ Projects are encouraged to provide and archive further, project-specific metadat
 
 #### PostalAdress
 
-	Description: 
+**Description:** 
 
 	ValueScheme:
 	Number of occurrences: 	
@@ -584,7 +588,7 @@ Projects are encouraged to provide and archive further, project-specific metadat
 
 #### Email
 
-	Description: 
+**Description:** 
 
 	ValueScheme:
 	Number of occurrences: 	
@@ -599,7 +603,7 @@ Projects are encouraged to provide and archive further, project-specific metadat
 ### File
 #### File Name
 
-	Description: 
+**Description:** 
 
 	ValueScheme:
 	Number of occurrences: 	
@@ -627,7 +631,7 @@ Projects are encouraged to provide and archive further, project-specific metadat
 
 #### File PID
 
-	Description: 
+**Description:** 
 
 	ValueScheme:
 	Number of occurrences: 	
@@ -641,7 +645,7 @@ Projects are encouraged to provide and archive further, project-specific metadat
 
 #### MimeType
 
-	Description: 
+**Description:** 
 
 	ValueScheme:
 	Number of occurrences: 	
