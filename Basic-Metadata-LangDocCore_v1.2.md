@@ -562,13 +562,13 @@ Projects are encouraged to provide and archive further, project-specific metadat
 
 **Examples:** `George W. Bush` `Alexander von Humboldt` `Mao Zedong` 
 
-	ValueScheme:
-	Number of occurrences: 	
-	Multilingual:			
-	CCR prefLabel@en:		
-	CCR URI:				
-	VLO Facet: 
-	OLAC (DCMI):			
+	ValueScheme:		string
+	Number of occurrences: 	1-1
+	Multilingual:		no	
+	CCR prefLabel@en:	—	
+	CCR URI:		—		
+	VLO Facet: 		—
+	OLAC (DCMI):		—	
 	ELDP-CMDI Element:			
 	IMDI-CMDI Element:
 
