@@ -12,17 +12,17 @@ Projects are encouraged to provide and archive further, project-specific metadat
 
 ---------------------------------------
 
-[Profiles](#profiles), [Components](#Components), [Elements](#Elements)
+[Profiles](#profiles), [Components](#components), [Elements](#elements)
 
 ---------------------------------------
 
 
 ## Profiles
 
-* [LangArchCore Collection](#LangArchCore Collection)
-* [LangArchCore Collection (Repository)](#LangArchCore Collection (Repository))
-* [LangArchCore Bundle](#LangArchCore Bundle) 
-* [LangArchCore Bundle (Repository)](#LangArchCore Bundle (Repository))
+* [LangArchCore Collection](#langarchcore-collection)
+* [LangArchCore Collection (Repository)](#langarchcore-collection--repository)
+* [LangArchCore Bundle](#langarchcore-bundle) 
+* [LangArchCore Bundle (Repository)](#langarchcore-bundle--Repository)
 * LangArchCore Admninstrative (external link)
 
 ### LangArchCore Collection ###
