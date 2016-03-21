@@ -12,17 +12,17 @@ Projects are encouraged to provide and archive further, project-specific metadat
 
 ---------------------------------------
 
-[Profiles](#Profiles), [Components], [Elements]
+[Profiles](#Profiles), [Components](#Components), [Elements](#Elements)
 
 ---------------------------------------
 
 
 ## Profiles
 
-* [LangArchCore Collection]
-* [LangArchCore Collection (Repository)]
-* [LangArchCore Bundle] 
-* [LangArchCore Bundle (Repository)]
+* [LangArchCore Collection](#LangArchCore Collection)
+* [LangArchCore Collection (Repository)](#LangArchCore Collection (Repository))
+* [LangArchCore Bundle](#LangArchCore Bundle) 
+* [LangArchCore Bundle (Repository)](#LangArchCore Bundle (Repository))
 * LangArchCore Admninstrative (external link)
 
 ### LangArchCore Collection ###
@@ -42,11 +42,11 @@ Projects are encouraged to provide and archive further, project-specific metadat
 
 **Components:**
 
-* [CollectionGeneralInfo] `Component` `Number of occurrences: 1-1`
-* [Legal] `Component` `Number of occurrences: 1-1`
-* [ObjectLanguage] `Component` `Number of occurrences: 1-unbounded`
-* [Location] `Component` `Number of occurrences: 1-1`
-* [Project] `Component` `Repository only` `Number of occurrences: 0-1`
+* [CollectionGeneralInfo](#CollectionGeneralInfo) `Component` `Number of occurrences: 1-1`
+* [Legal](#Legal) `Component` `Number of occurrences: 1-1`
+* [ObjectLanguage](#ObjectLanguage) `Component` `Number of occurrences: 1-unbounded`
+* [Location](#Location) `Component` `Number of occurrences: 1-1`
+* [Project](#Project) `Component` `Repository only` `Number of occurrences: 0-1`
 
 
 ### LangArchCore Bundle ###
@@ -55,11 +55,11 @@ Projects are encouraged to provide and archive further, project-specific metadat
 
 **Components:**
 
-* [BundleGeneralInfo] `Component` `Number of occurrences: 1-1`
-* [ObjectLanguage] `Component` `Number of occurrences: 1-unbounded`
-* [Location] `Component` `Number of occurrences: 1-1`
-* [Persons] `Component` `Number of occurrences: 1-unbounded`
-* [Files] `Component`
+* [BundleGeneralInfo](#BundleGeneralInfo) `Component` `Number of occurrences: 1-1`
+* [ObjectLanguage](#ObjectLanguage) `Component` `Number of occurrences: 1-unbounded`
+* [Location](#Location) `Component` `Number of occurrences: 1-1`
+* [Persons](#Persons) `Component` `Number of occurrences: 1-unbounded`
+* [Files](#Files) `Component`
 
 ### LangArchCore Bundle  (Repository) ###
 
@@ -67,11 +67,11 @@ Projects are encouraged to provide and archive further, project-specific metadat
 
 **Components:**
 
-* [BundleGeneralInfo] `Component` `Number of occurrences: 1-1`
-* [ObjectLanguage] `Component` `Number of occurrences: 1-unbounded`
-* [Location] `Component` `Number of occurrences: 1-1`
-* [Persons] `Component` `Number of occurrences: 1-unbounded`
-* [Files] `Component` `Number of occurrences: 1-unbounded`
+* [BundleGeneralInfo](#BundleGeneralInfo) `Component` `Number of occurrences: 1-1`
+* [ObjectLanguage](#ObjectLanguage) `Component` `Number of occurrences: 1-unbounded`
+* [Location](#Location) `Component` `Number of occurrences: 1-1`
+* [Persons](#Persons) `Component` `Number of occurrences: 1-unbounded`
+* [Files](#Files) `Component` `Number of occurrences: 1-unbounded`
 
 ---------------------------------------
 
