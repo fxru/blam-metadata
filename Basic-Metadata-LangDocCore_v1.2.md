@@ -31,10 +31,10 @@ Projects are encouraged to provide and archive further, project-specific metadat
 
 **Components:**
 
-* [CollectionGeneralInfo] `Component` `Number of occurrences: 1-1`
-* [Legal] `Component` `Number of occurrences: 1-1`
-* [ObjectLanguage] `Component` `Number of occurrences: 1-unbounded`
-* [Location] `Component` `Number of occurrences: 1-1`
+* [CollectionGeneralInfo](#collectiongeneralinfo) `Component` `Number of occurrences: 1-1`
+* [Legal](#legal) `Component` `Number of occurrences: 1-1`
+* [ObjectLanguage](#objectlanguage) `Component` `Number of occurrences: 1-unbounded`
+* [Location](#location) `Component` `Number of occurrences: 1-1`
 
 ### LangArchCore Collection  (Repository) ###
 
