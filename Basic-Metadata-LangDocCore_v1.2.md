@@ -22,7 +22,7 @@ Projects are encouraged to provide and archive further, project-specific metadat
 * [LangArchCore Collection](#langarchcore-collection)
 * [LangArchCore Collection (Repository)](#langarchcore-collection--repository)
 * [LangArchCore Bundle](#langarchcore-bundle) 
-* [LangArchCore Bundle (Repository)](#langarchcore-bundle--Repository)
+* [LangArchCore Bundle (Repository)](#langarchcore-bundle--repository)
 * LangArchCore Admninstrative (external link)
 
 ### LangArchCore Collection ###
@@ -42,7 +42,7 @@ Projects are encouraged to provide and archive further, project-specific metadat
 
 **Components:**
 
-* [CollectionGeneralInfo](#CollectionGeneralInfo) `Component` `Number of occurrences: 1-1`
+* [CollectionGeneralInfo](#collectiongeneralinfo) `Component` `Number of occurrences: 1-1`
 * [Legal](#Legal) `Component` `Number of occurrences: 1-1`
 * [ObjectLanguage](#ObjectLanguage) `Component` `Number of occurrences: 1-unbounded`
 * [Location](#Location) `Component` `Number of occurrences: 1-1`
