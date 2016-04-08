@@ -469,7 +469,7 @@ Projects are encouraged to provide and archive further, project-specific metadat
 	Multilingual:			
 	CCR prefLabel@en:		
 	CCR URI:				
-	VLO Facet: 
+	VLO Facet: Continent (deprecated)
 	OLAC (DCMI):			
 	ELDP-CMDI Element:			
 	IMDI-CMDI Element:
