@@ -134,12 +134,14 @@ Projects are encouraged to provide and archive further, project-specific metadat
 * [SortbyName](#sortbyname) `Element`
 * [Gender](#gender) `Element`
 * [DateOfBirth](#dateofbirth) `Element`
-* L1(#l1) `Component` `Number of occurrences: 1-unbounded`
+* L1 `Component` `Number of occurrences: 1-unbounded`
 	- [Language] `Component` `Number of occurrences: 1-unbounded`
-* L2(#l2) `Component` `Number of occurrences: 0-unbounded`
+* L2 `Component` `Number of occurrences: 0-unbounded`
 	- [Language] `Component` `Number of occurrences: 1-unbounded`
 * [Role](#role) `Element`
 
+### L1
+* Language
 
 ### Language
 * [ISO639-3](#iso639-3) `Element`
