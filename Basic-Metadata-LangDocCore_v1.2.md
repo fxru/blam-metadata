@@ -25,9 +25,12 @@ Projects are encouraged to provide and archive further, project-specific metadat
 * [LangArchCore Bundle (Repository)](#langarchcore-bundle--repository)
 * LangArchCore Admninstrative (external link)
 
+
+---------------------------------------
+
 ### LangArchCore Collection ###
 
-**Description:**
+**Description:** A basic metadata profile for collections in language repositories. The profile covers fundamental domain specific, but project independent, descriptive metadata as well as depositor input to administrative and structural metadata.
 
 **Components:**
 
@@ -38,7 +41,7 @@ Projects are encouraged to provide and archive further, project-specific metadat
 
 ### LangArchCore Collection  (Repository) ###
 
-**Description:**
+**Description:** A basic metadata profile for collections in language repositories. The profile covers fundamental domain specific, but project independent, descriptive metadata as well as depositor input to administrative and structural metadata as it is represented in the repository.
 
 **Components:**
 
@@ -56,6 +59,7 @@ Projects are encouraged to provide and archive further, project-specific metadat
 **Components:**
 
 * [BundleGeneralInfo](#BundleGeneralInfo) `Component` `Number of occurrences: 1-1`
+* [BundleDataInfo](#BundleDataInfo) `Component` `Number of occurrences: 1-1`
 * [ObjectLanguage](#ObjectLanguage) `Component` `Number of occurrences: 1-unbounded`
 * [Location](#Location) `Component` `Number of occurrences: 1-1`
 * [Persons](#Persons) `Component` `Number of occurrences: 1-unbounded`
@@ -68,6 +72,7 @@ Projects are encouraged to provide and archive further, project-specific metadat
 **Components:**
 
 * [BundleGeneralInfo](#BundleGeneralInfo) `Component` `Number of occurrences: 1-1`
+* [BundleDataInfo](#BundleDataInfo) `Component` `Number of occurrences: 1-1`
 * [ObjectLanguage](#ObjectLanguage) `Component` `Number of occurrences: 1-unbounded`
 * [Location](#Location) `Component` `Number of occurrences: 1-1`
 * [Persons](#Persons) `Component` `Number of occurrences: 1-unbounded`
@@ -87,6 +92,7 @@ Projects are encouraged to provide and archive further, project-specific metadat
 * [BundleID] `Element` `Repository only`
 * [BundleDisplayName] `Element`
 * [BundleDescription] `Element`
+* [BundleRecordingDate] `Element`
 * [BundleKeywords] `Element`
 
 ### ProjectGeneralInfo
@@ -97,6 +103,13 @@ Projects are encouraged to provide and archive further, project-specific metadat
 
 **Comments:** 
 - candidate component https://catalog.clarin.eu/ds/ComponentRegistry#/?itemId=clarin.eu%3Acr1%3Ac_1422885449330&registrySpace=public
+
+
+### BundleDataInfo
+* [SegmentationUnit] `Element`
+* [Transcription] `Element`
+* [Translation] `Element`
+* [Annotation] `Element`
 
 ### Legal
 * [ResponsiblePerson] `Component` `Number of occurrences: 1-1`
@@ -264,6 +277,23 @@ Projects are encouraged to provide and archive further, project-specific metadat
 	ELDP-CMDI Element:			
 	IMDI-CMDI Element:
 
+#### BundleRecordingDate
+
+**Description:** The BundleRecordingDate component contains the date at which a recording occured. The date must be provided conforming to ISO 8601. 
+
+**Examples: `2016-03-19` `1970-01-01` 
+
+	ValueScheme:			string
+	Number of occurrences: 	1-1
+	Multilingual:			no
+	CCR prefLabel@en:		Date of Recording
+	CCR URI:			http://hdl.handle.net/11459/CCR_C-5257_6572a4ea-cc70-c721-bbd8-2f6c28cc71a1
+	VLO Facet: 			—
+	OLAC (DCMI):			—
+	ELDP-CMDI Element:			
+	IMDI-CMDI Element:
+
+
 #### BundleKeywords
 
 **Description:** BundleKeywords should be used to describe the content and nature of data to enhance the discoverability and facilitate a finer granularity of searches and browsing of the data. Repositories can use 
@@ -338,9 +368,67 @@ Projects are encouraged to provide and archive further, project-specific metadat
 	ELDP-CMDI Element:			
 	IMDI-CMDI Element:
 
+### Elements: BundleDataInfo 
+
+#### SegmentationUnit
+
+**Description:** 
+
+	ValueScheme:
+	Number of occurrences: 	
+	Multilingual:			
+	CCR prefLabel@en:		
+	CCR URI:				
+	VLO Facet: 
+	OLAC (DCMI):			
+	ELDP-CMDI Element:			
+	IMDI-CMDI Element:
+
+#### Transcription
+
+**Description:** 
+
+	ValueScheme:
+	Number of occurrences: 	
+	Multilingual:			
+	CCR prefLabel@en:		
+	CCR URI:				
+	VLO Facet: 
+	OLAC (DCMI):			
+	ELDP-CMDI Element:			
+	IMDI-CMDI Element:
+
+### Translation 
+
+**Description:** 
+
+	ValueScheme:
+	Number of occurrences: 	
+	Multilingual:			
+	CCR prefLabel@en:		
+	CCR URI:				
+	VLO Facet: 
+	OLAC (DCMI):			
+	ELDP-CMDI Element:			
+	IMDI-CMDI Element:
+
+### Annotation
+
+**Description:** 
+
+	ValueScheme:
+	Number of occurrences: 	
+	Multilingual:			
+	CCR prefLabel@en:		
+	CCR URI:				
+	VLO Facet: 
+	OLAC (DCMI):			
+	ELDP-CMDI Element:			
+	IMDI-CMDI Element:
+
 ### Legal
 
-### Licence 
+#### Licence 
 
 **Description:** The Licence element contains a reference to a licence, ideally a PID, but URIs are also accepted. Repositories are free to provide a list of acceptable values for this element. 
 
