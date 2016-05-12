@@ -440,14 +440,14 @@ Projects are encouraged to provide and archive further, project-specific metadat
 	ValueScheme:			string
 	Number of occurrences: 	1-1
 	Multilingual:			no
-	CCR prefLabel@en:		availability
-	CCR URI:			http://hdl.handle.net/11459/CCR_C-2453_1f0c3ea5-7966-ae11-d3c6-448424d4e6e8
-	VLO Facet: 			license
+	CCR prefLabel@en:		licence URL
+	CCR URI:			http://hdl.handle.net/11459/CCR_C-6586_2c79d86a-5a75-0890-d407-7d9cb86b9beb
+	VLO Facet: 			
 	OLAC (DCMI):			http://purl.org/dc/terms/license
 	ELDP-CMDI Element:			
 	IMDI-CMDI Element:
 	
-**Comments:** alternative CCR reference possible. CCR prefLabel@en:licence URL / CCR URI:http://hdl.handle.net/11459/CCR_C-6586_2c79d86a-5a75-0890-d407-7d9cb86b9beb
+**Comments:** 
 
 ### Language
 
