@@ -185,7 +185,7 @@ Projects are encouraged to provide and archive further, project-specific metadat
 	CCR URI:				http://hdl.handle.net/11459/CCR_C-2544_3626545e-a21d-058c-ebfd-241c0464e7e5
 	VLO Facet: 				—
 	OLAC (DCMI):			—
-	ELDP-CMDI Element:			
+	ELDP-CMDI Element:		CCR:ELDP_Project:ID		
 	IMDI-CMDI Element:
 
 #### CollectionDisplayName
@@ -199,7 +199,7 @@ Projects are encouraged to provide and archive further, project-specific metadat
 	CCR URI:				http://hdl.handle.net/11459/CCR_C-2545_d873f2ab-2a2f-29d6-a9ab-260cde57f227
 	VLO Facet: 				name
 	OLAC (DCMI):			http://purl.org/dc/terms/title
-	ELDP-CMDI Element:		
+	ELDP-CMDI Element:		CCR:ELDP_Project:Title
 	IMDI-CMDI Element:
 
 #### CollectionDescription
@@ -213,7 +213,7 @@ Projects are encouraged to provide and archive further, project-specific metadat
 	CCR URI:				http://hdl.handle.net/11459/CCR_C-2520_9eeedfb4-47d3-ddee-cfcb-99ac634bf1db
 	VLO Facet: 				description
 	OLAC (DCMI):			http://purl.org/dc/terms/description
-	ELDP-CMDI Element:			
+	ELDP-CMDI Element:		CCR:ELDP_Project:Description	
 	IMDI-CMDI Element:
 
 #### CollectionKeywords
@@ -229,7 +229,7 @@ Projects are encouraged to provide and archive further, project-specific metadat
 	CCR URI:				http://hdl.handle.net/11459/CCR_C-5436_6ab57c2c-5f8d-3561-6db6-d75da23d2637
 	VLO Facet: 				keywords
 	OLAC (DCMI):			—
-	ELDP-CMDI Element:			
+	ELDP-CMDI Element:		CCR:ELDP_Project:Keywords	
 	IMDI-CMDI Element:
 
 
@@ -246,7 +246,7 @@ Projects are encouraged to provide and archive further, project-specific metadat
 	CCR URI:				http://hdl.handle.net/11459/CCR_C-2544_3626545e-a21d-058c-ebfd-241c0464e7e5
 	VLO Facet: 				—
 	OLAC (DCMI):			—
-	ELDP-CMDI Element:			
+	ELDP-CMDI Element:		CCR:ELDP_Bundle:ID		
 	IMDI-CMDI Element:
 
 #### BundleDisplayName
@@ -260,7 +260,7 @@ Projects are encouraged to provide and archive further, project-specific metadat
 	CCR URI:				http://hdl.handle.net/11459/CCR_C-2545_d873f2ab-2a2f-29d6-a9ab-260cde57f227
 	VLO Facet: 				name
 	OLAC (DCMI):			http://purl.org/dc/terms/title
-	ELDP-CMDI Element:			
+	ELDP-CMDI Element:		CCR:ELDP_Bundle:Title	
 	IMDI-CMDI Element:
 
 #### BundleDescription
@@ -274,7 +274,7 @@ Projects are encouraged to provide and archive further, project-specific metadat
 	CCR URI:				http://hdl.handle.net/11459/CCR_C-2520_9eeedfb4-47d3-ddee-cfcb-99ac634bf1db
 	VLO Facet: 				description
 	OLAC (DCMI):			http://purl.org/dc/terms/description
-	ELDP-CMDI Element:			
+	ELDP-CMDI Element:		CCR:ELDP_Bundle:Description	
 	IMDI-CMDI Element:
 
 #### BundleRecordingDate
@@ -293,6 +293,7 @@ Projects are encouraged to provide and archive further, project-specific metadat
 	ELDP-CMDI Element:			
 	IMDI-CMDI Element:
 
+**Comments:** Not sure that this is necessary. 
 
 #### BundleKeywords
 
