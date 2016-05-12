@@ -120,30 +120,30 @@ Projects are encouraged to provide and archive further, project-specific metadat
 * [Language](#language) `Component` `Number of occurrences: 1-unbounded`
 
 ### Location
-* [GeoCoordinates] `Element`
-* [LocationDisplayName] `Element`
-* [AdministrativeSubdivision] `Element`
-* [CountryDisplayName] `Element`
-* [ContinentDisplayName] `Element`
+* [GeoCoordinates](#geocoordinates) `Element`
+* [LocationDisplayName](#locationdisplayname) `Element`
+* [AdministrativeSubdivision](#administrativesubdivision) `Element`
+* [CountryDisplayName](#countrydisplayname) `Element`
+* [ContinentDisplayName](#continentdisplayname) `Element`
 
 ### Persons
-* [Participant] `Component` `Number of occurrences: 1-unbounded`
+* [Participant](#participant) `Component` `Number of occurrences: 1-unbounded`
 
 ### Participant
-* [PersonName] `Element`
-* [SortbyName] `Element`
-* [Gender] `Element`
-* [DateOfBirth] `Element`
-* L1 `Component` `Number of occurrences: 1-unbounded`
+* [PersonName](#personname) `Element`
+* [SortbyName](#sortbyname) `Element`
+* [Gender](#gender) `Element`
+* [DateOfBirth](#dateofbirth) `Element`
+* L1(#l1) `Component` `Number of occurrences: 1-unbounded`
 	- [Language] `Component` `Number of occurrences: 1-unbounded`
-* L2 `Component` `Number of occurrences: 0-unbounded`
+* L2(#l2) `Component` `Number of occurrences: 0-unbounded`
 	- [Language] `Component` `Number of occurrences: 1-unbounded`
-* [Role] `Element`
+* [Role](#role) `Element`
 
 
 ### Language
-* [ISO 639-3] `Element`
-* [Glottolog] `Element`
+* [ISO639-3](#iso639-3) `Element`
+* [Glottolog](#glottolog) `Element`
 * [LanguageDisplayname] `Element`
 
 ### ResponsiblePerson
