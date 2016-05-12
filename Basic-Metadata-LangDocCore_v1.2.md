@@ -85,39 +85,39 @@ Projects are encouraged to provide and archive further, project-specific metadat
 ### CollectionGeneralInfo
 * [CollectionID](#collectionid) `Element` `Repository only`
 * [CollectionDisplayName](#collectiondisplayname) `Element`
-* [CollectionDescription] `Element`
-* [CollectionKeywords] `Element`
+* [CollectionDescription](#collectiondescription) `Element`
+* [CollectionKeywords](#collectionkeywords) `Element`
 
 ### BundleGeneralInfo
-* [BundleID] `Element` `Repository only`
-* [BundleDisplayName] `Element`
-* [BundleDescription] `Element`
-* [BundleRecordingDate] `Element`
-* [BundleKeywords] `Element`
+* [BundleID](#bundleid) `Element` `Repository only`
+* [BundleDisplayName](#bundledisplayname) `Element`
+* [BundleDescription](#bundledescription) `Element`
+* [BundleRecordingDate](#bundlerecordingdate) `Element`
+* [BundleKeywords](#bundlekeywords) `Element`
 
 ### ProjectGeneralInfo
-* [ProjectID] `Element` `Repository only`
-* [ProjectDisplayName] `Element`
-* [ProjectDescription] `Element`
-* [ProjectKeywords] `Element`
+* [ProjectID](#projectid) `Element` `Repository only`
+* [ProjectDisplayName](#projectdisplayname) `Element`
+* [ProjectDescription](#projectdescription) `Element`
+* [ProjectKeywords](#projectkeywords) `Element`
 
 **Comments:** 
 - candidate component https://catalog.clarin.eu/ds/ComponentRegistry#/?itemId=clarin.eu%3Acr1%3Ac_1422885449330&registrySpace=public
 
 
 ### BundleDataInfo
-* [SegmentationUnit] `Element`
-* [Transcription] `Element`
-* [Translation] `Element`
-* [Annotation] `Element`
+* [SegmentationUnit](#segmentationunit) `Element`
+* [Transcription](#transcription) `Element`
+* [Translation](#translation) `Element`
+* [Annotation](#annotation) `Element`
 
 ### Legal
-* [ResponsiblePerson] `Component` `Number of occurrences: 1-1`
-	- [Contact] `Component` `Number of occurrences: 1-unbounded`
-* [Licence] `Element`
+* [ResponsiblePerson](#responsibleperson) `Component` `Number of occurrences: 1-1`
+	- [Contact](#contact) `Component` `Number of occurrences: 1-unbounded`
+* [Licence](#licence) `Element`
 
 ### ObjectLanguage
-* [Language] `Component` `Number of occurrences: 1-unbounded`
+* [Language](#language) `Component` `Number of occurrences: 1-unbounded`
 
 ### Location
 * [GeoCoordinates] `Element`
