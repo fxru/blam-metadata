@@ -357,77 +357,79 @@ Projects are encouraged to provide and archive further, project-specific metadat
 	ELDP-CMDI Element:			
 	IMDI-CMDI Element:
 
-#### ProjectKeywords ???
+#### ProjectKeywords
 
 **Description:** 
 
-	ValueScheme:
-	Number of occurrences: 	
-	Multilingual:			
-	CCR prefLabel@en:		
-	CCR URI:				
-	VLO Facet: 
-	OLAC (DCMI):			
-	ELDP-CMDI Element:			
+	ValueScheme: 			string
+	Number of occurrences: 	0-unbounded
+	Multilingual:			yes
+	CCR prefLabel@en:		metadata tag
+	CCR URI:				http://hdl.handle.net/11459/CCR_C-5436_6ab57c2c-5f8d-3561-6db6-d75da23d2637
+	VLO Facet: 				keywords
+	OLAC (DCMI):			—
+	ELDP-CMDI Element:		CCR:ELDP_Project:Keywords	
 	IMDI-CMDI Element:
+
+**Comments:** Not sure this element is necessary.
 
 ### Elements: BundleDataInfo 
 
 #### SegmentationUnit
 
-**Description:** 
+**Description:** A component to describe how the ressource is segmented.
 
-	ValueScheme:
-	Number of occurrences: 	
-	Multilingual:			
-	CCR prefLabel@en:		
-	CCR URI:				
-	VLO Facet: 
-	OLAC (DCMI):			
-	ELDP-CMDI Element:			
-	IMDI-CMDI Element:
+	ValueScheme:			string
+	Number of occurrences: 		0-unbounded
+	Multilingual:			no
+	CCR prefLabel@en:		segmentation unit	
+	CCR URI:			http://hdl.handle.net/11459/CCR_C-3819_833e225a-f7c9-2c41-4bd3-c55c81ef7559		
+	VLO Facet: 			—
+	OLAC (DCMI):			—
+	ELDP-CMDI Element:		—	
+	IMDI-CMDI Element:		—
 
 #### Transcription
 
 **Description:** 
 
-	ValueScheme:
-	Number of occurrences: 	
-	Multilingual:			
-	CCR prefLabel@en:		
-	CCR URI:				
-	VLO Facet: 
-	OLAC (DCMI):			
-	ELDP-CMDI Element:			
-	IMDI-CMDI Element:
+	ValueScheme:			string
+	Number of occurrences: 		0-unbounded
+	Multilingual:			no
+	CCR prefLabel@en:		—	
+	CCR URI:			—		
+	VLO Facet: 			—
+	OLAC (DCMI):			—
+	ELDP-CMDI Element:		—	
+	IMDI-CMDI Element:		—
 
 ### Translation 
 
 **Description:** 
 
-	ValueScheme:
-	Number of occurrences: 	
-	Multilingual:			
-	CCR prefLabel@en:		
-	CCR URI:				
-	VLO Facet: 
-	OLAC (DCMI):			
-	ELDP-CMDI Element:			
-	IMDI-CMDI Element:
+	ValueScheme:			string
+	Number of occurrences: 		0-unbounded
+	Multilingual:			no
+	CCR prefLabel@en:		—	
+	CCR URI:			—		
+	VLO Facet: 			—
+	OLAC (DCMI):			—
+	ELDP-CMDI Element:		—	
+	IMDI-CMDI Element:		—
 
 ### Annotation
 
 **Description:** 
 
-	ValueScheme:
-	Number of occurrences: 	
-	Multilingual:			
-	CCR prefLabel@en:		
-	CCR URI:				
-	VLO Facet: 
-	OLAC (DCMI):			
-	ELDP-CMDI Element:			
-	IMDI-CMDI Element:
+	ValueScheme:			string
+	Number of occurrences: 		0-unbounded
+	Multilingual:			no
+	CCR prefLabel@en:		—	
+	CCR URI:			—		
+	VLO Facet: 			—
+	OLAC (DCMI):			—
+	ELDP-CMDI Element:		—	
+	IMDI-CMDI Element:		—
 
 ### Legal
 
@@ -439,11 +441,13 @@ Projects are encouraged to provide and archive further, project-specific metadat
 	Number of occurrences: 	1-1
 	Multilingual:			no
 	CCR prefLabel@en:		availability
-	CCR URI:				http://hdl.handle.net/11459/CCR_C-2453_1f0c3ea5-7966-ae11-d3c6-448424d4e6e8
-	VLO Facet: 				license
+	CCR URI:			http://hdl.handle.net/11459/CCR_C-2453_1f0c3ea5-7966-ae11-d3c6-448424d4e6e8
+	VLO Facet: 			license
 	OLAC (DCMI):			http://purl.org/dc/terms/license
 	ELDP-CMDI Element:			
 	IMDI-CMDI Element:
+	
+**Comments:** alternative CCR reference possible. CCR prefLabel@en:licence URL / CCR URI:http://hdl.handle.net/11459/CCR_C-6586_2c79d86a-5a75-0890-d407-7d9cb86b9beb
 
 ### Language
 
