@@ -622,7 +622,7 @@ Projects are encouraged to provide and archive further, project-specific metadat
 
 **Description:** The DateOfBirth component contains the date of birth of the person. The date must be provided conforming to ISO 8601. 
 
-**Examples: `2016-03-19` `1970-01-01` 
+**Examples:** `2016-03-19` `1970-01-01` 
 
 	ValueScheme:			string
 	Number of occurrences: 	1-1
