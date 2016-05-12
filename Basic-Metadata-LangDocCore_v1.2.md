@@ -158,7 +158,7 @@ Projects are encouraged to provide and archive further, project-specific metadat
 
 ### Files
 * [FileName](#filename) `Element`
-* [FileHash](#filehash) `Element` `Repository only`
+* [FileChecksum](#filechecksum) `Element` `Repository only`
 * [FilePID](#filepid) `Element` `Repository only`
 * [MimeType](#mimetype) `Element`
 
@@ -707,7 +707,7 @@ Projects are encouraged to provide and archive further, project-specific metadat
 	ELDP-CMDI Element:			
 	IMDI-CMDI Element:
 
-#### FileHash
+#### FileChecksum
 
 	Description: 
 
