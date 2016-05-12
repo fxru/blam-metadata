@@ -310,7 +310,7 @@ Projects are encouraged to provide and archive further, project-specific metadat
 	CCR URI:				http://hdl.handle.net/11459/CCR_C-5436_6ab57c2c-5f8d-3561-6db6-d75da23d2637
 	VLO Facet: 				keywords
 	OLAC (DCMI):			—
-	ELDP-CMDI Element:			
+	ELDP-CMDI Element:		CCR:ELDP_Bundle:Keywords:Keyword	
 	IMDI-CMDI Element:
 
 ### Elements: ProjectGeneralInfo
@@ -323,8 +323,8 @@ Projects are encouraged to provide and archive further, project-specific metadat
 	Number of occurrences: 	1-1
 	Multilingual:			no
 	CCR prefLabel@en:		project name
-	CCR URI:				http://hdl.handle.net/11459/CCR_C-2536_13fc5f10-c14a-1f64-a669-32736f6d3ef5
-	VLO Facet: 				projectName
+	CCR URI:			http://hdl.handle.net/11459/CCR_C-2536_13fc5f10-c14a-1f64-a669-32736f6d3ef5
+	VLO Facet: 			projectName
 	OLAC (DCMI):			—
 	ELDP-CMDI Element:			
 	IMDI-CMDI Element:
@@ -337,8 +337,8 @@ Projects are encouraged to provide and archive further, project-specific metadat
 	Number of occurrences: 	1-1
 	Multilingual:			yes
 	CCR prefLabel@en:		project title
-	CCR URI:				http://hdl.handle.net/11459/CCR_C-2537_fa206273-223a-f4fa-dde3-ba59b965701f
-	VLO Facet: 				projectName
+	CCR URI:			http://hdl.handle.net/11459/CCR_C-2537_fa206273-223a-f4fa-dde3-ba59b965701f
+	VLO Facet: 			projectName
 	OLAC (DCMI):			—
 	ELDP-CMDI Element:			
 	IMDI-CMDI Element:
