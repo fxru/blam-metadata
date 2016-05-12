@@ -46,10 +46,10 @@ Projects are encouraged to provide and archive further, project-specific metadat
 **Components:**
 
 * [CollectionGeneralInfo](#collectiongeneralinfo) `Component` `Number of occurrences: 1-1`
-* [Legal](#Legal) `Component` `Number of occurrences: 1-1`
-* [ObjectLanguage](#ObjectLanguage) `Component` `Number of occurrences: 1-unbounded`
-* [Location](#Location) `Component` `Number of occurrences: 1-1`
-* [Project](#Project) `Component` `Repository only` `Number of occurrences: 0-1`
+* [Legal](#legal) `Component` `Number of occurrences: 1-1`
+* [ObjectLanguage](#objectlanguage) `Component` `Number of occurrences: 1-unbounded`
+* [Location](#location) `Component` `Number of occurrences: 1-1`
+* [Project](#project) `Component` `Repository only` `Number of occurrences: 0-1`
 
 
 ### LangArchCore Bundle ###
@@ -58,12 +58,12 @@ Projects are encouraged to provide and archive further, project-specific metadat
 
 **Components:**
 
-* [BundleGeneralInfo](#BundleGeneralInfo) `Component` `Number of occurrences: 1-1`
-* [BundleDataInfo](#BundleDataInfo) `Component` `Number of occurrences: 1-1`
-* [ObjectLanguage](#ObjectLanguage) `Component` `Number of occurrences: 1-unbounded`
-* [Location](#Location) `Component` `Number of occurrences: 1-1`
-* [Persons](#Persons) `Component` `Number of occurrences: 1-unbounded`
-* [Files](#Files) `Component`
+* [BundleGeneralInfo](#bundlegeneralinfo) `Component` `Number of occurrences: 1-1`
+* [BundleDataInfo](#bundledatainfo) `Component` `Number of occurrences: 1-1`
+* [ObjectLanguage](#objectlanguage) `Component` `Number of occurrences: 1-unbounded`
+* [Location](#location) `Component` `Number of occurrences: 1-1`
+* [Persons](#persons) `Component` `Number of occurrences: 1-unbounded`
+* [Files](#files) `Component`
 
 ### LangArchCore Bundle  (Repository) ###
 
@@ -71,20 +71,20 @@ Projects are encouraged to provide and archive further, project-specific metadat
 
 **Components:**
 
-* [BundleGeneralInfo](#BundleGeneralInfo) `Component` `Number of occurrences: 1-1`
-* [BundleDataInfo](#BundleDataInfo) `Component` `Number of occurrences: 1-1`
-* [ObjectLanguage](#ObjectLanguage) `Component` `Number of occurrences: 1-unbounded`
-* [Location](#Location) `Component` `Number of occurrences: 1-1`
-* [Persons](#Persons) `Component` `Number of occurrences: 1-unbounded`
-* [Files](#Files) `Component` `Number of occurrences: 1-unbounded`
+* [BundleGeneralInfo](#bundlegeneralinfo) `Component` `Number of occurrences: 1-1`
+* [BundleDataInfo](#bundledatainfo) `Component` `Number of occurrences: 1-1`
+* [ObjectLanguage](#objectlanguage) `Component` `Number of occurrences: 1-unbounded`
+* [Location](#location) `Component` `Number of occurrences: 1-1`
+* [Persons](#persons) `Component` `Number of occurrences: 1-unbounded`
+* [Files](#files) `Component` `Number of occurrences: 1-unbounded`
 
 ---------------------------------------
 
 ## Components
 
 ### CollectionGeneralInfo
-* [CollectionID] `Element` `Repository only`
-* [CollectionDisplayName] `Element`
+* [CollectionID](#collectionid) `Element` `Repository only`
+* [CollectionDisplayName](#collectiondisplayname) `Element`
 * [CollectionDescription] `Element`
 * [CollectionKeywords] `Element`
 
