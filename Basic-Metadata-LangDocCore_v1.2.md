@@ -144,29 +144,29 @@ Projects are encouraged to provide and archive further, project-specific metadat
 ### Language
 * [ISO639-3](#iso639-3) `Element`
 * [Glottolog](#glottolog) `Element`
-* [LanguageDisplayname] `Element`
+* [LanguageDisplayname](#languagedisplayname) `Element`
 
 ### ResponsiblePerson
-* [Contact] `Component` `Number of occurrences: 1-unbounded`
+* [Contact](#contact) `Component` `Number of occurrences: 1-unbounded`
 
 ### Contact
-* [ContactName] `Element`
-* [PostalAdress] `Element`
-* [Email] `Element`
+* [ContactName](#contactname) `Element`
+* [PostalAdress](#postaladress) `Element`
+* [Email](#email) `Element`
 
 **Comments:**
 - cadidate component: https://catalog.clarin.eu/ds/ComponentRegistry#/?itemId=clarin.eu%3Acr1%3Ac_1430905751602&registrySpace=public
 
 ### Files
-* [File Name] `Element`
-* [File Hash] `Element` `Repository only`
-* [File PID] `Element` `Repository only`
-* [MimeType] `Element`
+* [FileName](#filename) `Element`
+* [FileHash](#filehash) `Element` `Repository only`
+* [FilePID](#filepid) `Element` `Repository only`
+* [MimeType](#mimetype) `Element`
 
 ## Repository Components
 
 ### Project
-* [ProjectGeneralInfo] `Component` `Number of occurrences: 1-1`
+* [ProjectGeneralInfo](#) `Component` `Number of occurrences: 1-1`
 
 ---------------------------------------
 
@@ -445,7 +445,7 @@ Projects are encouraged to provide and archive further, project-specific metadat
 
 ### Language
 
-#### ISO 639-3
+#### ISO639-3
 
 **Description:** The ISO639-3 element contains a ISO 639-3 language code.
 
@@ -690,7 +690,7 @@ Projects are encouraged to provide and archive further, project-specific metadat
 	IMDI-CMDI Element:
 
 ### File
-#### File Name
+#### FileName
 
 **Description:** 
 
@@ -704,7 +704,7 @@ Projects are encouraged to provide and archive further, project-specific metadat
 	ELDP-CMDI Element:			
 	IMDI-CMDI Element:
 
-#### File Hash
+#### FileHash
 
 	Description: 
 
@@ -718,7 +718,7 @@ Projects are encouraged to provide and archive further, project-specific metadat
 	ELDP-CMDI Element:			
 	IMDI-CMDI Element:
 
-#### File PID
+#### FilePID
 
 **Description:** 
 
