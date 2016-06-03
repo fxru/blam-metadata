@@ -250,7 +250,10 @@ Projects are encouraged to provide and archive further, project-specific metadat
 
 #### BundleDisplayName
 
+** &#x1F534; This Element is a KA³-Facet**
+
 **Description:** The BundleDisplayName element provides a human readable name of the bundle. It should contain a meaningful and recognisable title for the bundle. The content of the CollectionDisplayName element will be used as the humanreadable identifier in interfaces. Data providers can provide BundleDisplayName values for multiple interface languages.
+
 
 	ValueScheme: 			string
 	Number of occurrences: 	1-1
@@ -259,12 +262,14 @@ Projects are encouraged to provide and archive further, project-specific metadat
 	CCR URI:				http://hdl.handle.net/11459/CCR_C-2545_d873f2ab-2a2f-29d6-a9ab-260cde57f227
 	VLO Facet: 				name
 	OLAC (DCMI):			http://purl.org/dc/terms/title
-	ELDP-CMDI Element:		CCR:ELDP_Bundle:Title	
-	IMDI-CMDI Element:
+	ELDP-CMDI Element:		ELDP_Bundle:Title	
+	IMDI-CMDI Element:      imdi-session:Session:Title
 
 #### BundleDescription
 
 **Description:** The BundleDescription element provides a human readable description of the bundle. It should contain a description of the content of the collection. The content of the BundleDescription element will be used as the humanreadable description in interfaces. Its content can be queried by repositories for free-text metadata search. Data providers can provide BundleDescription values for multiple interface languages.
+
+This Element is a KA³-Facet
 
 	ValueScheme:			string
 	Number of occurrences: 	1-1
@@ -273,8 +278,8 @@ Projects are encouraged to provide and archive further, project-specific metadat
 	CCR URI:				http://hdl.handle.net/11459/CCR_C-2520_9eeedfb4-47d3-ddee-cfcb-99ac634bf1db
 	VLO Facet: 				description
 	OLAC (DCMI):			http://purl.org/dc/terms/description
-	ELDP-CMDI Element:		CCR:ELDP_Bundle:Description	
-	IMDI-CMDI Element:
+	ELDP-CMDI Element:		ELDP_Bundle:Description	
+	IMDI-CMDI Element:      imdi-session:Session:Description
 
 #### BundleRecordingDate
 
