@@ -10,6 +10,12 @@ The design of the Language Archive Core focuses on discoverability via the archi
 
 Projects are encouraged to provide and archive further, project-specific metadata through project specific metadata profiles (or formats) or different general CMDI profiles.
 
+**KA³-facets**
+
+Elements marked with the following indicator are candidates for a searchable and browsable facet in the [KA³-Project](http://dch.phil-fak.uni-koeln.de/ka3.html).
+> &#x1F534; *KA³-facet*
+
+
 ---------------------------------------
 
 [Profiles](#profiles), [Components](#components), [Elements](#elements)
@@ -250,7 +256,7 @@ Projects are encouraged to provide and archive further, project-specific metadat
 
 #### BundleDisplayName
 
-&#x1F534; *This Element is a KA³-Facet*
+&#x1F534; *KA³-facet*
 
 **Description:** The BundleDisplayName element provides a human readable name of the bundle. It should contain a meaningful and recognisable title for the bundle. The content of the CollectionDisplayName element will be used as the humanreadable identifier in interfaces. Data providers can provide BundleDisplayName values for multiple interface languages.
 
@@ -267,9 +273,9 @@ Projects are encouraged to provide and archive further, project-specific metadat
 
 #### BundleDescription
 
-**Description:** The BundleDescription element provides a human readable description of the bundle. It should contain a description of the content of the collection. The content of the BundleDescription element will be used as the humanreadable description in interfaces. Its content can be queried by repositories for free-text metadata search. Data providers can provide BundleDescription values for multiple interface languages.
+&#x1F534; *KA³-facet*
 
-This Element is a KA³-Facet
+**Description:** The BundleDescription element provides a human readable description of the bundle. It should contain a description of the content of the collection. The content of the BundleDescription element will be used as the humanreadable description in interfaces. Its content can be queried by repositories for free-text metadata search. Data providers can provide BundleDescription values for multiple interface languages.
 
 	ValueScheme:			string
 	Number of occurrences: 	1-1
@@ -282,6 +288,8 @@ This Element is a KA³-Facet
 	IMDI-CMDI Element:      imdi-session:Session:Description
 
 #### BundleRecordingDate
+
+&#x1F534; *KA³-facet*
 
 **Description:** The BundleRecordingDate component contains the date at which a recording occured. The date must be provided conforming to ISO 8601. 
 
@@ -300,6 +308,8 @@ This Element is a KA³-Facet
 **Comments:** Not sure that this is necessary. 
 
 #### BundleKeywords
+
+&#x1F534; *KA³-facet*
 
 **Description:** BundleKeywords should be used to describe the content and nature of data to enhance the discoverability and facilitate a finer granularity of searches and browsing of the data. Repositories can use 
 
