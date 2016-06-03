@@ -291,7 +291,7 @@ Projects are encouraged to provide and archive further, project-specific metadat
 	VLO Facet: 			    —
 	OLAC (DCMI):			—
 	ELDP-CMDI Element:		(closest match) ELDP_Bundle:Resources:Resource:File:[TextFile | AudioFile | VideoFile | ImageFile]:General:Date 
-	IMDI-CMDI Element:      imdi-session:Date
+	IMDI-CMDI Element:      imdi-session:Session:Date
 
 **Comments:** Not sure that this is necessary. 
 
