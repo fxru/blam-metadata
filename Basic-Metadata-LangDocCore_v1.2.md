@@ -250,7 +250,7 @@ Projects are encouraged to provide and archive further, project-specific metadat
 
 #### BundleDisplayName
 
-** &#x1F534; This Element is a KA³-Facet**
+**&#x1F534; This Element is a KA³-Facet**
 
 **Description:** The BundleDisplayName element provides a human readable name of the bundle. It should contain a meaningful and recognisable title for the bundle. The content of the CollectionDisplayName element will be used as the humanreadable identifier in interfaces. Data providers can provide BundleDisplayName values for multiple interface languages.
 
