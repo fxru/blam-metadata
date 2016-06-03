@@ -10,6 +10,22 @@ The design of the Language Archive Core focuses on discoverability via the archi
 
 Projects are encouraged to provide and archive further, project-specific metadata through project specific metadata profiles (or formats) or different general CMDI profiles.
 
+
+**Sources**
+
+*Metadata Formats*
+
+* IMDI Metadata Format: [ISLE Meta Data Initative, Version 3.0.4 (2003)](https://tla.mpi.nl/imdi-metadata/)
+* CMDI imdi-session-profile: [clarin.eu:cr1:p_1271859438204](https://catalog.clarin.eu/ds/ComponentRegistry#/?itemId=clarin.eu%3Acr1%3Ap_1271859438204&registrySpace=public)
+* CMDI ELDP_Bundle: [clarin.eu:cr1:p_1407745711992](https://catalog.clarin.eu/ds/ComponentRegistry#/?itemId=clarin.eu%3Acr1%3Ap_1407745711992&registrySpace=public)
+* CLARIN VLO facets: [facets mapping](https://lux17.mpi.nl/isocat/clarin/vlo/mapping/index.html)
+* OLAC metadata: [specifications](http://www.language-archives.org/OLAC/metadata.html), [usage](http://www.language-archives.org/NOTE/usage.html)
+
+*Other*
+
+* CLARIN Concept Registry (CCR): [about](https://www.clarin.eu/ccr), [registry](https://www.clarin.eu/conceptregistry/)
+* CLARIN CMDI Component Registry: [about](https://www.clarin.eu/content/component-metadata), [registry](https://catalog.clarin.eu/ds/ComponentRegistry/)
+
 ---------------------------------------
 
 [Profiles](#profiles), [Components](#components), [Elements](#elements)
@@ -246,11 +262,9 @@ Projects are encouraged to provide and archive further, project-specific metadat
 	VLO Facet: 				—
 	OLAC (DCMI):			—
 	ELDP-CMDI Element:		CCR:ELDP_Bundle:ID		
-	IMDI-CMDI Element:
+	IMDI-CMDI Element:      —
 
 #### BundleDisplayName
-
-&#x1F534; *This Element is a KA³-Facet*
 
 **Description:** The BundleDisplayName element provides a human readable name of the bundle. It should contain a meaningful and recognisable title for the bundle. The content of the CollectionDisplayName element will be used as the humanreadable identifier in interfaces. Data providers can provide BundleDisplayName values for multiple interface languages.
 
@@ -268,8 +282,6 @@ Projects are encouraged to provide and archive further, project-specific metadat
 #### BundleDescription
 
 **Description:** The BundleDescription element provides a human readable description of the bundle. It should contain a description of the content of the collection. The content of the BundleDescription element will be used as the humanreadable description in interfaces. Its content can be queried by repositories for free-text metadata search. Data providers can provide BundleDescription values for multiple interface languages.
-
-This Element is a KA³-Facet
 
 	ValueScheme:			string
 	Number of occurrences: 	1-1
@@ -291,11 +303,12 @@ This Element is a KA³-Facet
 	Number of occurrences: 	1-1
 	Multilingual:			no
 	CCR prefLabel@en:		Date of Recording
-	CCR URI:			http://hdl.handle.net/11459/CCR_C-5257_6572a4ea-cc70-c721-bbd8-2f6c28cc71a1
-	VLO Facet: 			—
+	CCR URI:			    http://hdl.handle.net/11459/CCR_C-5257_6572a4ea-cc70-c721-bbd8-2f6c28cc71a1
+    CCR URI (alternate)   https://openskos.meertens.knaw.nl/ccr/browser/index.php?id=http://hdl.handle.net/11459/CCR_C-2510_2402e609-046a-dfbf-c2d7-5a2f1ae6dc86
+	VLO Facet: 			    —
 	OLAC (DCMI):			—
-	ELDP-CMDI Element:			
-	IMDI-CMDI Element:
+	ELDP-CMDI Element:		(closest match) ELDP_Bundle:Resources:Resource:File:[TextFile | AudioFile | VideoFile | ImageFile]:General:Date 
+	IMDI-CMDI Element:      imdi-session:Date
 
 **Comments:** Not sure that this is necessary. 
 
@@ -312,8 +325,8 @@ This Element is a KA³-Facet
 	CCR URI:				http://hdl.handle.net/11459/CCR_C-5436_6ab57c2c-5f8d-3561-6db6-d75da23d2637
 	VLO Facet: 				keywords
 	OLAC (DCMI):			—
-	ELDP-CMDI Element:		CCR:ELDP_Bundle:Keywords:Keyword	
-	IMDI-CMDI Element:
+	ELDP-CMDI Element:		ELDP_Bundle:Keywords:Keyword	
+	IMDI-CMDI Element:  	(closest match) imdi-session:Session:Keys
 
 ### Elements: ProjectGeneralInfo
 
@@ -325,10 +338,10 @@ This Element is a KA³-Facet
 	Number of occurrences: 	1-1
 	Multilingual:			no
 	CCR prefLabel@en:		project name
-	CCR URI:			http://hdl.handle.net/11459/CCR_C-2536_13fc5f10-c14a-1f64-a669-32736f6d3ef5
-	VLO Facet: 			projectName
+	CCR URI:			    http://hdl.handle.net/11459/CCR_C-2536_13fc5f10-c14a-1f64-a669-32736f6d3ef5
+	VLO Facet: 			    projectName
 	OLAC (DCMI):			—
-	ELDP-CMDI Element:			
+	ELDP-CMDI Element:		
 	IMDI-CMDI Element:
 
 #### ProjectDisplayName
