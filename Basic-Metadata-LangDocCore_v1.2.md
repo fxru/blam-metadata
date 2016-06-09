@@ -10,6 +10,21 @@ The design of the Language Archive Core focuses on discoverability via the archi
 
 Projects are encouraged to provide and archive further, project-specific metadata through project specific metadata profiles (or formats) or different general CMDI profiles.
 
+**Sources**
+
+*Metadata Formats*
+
+* IMDI Metadata Format: [ISLE Meta Data Initative, Version 3.0.4 (2003)](https://tla.mpi.nl/imdi-metadata/)
+* CMDI imdi-session-profile: [clarin.eu:cr1:p_1271859438204](https://catalog.clarin.eu/ds/ComponentRegistry#/?itemId=clarin.eu%3Acr1%3Ap_1271859438204&registrySpace=public)
+* CMDI ELDP_Bundle: [clarin.eu:cr1:p_1407745711992](https://catalog.clarin.eu/ds/ComponentRegistry#/?itemId=clarin.eu%3Acr1%3Ap_1407745711992&registrySpace=public)
+* OLAC metadata: [specifications](http://www.language-archives.org/OLAC/metadata.html), [usage](http://www.language-archives.org/NOTE/usage.html)
+
+*CLARIN Tools and Registries*
+
+* CLARIN VLO facets: [facets mapping](https://lux17.mpi.nl/isocat/clarin/vlo/mapping/index.html)
+* CLARIN Concept Registry (CCR): [about](https://www.clarin.eu/ccr), [registry](https://www.clarin.eu/conceptregistry/)
+* CLARIN CMDI Component Registry: [about](https://www.clarin.eu/content/component-metadata), [registry](https://catalog.clarin.eu/ds/ComponentRegistry/)
+
 **KA³-facets**
 
 Elements marked with the following indicator are candidates for a searchable and browsable facet in the [KA³-Project](http://dch.phil-fak.uni-koeln.de/ka3.html).
