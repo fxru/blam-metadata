@@ -10,6 +10,12 @@ The design of the Language Archive Core focuses on discoverability via the archi
 
 Projects are encouraged to provide and archive further, project-specific metadata through project specific metadata profiles (or formats) or different general CMDI profiles.
 
+**KA³-facets**
+
+Elements marked with the following indicator are candidates for a searchable and browsable facet in the [KA³-Project](http://dch.phil-fak.uni-koeln.de/ka3.html).
+> &#x1F534; *KA³-facet*
+
+
 ---------------------------------------
 
 [Profiles](#profiles), [Components](#components), [Elements](#elements)
@@ -250,7 +256,10 @@ Projects are encouraged to provide and archive further, project-specific metadat
 
 #### BundleDisplayName
 
+&#x1F534; *KA³-facet*
+
 **Description:** The BundleDisplayName element provides a human readable name of the bundle. It should contain a meaningful and recognisable title for the bundle. The content of the CollectionDisplayName element will be used as the humanreadable identifier in interfaces. Data providers can provide BundleDisplayName values for multiple interface languages.
+
 
 	ValueScheme: 			string
 	Number of occurrences: 	1-1
@@ -259,10 +268,12 @@ Projects are encouraged to provide and archive further, project-specific metadat
 	CCR URI:				http://hdl.handle.net/11459/CCR_C-2545_d873f2ab-2a2f-29d6-a9ab-260cde57f227
 	VLO Facet: 				name
 	OLAC (DCMI):			http://purl.org/dc/terms/title
-	ELDP-CMDI Element:		CCR:ELDP_Bundle:Title	
-	IMDI-CMDI Element:
+	ELDP-CMDI Element:		ELDP_Bundle:Title	
+	IMDI-CMDI Element:      imdi-session:Session:Title
 
 #### BundleDescription
+
+&#x1F534; *KA³-facet*
 
 **Description:** The BundleDescription element provides a human readable description of the bundle. It should contain a description of the content of the collection. The content of the BundleDescription element will be used as the humanreadable description in interfaces. Its content can be queried by repositories for free-text metadata search. Data providers can provide BundleDescription values for multiple interface languages.
 
@@ -273,10 +284,12 @@ Projects are encouraged to provide and archive further, project-specific metadat
 	CCR URI:				http://hdl.handle.net/11459/CCR_C-2520_9eeedfb4-47d3-ddee-cfcb-99ac634bf1db
 	VLO Facet: 				description
 	OLAC (DCMI):			http://purl.org/dc/terms/description
-	ELDP-CMDI Element:		CCR:ELDP_Bundle:Description	
-	IMDI-CMDI Element:
+	ELDP-CMDI Element:		ELDP_Bundle:Description	
+	IMDI-CMDI Element:      imdi-session:Session:Description
 
 #### BundleRecordingDate
+
+&#x1F534; *KA³-facet*
 
 **Description:** The BundleRecordingDate component contains the date at which a recording occured. The date must be provided conforming to ISO 8601. 
 
@@ -295,6 +308,8 @@ Projects are encouraged to provide and archive further, project-specific metadat
 **Comments:** Not sure that this is necessary. 
 
 #### BundleKeywords
+
+&#x1F534; *KA³-facet*
 
 **Description:** BundleKeywords should be used to describe the content and nature of data to enhance the discoverability and facilitate a finer granularity of searches and browsing of the data. Repositories can use 
 
