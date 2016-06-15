@@ -338,7 +338,7 @@ Elements marked with the following indicator are candidates for a searchable and
 	VLO Facet: 				keywords
 	OLAC (DCMI):			—
 	ELDP-CMDI Element:		CCR:ELDP_Bundle:Keywords:Keyword	
-	IMDI-CMDI Element:
+	IMDI-CMDI Element:      closest match: CCR:imdi-session:Session.Keys.@Name|Text()
 
 ### Elements: ProjectGeneralInfo
 
@@ -350,8 +350,8 @@ Elements marked with the following indicator are candidates for a searchable and
 	Number of occurrences: 	1-1
 	Multilingual:			no
 	CCR prefLabel@en:		project name
-	CCR URI:			http://hdl.handle.net/11459/CCR_C-2536_13fc5f10-c14a-1f64-a669-32736f6d3ef5
-	VLO Facet: 			projectName
+	CCR URI:			    http://hdl.handle.net/11459/CCR_C-2536_13fc5f10-c14a-1f64-a669-32736f6d3ef5
+	VLO Facet: 			    projectName
 	OLAC (DCMI):			—
 	ELDP-CMDI Element:			
 	IMDI-CMDI Element:
