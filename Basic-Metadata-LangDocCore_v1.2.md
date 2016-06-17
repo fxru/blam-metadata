@@ -318,7 +318,7 @@ Elements marked with the following indicator are candidates for a searchable and
 	VLO Facet: 			—
 	OLAC (DCMI):			—
 	ELDP-CMDI Element:			
-	IMDI-CMDI Element:
+	IMDI-CMDI Element:		Session.Date
 
 **Comments:** Not sure that this is necessary. 
 
@@ -326,7 +326,7 @@ Elements marked with the following indicator are candidates for a searchable and
 
 &#x1F534; *KA³-facet*
 
-**Description:** BundleKeywords should be used to describe the content and nature of data to enhance the discoverability and facilitate a finer granularity of searches and browsing of the data. Repositories can use 
+**Description:** BundleKeywords should be used to describe the content and nature of data to enhance the discoverability and facilitate a finer granularity of searches and browsing of the data. Repositories can use keyword metadata to define meaningful subsets of the data and provide a better browsing experience. 
 
 **Examples:** `elicited` `dialogue` `ritual speech` `kinship` `creation myth` `planned discourse`
 
@@ -354,7 +354,7 @@ Elements marked with the following indicator are candidates for a searchable and
 	VLO Facet: 			    projectName
 	OLAC (DCMI):			—
 	ELDP-CMDI Element:			
-	IMDI-CMDI Element:
+	IMDI-CMDI Element:		
 
 #### ProjectDisplayName
 
@@ -368,7 +368,7 @@ Elements marked with the following indicator are candidates for a searchable and
 	VLO Facet: 			projectName
 	OLAC (DCMI):			—
 	ELDP-CMDI Element:			
-	IMDI-CMDI Element:
+	IMDI-CMDI Element:		Project.Title
 
 #### ProjectDescription
 
@@ -382,11 +382,11 @@ Elements marked with the following indicator are candidates for a searchable and
 	VLO Facet: 				description
 	OLAC (DCMI):			http://purl.org/dc/terms/description
 	ELDP-CMDI Element:			
-	IMDI-CMDI Element:
+	IMDI-CMDI Element:		Project.Description
 
 #### ProjectKeywords
 
-**Description:** 
+**Description:** ProjectKeywords should be used to describe the project in which the data was collected. The keywords should be used to enhance the discoverability and facilitate a finer granularity of searches and browsing of the data. Repositories can use keyword metadata to define meaningful subsets of the data and provide a better browsing experience.
 
 	ValueScheme: 			string
 	Number of occurrences: 	0-unbounded
@@ -404,42 +404,51 @@ Elements marked with the following indicator are candidates for a searchable and
 
 #### SegmentationUnit
 
-**Description:** A component to describe how the ressource is segmented.
+**Description:** SegmentationUnit describes the criteria the ressource is segmented. This element applies to annotations of audio-visual data and is intended to facilitate  the identification of useful data for a specific research question. 
+
+**Examples:** `sentence` `clause` `word` `intonation unit` `phon` `paragraph`
 
 	ValueScheme:			string
-	Number of occurrences: 		0-unbounded
+	Number of occurrences: 	0-unbounded
 	Multilingual:			no
 	CCR prefLabel@en:		segmentation unit	
-	CCR URI:			http://hdl.handle.net/11459/CCR_C-3819_833e225a-f7c9-2c41-4bd3-c55c81ef7559		
-	VLO Facet: 			—
+	CCR URI:				http://hdl.handle.net/11459/CCR_C-3819_833e225a-f7c9-2c41-4bd3-c55c81ef7559		
+	VLO Facet: 				—
 	OLAC (DCMI):			—
 	ELDP-CMDI Element:		—	
 	IMDI-CMDI Element:		—
+
 
 #### Transcription
 
-**Description:** 
+**Description:** Transcription describes the level of transcription of audio-visual data in the annotations. Data with no Transcription metadata will be treated as not transcribed by the repository.
+
+**Examples:** `phonemic` `phonetic` `orthographic`  
 
 	ValueScheme:			string
-	Number of occurrences: 		0-unbounded
+	Number of occurrences: 	0-unbounded
 	Multilingual:			no
 	CCR prefLabel@en:		—	
-	CCR URI:			—		
-	VLO Facet: 			—
+	CCR URI:				—		
+	VLO Facet: 				—
 	OLAC (DCMI):			—
 	ELDP-CMDI Element:		—	
 	IMDI-CMDI Element:		—
 
+
+
 ### Translation 
 
-**Description:** 
+**Description:** The Translation element describes the annotation of the type translation. It contains a language code (ISO 639-3) which identifies the language used in the translation. Data with no Translation metadata will be treated as not translated by the repository. Data with several Translation elements will be treated as having several translations..
+
+**Examples:** `eng` `ind` `spa` `cmn` 
 
 	ValueScheme:			string
-	Number of occurrences: 		0-unbounded
+	Number of occurrences: 	0-unbounded
 	Multilingual:			no
 	CCR prefLabel@en:		—	
-	CCR URI:			—		
-	VLO Facet: 			—
+	CCR URI:				—		
+	VLO Facet: 				—
 	OLAC (DCMI):			—
 	ELDP-CMDI Element:		—	
 	IMDI-CMDI Element:		—
