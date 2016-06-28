@@ -18,7 +18,7 @@ Projects are encouraged to provide and archive further, project-specific metadat
 * CMDI imdi-session-profile: [clarin.eu:cr1:p_1271859438204](https://catalog.clarin.eu/ds/ComponentRegistry#/?itemId=clarin.eu%3Acr1%3Ap_1271859438204&registrySpace=public)
 * CMDI ELDP_Bundle: [clarin.eu:cr1:p_1407745711992](https://catalog.clarin.eu/ds/ComponentRegistry#/?itemId=clarin.eu%3Acr1%3Ap_1407745711992&registrySpace=public)
 * OLAC metadata: [specifications](http://www.language-archives.org/OLAC/metadata.html), [usage](http://www.language-archives.org/NOTE/usage.html)
-* DataCite [Schema](https://schema.datacite.org/meta/kernel-3.1/)
+* DataCite Metadata: [Schema](https://schema.datacite.org/meta/kernel-3.1/)
 
 *CLARIN Tools and Registries*
 
