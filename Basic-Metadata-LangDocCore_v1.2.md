@@ -172,7 +172,7 @@ Elements marked with the following indicator are candidates for a searchable and
 
 ### Contact
 * [ContactName](#contactname) `Element`
-* [PostalAdress](#postaladress) `Element`
+* [PostalAddress](#postaladdress) `Element`
 * [Email](#email) `Element`
 
 **Comments:**
@@ -704,7 +704,7 @@ Elements marked with the following indicator are candidates for a searchable and
 	ELDP-CMDI Element:			
 	IMDI-CMDI Element:
 
-#### PostalAdress
+#### PostalAddress
 
 **Description:** 
 
