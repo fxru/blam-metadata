@@ -29,7 +29,7 @@ Projects are encouraged to provide and archive further, project-specific metadat
 **KA³-facets**
 
 Elements marked with the following indicator are candidates for a searchable and browsable facet in the [KA³-Project](http://dch.phil-fak.uni-koeln.de/ka3.html).
-> &#x1F534; *KA³-facet*
+> &#x1F4A5; *KA³-facet*
 
 
 ---------------------------------------
