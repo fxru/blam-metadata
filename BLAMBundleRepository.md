@@ -82,7 +82,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 	Number of occurrences:  	1-1
 	Multilingual:           	no
 	CCR prefLabel@en:       	resource name
-	CCR URI:                	hdl.handle.net—CCR_C-2544_3626545e-a21d-058c-ebfd-241c0464e7e5 <http://hdl.handle.net/11459/CCR_C-2544_3626545e-a21d-058c-ebfd-241c0464e7e5>
+	CCR URI:                	hdl.handle.net—CCR_C-2544_3626545e-a21d-058c-ebfd-241c0464e7e5
 	
 	VLO Facet: 					—
 	OLAC (DCMI):				—
@@ -104,7 +104,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 	Number of occurrences:  	1-1
 	Multilingual:           	yes
 	CCR prefLabel@en:       	resource title
-	CCR URI:                	hdl.handle.net—CCR_C-2545_d873f2ab-2a2f-29d6-a9ab-260cde57f227 <http://hdl.handle.net/11459/CCR_C-2545_d873f2ab-2a2f-29d6-a9ab-260cde57f227>
+	CCR URI:                	hdl.handle.net—CCR_C-2545_d873f2ab-2a2f-29d6-a9ab-260cde57f227
 
 	VLO Facet: 					name
 	OLAC (DCMI):				purl.org—title <http://purl.org/dc/terms/title>
@@ -125,7 +125,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 	Number of occurrences:  	1-1
 	Multilingual:           	yes
 	CCR prefLabel@en:       	description
-	CCR URI:                	hdl.handle.net—CCR_C-2520_9eeedfb4-47d3-ddee-cfcb-99ac634bf1db <http://hdl.handle.net/11459/CCR_C-2520_9eeedfb4-47d3-ddee-cfcb-99ac634bf1db>
+	CCR URI:                	hdl.handle.net—CCR_C-2520_9eeedfb4-47d3-ddee-cfcb-99ac634bf1db
 
 	VLO Facet: 					description
 	OLAC (DCMI):				purl.org—description <http://purl.org/dc/terms/description>
@@ -151,7 +151,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 	Number of occurrences:  	0-unbound
 	Multilingual:           	yes
 	CCR prefLabel@en:       	metadata tag
-	CCR URI:               		hdl.handle.net—CCR_C-5436_6ab57c2c-5f8d-3561-6db6-d75da23d2637 <http://hdl.handle.net/11459/CCR_C-5436_6ab57c2c-5f8d-3561-6db6-d75da23d2637>
+	CCR URI:               		hdl.handle.net—CCR_C-5436_6ab57c2c-5f8d-3561-6db6-d75da23d2637
 
 	VLO Facet: 					keywords
 	OLAC (DCMI):				—
@@ -186,7 +186,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 	Number of occurrences:  	1-1
 	Multilingual:           	yes
 	CCR prefLabel@en:       	Language Name
-	CCR URI:                	hdl.handle.net—CCR_C-2484_669684e7-cb9e-ea96-59cb-a25fe89b9b9d <http://hdl.handle.net/11459/CCR_C-2484_669684e7-cb9e-ea96-59cb-a25fe89b9b9d>
+	CCR URI:                	hdl.handle.net—CCR_C-2484_669684e7-cb9e-ea96-59cb-a25fe89b9b9d
 
 	VLO Facet: 					languageCode
 	OLAC (DCMI):				purl.org—language <http://purl.org/dc/terms/language>
@@ -207,7 +207,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 	Number of occurrences:  	0-unbound
 	Multilingual:           	yes
 	CCR prefLabel@en:       	Language Name
-	CCR URI:                	hdl.handle.net—CCR_C-2484_669684e7-cb9e-ea96-59cb-a25fe89b9b9d <http://hdl.handle.net/11459/CCR_C-2484_669684e7-cb9e-ea96-59cb-a25fe89b9b9d>
+	CCR URI:                	hdl.handle.net—CCR_C-2484_669684e7-cb9e-ea96-59cb-a25fe89b9b9d
 
 	VLO Facet: 					languageCode
 	OLAC (DCMI):				purl.org—language <http://purl.org/dc/terms/language>
@@ -228,7 +228,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 	Number of occurrences:  	1-1
 	Multilingual:           	no
 	CCR prefLabel@en:       	Language ID
-	CCR URI:                	hdl.handle.net—CCR_C-2482_08eded24-4086-7e3f-88e5-e0807fb01e17 <http://hdl.handle.net/11459/CCR_C-2482_08eded24-4086-7e3f-88e5-e0807fb01e17>
+	CCR URI:                	hdl.handle.net—CCR_C-2482_08eded24-4086-7e3f-88e5-e0807fb01e17
 
 	VLO Facet: 					languageCode
 	OLAC (DCMI):				purl.org—language <http://purl.org/dc/terms/language>
@@ -270,7 +270,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 	Number of occurrences:  	1-unbound
 	Multilingual:           	yes
 	CCR prefLabel@en:       	Language Name
-	CCR URI:                	hdl.handle.net—CCR_C-2484_669684e7-cb9e-ea96-59cb-a25fe89b9b9d <http://hdl.handle.net/11459/CCR_C-2484_669684e7-cb9e-ea96-59cb-a25fe89b9b9d>
+	CCR URI:                	hdl.handle.net—CCR_C-2484_669684e7-cb9e-ea96-59cb-a25fe89b9b9d
 
 	VLO Facet: 					languageCode
 	OLAC (DCMI):				purl.org—language <http://purl.org/dc/terms/language>
@@ -291,7 +291,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 	Number of occurrences:  	1-1
 	Multilingual:           	no
 	CCR prefLabel@en:       	Date of Recording
-	CCR URI:                	hdl.handle.net—CCR_C-5257_6572a4ea-cc70-c721-bbd8-2f6c28cc71a1 <http://hdl.handle.net/11459/CCR_C-5257_6572a4ea-cc70-c721-bbd8-2f6c28cc71a1>
+	CCR URI:                	hdl.handle.net—CCR_C-5257_6572a4ea-cc70-c721-bbd8-2f6c28cc71a1
 
 	VLO Facet: 					—
 	OLAC (DCMI):				—
@@ -319,7 +319,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 	Number of occurrences:  	1-1
 	Multilingual:           	no
 	CCR prefLabel@en:       	geographical coordinates
-	CCR URI:                	hdl.handle.net—CCR_C-2523_283c7b54-06ed-3d6c-4bb0-c8a79a8236fd <http://hdl.handle.net/11459/CCR_C-2523_283c7b54-06ed-3d6c-4bb0-c8a79a8236fd>
+	CCR URI:                	hdl.handle.net—CCR_C-2523_283c7b54-06ed-3d6c-4bb0-c8a79a8236fd
 
 	VLO Facet: 					—
 	OLAC (DCMI):				—
@@ -340,7 +340,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 	Number of occurrences:  	1-1
 	Multilingual:           	yes
 	CCR prefLabel@en:       	place name
-	CCR URI:                	hdl.handle.net—CCR_C-5580_03e458f2-f873-8645-76eb-40e001b6c1ac <http://hdl.handle.net/11459/CCR_C-5580_03e458f2-f873-8645-76eb-40e001b6c1ac>
+	CCR URI:                	hdl.handle.net—CCR_C-5580_03e458f2-f873-8645-76eb-40e001b6c1ac
 
 	VLO Facet: 					—
 	OLAC (DCMI):				—
@@ -361,7 +361,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 	Number of occurrences:  	0-unbound
 	Multilingual:           	yes
 	CCR prefLabel@en:       	place name
-	CCR URI:                	hdl.handle.net—CCR_C-5580_03e458f2-f873-8645-76eb-40e001b6c1ac <http://hdl.handle.net/11459/CCR_C-5580_03e458f2-f873-8645-76eb-40e001b6c1ac>
+	CCR URI:                	hdl.handle.net—CCR_C-5580_03e458f2-f873-8645-76eb-40e001b6c1ac
 
 	VLO Facet: 					—
 	OLAC (DCMI):				—
@@ -382,7 +382,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 	Number of occurrences:  	0-1
 	Multilingual:           	yes
 	CCR prefLabel@en:       	location region
-	CCR URI:                	hdl.handle.net—CCR_C-2533_fa6e1812-e29b-3cf6-e15a-50aa34b9be68 <http://hdl.handle.net/11459/CCR_C-2533_fa6e1812-e29b-3cf6-e15a-50aa34b9be68>
+	CCR URI:                	hdl.handle.net—CCR_C-2533_fa6e1812-e29b-3cf6-e15a-50aa34b9be68
 
 	VLO Facet: 					—
 	OLAC (DCMI):				—
@@ -403,7 +403,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 	Number of occurrences:  	0-unbound
 	Multilingual:           	yes
 	CCR prefLabel@en:       	location region
-	CCR URI:                	hdl.handle.net—CCR_C-2533_fa6e1812-e29b-3cf6-e15a-50aa34b9be68 <http://hdl.handle.net/11459/CCR_C-2533_fa6e1812-e29b-3cf6-e15a-50aa34b9be68>
+	CCR URI:                	hdl.handle.net—CCR_C-2533_fa6e1812-e29b-3cf6-e15a-50aa34b9be68
 
 	VLO Facet: 					—
 	OLAC (DCMI):				—
@@ -424,7 +424,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 	Number of occurrences:  	0-1
 	Multilingual:           	yes
 	CCR prefLabel@en:       	location country
-	CCR URI:                	hdl.handle.net—CCR_C-2532_d004b0a6-fd1d-3ca3-abf1-1e6aeb3e37b2 <http://hdl.handle.net/11459/CCR_C-2532_d004b0a6-fd1d-3ca3-abf1-1e6aeb3e37b2>
+	CCR URI:                	hdl.handle.net—CCR_C-2532_d004b0a6-fd1d-3ca3-abf1-1e6aeb3e37b2
 
 	VLO Facet: 					country
 	OLAC (DCMI):				—
@@ -445,7 +445,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 	Number of occurrences:  	0-1
 	Multilingual:           	yes
 	CCR prefLabel@en:       	location country
-	CCR URI:                	hdl.handle.net—CCR_C-2532_d004b0a6-fd1d-3ca3-abf1-1e6aeb3e37b2 <http://hdl.handle.net/11459/CCR_C-2532_d004b0a6-fd1d-3ca3-abf1-1e6aeb3e37b2>
+	CCR URI:                	hdl.handle.net—CCR_C-2532_d004b0a6-fd1d-3ca3-abf1-1e6aeb3e37b2
 
 	VLO Facet: 					country
 	OLAC (DCMI):				—
@@ -466,7 +466,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 	Number of occurrences:  	1-1
 	Multilingual:           	no
 	CCR prefLabel@en:       	country coding
-	CCR URI:                	hdl.handle.net—CCR_C-2092_36cd7ca8-e412-9f29-7ea7-4a3ba4ba2c91 <http://hdl.handle.net/11459/CCR_C-2092_36cd7ca8-e412-9f29-7ea7-4a3ba4ba2c91>
+	CCR URI:                	hdl.handle.net—CCR_C-2092_36cd7ca8-e412-9f29-7ea7-4a3ba4ba2c91
 
 	VLO Facet: 					—
 	OLAC (DCMI):				—
@@ -516,7 +516,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 	Number of occurrences:  	1-1
 	Multilingual:           	no
 	CCR prefLabel@en:       	creator
-	CCR URI:                	hdl.handle.net—CCR_C-6836_d35e73a8-ec72-d3c4-e39a-4b0fefd32cdc <http://hdl.handle.net/11459/CCR_C-6836_d35e73a8-ec72-d3c4-e39a-4b0fefd32cdc>
+	CCR URI:                	hdl.handle.net—CCR_C-6836_d35e73a8-ec72-d3c4-e39a-4b0fefd32cdc
 
 	VLO Facet: 					—
 	OLAC (DCMI):				contributor
@@ -580,7 +580,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 	Number of occurrences:  	1-1
 	Multilingual:           	no
 	CCR prefLabel@en:       	publication date
-	CCR URI:                	hdl.handle.net—CCR_C-2538_8b697452-7ef3-9fce-ccf9-a7f344f11317 <http://hdl.handle.net/11459/CCR_C-2538_8b697452-7ef3-9fce-ccf9-a7f344f11317>
+	CCR URI:                	hdl.handle.net—CCR_C-2538_8b697452-7ef3-9fce-ccf9-a7f344f11317
 
 	VLO Facet: 					—
 	OLAC (DCMI):				Date:dcterms:available
@@ -601,7 +601,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 	Number of occurrences:  	1-1
 	Multilingual:           	yes
 	CCR prefLabel@en:       	publisher
-	CCR URI:                	hdl.handle.net—CCR_C-6134_72c22724-2615-fd70-2eff-8cd3cb59e91d <http://hdl.handle.net/11459/CCR_C-6134_72c22724-2615-fd70-2eff-8cd3cb59e91d>
+	CCR URI:                	hdl.handle.net—CCR_C-6134_72c22724-2615-fd70-2eff-8cd3cb59e91d
 
 	VLO Facet: 					—
 	OLAC (DCMI):				Publisher
@@ -646,7 +646,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 	Number of occurrences:  	1-1
 	Multilingual:           	yes
 	CCR prefLabel@en:       	project name
-	CCR URI:                	hdl.handle.net—CCR_C-2536_13fc5f10-c14a-1f64-a669-32736f6d3ef5 <http://hdl.handle.net/11459/CCR_C-2536_13fc5f10-c14a-1f64-a669-32736f6d3ef5>
+	CCR URI:                	hdl.handle.net—CCR_C-2536_13fc5f10-c14a-1f64-a669-32736f6d3ef5
 
 	VLO Facet: 					projectName
 	OLAC (DCMI):				—
@@ -702,7 +702,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 	Number of occurrences:  	1-1
 	Multilingual:           	no
 	CCR prefLabel@en:       	funder
-	CCR URI:                	hdl.handle.net—CCR_C-2522_3bdc6af1-bf1b-3f5d-2938-62d99a1980ab <http://hdl.handle.net/11459/CCR_C-2522_3bdc6af1-bf1b-3f5d-2938-62d99a1980ab>
+	CCR URI:                	hdl.handle.net—CCR_C-2522_3bdc6af1-bf1b-3f5d-2938-62d99a1980ab
 
 	VLO Facet: 					—
 	OLAC (DCMI):				Contributor:sponsor
@@ -1017,7 +1017,7 @@ Examples:*`phonemic` `phonetic` `orthographic`
 	Number of occurrences:  	1-1
 	Multilingual:           	no
 	CCR prefLabel@en:       	license
-	CCR URI:                	hdl.handle.net—CCR_C-2457_45bbaa1a-7002-2ecd-ab9d-57a189f694a6 <http://hdl.handle.net/11459/CCR_C-2457_45bbaa1a-7002-2ecd-ab9d-57a189f694a6>
+	CCR URI:                	hdl.handle.net—CCR_C-2457_45bbaa1a-7002-2ecd-ab9d-57a189f694a6
 
 	VLO Facet: 					license
 	OLAC (DCMI):				dcterms:license
@@ -1038,7 +1038,7 @@ Examples:*`phonemic` `phonetic` `orthographic`
 	Number of occurrences:  	1-1
 	Multilingual:           	no
 	CCR prefLabel@en:       	licence URL
-	CCR URI:                	hdl.handle.net—CCR_C-6586_2c79d86a-5a75-0890-d407-7d9cb86b9beb <http://hdl.handle.net/11459/CCR_C-6586_2c79d86a-5a75-0890-d407-7d9cb86b9beb>
+	CCR URI:                	hdl.handle.net—CCR_C-6586_2c79d86a-5a75-0890-d407-7d9cb86b9beb
 
 	VLO Facet: 					distributionType
 	OLAC (DCMI):				dcterms:license
@@ -1059,7 +1059,7 @@ Examples:*`phonemic` `phonetic` `orthographic`
 	Number of occurrences:  	1-1
 	Multilingual:           	no
 	CCR prefLabel@en:       	availability
-	CCR URI:                	hdl.handle.net—CCR_C-2453_1f0c3ea5-7966-ae11-d3c6-448424d4e6e8 <http://hdl.handle.net/11459/CCR_C-2453_1f0c3ea5-7966-ae11-d3c6-448424d4e6e8>
+	CCR URI:                	hdl.handle.net—CCR_C-2453_1f0c3ea5-7966-ae11-d3c6-448424d4e6e8
 
 	VLO Facet: 					availability
 	OLAC (DCMI):				—
@@ -1081,7 +1081,7 @@ Examples:*`phonemic` `phonetic` `orthographic`
 	Number of occurrences:  	1-1
 	Multilingual:           	no
 	CCR prefLabel@en:       	availability start date
-	CCR URI:                	hdl.handle.net—CCR_C-6711_135e104e-9f0e-265a-0e6e-4e2325c8751e <http://hdl.handle.net/11459/CCR_C-6711_135e104e-9f0e-265a-0e6e-4e2325c8751e>
+	CCR URI:                	hdl.handle.net—CCR_C-6711_135e104e-9f0e-265a-0e6e-4e2325c8751e
 
 	VLO Facet: 					—
 	OLAC (DCMI):				—
@@ -1109,7 +1109,7 @@ Examples:*`phonemic` `phonetic` `orthographic`
 	Number of occurrences:  	1-1
 	Multilingual:           	no
 	CCR prefLabel@en:       	IPR Holder
-	CCR URI:                	hdl.handle.net—CCR_C-6709_cb3572ed-ffd3-04f1-c145-b9c1f26bfc82 <http://hdl.handle.net/11459/CCR_C-6709_cb3572ed-ffd3-04f1-c145-b9c1f26bfc82>
+	CCR URI:                	hdl.handle.net—CCR_C-6709_cb3572ed-ffd3-04f1-c145-b9c1f26bfc82
 
 	VLO Facet: 					rightsHolder
 	OLAC (DCMI):				dcterms:rightsHolder
@@ -1180,7 +1180,7 @@ Examples:*`phonemic` `phonetic` `orthographic`
 	Number of occurrences:  	1-1
 	Multilingual:           	no
 	CCR prefLabel@en:       	relation role
-	CCR URI:                	hdl.handle.net—CCR_C-6570_90018537-4ab9-0cfe-c878-257b9b311993 <http://hdl.handle.net/11459/CCR_C-6570_90018537-4ab9-0cfe-c878-257b9b311993>
+	CCR URI:                	hdl.handle.net—CCR_C-6570_90018537-4ab9-0cfe-c878-257b9b311993
 
 	VLO Facet: 					—
 	OLAC (DCMI):				Relation:dcterms:isPartOf
@@ -1229,7 +1229,7 @@ Examples:*`phonemic` `phonetic` `orthographic`
 	Number of occurrences:  	1-1
 	Multilingual:           	no
 	CCR prefLabel@en:       	mime type
-	CCR URI:                	hdl.handle.net—CCR_C-2571_2be2e583-e5af-34c2-3673-93359ec1f7df <http://hdl.handle.net/11459/CCR_C-2571_2be2e583-e5af-34c2-3673-93359ec1f7df>
+	CCR URI:                	hdl.handle.net—CCR_C-2571_2be2e583-e5af-34c2-3673-93359ec1f7df
 
 	VLO Facet: 					format
 	OLAC (DCMI):				Format
@@ -1271,7 +1271,7 @@ Examples:*`phonemic` `phonetic` `orthographic`
 	Number of occurrences:  	0-1
 	Multilingual:           	yes
 	CCR prefLabel@en:       	description
-	CCR URI:                	hdl.handle.net—CCR_C-2520_9eeedfb4-47d3-ddee-cfcb-99ac634bf1db <http://hdl.handle.net/11459/CCR_C-2520_9eeedfb4-47d3-ddee-cfcb-99ac634bf1db>
+	CCR URI:                	hdl.handle.net—CCR_C-2520_9eeedfb4-47d3-ddee-cfcb-99ac634bf1db
 
 	VLO Facet: 					description
 	OLAC (DCMI):				purl.org—description <http://purl.org/dc/terms/description>
@@ -1327,7 +1327,7 @@ Examples:*`phonemic` `phonetic` `orthographic`
 	Number of occurrences:  	1-1
 	Multilingual:           	no
 	CCR prefLabel@en:       	mime type
-	CCR URI:                	hdl.handle.net—CCR_C-2571_2be2e583-e5af-34c2-3673-93359ec1f7df <http://hdl.handle.net/11459/CCR_C-2571_2be2e583-e5af-34c2-3673-93359ec1f7df>
+	CCR URI:                	hdl.handle.net—CCR_C-2571_2be2e583-e5af-34c2-3673-93359ec1f7df
 
 	VLO Facet: 					format
 	OLAC (DCMI):				Format
@@ -1348,7 +1348,7 @@ Examples:*`phonemic` `phonetic` `orthographic`
 	Number of occurrences:  	1-1
 	Multilingual:           	no
 	CCR prefLabel@en:       	duration
-	CCR URI:                	hdl.handle.net—CCR_C-2567_8e616d60-5708-c3d4-320b-661399ccda43 <http://hdl.handle.net/11459/CCR_C-2567_8e616d60-5708-c3d4-320b-661399ccda43>
+	CCR URI:                	hdl.handle.net—CCR_C-2567_8e616d60-5708-c3d4-320b-661399ccda43
 
 	VLO Facet: 					—
 	OLAC (DCMI):				Format:dcterms:extent
@@ -1369,7 +1369,7 @@ Examples:*`phonemic` `phonetic` `orthographic`
 	Number of occurrences:  	0-1
 	Multilingual:           	yes
 	CCR prefLabel@en:       	description
-	CCR URI:                	hdl.handle.net—CCR_C-2520_9eeedfb4-47d3-ddee-cfcb-99ac634bf1db <http://hdl.handle.net/11459/CCR_C-2520_9eeedfb4-47d3-ddee-cfcb-99ac634bf1db>
+	CCR URI:                	hdl.handle.net—CCR_C-2520_9eeedfb4-47d3-ddee-cfcb-99ac634bf1db
 
 	VLO Facet: 					description
 	OLAC (DCMI):				purl.org—description <http://purl.org/dc/terms/description>
@@ -1418,7 +1418,7 @@ Examples:*`phonemic` `phonetic` `orthographic`
 	Number of occurrences:  	1-1
 	Multilingual:           	no
 	CCR prefLabel@en:       	mime type
-	CCR URI:                	hdl.handle.net—CCR_C-2571_2be2e583-e5af-34c2-3673-93359ec1f7df <http://hdl.handle.net/11459/CCR_C-2571_2be2e583-e5af-34c2-3673-93359ec1f7df>
+	CCR URI:                	hdl.handle.net—CCR_C-2571_2be2e583-e5af-34c2-3673-93359ec1f7df
 
 	VLO Facet: 					format
 	OLAC (DCMI):				Format
@@ -1460,7 +1460,7 @@ Examples:*`phonemic` `phonetic` `orthographic`
 	Number of occurrences:  	0-1
 	Multilingual:           	yes
 	CCR prefLabel@en:       	description
-	CCR URI:                	hdl.handle.net—CCR_C-2520_9eeedfb4-47d3-ddee-cfcb-99ac634bf1db <http://hdl.handle.net/11459/CCR_C-2520_9eeedfb4-47d3-ddee-cfcb-99ac634bf1db>
+	CCR URI:                	hdl.handle.net—CCR_C-2520_9eeedfb4-47d3-ddee-cfcb-99ac634bf1db
 
 	VLO Facet: 					description
 	OLAC (DCMI):				purl.org—description <http://purl.org/dc/terms/description>
@@ -1509,7 +1509,7 @@ Examples:*`phonemic` `phonetic` `orthographic`
 	Number of occurrences:  	1-1
 	Multilingual:           	no
 	CCR prefLabel@en:       	mime type
-	CCR URI:                	hdl.handle.net—CCR_C-2571_2be2e583-e5af-34c2-3673-93359ec1f7df <http://hdl.handle.net/11459/CCR_C-2571_2be2e583-e5af-34c2-3673-93359ec1f7df>
+	CCR URI:                	hdl.handle.net—CCR_C-2571_2be2e583-e5af-34c2-3673-93359ec1f7df
 
 	VLO Facet: 					format
 	OLAC (DCMI):				Format
@@ -1530,7 +1530,7 @@ Examples:*`phonemic` `phonetic` `orthographic`
 	Number of occurrences:  	0-1
 	Multilingual:           	yes
 	CCR prefLabel@en:       	description
-	CCR URI:                	hdl.handle.net—CCR_C-2520_9eeedfb4-47d3-ddee-cfcb-99ac634bf1db <http://hdl.handle.net/11459/CCR_C-2520_9eeedfb4-47d3-ddee-cfcb-99ac634bf1db>
+	CCR URI:                	hdl.handle.net—CCR_C-2520_9eeedfb4-47d3-ddee-cfcb-99ac634bf1db
 
 	VLO Facet: 					description
 	OLAC (DCMI):				purl.org—description <http://purl.org/dc/terms/description>
