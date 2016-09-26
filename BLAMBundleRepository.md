@@ -47,16 +47,16 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 
 	Number of occurrences:	1-1
 
-- [*BundleID*](#bundleid)
-- [*BundleDisplayTitle*](#bundledisplaytitle) &#x1F4A5;
-- [*BundleDescription*](#bundledescription) &#x1F4A5;
+- [BundleID](#bundleid)
+- [BundleDisplayTitle](#bundledisplaytitle) &#x1F4A5;
+- [BundleDescription](#bundledescription) &#x1F4A5;
 - [BundleKeywords](#bundlekeywords)
-	- [*BundleKeyword*](#bundlekeyword) &#x1F4A5;
+	- [BundleKeyword](#bundlekeyword) &#x1F4A5;
 - [BundleObjectLanguages](#bundleobjectlanguages)
-	- [*BundleObjectLanguage*](#bundleobjectlanguage)
-		- [*ObjectLanguageDisplayName*](#objectlanguagedisplayname) &#x1F4A5;
-		- [*ObjectLanguageName*](#objectlanguagename)
-		- [*ObjectLanguageISO639-3Code*](#objectlanguageiso639-3code) &#x1F4A5;
+	- [BundleObjectLanguage](#bundleobjectlanguage)
+		- [ObjectLanguageDisplayName](#objectlanguagedisplayname) &#x1F4A5;
+		- [ObjectLanguageName](#objectlanguagename)
+		- [ObjectLanguageISO639-3Code](#objectlanguageiso639-3code) &#x1F4A5;
 		- [ObjectLanguageGlottologCode](#objectlanguageglottologcode)
 		- [ObjectLanguageLanguageFamily](#objectlanguagelanguagefamily)
 - [BundleRecordingDate](#bundlerecordingdate) &#x1F4A5;
@@ -613,7 +613,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 [Back to Top](#blam-bundle-repository) |  [Back to BundlePublicationInfo](#bundlepublicationinfo)
 
 ### ProjectInfo
-**Description:** ProjectInfo contains descriptive information about the project or the projects relating to bundle data.
+**Description:** ProjectInfo contains descriptive information about the project or the projects relating to the resource.
 
 	Number of occurrences:		0-1
 
@@ -630,14 +630,14 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 [Back to Top](#blam-bundle-repository)
 
 #### Project
-**Description:** Project contains descriptive information about the projectrelating to bundle data.
+**Description:** Project contains descriptive information about the project relating to bundle data.
 
 	Number of occurrences:		1-unbound
 
 [Back to Top](#blam-bundle-repository) | [Back to ProjectInfo](#projectinfo)
 
 #### ProjectDisplayName
-**Description:** &#x1F4A5; &#x1F4CC; The ProjectDisplayName element provides a human readable name of the project. The preferred form is the abbreviation by with the project is generally known. The long form is best placed in the project description.
+**Description:** &#x1F4A5; &#x1F4CC; The ProjectDisplayName element provides a human readable name of the project. The preferred form is the abbreviation by which the project is generally known. The long form is best placed in the project description.
 
 	Interface Facet:			yes, display
 	User provided:				yes
@@ -658,7 +658,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 [Back to Top](#blam-bundle-repository) | [Back to ProjectInfo](#projectinfo)
 
 #### ProjectDescription
-**Description:** &#x1F4A5; &#x1F4CC; The ProjectDescription element provides a human readable description of the project in eluding its full name or title. It should contain a description of the project objective or activity. The content of the ProjectDescription element will be used as the human readable description in interfaces. Its content can be queried by repositories for free-text metadata search. Data providers can provide BundleDescription values for multiple interface languages
+**Description:** &#x1F4A5; &#x1F4CC; The ProjectDescription element provides a human readable description of the project in eluding its full name or title. It should contain a description of the project objective or activity. The content of the ProjectDescription element will be used as the human readable description in interfaces. Its content can be queried by repositories for free-text metadata search. Data providers can provide ProjectDescription values for multiple interface languages
 
 	Interface Facet:			yes, fulltext
 	User provided:				yes
