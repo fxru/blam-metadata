@@ -7,7 +7,7 @@ Basic Language Archive Metadata (BLAM) is designed to provide basic metadata for
 
 * BLAM Bundle Repository: described in this document [below](#blam-bundle-repository)
 * BLAM Bundle User: documentation (to come)
-* BLAM Collection Repository: documentation  (to come)
+* BLAM Collection Repository: documentation  [(draft)](https://github.com/fxru/blam-metadata/blob/master/BLAMCollectionRepository.md)
 * BLAM Collection User: documentation  (to come)
 
 BLAM Bundle Repository contains information about bundles as provided by the repository. Data producers are asked to submit a subset of this imformation during ingest. The BLAM Bundle User profile defines this subset of 35 data fields of which 16 are obligatory. The separate definition of the BLAM Bundle User profile enhances the usability for data producers and can be validated independently from the more comprehensive BLAM Bundle Repository profile. The Basic Language Archive Metadata Bundle User profile is intended to be the primary source of user input for BLAM Bundle Repository. However, BLAM Bundle Repository is designed to allow automatic import of information from other metadata formats. The formats actively considered are: 
