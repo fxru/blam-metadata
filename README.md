@@ -7,7 +7,7 @@ Basic Language Archive Metadata (BLAM) is designed to provide basic metadata for
 
 * BLAM Bundle Repository: [documentation](https://github.com/fxru/blam-metadata/blob/master/BLAMBundleRepository.md)
 * BLAM Bundle User: documentation (to come)
-* BLAM Collection Repository: documentation  (to come)
+* BLAM Collection Repository: documentation  [(draft)](https://github.com/fxru/blam-metadata/blob/master/BLAMCollectionRepository.md)
 * BLAM Collection User: documentation  (to come)
 
 BLAM is designed with a focus on discoverability and display. Data producers can submit additional metadata information to document their data and their research. The preferred format are other CMDI profiles or comparably standardized metadata formats.
