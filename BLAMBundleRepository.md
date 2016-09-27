@@ -521,8 +521,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 	VLO Facet: 					—
 	OLAC (DCMI):				contributor
 	DataCite:        			creator
-	IMDI Element:               	
-//Session/MDGroup/Actors/Actor/FullName[../Role/contains(text(), 'Researcher') or ../Role/contains(text(), 'Depositor')]
+	IMDI Element:               //Session/MDGroup/Actors/Actor/FullName[../Role/contains(text(), 'Researcher') or ../Role/contains(text(), 'Depositor')]
 	ELDP-CMDI Element:          
 	IMDI-CMDI Element:
 
@@ -813,7 +812,7 @@ Examples: `sentence` `clause` `word` `intonation unit` `phon` `paragraph`
 	Number of occurrences:  	0-unbound
 	Multilingual:           	no
 	CCR prefLabel@en:       	segmentation unit
-	CCR URI:                	hdl.handle.net—CCR_C-3819_833e225a-f7c9-2c41-4bd3-c55c81ef7559 <http://hdl.handle.net/11459/CCR_C-3819_833e225a-f7c9-2c41-4bd3-c55c81ef7559>
+	CCR URI:                	hdl.handle.net—CCR_C-3819_833e225a-f7c9-2c41-4bd3-c55c81ef7559
 
 	VLO Facet: 					—
 	OLAC (DCMI):				—
@@ -1148,25 +1147,29 @@ Examples:*`phonemic` `phonetic` `orthographic`
 
 - [BundleIsPartOfCollection](#bundleispartofcollection) 
 - [BundleAdditionalMetadataFile](#bundleadditionalmetadatafile)
-	- [FilePID](#filepid) 
-	- [MimeType](#mimetype)
-	- [IsMetadataOf](#ismetadataof) &#x1F4A5;
-	- [FileDescription](#filedescription)  &#x1F4A5;
+	- [FileName](#filename-metadatafile) 
+	- [FilePID](#filepid-metadatafile) 
+	- [MimeType](#mimetype-metadatafile)
+	- [IsMetadataOf](#ismetadataof-metadatafile) &#x1F4A5;
+	- [FileDescription](#filedescription-metadatafile)  &#x1F4A5;
 - [BundleResources](#bundleresources)
-	- [MediaResource](#mediaresource) 
-		- [FilePID](#filepid) 
-		- [MimeType](#mimetype)
-		- [FileLength](#filelength)
-		- [FileDescription](#filedescription)  &#x1F4A5;
+	- [MediaResource](#mediaresource)
+		- [FileName] (#filename-mediaresource)
+		- [FilePID](#filepid-mediaresource) 
+		- [MimeType](#mimetype-mediaresource)
+		- [FileLength](#filelength-mediaresource)
+		- [FileDescription](#filedescription-mediaresource)  &#x1F4A5;
 	- [WrittenResource](#writtenresource)
-		- [FilePID](#filepid) 
-		- [MimeType](#mimetype)
-		- [IsAnnotationOf](#isannotationof) &#x1F4A5;
-		- [FileDescription](#filedescription)  &#x1F4A5; 
+		- [FileName] (#filename-writtenresource)
+		- [FilePID](#filepid-writtenresource) 
+		- [MimeType](#mimetype-writtenresource)
+		- [IsAnnotationOf](#isannotationof-writtenresource) &#x1F4A5;
+		- [FileDescription](#filedescription-writtenresource)  &#x1F4A5; 
 	- [OtherResource](#otherresource)
-		- [FilePID](#filepid) 
-		- [MimeType](#mimetype)
-		- [FileDescription](#filedescription)  &#x1F4A5;
+		- [FileName] (#filename-otherresource)
+		- [FilePID](#filepid-otherresource) 
+		- [MimeType](#mimetype-otherresource)
+		- [FileDescription](#filedescription-otherresource)  &#x1F4A5;
 
 [Back to Top](#blam-bundle-repository) |  [Back to BundleStructuralInfo](#bundlestructuralinfo)
 
@@ -1198,7 +1201,26 @@ Examples:*`phonemic` `phonetic` `orthographic`
 
 [Back to Top](#blam-bundle-repository) |  [Back to BundleStructuralInfo](#bundlestructuralinfo)
 
-#### FilePID
+##### FileName MetadataFile
+**Description:** &#x1F4A5; &#x1F4CC; The FileName element contains the name of the file as provided by the depositor.
+
+	Interface Facet:			yes, display
+	User provided:				no		
+
+	ValueScheme:				string
+	Number of occurrences:  	1-1
+	Multilingual:           	no
+	CCR prefLabel@en:       	—
+	CCR URI:                	—
+
+	VLO Facet: 					—
+	OLAC (DCMI):				—
+	DataCite:                	—
+	IMDI Element:               	       
+	ELDP-CMDI Element:          	
+	IMDI-CMDI Element:		
+
+#### FilePID MetadataFile
 **Description:** &#x1F4CC; The FileID element contains a PID that uniquely identifies the file described by this component.
 
 	Interface Facet:			full text, display
@@ -1219,7 +1241,7 @@ Examples:*`phonemic` `phonetic` `orthographic`
 
 [Back to Top](#blam-bundle-repository) |  [Back to BundleStructuralInfo](#bundlestructuralinfo)
 
-#### MimeType
+#### MimeType MetadataFile
 **Description:** &#x1F4CC; Specification of the mime-type of the resource.
 
 	Interface Facet:			no
@@ -1240,7 +1262,7 @@ Examples:*`phonemic` `phonetic` `orthographic`
 
 [Back to Top](#blam-bundle-repository) |  [Back to BundleStructuralInfo](#bundlestructuralinfo)
 
-#### IsMetadataOf
+#### IsMetadataOf MetadataFile
 **Description:** &#x1F4A5; &#x1F4CC; The IsMetadataOf element contains a PID that uniquely identifies the file described by the file described in this component.
 
 	Interface Facet:			no
@@ -1261,7 +1283,7 @@ Examples:*`phonemic` `phonetic` `orthographic`
 
 [Back to Top](#blam-bundle-repository) |  [Back to BundleStructuralInfo](#bundlestructuralinfo)
 
-#### FileDescription
+#### FileDescription MetadataFile
 **Description:** &#x1F4A5; The FileDescription contains a human readable, file specific description. This element should be used to provide file specific that cannot be added to the bundle description. 
 
 	Interface Facet:			no	
@@ -1282,7 +1304,7 @@ Examples:*`phonemic` `phonetic` `orthographic`
 
 [Back to Top](#blam-bundle-repository) |  [Back to BundleStructuralInfo](#bundlestructuralinfo)
 
-#### BundleResources
+#### BundleResources MetadataFile
 **Description:** The BundleResources component contains metadata about files contained in the bundle.
 
 	Number of occurrences:		1-1
@@ -1296,7 +1318,26 @@ Examples:*`phonemic` `phonetic` `orthographic`
 
 [Back to Top](#blam-bundle-repository) |  [Back to BundleStructuralInfo](#bundlestructuralinfo)
 
-##### FilePID
+##### FileName MediaResource
+**Description:** &#x1F4A5; &#x1F4CC; The FileName element contains the name of the file as provided by the depositor.
+
+	Interface Facet:			yes, display
+	User provided:				no		
+
+	ValueScheme:				string
+	Number of occurrences:  	1-1
+	Multilingual:           	no
+	CCR prefLabel@en:       	—
+	CCR URI:                	—
+
+	VLO Facet: 					—
+	OLAC (DCMI):				—
+	DataCite:                	—
+	IMDI Element:               	       
+	ELDP-CMDI Element:          	
+	IMDI-CMDI Element:		
+
+##### FilePID MediaResource
 **Description:** &#x1F4CC; The FileID element contains a PID that uniquely identifies the file described by this component.
 
 	Interface Facet:			yes, display
@@ -1317,7 +1358,7 @@ Examples:*`phonemic` `phonetic` `orthographic`
 
 [Back to Top](#blam-bundle-repository) |  [Back to BundleStructuralInfo](#bundlestructuralinfo)
 
-##### MimeType
+##### MimeType MediaResource
 **Description:** &#x1F4CC; Specification of the mime-type of the resource.
 
 	Interface Facet:			yes, browsing
@@ -1338,7 +1379,7 @@ Examples:*`phonemic` `phonetic` `orthographic`
 
 [Back to Top](#blam-bundle-repository) |  [Back to BundleStructuralInfo](#bundlestructuralinfo)
 
-##### FileLength
+##### FileLength MediaResource
 **Description:** &#x1F4CC; The FileLength element contains the length of a media file in microseconds(?).
 
 	Interface Facet:			yes, browsing
@@ -1359,7 +1400,7 @@ Examples:*`phonemic` `phonetic` `orthographic`
 
 [Back to Top](#blam-bundle-repository) |  [Back to BundleStructuralInfo](#bundlestructuralinfo)
 
-##### FileDescription
+##### FileDescription MediaResource
 **Description:** &#x1F4A5; The FileDescription contains a human readable, file specific description. This element should be used to provide file specific that cannot be added to the bundle description. 
 
 	Interface Facet:			no, full text	
@@ -1387,7 +1428,26 @@ Examples:*`phonemic` `phonetic` `orthographic`
 
 [Back to Top](#blam-bundle-repository) |  [Back to BundleStructuralInfo](#bundlestructuralinfo)
 
-##### FilePID
+##### FileName WrittenResource
+**Description:** &#x1F4A5; &#x1F4CC; The FileName element contains the name of the file as provided by the depositor.
+
+	Interface Facet:			yes, display
+	User provided:				no		
+
+	ValueScheme:				string
+	Number of occurrences:  	1-1
+	Multilingual:           	no
+	CCR prefLabel@en:       	—
+	CCR URI:                	—
+
+	VLO Facet: 					—
+	OLAC (DCMI):				—
+	DataCite:                	—
+	IMDI Element:               	       
+	ELDP-CMDI Element:          	
+	IMDI-CMDI Element:			
+
+##### FilePID WrittenResource
 **Description:** &#x1F4CC; The FileID element contains a PID that uniquely identifies the file described by this component.
 
 	Interface Facet:			yes, display
@@ -1408,7 +1468,7 @@ Examples:*`phonemic` `phonetic` `orthographic`
 
 [Back to Top](#blam-bundle-repository) |  [Back to BundleStructuralInfo](#bundlestructuralinfo)
 
-##### MimeType
+##### MimeType WrittenResource
 **Description:** &#x1F4CC; Specification of the mime-type of the resource.
 
 	Interface Facet:			yes, browsing
@@ -1429,7 +1489,7 @@ Examples:*`phonemic` `phonetic` `orthographic`
 
 [Back to Top](#blam-bundle-repository) |  [Back to BundleStructuralInfo](#bundlestructuralinfo)
 
-##### IsAnnotationOf
+##### IsAnnotationOf WrittenResource
 **Description:** &#x1F4A5; The IsAnnotationOf element contains a PID that uniquely identifies the file annotated by the file described in this component.
 
 	Interface Facet:			no
@@ -1450,7 +1510,7 @@ Examples:*`phonemic` `phonetic` `orthographic`
 
 [Back to Top](#blam-bundle-repository) |  [Back to BundleStructuralInfo](#bundlestructuralinfo)
 
-##### FileDescription
+##### FileDescription WrittenResource
 **Description:** &#x1F4A5; The FileDescription contains a human readable, file specific description. This element should be used to provide file specific that cannot be added to the bundle description. 
 
 	Interface Facet:			no, full text	
@@ -1478,7 +1538,26 @@ Examples:*`phonemic` `phonetic` `orthographic`
 
 [Back to Top](#blam-bundle-repository) |  [Back to BundleStructuralInfo](#bundlestructuralinfo)
 
-##### FilePID
+##### FileName OtherResource
+**Description:** &#x1F4A5; &#x1F4CC; The FileName element contains the name of the file as provided by the depositor.
+
+	Interface Facet:			yes, display
+	User provided:				no		
+
+	ValueScheme:				string
+	Number of occurrences:  	1-1
+	Multilingual:           	no
+	CCR prefLabel@en:       	—
+	CCR URI:                	—
+
+	VLO Facet: 					—
+	OLAC (DCMI):				—
+	DataCite:                	—
+	IMDI Element:               	       
+	ELDP-CMDI Element:          	
+	IMDI-CMDI Element:		
+
+##### FilePID OtherResource
 **Description:** &#x1F4CC; The FileID element contains a PID that uniquely identifies the file described by this component.
 
 	Interface Facet:			yes, display
@@ -1499,7 +1578,7 @@ Examples:*`phonemic` `phonetic` `orthographic`
 
 [Back to Top](#blam-bundle-repository) |  [Back to BundleStructuralInfo](#bundlestructuralinfo)
 
-##### MimeType
+##### MimeType OtherResource
 **Description:** &#x1F4CC; Specification of the mime-type of the resource.
 
 	Interface Facet:			yes, browsing
@@ -1520,7 +1599,7 @@ Examples:*`phonemic` `phonetic` `orthographic`
 
 [Back to Top](#blam-bundle-repository) |  [Back to BundleStructuralInfo](#bundlestructuralinfo)
 
-##### FileDescription
+##### FileDescription OtherResource
 **Description:** &#x1F4A5; The FileDescription contains a human readable, file specific description. This element should be used to provide file specific that cannot be added to the bundle description. 
 
 	Interface Facet:			no, full text	
