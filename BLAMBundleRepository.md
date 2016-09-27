@@ -10,7 +10,7 @@ Basic Language Archive Metadata (BLAM) is designed to provide basic metadata for
 * BLAM Collection Repository: documentation  (to come)
 * BLAM Collection User: documentation  (to come)
 
-BLAM Bundle Repository contains information about bundles as provided by the repository. Data providers are asked to submit a subset of this imformation during ingest. The BLAM Bundle User profile defines this subset of 35 data fields of which 16 are obligatory. The separate definition of the BLAM Bundle User profile enhances the usability for data providers and can be validated independently from the more comprehensive BLAM Bundle Repository profile. The Basic Language Archive Metadata Bundle User profile is intended to be the primary source of user input for BLAM Bundle Repository. However, BLAM Bundle Repository is designed to allow automatic import of information from other metadata formats. The formats actively considered are: 
+BLAM Bundle Repository contains information about bundles as provided by the repository. Data producers are asked to submit a subset of this imformation during ingest. The BLAM Bundle User profile defines this subset of 35 data fields of which 16 are obligatory. The separate definition of the BLAM Bundle User profile enhances the usability for data producers and can be validated independently from the more comprehensive BLAM Bundle Repository profile. The Basic Language Archive Metadata Bundle User profile is intended to be the primary source of user input for BLAM Bundle Repository. However, BLAM Bundle Repository is designed to allow automatic import of information from other metadata formats. The formats actively considered are: 
 
 * IMDI Metadata Format: [ISLE Meta Data Initative, Version 3.0.4 (2003)](https://tla.mpi.nl/imdi-metadata/)
 * CMDI imdi-session-profile: [clarin.eu:cr1:p_1271859438204](https://catalog.clarin.eu/ds/ComponentRegistry#/?itemId=clarin.eu%3Acr1%3Ap_1271859438204&registrySpace=public)
@@ -95,7 +95,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 [Back to Top](#blam-bundle-repository) | [Back to BundleGeneralInfo](#bundlegeneralinfo)
 
 #### BundleDisplayTitle 
-**Description:** &#x1F4A5; &#x1F4CC; The BundleDisplayTitle element provides a human readable name of the bundle. It should contain a meaningful and recognisable title for the bundle. The content of the BundleDisplayTitle element will be used as the human readable identifier in interfaces. Data providers can provide BundleDisplayTitle values for multiple interface languages.
+**Description:** &#x1F4A5; &#x1F4CC; The BundleDisplayTitle element provides a human readable name of the bundle. It should contain a meaningful and recognisable title for the bundle. The content of the BundleDisplayTitle element will be used as the human readable identifier in interfaces. Data producers can provide BundleDisplayTitle values for multiple interface languages.
 
 	Interface Facet:			yes, full text, display
 	User provided:				yes
@@ -116,7 +116,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 [Back to Top](#blam-bundle-repository) | [Back to BundleGeneralInfo](#bundlegeneralinfo)
 
 #### BundleDescription 
-**Description:** &#x1F4A5; &#x1F4CC; The BundleDescription element provides a human readable description of the bundle. It should contain a description of the content of the collection. The content of the BundleDescription element will be used as the human readable description in interfaces. Its content can be queried by repositories for free-text metadata search. Data providers can provide BundleDescription values for multiple interface languages.
+**Description:** &#x1F4A5; &#x1F4CC; The BundleDescription element provides a human readable description of the bundle. It should contain a description of the content of the collection. The content of the BundleDescription element will be used as the human readable description in interfaces. Its content can be queried by repositories for free-text metadata search. Data producers can provide BundleDescription values for multiple interface languages.
 
 	Interface Facet:			yes, full text, display
 	User provided:				yes
@@ -177,7 +177,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 [Back to Top](#blam-bundle-repository) | [Back to BundleGeneralInfo](#bundlegeneralinfo)
 
 #### ObjectLanguageDisplayName
-**Description:** &#x1F4A5; &#x1F4CC; The ObjectLanguageDisplayName element contains the name of the object language in the version recommended by the data producer. Repositories should tread the name provided by this element as the primary language name when displaying the metadata in relation to this particular data set (e.g. collection or bundle).The repository may use alternative names provided by services such as Glottolog or Ethnologue to improve discoverability and to enhance browsing and search experience. The repository may also translate the name into other languages if no language name is given for a particular interface language. Data providers can provide LanguageDisplayName values for multiple interface languages. 
+**Description:** &#x1F4A5; &#x1F4CC; The ObjectLanguageDisplayName element contains the name of the object language in the version recommended by the data producer. Repositories should tread the name provided by this element as the primary language name when displaying the metadata in relation to this particular data set (e.g. collection or bundle).The repository may use alternative names provided by services such as Glottolog or Ethnologue to improve discoverability and to enhance browsing and search experience. The repository may also translate the name into other languages if no language name is given for a particular interface language. Data producers can provide LanguageDisplayName values for multiple interface languages. 
 
 	Interface Facet:			yes, display, browsing
 	User provided:				yes		
@@ -331,7 +331,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 [Back to Top](#blam-bundle-repository) | [Back to BundleGeneralInfo](#bundlegeneralinfo)
 
 #### BundleLocationDisplayName
-**Description:** &#x1F4A5; &#x1F4CC; The BundleLocationDisplayName element contains the name of a location in the version recommended by the data producer. Repositories should treat the name provided by this element as the primary location name when displaying the metadata in relation to this particular data set (e.g. collection or bundle).The repository may use alternative names provided by services such as GeoNames to improve discoverability and to enhance the browsing and search experience. The repository may also translate the name into other languages if no BundleLocationDisplayName name is given for a particular interface language. Data providers can provide BundleLocationDisplayName values for multiple interface languages. 
+**Description:** &#x1F4A5; &#x1F4CC; The BundleLocationDisplayName element contains the name of a location in the version recommended by the data producer. Repositories should treat the name provided by this element as the primary location name when displaying the metadata in relation to this particular data set (e.g. collection or bundle).The repository may use alternative names provided by services such as GeoNames to improve discoverability and to enhance the browsing and search experience. The repository may also translate the name into other languages if no BundleLocationDisplayName name is given for a particular interface language. Data producers can provide BundleLocationDisplayName values for multiple interface languages. 
 
 	Interface Facet:			yes, full text
 	User provided:				yes		
@@ -373,7 +373,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 [Back to Top](#blam-bundle-repository) | [Back to BundleGeneralInfo](#bundlegeneralinfo)
 
 #### BundleRegionDisplayName
-**Description:** &#x1F4A5; The BundleRegionDisplayName element optionally contains the name of an administrative subdivision such as state, province, or any other culturally salient unit in the version recommended by the data producer. The data producer can decided which level of subdivision is relevant and will improve discoverability. Repositories should tread the name provided by this element as the primary location name when displaying the metadata in relation to this particular data set (e.g. collection or bundle). The repository may use alternative names provided by services such as GeoNames to improve discoverability and to enhance browsing and search experience. The repository may also translate the name into other languages if no RegionDisplayName value is given for a particular interface language. Data providers can provide RegionDisplayName values for multiple interface languages.
+**Description:** &#x1F4A5; The BundleRegionDisplayName element optionally contains the name of an administrative subdivision such as state, province, or any other culturally salient unit in the version recommended by the data producer. The data producer can decided which level of subdivision is relevant and will improve discoverability. Repositories should tread the name provided by this element as the primary location name when displaying the metadata in relation to this particular data set (e.g. collection or bundle). The repository may use alternative names provided by services such as GeoNames to improve discoverability and to enhance browsing and search experience. The repository may also translate the name into other languages if no RegionDisplayName value is given for a particular interface language. Data producers can provide RegionDisplayName values for multiple interface languages.
 
 	Interface Facet:			yes, full text
 	User provided:				yes
@@ -415,7 +415,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 [Back to Top](#blam-bundle-repository) | [Back to BundleGeneralInfo](#bundlegeneralinfo)
 
 #### BundleCountryDisplayName
-**Description:** &#x1F4A5; The BundleCountryDisplayName element contains the name of the country to which the location belongs in the version recommended by the data producer. Repositories should tread the name provided by this element as the primary country name when displaying the metadata in relation to this particular data set (e.g. collection or bundle). The repository may use alternative names provided by services such as GeoNames to improve discoverability and to enhance browsing and search experience. The repository may also translate the name into other languages if no BundleCountryDisplayName name is given for a particular interface language. Data providers can provide BundleCountryDisplayName values for multiple interface languages.  
+**Description:** &#x1F4A5; The BundleCountryDisplayName element contains the name of the country to which the location belongs in the version recommended by the data producer. Repositories should tread the name provided by this element as the primary country name when displaying the metadata in relation to this particular data set (e.g. collection or bundle). The repository may use alternative names provided by services such as GeoNames to improve discoverability and to enhance browsing and search experience. The repository may also translate the name into other languages if no BundleCountryDisplayName name is given for a particular interface language. Data producers can provide BundleCountryDisplayName values for multiple interface languages.  
 
 	Interface Facet:			yes, full text
 	User provided:				yes	
@@ -489,25 +489,30 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 		- [CreatorAffiliation](#creatoraffiliation) &#x1F4A5;
 - [BundlePublicationYear](#bundlepublicationyear) &#x1F4A5;
 - [BundleDataProvider](#bundledataprovider)
+- [BundleContributors](#bundlecontributors)
+	- [BundleContributor](#bundlecontributor)
+		- [CreatorDisplayName](#ccontributordisplayname) &#x1F4A5;
+		- [CreatorNameIdentifier](#contributornameidentifier) &#x1F4A5;
+		- [CreatorAffiliation](#contributoraffiliation) &#x1F4A5;
 
 [Back to Top](#blam-bundle-repository)
 
 #### BundleCreators
-**Description:** The BundleCreator component contains information about the creator or creators of the resource.
+**Description:** The BundleCreator component contains information about the creator or creators of the resource. BundleCreators are treated as creators of the resource and thus similar to authors in respect to quotation, references, and metadata display. Other individuals involved in the production or processing of the resource should be added as [BundleContributors](bundlecontributors).
 
 	Number of occurrences:		1-1
 
 [Back to Top](#blam-bundle-repository) | [Back to BundlePublicationInfo](#bundlepublicationinfo)
 
-#### BundleCreator
-**Description:** The BundleCreator component contains information about the creator of the resource.
+##### BundleCreator
+**Description:** The BundleCreator component contains information about the creator of the resource. 
 
 	Number of occurrences:		1-unbound
 
 [Back to Top](#blam-bundle-repository) | [Back to BundlePublicationInfo](#bundlepublicationinfo)
 
-#### CreatorDisplayName
-**Description:** &#x1F4A5; &#x1F4CC; The CreatorDisplayName element contains the name of the creator in a form that lends itself to alphabetical sorting. The value of this field can be used to generate a bibliographical citation reference for the resource. This usage should guide the formatting. The data provider determines what is the proper order of names for an alphabetically sorted list.
+###### CreatorDisplayName
+**Description:** &#x1F4A5; &#x1F4CC; The CreatorDisplayName element contains the name of the creator in a form that lends itself to alphabetical sorting. The value of this field can be used to generate a bibliographical citation reference for the resource. This usage should guide the formatting. The data producer determines what is the proper order of names for an alphabetically sorted list.
 
 	Interface Facet:			yes, full text, citation
 	User provided:				yes	
@@ -527,7 +532,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 
 [Back to Top](#blam-bundle-repository) |  [Back to BundlePublicationInfo](#bundlepublicationinfo)
 
-#### CreatorNameIdentifier
+###### CreatorNameIdentifier
 **Description:** &#x1F4A5; The CreatorNameIdentifier contains an URI that uniquely identifies the creator according to an established scheme. Best Practice: ORCID, INSI
 
 	Interface Facet:			no
@@ -548,7 +553,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 
 [Back to Top](#blam-bundle-repository) |  [Back to BundlePublicationInfo](#bundlepublicationinfo)
 
-#### CreatorAffiliation
+###### CreatorAffiliation
 **Description:** &#x1F4A5; The CreatorAffiliation contains the organisational or institutional affiliation of the creator as provided by the depositor.
 
 	Interface Facet:			yes
@@ -591,7 +596,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 [Back to Top](#blam-bundle-repository) |  [Back to BundlePublicationInfo](#bundlepublicationinfo)
 
 #### BundleDataProvider
-**Description:** &#x1F4CC; BundleDataProvider contain the name of the data provider. The default value would be the name of the repository or its holding institution. The value of this field can be used to generate a bibliographical citation reference for the resource. 
+**Description:** &#x1F4CC; BundleDataProvider contain the name of the data providing entity. The default value would be the name of the repository or its holding institution. The value of this field can be used to generate a bibliographical citation reference for the resource. 
 			
 	Interface Facet:			no
 	User provided:				no
@@ -605,6 +610,83 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 	VLO Facet: 					—
 	OLAC (DCMI):				Publisher
 	DataCite:        			Publisher
+	IMDI Element:               —
+	ELDP-CMDI Element:          	
+	IMDI-CMDI Element:			—
+
+[Back to Top](#blam-bundle-repository) |  [Back to BundlePublicationInfo](#bundlepublicationinfo)
+
+#### BundleContributors
+**Description:** The BundleContributors component contains information about the creator or creators of the resource. BundleCreators are treated as creators of the resource and thus similar to authors in respect to quotation, references, and metadata display. Other individuals involved in the production or processing of the resource should be added as [BundleContributors](bundlecontributors).
+
+	Number of occurrences:		1-1
+
+[Back to Top](#blam-bundle-repository) | [Back to BundlePublicationInfo](#bundlepublicationinfo)
+
+##### BundleContributor
+**Description:** The BundleContributor component contains information about a contributor to the resource. 
+
+	Number of occurrences:		1-unbound
+
+[Back to Top](#blam-bundle-repository) | [Back to BundlePublicationInfo](#bundlepublicationinfo)
+
+###### ContributorDisplayName
+**Description:** &#x1F4A5; &#x1F4CC; The CreatorDisplayName element contains the name of the creator. The data producer determines what is the proper order of names.
+
+	Interface Facet:			yes, full text, citation
+	User provided:				yes	
+
+	ValueScheme:				string
+	Number of occurrences:  	1-1
+	Multilingual:           	no
+	CCR prefLabel@en:       	creator
+	CCR URI:                	hdl.handle.net—CCR_C-6836_d35e73a8-ec72-d3c4-e39a-4b0fefd32cdc
+
+	VLO Facet: 					—
+	OLAC (DCMI):				contributor
+	DataCite:        			creator
+	IMDI Element:               //Session/MDGroup/Actors/Actor/FullName[../Role/contains(text(), 'Researcher') or ../Role/contains(text(), 'Depositor')]
+	ELDP-CMDI Element:          
+	IMDI-CMDI Element:
+
+[Back to Top](#blam-bundle-repository) |  [Back to BundlePublicationInfo](#bundlepublicationinfo)
+
+###### ContributorNameIdentifier
+**Description:** &#x1F4A5; The ContributorNameIdentifier contains an URI that uniquely identifies the contributor according to an established scheme. Best Practice: ORCID, INSI
+
+	Interface Facet:			no
+	User provided:				yes
+
+	ValueScheme:				anyURI
+	Number of occurrences:  	0-1
+	Multilingual:           	no
+	CCR prefLabel@en:       	—
+	CCR URI:                	—
+
+	VLO Facet: 					—
+	OLAC (DCMI):				—
+	DataCite:        			Creator:nameIdentifier
+	IMDI Element:               —
+	ELDP-CMDI Element:          —
+	IMDI-CMDI Element:			—
+
+[Back to Top](#blam-bundle-repository) |  [Back to BundlePublicationInfo](#bundlepublicationinfo)
+
+###### ContributorAffiliation
+**Description:** &#x1F4A5; The ContributorAffiliation contains the organisational or institutional affiliation of the contributor as provided by the depositor.
+
+	Interface Facet:			yes
+	User provided:				yes
+
+	ValueScheme:				string
+	Number of occurrences:  	0-unbound
+	Multilingual:           	yes
+	CCR prefLabel@en:       	—
+	CCR URI:                	—
+
+	VLO Facet: 					—
+	OLAC (DCMI):				—
+	DataCite:        			Creator:affiliation
 	IMDI Element:               —
 	ELDP-CMDI Element:          	
 	IMDI-CMDI Element:			—
@@ -657,7 +739,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 [Back to Top](#blam-bundle-repository) | [Back to ProjectInfo](#projectinfo)
 
 #### ProjectDescription
-**Description:** &#x1F4A5; &#x1F4CC; The ProjectDescription element provides a human readable description of the project in eluding its full name or title. It should contain a description of the project objective or activity. The content of the ProjectDescription element will be used as the human readable description in interfaces. Its content can be queried by repositories for free-text metadata search. Data providers can provide ProjectDescription values for multiple interface languages
+**Description:** &#x1F4A5; &#x1F4CC; The ProjectDescription element provides a human readable description of the project in eluding its full name or title. It should contain a description of the project objective or activity. The content of the ProjectDescription element will be used as the human readable description in interfaces. Its content can be queried by repositories for free-text metadata search. Data producers can provide ProjectDescription values for multiple interface languages
 
 	Interface Facet:			yes, fulltext
 	User provided:				yes
