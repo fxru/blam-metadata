@@ -491,7 +491,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 - [BundleDataProvider](#bundledataprovider)
 - [BundleContributors](#bundlecontributors)
 	- [BundleContributor](#bundlecontributor)
-		- [CreatorDisplayName](#ccontributordisplayname) &#x1F4A5;
+		- [CreatorDisplayName](#contributordisplayname) &#x1F4A5;
 		- [CreatorNameIdentifier](#contributornameidentifier) &#x1F4A5;
 		- [CreatorAffiliation](#contributoraffiliation) &#x1F4A5;
 
