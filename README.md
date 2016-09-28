@@ -18,7 +18,7 @@ The data fields of BLAM the profiles were defined to facilitate interoperability
 * DataCite Metadata: [Schema 4.0](https://schema.datacite.org/meta/kernel-4.0/) 
 * CLARIN VLO facets: [facets mapping](https://lux17.mpi.nl/isocat/clarin/vlo/mapping/index.html)
 
-Mapping tables: [Datacite / BALM User Repository](https://github.com/fxru/blam-metadata/blob/master/BLAM-BR2DataCite.md))
+Mapping tables: [Datacite / BALM User Repository](https://github.com/fxru/blam-metadata/blob/master/BLAM-BR2DataCite.md)
 
 Recommended tools to create BLAM metadata are [CMDI Maker](http://cmdi-maker.uni-koeln.de/), [COMEDI](http://clarino.uib.no/comedi/), and [Arbil](https://tla.mpi.nl/tools/tla-tools/arbil/).
 
