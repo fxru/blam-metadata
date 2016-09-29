@@ -17,10 +17,10 @@ ID 2.2 | M | 0-n | nameIdentifier | CreatorNameIdentifier[identifierType="ORCID"
 ID 2.2.1 | M | 1 | nameIdentifierScheme | `ORCID`
 ID 2.2.2 | O | 0-1 | scheme URI | `http://orcid.org`
 ID 2.3 | O | 0-n | affiliation | CreatorAffiliation
-ID 3 | M | 1-n | Title | BundleDisplayTitle
+ID 3 | M | 1-n | Title | BundleDisplayTitle[lang('en')]
 ID 4 | M | 1 | Publisher | BundleDataProvider
 ID 5 | M |  1 | PublicationYear | BundlePublicationYear
-ID 6 | R | 0-n | Subject | BundleKeyword 
+ID 6 | R | 0-n | Subject | BundleKeyword
 ID 7 | R | 0-n | (Contributor) | (BundleContributor) 
 ID 7.1 | | 1 | contributorName | CreatorDisplayName
 ID 7.3 | | 0-n | nameIdentifier | CreatorNameIdentifier[identifierType="ORCID"]
@@ -39,7 +39,7 @@ ID 12.1 | | 1 | relatedIdentifierType | `Handle`
 ID 12.2 | | 1 | relationType | `IsIdenticalTo` \| `IsDerivedFrom` \| `IsPartOf` \| `HasPart`
 ID 16 | O | 0-n | Rights | LicenceName
 ID 16.1 | | 0-1 | rightsURI | LicenceIdentifier
-ID 17 | R | 0-n | Description | BundleDescription
+ID 17 | R | 0-n | Description | BundleDescription[lang('en')]
 ID 17.1 | | 1 | descriptionType | `abstract`
 ID 18 | R | 0-n | (GeoLocation) | (BundleLocation) 
 ID 18.1 | | 0‐1 | (geoLocationPoint) | (BundleGeoLocation)
