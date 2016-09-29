@@ -535,7 +535,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 [Back to Top](#blam-bundle-repository) |  [Back to BundlePublicationInfo](#bundlepublicationinfo)
 
 ###### CreatorNameIdentifier
-**Description:** &#x1F4A5; The CreatorNameIdentifier contains an URI that uniquely identifies the creator according to an established scheme. Best Practice: ORCID, INSI
+**Description:** &#x1F4A5; The CreatorNameIdentifier contains an URI that uniquely identifies the creator according to an established scheme. Best Practice: ORCID, ISNI
 
 	Interface Facet:			no
 	User provided:				yes
@@ -654,7 +654,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 [Back to Top](#blam-bundle-repository) |  [Back to BundlePublicationInfo](#bundlepublicationinfo)
 
 ###### ContributorNameIdentifier
-**Description:** &#x1F4A5; The ContributorNameIdentifier contains an URI that uniquely identifies the contributor according to an established scheme. Best Practice: ORCID, INSI
+**Description:** &#x1F4A5; The ContributorNameIdentifier contains an URI that uniquely identifies the contributor according to an established scheme. Best Practice: ORCID, ISNI
 
 	Interface Facet:			no
 	User provided:				yes
