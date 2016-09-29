@@ -242,7 +242,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 [Back to Top](#blam-bundle-repository) | [Back to BundleGeneralInfo](#bundlegeneralinfo)
 
 #### ObjectLanguageGlottologCode
-**Description:** &#x1F4CC; The ObjectLanguageISO639-3 element contains an ISO 639-3 language code for the object language.
+**Description:** &#x1F4CC; The ObjectLanguageGlottologCode element contains the Glottolog code for the object language as provided by glottolog.org.
 
 	Interface Facet:			full text
 	User provided:				no	
