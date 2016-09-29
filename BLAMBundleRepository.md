@@ -84,7 +84,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 	Number of occurrences:  	1-unbound
 	Multilingual:           	no
 	CCR prefLabel@en:       	resource name
-	CCR URI:                	hdl.handle.net—CCR_C-2544_3626545e-a21d-058c-ebfd-241c0464e7e5
+	CCR URI:                	http://hdl.handle.net/11459/CCR_C-2573_ae7c2548-8a86-ab6e-7099-e28b7697d1a2
 	
 	VLO Facet: 					—
 	OLAC (DCMI):				—
