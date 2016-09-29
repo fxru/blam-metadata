@@ -15,8 +15,10 @@ BLAM is designed with a focus on discoverability and display. Data producers can
 The data fields of BLAM the profiles were defined to facilitate interoperability with metacatalogues, in particular [DataCite](https://search.datacite.org/), [OLAC](http://search.language-archives.org/), and [VLO](https://vlo.clarin.eu/).
 
 * OLAC metadata: [specifications](http://www.language-archives.org/OLAC/metadata.html), [usage](http://www.language-archives.org/NOTE/usage.html)
-* DataCite Metadata: [Schema 4.0](https://schema.datacite.org/meta/kernel-4.0/)
+* DataCite Metadata: [Schema 4.0](https://schema.datacite.org/meta/kernel-4.0/) 
 * CLARIN VLO facets: [facets mapping](https://lux17.mpi.nl/isocat/clarin/vlo/mapping/index.html)
+
+Mapping tables: [Datacite / BALM User Repository](https://github.com/fxru/blam-metadata/blob/master/BLAM-BR2DataCite.md)
 
 Recommended tools to create BLAM metadata are [CMDI Maker](http://cmdi-maker.uni-koeln.de/), [COMEDI](http://clarino.uib.no/comedi/), and [Arbil](https://tla.mpi.nl/tools/tla-tools/arbil/).
 
