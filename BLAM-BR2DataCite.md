@@ -13,7 +13,7 @@ ID 1 | M | 1 | Identifier | /CMD/Components//BundleGeneralInfo/BundleID[@identif
 ID 1.1 | M | 1 | identifierType | /CMD/Components//BundleGeneralInfo/BundleID/@identifierType
 ID 2 | M | 1 | (Creator) | (BundleCreator)
 ID 2.1 | M | 1 | creatorName | /CMD/Components//BundlePublicationInfo/BundleCreators/BundleCreator/CreatorDisplayName
-ID 2.2 | M | 0-n | nameIdentifier | /CMD/Components//BundlePublicationInfo/BundleCreators/BundleCreator/CreatorNameIdentifier (change XSD so that CreatorNameIdentifier[@identifierType="ORCID"])
+ID 2.2 | M | 0-n | nameIdentifier | /CMD/Components//BundlePublicationInfo/BundleCreators/BundleCreator/CreatorNameIdentifier[@identifierType="ORCID"]
 ID 2.2.1 | M | 1 | nameIdentifierScheme | `ORCID`
 ID 2.2.2 | O | 0-1 | scheme URI | `http://orcid.org`
 ID 2.3 | O | 0-n | affiliation | /CMD/Components//BundlePublicationInfo/BundleCreators/BundleCreator/CreatorAffiliation
@@ -23,7 +23,7 @@ ID 5 | M |  1 | PublicationYear | /CMD/Components//BundlePublicationInfo/BundleP
 ID 6 | R | 0-n | Subject | /CMD/Components//BundleGeneralInfo//BundleKeywords/BundleKeyword
 ID 7 | R | 0-n | (Contributor) | (BundleContributor) 
 ID 7.1 | | 1 | contributorName | /CMD/Components//BundlePublicationInfo/BundleContributors/BundleContributor/ContributorDisplayName
-ID 7.3 | | 0-n | nameIdentifier | /CMD/Components//BundlePublicationInfo/BundleContributors/BundleContributor/ContributorNameIdentifier (change XSD so that ContributorNameIdentifier[@identifierType=“ORCID”])
+ID 7.3 | | 0-n | nameIdentifier | /CMD/Components//BundlePublicationInfo/BundleContributors/BundleContributor/ContributorNameIdentifier[@identifierType="ORCID"]
 ID 7.3.1 | M | 1 | nameIdentifierScheme | `ORCID`
 ID 7.3.2 | O | 0-1 | scheme URI | `http://orcid.org`
 ID 7.4 | | 0-n | affiliation | /CMD/Components//BundlePublicationInfo/BundleContributors/BundleContributor/ContributorAffiliation
