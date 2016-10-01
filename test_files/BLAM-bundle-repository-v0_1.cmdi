@@ -35,7 +35,7 @@
                </BundleObjectLanguage>
             </BundleObjectLanguages>
             <BundleLocation>
-               <BundleGeoLocatio>50.926735 6.930392</BundleGeoLocatio>
+               <BundleGeoLocation>50.926735 6.930392</BundleGeoLocation>
                <BundleLocationDisplayName>Köln</BundleLocationDisplayName>
                <BundleLocationName>Cologne</BundleLocationName>
                <BundleRegionDisplayName>Rhineland</BundleRegionDisplayName>
