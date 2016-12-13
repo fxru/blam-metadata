@@ -1112,7 +1112,7 @@ Examples: `phonemic` `phonetic` `orthographic`
 [Back to Top](#blam-bundle-repository) | [Back to BundleAdministrativeInfo](#bundleadministrativeinfo)
 
 #### LicenceName
-**Description:** &#x1F4CC; The LicenceName element should provide a human readable complete title of a licence and include version information if applicable.
+**Description:** &#x1F4CC; The LicenceName element should provide the complete human readable name of a licence and include version information if applicable.
 
 	Interface Facet:			yes, display	
 	User provided:				no
@@ -1133,7 +1133,7 @@ Examples: `phonemic` `phonetic` `orthographic`
 [Back to Top](#blam-bundle-repository) | [Back to BundleAdministrativeInfo](#bundleadministrativeinfo)
 
 #### LicenceIdentifier
-**Description:** &#x1F4A5; &#x1F4CC; The LicenceIdentifier provides the URI of the licence.
+**Description:** &#x1F4A5; &#x1F4CC; The LicenceIdentifier provides a URI for the licence.
 
 	Interface Facet:			display
 	User provided:				yes
@@ -1175,7 +1175,7 @@ Examples: `phonemic` `phonetic` `orthographic`
 [Back to Top](#blam-bundle-repository) | [Back to BundleAdministrativeInfo](#bundleadministrativeinfo)
 
 #### AvailabilityDate
-**Description:** &#x1F4CC; The AvailabilityDate element contains the date at which the bundle became, will become available. The date must be provided conforming to ISO 8601 in the form YYYY-MM-DD.
+**Description:** &#x1F4CC; The AvailabilityDate element contains the date at which the bundle became or will become available. The date must be provided conforming to ISO 8601 in the form YYYY-MM-DD.
 
 
 	Interface Facet:			yes, display	
@@ -1197,7 +1197,7 @@ Examples: `phonemic` `phonetic` `orthographic`
 [Back to Top](#blam-bundle-repository) | [Back to BundleAdministrativeInfo](#bundleadministrativeinfo)
 
 #### RightsHolder
-**Description:** The RightsHolder component contains informatin about the individual or institution owning or managing the rights over the resource. 
+**Description:** The RightsHolder component contains information about the individual or institution owning or managing the rights in regard to the resource. 
 
 	Number of occurrences:		1-unbounded
 
@@ -1225,15 +1225,15 @@ Examples: `phonemic` `phonetic` `orthographic`
 [Back to Top](#blam-bundle-repository) | [Back to BundleAdministrativeInfo](#bundleadministrativeinfo)
 
 #### RightsHolderIdentifier
-**Description:** &#x1F4A5; The RightsHolderIdentifier contains an URI that uniquely identifies the rights holder. In the case of an individual this should be achieved using an established scheme. Best Practice: ORCID, ISNI If an individual cannot be referenced by an identifier at least an email address should be given (in the form of a mailto: reference).
+**Description:** &#x1F4A5; The RightsHolderIdentifier contains a URI that uniquely identifies the rights holder. In the case of an individual, this should be achieved by using an established scheme. Best Practice: ORCID, ISNI If an individual cannot be referenced by an identifier an email address should be given (in the form of a mailto URI).
 
-**Attribute** *identifierType*: ORCID and ISNI are considered best practices. An email address in the form of an mailto URI is a fallback. *Values*: ORCID, ISNI, Email, Other
+**Attribute** *identifierType*: ORCID and ISNI are considered best practices. An email address in the form of a mailto URI is the recommended fallback. *Values*: ORCID, ISNI, Email, Other
 
 	Interface Facet:			display
 	User provided:				yes
 
 	ValueScheme:				anyURI
-	Number of occurrences:  	0-1
+	Number of occurrences:  	0-unbounded
 	Multilingual:           	no
 	CCR prefLabel@en:       	—
 	CCR URI:                	—
