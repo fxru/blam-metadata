@@ -10,7 +10,7 @@ Basic Language Archive Metadata (BLAM) is designed to provide basic metadata for
 * BLAM Collection Repository: documentation  [(draft)](https://github.com/fxru/blam-metadata/blob/master/BLAMCollectionRepository.md)
 * BLAM Collection User: documentation  (to come)
 
-BLAM Bundle Repository contains information about bundles as provided by the repository. Data producers are asked to submit a subset of this imformation during ingest. The BLAM Bundle User profile defines this subset of 35 data fields of which 16 are obligatory. The separate definition of the BLAM Bundle User profile enhances the usability for data producers and can be validated independently from the more comprehensive BLAM Bundle Repository profile. The Basic Language Archive Metadata Bundle User profile is intended to be the primary source of user input for BLAM Bundle Repository. However, BLAM Bundle Repository is designed to allow automatic import of information from other metadata formats. The formats actively considered are: 
+BLAM Bundle Repository contains information about bundles as provided by the repository. Data producers are asked to submit a subset of this information during ingest. The BLAM Bundle User profile defines this subset of 35 data fields of which 16 are obligatory. The separate definition of the BLAM Bundle User profile enhances the usability for data producers and can be validated independently from the more comprehensive BLAM Bundle Repository profile. The Basic Language Archive Metadata Bundle User profile is intended to be the primary source of user input for BLAM Bundle Repository. However, BLAM Bundle Repository is designed to allow automatic import of information from other metadata formats. The formats actively considered are: 
 
 * IMDI Metadata Format: [ISLE Meta Data Initative, Version 3.0.4 (2003)](https://tla.mpi.nl/imdi-metadata/)
 * CMDI imdi-session-profile: [clarin.eu:cr1:p_1271859438204](https://catalog.clarin.eu/ds/ComponentRegistry#/?itemId=clarin.eu%3Acr1%3Ap_1271859438204&registrySpace=public)
@@ -33,7 +33,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 
 ## BLAM-Bundle-Repository
 
-**Description:** The Basic Language Archive Metadata Bundle profile aims to provide a basic metadata profile for language repositories. The profiles cover fundamental domain specific, but project independent, descriptive metadata as well as basic administrative and structural metadata. BLAM Bundle focusses on discoverability and human-readable display.
+**Description:** The Basic Language Archive Metadata Bundle profile aims to provide a basic metadata profile for language repositories. The profiles cover fundamental domain specific, but project independent, descriptive metadata as well as basic administrative and structural metadata. BLAM Bundle focusses on discoverability and human-readable display without a proliferation of data fields and work for the data producer.
 
 * [BundleGeneralInfo](#bundlegeneralinfo)
 * [BundlePublicationInfo](#bundlepublicationinfo)
@@ -81,7 +81,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 	User provided:				no
 
 	ValueScheme: 				anyURI
-	Number of occurrences:  	1-unbound
+	Number of occurrences:  	1-unbounded
 	Multilingual:           	no
 	CCR prefLabel@en:       	resource name
 	CCR URI:                	http://hdl.handle.net/11459/CCR_C-2573_ae7c2548-8a86-ab6e-7099-e28b7697d1a2
@@ -92,7 +92,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 	IMDI Element:				/METATRANSCRIPT/@ArchiveHandle
 	ELDP-CMDI Element:      	—
 	IMDI-CMDI Element:
-	lat-bundle:				
+	lat-session:				
 
 [Back to Top](#blam-bundle-repository) | [Back to BundleGeneralInfo](#bundlegeneralinfo)
 
@@ -103,7 +103,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 	User provided:				yes
 
 	ValueScheme:				string
-	Number of occurrences:  	1-unbound
+	Number of occurrences:  	1-unbounded
 	Multilingual:           	yes
 	CCR prefLabel@en:       	resource title
 	CCR URI:                	http://hdl.handle.net/11459/CCR_C-2545_d873f2ab-2a2f-29d6-a9ab-260cde57f227
@@ -113,7 +113,8 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 	DataCite:        			Title
 	IMDI Element:               //Session/Title
 	ELDP-CMDI Element:			ELDP_Bundle:Title
-	IMDI-CMDI Element:		
+	IMDI-CMDI Element:	
+	lat-session:				
 
 [Back to Top](#blam-bundle-repository) | [Back to BundleGeneralInfo](#bundlegeneralinfo)
 
@@ -135,6 +136,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 	IMDI Element:               //Session/Description
 	ELDP-CMDI Element:          ELDP_Bundle:Description
 	IMDI-CMDI Element:
+	lat-session:				
 
 #### BundleKeywords
 **Description:** BundleKeywords should be used to describe the content and nature of data to enhance the discoverability and facilitate finer granularity for searches and browsing of the data. Repositories can use keyword metadata to define meaningful subsets of the data and provide a better browsing experience. 
@@ -150,7 +152,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 	User provided:				yes		
 
 	ValueScheme:				string
-	Number of occurrences:  	1-unbound
+	Number of occurrences:  	1-unbounded
 	Multilingual:           	yes
 	CCR prefLabel@en:       	metadata tag
 	CCR URI:               		http://hdl.handle.net/11459/CCR_C-5436_6ab57c2c-5f8d-3561-6db6-d75da23d2637
@@ -161,6 +163,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 	IMDI Element:               various (closest match: //Session/Keys/*)
 	ELDP-CMDI Element:          CCR:ELDP_Bundle:Keywords:Keyword
 	IMDI-CMDI Element:
+	lat-session:				
 
 [Back to Top](#blam-bundle-repository) | [Back to BundleGeneralInfo](#bundlegeneralinfo)
 
@@ -174,12 +177,12 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 #### BundleObjectLanguage
 **Description:** BundleObjectLanguage contains information about the language that is the object of the resource.
 
-	Number of occurrences:		1-unbound
+	Number of occurrences:		1-unbounded
 
 [Back to Top](#blam-bundle-repository) | [Back to BundleGeneralInfo](#bundlegeneralinfo)
 
 #### ObjectLanguageDisplayName
-**Description:** &#x1F4A5; &#x1F4CC; The ObjectLanguageDisplayName element contains the name of the object language in the version recommended by the data producer. Repositories should tread the name provided by this element as the primary language name when displaying the metadata in relation to this particular data set (e.g. collection or bundle).The repository may use alternative names provided by services such as Glottolog or Ethnologue to improve discoverability and to enhance browsing and search experience. The repository may also translate the name into other languages if no language name is given for a particular interface language. Data producers can provide LanguageDisplayName values for multiple interface languages. 
+**Description:** &#x1F4A5; &#x1F4CC; The ObjectLanguageDisplayName element contains the name of the object language in the version recommended by the data producer. Repositories should tread the name provided by this element as the primary language name when displaying the metadata in relation to this particular data set (e.g. collection or bundle). The repository may use alternative names provided by services such as Glottolog or Ethnologue to improve discoverability and to enhance browsing and search experience. The repository may also translate the name into other languages if no language name is given for a particular interface language. Data producers can provide LanguageDisplayName values for multiple interface languages. 
 
 	Interface Facet:			yes, display, browsing
 	User provided:				yes		
@@ -196,6 +199,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 	IMDI Element:               //Session/MDGroup/Content/Languages/Language/Name
 	ELDP-CMDI Element:          
 	IMDI-CMDI Element:
+	lat-session:				
 
 [Back to Top](#blam-bundle-repository) | [Back to BundleGeneralInfo](#bundlegeneralinfo)
 
@@ -206,7 +210,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 	User provided:				no
 
 	ValueScheme:				string
-	Number of occurrences:  	0-unbound
+	Number of occurrences:  	0-unbounded
 	Multilingual:           	yes
 	CCR prefLabel@en:       	Language Name
 	CCR URI:                	http://hdl.handle.net/11459/CCR_C-2484_669684e7-cb9e-ea96-59cb-a25fe89b9b9d
@@ -217,6 +221,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 	IMDI Element:               //Session/MDGroup/Content/Languages/Language/Name
 	ELDP-CMDI Element:          
 	IMDI-CMDI Element:
+	lat-session:				
 
 [Back to Top](#blam-bundle-repository) | [Back to BundleGeneralInfo](#bundlegeneralinfo)
 
@@ -238,6 +243,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 	IMDI Element:               //Session/MDGroup/Content/Languages/Language/Id
 	ELDP-CMDI Element:          
 	IMDI-CMDI Element:
+	lat-session:				
 
 [Back to Top](#blam-bundle-repository) | [Back to BundleGeneralInfo](#bundlegeneralinfo)
 
@@ -259,6 +265,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 	IMDI Element:               
 	ELDP-CMDI Element:          
 	IMDI-CMDI Element:
+	lat-session:				
 
 [Back to Top](#blam-bundle-repository) | [Back to BundleGeneralInfo](#bundlegeneralinfo)
 
@@ -269,7 +276,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 	User provided:				no
 
 	ValueScheme:				string
-	Number of occurrences:  	1-unbound
+	Number of occurrences:  	1-unbounded
 	Multilingual:           	no
 	CCR prefLabel@en:       	Language Name
 	CCR URI:                	http://hdl.handle.net/11459/CCR_C-2484_669684e7-cb9e-ea96-59cb-a25fe89b9b9d
@@ -280,6 +287,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 	IMDI Element:               
 	ELDP-CMDI Element:          
 	IMDI-CMDI Element:
+	lat-session:				
 
 [Back to Top](#blam-bundle-repository) | [Back to BundleGeneralInfo](#bundlegeneralinfo)
 
@@ -301,6 +309,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 	IMDI Element:               //Session/date
 	ELDP-CMDI Element:          
 	IMDI-CMDI Element:
+	lat-session:				
 
 [Back to Top](#blam-bundle-repository) | [Back to BundleGeneralInfo](#bundlegeneralinfo)
 
@@ -312,7 +321,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 [Back to Top](#blam-bundle-repository) | [Back to BundleGeneralInfo](#bundlegeneralinfo)
 
 #### BundleGeoLocation
-**Description:** &#x1F4A5; &#x1F4CC; The BundleGeoLocation element contains a geographical coordinates for a location point conforming to ISO 6709. 
+**Description:** &#x1F4A5; &#x1F4CC; The BundleGeoLocation element contains a geographical coordinates for a location point in the form *LATITUDE,LONGITUDE* as decimal degrees (e.g. 50.926735,6.930392).
 
 	Interface Facet:			display (map)
 	User provided:				yes				
@@ -329,6 +338,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 	IMDI Element:               —
 	ELDP-CMDI Element:          
 	IMDI-CMDI Element:
+	lat-session:				
 
 [Back to Top](#blam-bundle-repository) | [Back to BundleGeneralInfo](#bundlegeneralinfo)
 
@@ -350,17 +360,18 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 	IMDI Element:               //Session/MDGroup/Location/Address
 	ELDP-CMDI Element:          
 	IMDI-CMDI Element:
+	lat-session:				
 
 [Back to Top](#blam-bundle-repository) | [Back to BundleGeneralInfo](#bundlegeneralinfo)
 
 #### BundleLocationName
-**Description:** The BundleLocationName element contains the name of a location provided by services such as GeoNames. This name is used to improve discoverability and to enhance the browsing and search experience. GeoNames field: name (or toponymName).
+**Description:** The BundleLocationName element contains the name of a location provided by services such as GeoNames. This name is used to improve discoverability and to enhance the browsing and search experience. GeoNames field: *name* (or *toponymName*).
 
 	Interface Facet:			yes, full text
 	User provided:				no
 
 	ValueScheme:				string
-	Number of occurrences:  	0-unbound
+	Number of occurrences:  	0-unbounded
 	Multilingual:           	yes
 	CCR prefLabel@en:       	place name
 	CCR URI:                	http://hdl.handle.net/11459/CCR_C-5580_03e458f2-f873-8645-76eb-40e001b6c1ac
@@ -371,6 +382,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 	IMDI Element:				//Session/MDGroup/Location/Address
 	ELDP-CMDI Element:          
 	IMDI-CMDI Element:
+	lat-session:				
 
 [Back to Top](#blam-bundle-repository) | [Back to BundleGeneralInfo](#bundlegeneralinfo)
 
@@ -392,17 +404,18 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 	IMDI Element:               //Session/MDGroup/Location/Region
 	ELDP-CMDI Element:          
 	IMDI-CMDI Element:
+	lat-session:				
 
 [Back to Top](#blam-bundle-repository) | [Back to BundleGeneralInfo](#bundlegeneralinfo)
 
 #### BundleRegionName
-**Description:** The BundleRegionName element contains the name of an administrative subdivision provided by services such as GeoNames to improve discoverability and to enhance browsing and search experience. GeoNames field: adminName1 
+**Description:** The BundleRegionName element contains the name of an administrative subdivision provided by services such as GeoNames to improve discoverability and to enhance browsing and search experience. GeoNames field: *adminName1* 
 
 	Interface Facet:			yes, full text
 	User provided:				no
 
 	ValueScheme:				string
-	Number of occurrences:  	0-unbound
+	Number of occurrences:  	0-unbounded
 	Multilingual:           	yes
 	CCR prefLabel@en:       	location region
 	CCR URI:                	http://hdl.handle.net/11459/CCR_C-2533_fa6e1812-e29b-3cf6-e15a-50aa34b9be68
@@ -413,6 +426,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 	IMDI Element:               //Session/MDGroup/Location/Region
 	ELDP-CMDI Element:          
 	IMDI-CMDI Element:
+	lat-session:				
 
 [Back to Top](#blam-bundle-repository) | [Back to BundleGeneralInfo](#bundlegeneralinfo)
 
@@ -434,11 +448,12 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 	IMDI Element:               //Session/MDGroup/Location/Country
 	ELDP-CMDI Element:          
 	IMDI-CMDI Element:
+	lat-session:				
 
 [Back to Top](#blam-bundle-repository) | [Back to BundleGeneralInfo](#bundlegeneralinfo)
 
 #### BundleCountryName
-**Description:** The BundleCountryName element contains the name of the country as provided by services such as GeoNames to improve discoverability and to enhance browsing and search experience. GeoNames field: countryName
+**Description:** The BundleCountryName element contains the name of the country as provided by services such as GeoNames to improve discoverability and to enhance browsing and search experience. GeoNames field: *countryName*
 
 	Interface Facet:			yes, full text
 	User provided:				no	
@@ -455,16 +470,17 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 	IMDI Element:               //Session/MDGroup/Location/Country
 	ELDP-CMDI Element:          
 	IMDI-CMDI Element:
+	lat-session:				
 
 [Back to Top](#blam-bundle-repository) | [Back to BundleGeneralInfo](#bundlegeneralinfo)
 
 #### BundleCountryCode
-**Description:** &#x1F4CC; The CountryCode element contains the ISO 3166-1 alpha 2 code of the country of the location as provided by services such as GeoNames GeoNames field: countryCode
+**Description:** &#x1F4CC; The CountryCode element contains the ISO 3166-1 alpha 2 code of the country of the location as provided by services such as GeoNames GeoNames field: *countryCode*
 
 	Interface Facet:			no, full text
 	User provided:				no
 
-	ValueScheme:				string
+	ValueScheme:				[A-Z]{2}
 	Number of occurrences:  	1-1
 	Multilingual:           	no
 	CCR prefLabel@en:       	country coding
@@ -476,6 +492,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 	IMDI Element:               —
 	ELDP-CMDI Element:          —
 	IMDI-CMDI Element:			—
+	lat-session:				
 
 [Back to Top](#blam-bundle-repository) | [Back to BundleGeneralInfo](#bundlegeneralinfo)
 
@@ -509,7 +526,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 ##### BundleCreator
 **Description:** The BundleCreator component contains information about the creator of the resource. 
 
-	Number of occurrences:		1-unbound
+	Number of occurrences:		1-unbounded
 
 [Back to Top](#blam-bundle-repository) | [Back to BundlePublicationInfo](#bundlepublicationinfo)
 
@@ -563,7 +580,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 	User provided:				yes
 
 	ValueScheme:				string
-	Number of occurrences:  	0-unbound
+	Number of occurrences:  	0-unbounded
 	Multilingual:           	yes
 	CCR prefLabel@en:       	—
 	CCR URI:                	—
@@ -629,7 +646,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 ##### BundleContributor
 **Description:** The BundleContributor component contains information about a contributor to the resource. 
 
-	Number of occurrences:		1-unbound
+	Number of occurrences:		1-unbounded
 
 [Back to Top](#blam-bundle-repository) | [Back to BundlePublicationInfo](#bundlepublicationinfo)
 
@@ -683,7 +700,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 	User provided:				yes
 
 	ValueScheme:				string
-	Number of occurrences:  	0-unbound
+	Number of occurrences:  	0-unbounded
 	Multilingual:           	no
 	CCR prefLabel@en:       	—
 	CCR URI:                	—
@@ -717,7 +734,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 #### Project
 **Description:** Project contains descriptive information about the project relating to bundle data.
 
-	Number of occurrences:		1-unbound
+	Number of occurrences:		1-unbounded
 
 [Back to Top](#blam-bundle-repository) | [Back to ProjectInfo](#projectinfo)
 
@@ -743,7 +760,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 [Back to Top](#blam-bundle-repository) | [Back to ProjectInfo](#projectinfo)
 
 #### ProjectDescription
-**Description:** &#x1F4A5; &#x1F4CC; The ProjectDescription element provides a human readable description of the project in eluding its full name or title. It should contain a description of the project objective or activity. The content of the ProjectDescription element will be used as the human readable description in interfaces. Its content can be queried by repositories for free-text metadata search. Data producers can provide ProjectDescription values for multiple interface languages.
+**Description:** &#x1F4A5; &#x1F4CC; The ProjectDescription element provides a human readable description of the project including full project name. It should contain a description of the project’s objective or activity. The content of the ProjectDescription element will be used as the human readable description in interfaces. Its content can be queried by repositories for free-text metadata search. Data producers can provide ProjectDescription values for multiple interface languages.
 
 	Interface Facet:			yes, fulltext
 	User provided:				yes
@@ -773,12 +790,12 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 #### FunderInfo
 **Description:** The FunderInfo component contains information about the funding organisation associated with this resource.
 
-	Number of occurrences:		1-unbound
+	Number of occurrences:		1-unbounded
 
 [Back to Top](#blam-bundle-repository) | [Back to ProjectInfo](#projectinfo)
 
 #### FunderName
-**Description:** &#x1F4A5; &#x1F4CC; The FunderName element provides the name of the funding organisation. The preferred form is the abbreviation by with the project is generally known. 
+**Description:** &#x1F4A5; &#x1F4CC; The FunderName element provides the name of the funding organisation. The preferred form is the abbreviation by with the funding agency is generally known. 
 
 	Interface Facet:			yes, fulltext, display
 	User provided:				yes
@@ -891,7 +908,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 #### SegmentationUnit
 **Description:** &#x1F4A5; SegmentationUnit describes the criteria applied to segment the resource. This element applies to annotations of audio-visual data and is intended to facilitate the identification of useful data for a specific research question. The best practice is to use keywords.
 
-Examples: `sentence` `clause` `word` `intonation unit` `phon` `paragraph`
+Examples:  `clause` `intonation unit` 
 
 	Interface Facet:			yes	
 	User provided:				yes	
@@ -919,7 +936,7 @@ Examples: `sentence` `clause` `word` `intonation unit` `phon` `paragraph`
 [Back to Top](#blam-bundle-repository) | [Back to BundleDataInfo](#bundledatainfo)
 
 #### TranscriptionType
-**Description:** &#x1F4A5; TranscriptionType describes the level of transcription of audio-visual data in the annotations. Data with no Transcription metadata will be treated as not transcribed by the repository.
+**Description:** &#x1F4A5; TranscriptionType describes the level of transcription of audio-visual data in the annotations. Data with no TranscriptionType metadata will be treated as not transcribed by the repository.
 
 Examples: `phonemic` `phonetic` `orthographic`  
 
@@ -949,7 +966,7 @@ Examples: `phonemic` `phonetic` `orthographic`
 [Back to Top](#blam-bundle-repository) | [Back to BundleDataInfo](#bundledatainfo)
 
 #### TranslationLanguage
-**Description:** TranslationLanguage contains metadata about a particular language used in translation of the data.
+**Description:** TranslationLanguage contains metadata about a particular language used in translation of the data. Data with no TranslationLanguage metadata will be treated as not translated by the repository. Data with several TranslationLanguage elements will be treated as having several translations.
 
 	Number of occurrences:		1-unbounded
 
@@ -977,7 +994,7 @@ Examples: `phonemic` `phonetic` `orthographic`
 [Back to Top](#blam-bundle-repository) | [Back to BundleDataInfo](#bundledatainfo)
 
 #### TranslationLanguageCode
-**Description:** &#x1F4A5; &#x1F4CC; The TranslationLanguageCode element describes the annotation of the type translation. It contains a language code (ISO 639-3) which identifies the language used in the translation. Data with no Translation metadata will be treated as not translated by the repository. Data with several Translation elements will be treated as having several translations.
+**Description:** &#x1F4A5; &#x1F4CC; The TranslationLanguageCode element describes the annotation of the type translation. It contains a language code (ISO 639-3) which identifies the language used in the translation. Data with no TranslationLanguage metadata will be treated as not translated by the repository. Data with several TranslationLanguage elements will be treated as having several translations.
 
 	Interface Facet:			yes, browsing
 	User provided:				yes
@@ -998,7 +1015,7 @@ Examples: `phonemic` `phonetic` `orthographic`
 [Back to Top](#blam-bundle-repository) | [Back to BundleDataInfo](#bundledatainfo)
 
 #### AnnotationTypes
-**Description:** AnnotationTypes contains metadata describing the level and type of annotation of audio-visual data in the annotations.
+**Description:** AnnotationTypes contains metadata describing the level and type of annotation of audio-visual data.
 
 	Number of occurrences:		0-1
 
@@ -1013,7 +1030,7 @@ Examples: `phonemic` `phonetic` `orthographic`
 	User provided:				yes
 
 	ValueScheme:				string
-	Number of occurrences:  	1-unbound
+	Number of occurrences:  	1-unbounded
 	Multilingual:           	no
 	CCR prefLabel@en:       	—
 	CCR URI:                	—
@@ -1052,7 +1069,7 @@ Examples: `phonemic` `phonetic` `orthographic`
 	User provided:				yes		
 
 	ValueScheme:				anyURI
-	Number of occurrences:  	0-unbound
+	Number of occurrences:  	0-unbounded
 	Multilingual:           	no
 	CCR prefLabel@en:       	—
 	CCR URI:                	—
@@ -1182,7 +1199,7 @@ Examples: `phonemic` `phonetic` `orthographic`
 #### RightsHolder
 **Description:** The RightsHolder component contains informatin about the individual or institution owning or managing the rights over the resource. 
 
-	Number of occurrences:		1-unbound
+	Number of occurrences:		1-unbounded
 
 [Back to Top](#blam-bundle-repository) | [Back to BundleAdministrativeInfo](#bundleadministrativeinfo)
 
@@ -1289,7 +1306,7 @@ Examples: `phonemic` `phonetic` `orthographic`
 #### BundleAdditionalMetadataFile
 **Description:** The BundleAdditionalMetadataFile component contains metadata about additional metadata files contained in the bundle.
 
-	Number of occurrences:		0-unbound
+	Number of occurrences:		0-unbounded
 
 [Back to Top](#blam-bundle-repository) |  [Back to BundleStructuralInfo](#bundlestructuralinfo)
 
@@ -1382,7 +1399,7 @@ Examples: `phonemic` `phonetic` `orthographic`
 	User provided:				yes
 
 	ValueScheme:				string
-	Number of occurrences:  	0-unbound
+	Number of occurrences:  	0-unbounded
 	Multilingual:           	yes
 	CCR prefLabel@en:       	description
 	CCR URI:                	http://hdl.handle.net/11459/CCR_C-2520_9eeedfb4-47d3-ddee-cfcb-99ac634bf1db
@@ -1406,7 +1423,7 @@ Examples: `phonemic` `phonetic` `orthographic`
 ##### MediaResource
 **Description:** The MediaResource component contains metadata about media files contained in the bundle.
 
-	Number of occurrences:		0-unbound
+	Number of occurrences:		0-unbounded
 
 [Back to Top](#blam-bundle-repository) |  [Back to BundleStructuralInfo](#bundlestructuralinfo)
 
@@ -1516,7 +1533,7 @@ Examples: `phonemic` `phonetic` `orthographic`
 ##### WrittenResource
 **Description:** The WrittenResource component contains metadata about annotation files and other character encoded information contained in the bundle.
 
-	Number of occurrences:		0-unbound
+	Number of occurrences:		0-unbounded
 
 [Back to Top](#blam-bundle-repository) |  [Back to BundleStructuralInfo](#bundlestructuralinfo)
 
@@ -1588,7 +1605,7 @@ Examples: `phonemic` `phonetic` `orthographic`
 	User provided:				yes (processed)
 
 	ValueScheme:				anyURI
-	Number of occurrences:  	0-unbound
+	Number of occurrences:  	0-unbounded
 	Multilingual:           	no
 	CCR prefLabel@en:       	—
 	CCR URI:                	—
@@ -1609,7 +1626,7 @@ Examples: `phonemic` `phonetic` `orthographic`
 	User provided:				yes
 
 	ValueScheme:				string
-	Number of occurrences:  	0-unbound
+	Number of occurrences:  	0-unbounded
 	Multilingual:           	yes
 	CCR prefLabel@en:       	description
 	CCR URI:                	http://hdl.handle.net/11459/CCR_C-2520_9eeedfb4-47d3-ddee-cfcb-99ac634bf1db
@@ -1626,7 +1643,7 @@ Examples: `phonemic` `phonetic` `orthographic`
 ##### OtherResource
 **Description:** The OtherResource component contains metadata about additional files contained in the bundle that are not covered by the BundleAdditionalMetadataFile, MediaResource, and WrittenResource components.
 
-	Number of occurrences:		0-unbound
+	Number of occurrences:		0-unbounded
 
 [Back to Top](#blam-bundle-repository) |  [Back to BundleStructuralInfo](#bundlestructuralinfo)
 
@@ -1698,7 +1715,7 @@ Examples: `phonemic` `phonetic` `orthographic`
 	User provided:				yes
 
 	ValueScheme:				string
-	Number of occurrences:  	0-unbound
+	Number of occurrences:  	0-unbounded
 	Multilingual:           	yes
 	CCR prefLabel@en:       	description
 	CCR URI:                	http://hdl.handle.net/11459/CCR_C-2520_9eeedfb4-47d3-ddee-cfcb-99ac634bf1db
