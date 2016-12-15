@@ -77,7 +77,8 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 
 **Attribute:** *identifierType* **Values:** *DOI, Handle, URN, Other* The identifierType attribute determines the identifier type used. Recommended practice is to have a DOI and a Handle for each bundle.
 
-	Interface Facet:			no
+	Discovery:					no
+	Display:					no
 	User provided:				no
 
 	ValueScheme: 				anyURI
@@ -99,7 +100,8 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 #### BundleDisplayTitle 
 **Description:** &#x1F4A5; &#x1F4CC; The BundleDisplayTitle element provides a human readable name of the bundle. It should contain a meaningful and recognisable title for the bundle. The content of the BundleDisplayTitle element will be used as the human readable identifier in interfaces. Data producers can provide BundleDisplayTitle values for multiple interface languages. This field will be used as the human readable identifier for the bundle in citation and interfaces.
 
-	Interface Facet:			yes, full text, display
+	Discovery:					searchable
+	Display:					page, list
 	User provided:				yes
 
 	ValueScheme:				string
@@ -121,7 +123,8 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 #### BundleDescription 
 **Description:** &#x1F4A5; &#x1F4CC; The BundleDescription element provides a human readable description of the bundle. It should contain a description of the content of the collection. The content of the BundleDescription element will be used as the human readable description in interfaces. Its content can be queried by repositories for free-text metadata search. Data producers can provide BundleDescription values for multiple interface languages.
 
-	Interface Facet:			yes, full text, display
+	Discovery:					searchable
+	Display:					page, list (excerpt)
 	User provided:				yes
 
 	ValueScheme:				string
@@ -148,7 +151,8 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 #### BundleKeyword 
 **Description:** &#x1F4A5; BundleKeyword should contain a single keyword or keyphrase and should be used to describe the content and nature of data to enhance the discoverability and facilitate finer granularity for searches and browsing of the data. Repositories can use keyword metadata to define meaningful subsets of the data and provide a better browsing experience. 
 
-	Interface Facet:			yes, full text, display
+	Discovery:					searchable, browsing facet
+	Display:					page, list
 	User provided:				yes		
 
 	ValueScheme:				string
@@ -184,7 +188,8 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 #### ObjectLanguageDisplayName
 **Description:** &#x1F4A5; &#x1F4CC; The ObjectLanguageDisplayName element contains the name of the object language in the version recommended by the data producer. Repositories should tread the name provided by this element as the primary language name when displaying the metadata in relation to this particular data set (e.g. collection or bundle). The repository may use alternative names provided by services such as Glottolog or Ethnologue to improve discoverability and to enhance browsing and search experience. The repository may also translate the name into other languages if no language name is given for a particular interface language. Data producers can provide LanguageDisplayName values for multiple interface languages. 
 
-	Interface Facet:			yes, display, browsing
+	Discovery:					searchable, browsing facet
+	Display:					page, list
 	User provided:				yes		
 
 	ValueScheme:				string
@@ -206,7 +211,8 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 #### ObjectLanguageName
 **Description:** The ObjectLanguageName element contains the name of the object language in the version as provided by services such as Glottolog or Ethnologue. 
 
-	Interface Facet:			yes, browsing
+	Discovery:					searchable, browsing facet
+	Display:					no
 	User provided:				no
 
 	ValueScheme:				string
@@ -228,7 +234,8 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 #### ObjectLanguageISO639-3Code
 **Description:**  &#x1F4A5; &#x1F4CC; The ObjectLanguageISO639-3 element contains an ISO 639-3 language code for the object language.
 
-	Interface Facet:			full text
+	Discovery:					no
+	Display:					page
 	User provided:				yes
 
 	ValueScheme:				[a-z]{3}
@@ -250,7 +257,8 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 #### ObjectLanguageGlottologCode
 **Description:** &#x1F4CC; The ObjectLanguageGlottologCode element contains the Glottolog code for the object language as provided by glottolog.org.
 
-	Interface Facet:			full text
+	Discovery:					searchable
+	Display:					page
 	User provided:				no	
 
 	ValueScheme:				[a-z]{4}[0-9]{4}
@@ -272,7 +280,8 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 #### ObjectLanguageLanguageFamily
 **Description:** &#x1F4CC; The ObjectLanguageLanguageFamily element contains the name of the language family and sub-families or sub-groups the object language belongs to. The values are taken from Glottolog and given in the version as provided by this service. 
 
-	Interface Facet:			yes, full text browsing
+	Discovery:					searchable, browsing facet
+	Display:					no
 	User provided:				no
 
 	ValueScheme:				string
@@ -294,7 +303,8 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 #### BundleRecordingDate
 **Description:** &#x1F4A5; &#x1F4CC; The BundleRecordingDate element contains the date at which a recording occured. The date must be provided conforming to ISO 8601 in the form YYYY-MM-DD.
 
-	Interface Facet:			no, display
+	Discovery:					searchable, browsing facet (collection)
+	Display:					page
 	User provided:				yes		
 
 	ValueScheme:				date
@@ -323,7 +333,8 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 #### BundleGeoLocation
 **Description:** &#x1F4A5; &#x1F4CC; The BundleGeoLocation element contains a geographical coordinates for a location point in the form *LATITUDE,LONGITUDE* as decimal degrees (e.g. 50.926735,6.930392).
 
-	Interface Facet:			display (map)
+	Discovery:					browsing facet (map)
+	Display:					page, list (both map)
 	User provided:				yes				
 
 	ValueScheme:				string
@@ -345,7 +356,8 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 #### BundleLocationDisplayName
 **Description:** &#x1F4A5; &#x1F4CC; The BundleLocationDisplayName element contains the name of a location in the version recommended by the data producer. Repositories should treat the name provided by this element as the primary location name when displaying the metadata in relation to this particular data set (e.g. collection or bundle).The repository may use alternative names provided by services such as GeoNames to improve discoverability and to enhance the browsing and search experience. The repository may also translate the name into other languages if no BundleLocationDisplayName name is given for a particular interface language. 
 
-	Interface Facet:			yes, full text
+	Discovery:					searchable, browsing facet
+	Display:					page
 	User provided:				yes		
 
 	ValueScheme:				string
@@ -367,7 +379,8 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 #### BundleLocationName
 **Description:** The BundleLocationName element contains the name of a location provided by services such as GeoNames. This name is used to improve discoverability and to enhance the browsing and search experience. GeoNames field: *name* (or *toponymName*).
 
-	Interface Facet:			yes, full text
+	Discovery:					searchable
+	Display:					no
 	User provided:				no
 
 	ValueScheme:				string
@@ -389,7 +402,8 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 #### BundleRegionDisplayName
 **Description:** &#x1F4A5; The BundleRegionDisplayName element optionally contains the name of an administrative subdivision such as state, province, or any other culturally salient unit in the version recommended by the data producer. The data producer can decided which level of subdivision is relevant and will improve discoverability. Repositories should tread the name provided by this element as the primary location name when displaying the metadata in relation to this particular data set (e.g. collection or bundle). The repository may use alternative names provided by services such as GeoNames to improve discoverability and to enhance browsing and search experience. The repository may also translate the name into other languages if no RegionDisplayName value is given for a particular interface language.
 
-	Interface Facet:			yes, full text
+	Discovery:					searchable
+	Display:					page
 	User provided:				yes
 
 	ValueScheme:				string
@@ -411,7 +425,8 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 #### BundleRegionName
 **Description:** The BundleRegionName element contains the name of an administrative subdivision provided by services such as GeoNames to improve discoverability and to enhance browsing and search experience. GeoNames field: *adminName1* 
 
-	Interface Facet:			yes, full text
+	Discovery:					searchable, browsing facet
+	Display:					no
 	User provided:				no
 
 	ValueScheme:				string
@@ -433,7 +448,8 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 #### BundleCountryDisplayName
 **Description:** &#x1F4A5; The BundleCountryDisplayName element contains the name of the country to which the location belongs in the version recommended by the data producer. Repositories should tread the name provided by this element as the primary country name when displaying the metadata in relation to this particular data set (e.g. collection or bundle). The repository may use alternative names provided by services such as GeoNames to improve discoverability and to enhance browsing and search experience. The repository may also translate the name into other languages if no BundleCountryDisplayName name is given for a particular interface language. Data producers can provide BundleCountryDisplayName values for multiple interface languages.  
 
-	Interface Facet:			yes, full text
+	Discovery:					searchable
+	Display:					page
 	User provided:				yes	
 
 	ValueScheme:				string
@@ -455,7 +471,8 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 #### BundleCountryName
 **Description:** The BundleCountryName element contains the name of the country as provided by services such as GeoNames to improve discoverability and to enhance browsing and search experience. GeoNames field: *countryName*
 
-	Interface Facet:			yes, full text
+	Discovery:					searchable, browsing facet
+	Display:					no
 	User provided:				no	
 
 	ValueScheme:				string
@@ -477,7 +494,8 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 #### BundleCountryCode
 **Description:** &#x1F4CC; The CountryCode element contains the ISO 3166-1 alpha 2 code of the country of the location as provided by services such as GeoNames GeoNames field: *countryCode*
 
-	Interface Facet:			no, full text
+	Discovery:					no
+	Display:					no
 	User provided:				no
 
 	ValueScheme:				[A-Z]{2}
@@ -510,9 +528,9 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 - [BundleDataProvider](#bundledataprovider)
 - [BundleContributors](#bundlecontributors)
 	- [BundleContributor](#bundlecontributor)
-		- [CreatorDisplayName](#contributordisplayname) &#x1F4A5;
-		- [CreatorNameIdentifier](#contributornameidentifier) &#x1F4A5;
-		- [CreatorAffiliation](#contributoraffiliation) &#x1F4A5;
+		- [ContributorDisplayName](#contributordisplayname) &#x1F4A5;
+		- [ContributorNameIdentifier](#contributornameidentifier) &#x1F4A5;
+		- [ContributorAffiliation](#contributoraffiliation) &#x1F4A5;
 
 [Back to Top](#blam-bundle-repository)
 
@@ -533,7 +551,8 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 ###### CreatorDisplayName
 **Description:** &#x1F4A5; &#x1F4CC; The CreatorDisplayName element contains the name of the creator in a form that lends itself to alphabetical sorting. The value of this field can be used to generate a bibliographical citation reference for the resource. This usage should guide the formatting. The data producer determines what is the proper order of names for an alphabetically sorted list.
 
-	Interface Facet:			yes, full text, citation
+	Discovery:					searchable
+	Display:					page
 	User provided:				yes	
 
 	ValueScheme:				string
@@ -555,7 +574,8 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 **Description:** &#x1F4A5; The CreatorNameIdentifier contains an URI that uniquely identifies the creator according to an established scheme. ORCID and INSI are considered best practices. An email address in the form of an mailto URI is a fallback.
 **Attribute** *identifierType*: ORCID and ISNI are considered best practices. An email address in the form of an mailto URI is a fallback. *Values*: ORCID, ISNI, Email, Other
 
-	Interface Facet:			no
+	Discovery:					searchable
+	Display:					page
 	User provided:				yes
 
 	ValueScheme:				anyURI
@@ -576,7 +596,8 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 ###### CreatorAffiliation
 **Description:** &#x1F4A5; The CreatorAffiliation contains the organisational or institutional affiliation of the creator as provided by the depositor.
 
-	Interface Facet:			yes
+	Discovery:					searchable
+	Display:					page
 	User provided:				yes
 
 	ValueScheme:				string
@@ -597,7 +618,8 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 #### BundlePublicationYear
 **Description:** &#x1F4A5; &#x1F4CC; BundlePublicationYear contains the year of publication in the form YYYY conforming to ISO 8601. The default value is the ingest date into the repository unless an embargo has been set for the resource. In that case the end year of the embargo is taken as the year of publication. For legacy data, the  value of BundlePublicationDate can be set to a point before the ingest. The value of this field should be used to generate a bibliographical citation reference for the resource. 
 
-	Interface Facet:			yes, display
+	Discovery:					searchable, browsing facet
+	Display:					page
 	User provided:				yes
 
 	ValueScheme:				gYear
@@ -618,7 +640,8 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 #### BundleDataProvider
 **Description:** &#x1F4CC; BundleDataProvider contain the name of the data providing entity. The default value would be the name of the repository or its holding institution. The value of this field can be used to generate a bibliographical citation reference for the resource. 
 			
-	Interface Facet:			no
+	Discovery:					no
+	Display:					citation
 	User provided:				no
 
 	ValueScheme:				string
@@ -653,7 +676,8 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 ###### ContributorDisplayName
 **Description:** &#x1F4A5; &#x1F4CC; The CreatorDisplayName element contains the name of the creator. The data producer determines what is the proper order of names.
 
-	Interface Facet:			yes, full text, citation
+	Discovery:					searchable
+	Display:					page
 	User provided:				yes	
 
 	ValueScheme:				string
@@ -675,7 +699,8 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 **Description:** &#x1F4A5; The ContributorNameIdentifier contains an URI that uniquely identifies the contributor according to an established scheme. ORCID and INSI are considered best practices. An email address in the form of an mailto URI is a fallback.
 **Attribute** *identifierType*: ORCID and ISNI are considered best practices. An email address in the form of an mailto URI is a fallback. *Values*: ORCID, ISNI, Email, Other
 
-	Interface Facet:			no
+	Discovery:					searchable
+	Display:					page
 	User provided:				yes
 
 	ValueScheme:				anyURI
@@ -696,7 +721,8 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 ###### ContributorAffiliation
 **Description:** &#x1F4A5; The ContributorAffiliation contains the organisational or institutional affiliation of the contributor as provided by the depositor.
 
-	Interface Facet:			yes
+	Discovery:					searchable
+	Display:					page
 	User provided:				yes
 
 	ValueScheme:				string
@@ -741,7 +767,8 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 #### ProjectDisplayName
 **Description:** &#x1F4A5; &#x1F4CC; The ProjectDisplayName element provides a human readable name of the project. The preferred form is the abbreviation by which the project is generally known. The long form is best placed in the project description.
 
-	Interface Facet:			yes, display
+	Discovery:					searchable, browsing facet
+	Display:					page
 	User provided:				yes
 
 	ValueScheme:				string
@@ -762,7 +789,8 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 #### ProjectDescription
 **Description:** &#x1F4A5; &#x1F4CC; The ProjectDescription element provides a human readable description of the project including full project name. It should contain a description of the project’s objective or activity. The content of the ProjectDescription element will be used as the human readable description in interfaces. Its content can be queried by repositories for free-text metadata search. Data producers can provide ProjectDescription values for multiple interface languages.
 
-	Interface Facet:			yes, fulltext
+	Discovery:					searchable
+	Display:					page
 	User provided:				yes
 
 	ValueScheme:				string
@@ -797,7 +825,8 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 #### FunderName
 **Description:** &#x1F4A5; &#x1F4CC; The FunderName element provides the name of the funding organisation. The preferred form is the abbreviation by with the funding agency is generally known. 
 
-	Interface Facet:			yes, fulltext, display
+	Discovery:					searchable
+	Display:					page
 	User provided:				yes
 
 	ValueScheme:				string
@@ -820,7 +849,8 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 
 **Attribute** *FunderIdentifierType*: The FunderIdentifierType attribute determines the identifier type used. *Values:* CrossrefFunder, ISNI, GRID,  Other
 
-	Interface Facet:			yes, fulltext	
+	Discovery:					searchable
+	Display:					page	
 	User provided:				yes
 
 	ValueScheme:				anyURI
@@ -841,7 +871,8 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 #### GrantIdentifier
 **Description:** &#x1F4A5; GrantIdentifier contains an element that uniquely identifies the grant according to an established scheme. Best Practice: funding body specific identifier such as NSF grant number or BMBF Förderkennzeichen.
 
-	Interface Facet:			yes, fulltext
+	Discovery:					searchable
+	Display:					page
 	User provided:				yes
 
 	ValueScheme:				string
@@ -862,7 +893,8 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 #### GrantURI
 **Description:** &#x1F4A5; The GrantURI contains an URI that uniquely identifies the grant and funding body according to an established scheme.
 
-	Interface Facet:			yes, fulltext	
+	Discovery:					searchable
+	Display:					page	
 	User provided:				yes	
 
 	ValueScheme:				string
@@ -910,7 +942,8 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 
 Examples:  `clause` `intonation unit` 
 
-	Interface Facet:			yes	
+	Discovery:					searchable, browsing facet
+	Display:					page, list	
 	User provided:				yes	
 
 	ValueScheme:				string
@@ -940,7 +973,8 @@ Examples:  `clause` `intonation unit`
 
 Examples: `phonemic` `phonetic` `orthographic`  
 
-	Interface Facet:			yes	
+	Discovery:					searchable, browsing facet
+	Display:					page, list	
 	User provided:				yes	
 
 	ValueScheme:				string
@@ -975,7 +1009,8 @@ Examples: `phonemic` `phonetic` `orthographic`
 #### TranslationLanguageName
 **Description:** &#x1F4CC; The TranslationLanguageName element describes the annotation of the type translation. It contains the name of the language used in the translation. Data with no Translation metadata will be treated as not translated by the repository. Data with several Translation elements will be treated as having several translations.
 
-	Interface Facet:			yes, browsing
+	Discovery:					searchable, browsing facet
+	Display:					page
 	User provided:				no
 
 	ValueScheme:				string
@@ -996,7 +1031,8 @@ Examples: `phonemic` `phonetic` `orthographic`
 #### TranslationLanguageCode
 **Description:** &#x1F4A5; &#x1F4CC; The TranslationLanguageCode element describes the annotation of the type translation. It contains a language code (ISO 639-3) which identifies the language used in the translation. Data with no TranslationLanguage metadata will be treated as not translated by the repository. Data with several TranslationLanguage elements will be treated as having several translations.
 
-	Interface Facet:			yes, browsing
+	Discovery:					no
+	Display:					page, list
 	User provided:				yes
 
 	ValueScheme:				string
@@ -1026,7 +1062,8 @@ Examples: `phonemic` `phonetic` `orthographic`
 
 **Examples:** `word-by-word` `GRAID` `PoS Tagging`  
 
-	Interface Facet:			yes, browsing
+	Discovery:					searchable, browsing facet
+	Display:					page, list
 	User provided:				yes
 
 	ValueScheme:				string
@@ -1065,7 +1102,8 @@ Examples: `phonemic` `phonetic` `orthographic`
 #### BundleIsIdenticalTo
 **Description:** &#x1F4A5; The BundleIsIdenticalTo element contains an URI that uniquely identifies an identical resource. This element should only be used if it can be ascertained that the identified resource and the current resource will remain identical; else BundleIsDerivedFrom should be used.
 
-	Interface Facet:			display
+	Discovery:					no
+	Display:					page
 	User provided:				yes		
 
 	ValueScheme:				anyURI
@@ -1086,7 +1124,8 @@ Examples: `phonemic` `phonetic` `orthographic`
 #### BundleIsDerivedFrom
 **Description:** &#x1F4A5; The BundleIsDerivedFrom element contains an URI that uniquely identifies the resource from which the current resource is derived.
 
-	Interface Facet:			display
+	Discovery:					no
+	Display:					page
 	User provided:				yes
 
 	ValueScheme:				anyURI
@@ -1114,7 +1153,8 @@ Examples: `phonemic` `phonetic` `orthographic`
 #### LicenceName
 **Description:** &#x1F4CC; The LicenceName element should provide the complete human readable name of a licence and include version information if applicable.
 
-	Interface Facet:			yes, display	
+	Discovery:					searchable, browsing facet
+	Display:					page	
 	User provided:				no
 
 	ValueScheme:				string
@@ -1135,7 +1175,8 @@ Examples: `phonemic` `phonetic` `orthographic`
 #### LicenceIdentifier
 **Description:** &#x1F4A5; &#x1F4CC; The LicenceIdentifier provides a URI for the licence.
 
-	Interface Facet:			display
+	Discovery:					no
+	Display:					page
 	User provided:				yes
 
 	ValueScheme:				anyURI
@@ -1156,7 +1197,8 @@ Examples: `phonemic` `phonetic` `orthographic`
 #### Access
 **Description:** &#x1F4CC; This element specifies the terms of availability of the resource in plain words. The  technical implementation of these terms depends on the repository.
 
-	Interface Facet:			yes, browsing, display	
+	Discovery:					searchable, browsing facet
+	Display:					page, list	
 	User provided:				no		
 
 	ValueScheme:				"open", "registration required", "request required" 
@@ -1178,7 +1220,8 @@ Examples: `phonemic` `phonetic` `orthographic`
 **Description:** &#x1F4CC; The AvailabilityDate element contains the date at which the bundle became or will become available. The date must be provided conforming to ISO 8601 in the form YYYY-MM-DD.
 
 
-	Interface Facet:			yes, display	
+	Discovery:					searchable, browsing facet
+	Display:					page	
 	User provided:				no	
 
 	ValueScheme:				date
@@ -1206,7 +1249,8 @@ Examples: `phonemic` `phonetic` `orthographic`
 #### RightsHolderName
 **Description:** &#x1F4A5; &#x1F4CC; The RightsHolderName contains the name of the individual or institution owning or managing the rights over the resource. 
 
-	Interface Facet:			display
+	Discovery:					searchable
+	Display:					page
 	User provided:				yes	
 
 	ValueScheme:				string
@@ -1229,7 +1273,8 @@ Examples: `phonemic` `phonetic` `orthographic`
 
 **Attribute** *identifierType*: ORCID and ISNI are considered best practices. An email address in the form of a mailto URI is the recommended fallback. *Values*: ORCID, ISNI, Email, Other
 
-	Interface Facet:			display
+	Discovery:					searchable
+	Display:					page
 	User provided:				yes
 
 	ValueScheme:				anyURI
@@ -1285,7 +1330,8 @@ Examples: `phonemic` `phonetic` `orthographic`
 
 **Attribute:** *IdentifierType* **Values:** *DOI, Handle* The IdentifierType attribute determines the identifier type used.
 
-	Interface Facet:			yes
+	Discovery:					no
+	Display:					page
 	User provided:				no
 
 	ValueScheme:				anyURI
@@ -1313,7 +1359,8 @@ Examples: `phonemic` `phonetic` `orthographic`
 ##### FileName (MetadataFile)
 **Description:** &#x1F4A5; &#x1F4CC; The FileName element contains the name of the file as provided by the depositor.
 
-	Interface Facet:			yes, display
+	Discovery:					no
+	Display:					page
 	User provided:				no		
 
 	ValueScheme:				string
@@ -1332,7 +1379,8 @@ Examples: `phonemic` `phonetic` `orthographic`
 ##### FilePID (MetadataFile)
 **Description:** &#x1F4CC; The FileID element contains a PID that uniquely identifies the file described by this component.
 
-	Interface Facet:			full text, display
+	Discovery:					no
+	Display:					page
 	User provided:				no		
 
 	ValueScheme:				string
@@ -1353,7 +1401,8 @@ Examples: `phonemic` `phonetic` `orthographic`
 ##### MimeType (MetadataFile)
 **Description:** &#x1F4CC; Specification of the mime-type of the resource.
 
-	Interface Facet:			no
+	Discovery:					searchable, browsing facet
+	Display:					page, list
 	User provided:				no
 
 	ValueScheme:				string
@@ -1374,7 +1423,8 @@ Examples: `phonemic` `phonetic` `orthographic`
 ##### IsMetadataOf (MetadataFile)
 **Description:** &#x1F4A5; &#x1F4CC; The IsMetadataOf element contains a PID that uniquely identifies the file described by the file described in this component.
 
-	Interface Facet:			no
+	Discovery:					no
+	Display:					page
 	User provided:				yes
 
 	ValueScheme:				anyURI
@@ -1395,7 +1445,8 @@ Examples: `phonemic` `phonetic` `orthographic`
 ##### FileDescription (MetadataFile)
 **Description:** &#x1F4A5; The FileDescription contains a human readable, file specific description. This element should be used to provide file specific that cannot be added to the bundle description. Any information applicable to the whole bundle should be added to the BundleDescription element.
 
-	Interface Facet:			no	
+	Discovery:					searchable
+	Display:					page
 	User provided:				yes
 
 	ValueScheme:				string
@@ -1430,7 +1481,8 @@ Examples: `phonemic` `phonetic` `orthographic`
 ###### FileName (MediaResource)
 **Description:** &#x1F4A5; &#x1F4CC; The FileName element contains the name of the file as provided by the depositor.
 
-	Interface Facet:			yes, display
+	Discovery:					no
+	Display:					page
 	User provided:				no		
 
 	ValueScheme:				string
@@ -1449,7 +1501,8 @@ Examples: `phonemic` `phonetic` `orthographic`
 ###### FilePID (MediaResource)
 **Description:** &#x1F4CC; The FileID element contains a PID that uniquely identifies the file described by this component.
 
-	Interface Facet:			yes, display
+	Discovery:					no
+	Display:					page
 	User provided:				no		
 
 	ValueScheme:				anyURI
@@ -1470,7 +1523,8 @@ Examples: `phonemic` `phonetic` `orthographic`
 ###### MimeType (MediaResource)
 **Description:** &#x1F4CC; Specification of the mime-type of the resource.
 
-	Interface Facet:			yes, browsing
+	Discovery:					browsing facet
+	Display:					page, list
 	User provided:				no
 
 	ValueScheme:				string
@@ -1491,7 +1545,8 @@ Examples: `phonemic` `phonetic` `orthographic`
 ###### FileLength (MediaResource)
 **Description:** &#x1F4CC; The FileLength element contains the length of a media file.
 
-	Interface Facet:			yes, browsing
+	Discovery:					browsing facet
+	Display:					page, list
 	User provided:				no
 
 	ValueScheme:				string
@@ -1512,7 +1567,8 @@ Examples: `phonemic` `phonetic` `orthographic`
 ###### FileDescription (MediaResource)
 **Description:** &#x1F4A5; The FileDescription contains a human readable, file specific description. This element should be used to provide file specific that cannot be added to the bundle description. Any information applicable to the whole bundle should be added to the BundleDescription element.
 
-	Interface Facet:			no, full text	
+	Discovery:					searchable
+	Display:					page	
 	User provided:				yes
 
 	ValueScheme:				string
@@ -1540,7 +1596,8 @@ Examples: `phonemic` `phonetic` `orthographic`
 ###### FileName (WrittenResource)
 **Description:** &#x1F4A5; &#x1F4CC; The FileName element contains the name of the file as provided by the depositor.
 
-	Interface Facet:			yes, display
+	Discovery:					no
+	Display:					page
 	User provided:				no		
 
 	ValueScheme:				string
@@ -1559,7 +1616,8 @@ Examples: `phonemic` `phonetic` `orthographic`
 ###### FilePID (WrittenResource)
 **Description:** &#x1F4CC; The FileID element contains a PID that uniquely identifies the file described by this component.
 
-	Interface Facet:			yes, display
+	Discovery:					no
+	Display:					page
 	User provided:				no		
 
 	ValueScheme:				anyURI
@@ -1580,7 +1638,8 @@ Examples: `phonemic` `phonetic` `orthographic`
 ###### MimeType (WrittenResource)
 **Description:** &#x1F4CC; Specification of the mime-type of the resource.
 
-	Interface Facet:			yes, browsing
+	Discovery:					browsing facet
+	Display:					page, list
 	User provided:				no
 
 	ValueScheme:				string
@@ -1601,7 +1660,8 @@ Examples: `phonemic` `phonetic` `orthographic`
 ###### IsAnnotationOf (WrittenResource)
 **Description:** &#x1F4A5; The IsAnnotationOf element contains a PID that uniquely identifies the file annotated by the file described in this component.
 
-	Interface Facet:			no
+	Discovery:					no
+	Display:					page
 	User provided:				yes (processed)
 
 	ValueScheme:				anyURI
@@ -1622,7 +1682,8 @@ Examples: `phonemic` `phonetic` `orthographic`
 ###### FileDescription (WrittenResource)
 **Description:** &#x1F4A5; The FileDescription contains a human readable, file specific description. This element should be used to provide file specific that cannot be added to the bundle description. Any information applicable to the whole bundle should be added to the BundleDescription element.
 
-	Interface Facet:			no, full text	
+	Discovery:					searchable
+	Display:					page	
 	User provided:				yes
 
 	ValueScheme:				string
@@ -1650,7 +1711,8 @@ Examples: `phonemic` `phonetic` `orthographic`
 ###### FileName (OtherResource)
 **Description:** &#x1F4A5; &#x1F4CC; The FileName element contains the name of the file as provided by the depositor.
 
-	Interface Facet:			yes, display
+	Discovery:					no
+	Display:					page
 	User provided:				no		
 
 	ValueScheme:				string
@@ -1669,7 +1731,8 @@ Examples: `phonemic` `phonetic` `orthographic`
 ###### FilePID (OtherResource)
 **Description:** &#x1F4CC; The FileID element contains a PID that uniquely identifies the file described by this component.
 
-	Interface Facet:			yes, display
+	Discovery:					no
+	Display:					page
 	User provided:				no		
 
 	ValueScheme:				anyURI
@@ -1690,7 +1753,8 @@ Examples: `phonemic` `phonetic` `orthographic`
 ###### MimeType (OtherResource)
 **Description:** &#x1F4CC; Specification of the mime-type of the resource.
 
-	Interface Facet:			yes, browsing
+	Discovery:					no
+	Display:					page, list
 	User provided:				no
 
 	ValueScheme:				string
@@ -1711,7 +1775,8 @@ Examples: `phonemic` `phonetic` `orthographic`
 ###### FileDescription (OtherResource)
 **Description:** &#x1F4A5; The FileDescription contains a human readable, file specific description. This element should be used to provide file specific that cannot be added to the bundle description. Any information applicable to the whole bundle should be added to the BundleDescription element.
 
-	Interface Facet:			no, full text	
+	Discovery:					searchable
+	Display:					page	
 	User provided:				yes
 
 	ValueScheme:				string
