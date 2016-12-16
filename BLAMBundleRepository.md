@@ -1088,9 +1088,9 @@ Examples: `phonemic` `phonetic` `orthographic`
 
 - [BundleIsIdenticalTo](#bundleisidenticalto) &#x1F4A5;
 - [BundleIsDerivedFrom](#bundleisderivedfrom) &#x1F4A5;
-- [Licence](#licence)
-	- [LicenceName](#licencename)
-	- [LicenceIdentifier](#licenceidentifier) &#x1F4A5;
+- [License](#license)
+	- [LicenseName](#licensename)
+	- [LicenseIdentifier](#licenseidentifier) &#x1F4A5;
 - [Access](#access) 
 - [AvailabilityDate](#availabilitydate)
 - [RightsHolder](#rightsholder)
@@ -1143,15 +1143,15 @@ Examples: `phonemic` `phonetic` `orthographic`
 
 [Back to Top](#blam-bundle-repository) | [Back to BundleAdministrativeInfo](#bundleadministrativeinfo)
 
-#### Licence
-**Description:** The Licence component contains information about the licence under which the resource is available.
+#### License
+**Description:** The License component contains information about the license under which the resource is available.
 
 	Number of occurrences:		1-unbounded
 
 [Back to Top](#blam-bundle-repository) | [Back to BundleAdministrativeInfo](#bundleadministrativeinfo)
 
-#### LicenceName
-**Description:** &#x1F4CC; The LicenceName element should provide the complete human readable name of a licence and include version information if applicable.
+#### LicenseName
+**Description:** &#x1F4CC; The LicenseName element should provide the complete human readable name of a license and include version information if applicable.
 
 	Discovery:					searchable, browsing facet
 	Display:					page	
@@ -1172,8 +1172,8 @@ Examples: `phonemic` `phonetic` `orthographic`
 
 [Back to Top](#blam-bundle-repository) | [Back to BundleAdministrativeInfo](#bundleadministrativeinfo)
 
-#### LicenceIdentifier
-**Description:** &#x1F4A5; &#x1F4CC; The LicenceIdentifier provides a URI for the licence.
+#### LicenseIdentifier
+**Description:** &#x1F4A5; &#x1F4CC; The LicenseIdentifier provides a URI for the license.
 
 	Discovery:					no
 	Display:					page
@@ -1182,7 +1182,7 @@ Examples: `phonemic` `phonetic` `orthographic`
 	ValueScheme:				anyURI
 	Number of occurrences:  	1-1
 	Multilingual:           	no
-	CCR prefLabel@en:       	licence URL
+	CCR prefLabel@en:       	license URL
 	CCR URI:                	http://hdl.handle.net/11459/CCR_C-6586_2c79d86a-5a75-0890-d407-7d9cb86b9beb
 
 	VLO Facet: 					distributionType
