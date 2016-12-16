@@ -1272,46 +1272,18 @@ Examples: `phonemic` `phonetic` `orthographic`
 **Description:** CollectionStructuralInfo contains structural metadata that describes the internal structure of the collection.
 
 	Number of occurrences:		1-1
-
-- [CollectionParts](#collectionparts) 
-	- [CollectionPart](#collectionpart) 
+ 
 - [CollectionAdditionalMetadataFile](#collectionadditionalmetadatafile)
 	- [FileName](#filename-metadatafile) &#x1F4A5; 
 	- [FilePID](#filepid-metadatafile) 
 	- [MimeType](#mimetype-metadatafile)
 	- [IsMetadataOf](#ismetadataof-metadatafile) &#x1F4A5;
 	- [FileDescription](#filedescription-metadatafile)  &#x1F4A5;
+- [CollectionTopics](#collectiontopics)
+	- [CollectionTopic](#collectiontopic)
+- [CollectionParts](#collectionparts) 
+	- [CollectionPart](#collectionpart)
 
-[Back to Top](#blam-collection-repository) |  [Back to CollectionStructuralInfo](#collectionstructuralinfo)
-
-#### CollectionParts
-**Description:** The CollectionParts component contains elements referencing the bundles of the collection.
-
-	Number of occurrences:		1-1
-
-[Back to Top](#blam-collection-repository) |  [Back to CollectionStructuralInfo](#collectionstructuralinfo)
-
-##### CollectionPart
-**Description:** The CollectionPart element contains references to a bundle contained in the collection.
-
-**Attribute:** *IdentifierType* **Values:** *DOI, Handle* The IdentifierType attribute determines the identifier type used.
-
-	Discovery:					no
-	Display:					page
-	User provided:				no
-
-	ValueScheme:				anyURI
-	Number of occurrences:  	1-unbounded
-	Multilingual:           	no
-	CCR prefLabel@en:       	relation role
-	CCR URI:                	http://hdl.handle.net/11459/CCR_C-6570_90018537-4ab9-0cfe-c878-257b9b311993
-
-	VLO Facet: 					—
-	OLAC (DCMI):				Relation:dcterms:hasPart
-	DataCite:                	RelatedIdentifier:relationType:HasPart
-	IMDI Element:               —       
-	ELDP-CMDI Element:          —
-	IMDI-CMDI Element:			—
 
 [Back to Top](#blam-collection-repository) |  [Back to CollectionStructuralInfo](#collectionstructuralinfo)
 
@@ -1430,9 +1402,63 @@ Examples: `phonemic` `phonetic` `orthographic`
 
 [Back to Top](#blam-collection-repository) |  [Back to CollectionStructuralInfo](#collectionstructuralinfo)
 
-#### CollectionResources
-**Description:** The CollectionResources component contains metadata about files contained in the collection.
+#### CollectionTopics
+**Description:** CollectionTopics are used by repositories to display default subsets of bundles. Bundles are assigned to a topic if one of their BundleKeyword elements is identical to a topic label of the collection. 
+
+								Number of occurrences:	0-1
+
+[Back to Top](#blam-collection-repository) | [Back to CollectionGeneralInfo](#collectiongeneralinfo)
+
+#### CollectionTopic
+**Description:** &#x1F4A5; A CollectionTopic element should contain a term that occurs as a BundleKeyword in a subset of bundles and defines a meaningful subsect of the collection.  
+
+	Discovery:					browsing facet
+	Display:					page, list
+	User provided:				yes		
+
+	ValueScheme:				string
+	Number of occurrences:  	1-unbounded
+	Multilingual:           	yes
+	CCR prefLabel@en:       	metadata tag
+	CCR URI:               		http://hdl.handle.net/11459/CCR_C-5436_6ab57c2c-5f8d-3561-6db6-d75da23d2637
+
+	VLO Facet: 					keywords
+	OLAC (DCMI):				—
+	DataCite:        			Subject
+	IMDI Element:               various (closest match: //Session/Keys/*)
+	ELDP-CMDI Element:          CCR:ELDP_Collection:Keywords:Keyword
+	IMDI-CMDI Element:
+	lat-session:				
+
+[Back to Top](#blam-collection-repository) | [Back to CollectionGeneralInfo](#collectiongeneralinfo)
+
+#### CollectionParts
+**Description:** The CollectionParts component contains elements referencing the bundles of the collection.
 
 	Number of occurrences:		1-1
+
+[Back to Top](#blam-collection-repository) |  [Back to CollectionStructuralInfo](#collectionstructuralinfo)
+
+##### CollectionPart
+**Description:** The CollectionPart element contains references to a bundle contained in the collection.
+
+**Attribute:** *IdentifierType* **Values:** *DOI, Handle* The IdentifierType attribute determines the identifier type used.
+
+	Discovery:					no
+	Display:					page
+	User provided:				no
+
+	ValueScheme:				anyURI
+	Number of occurrences:  	1-unbounded
+	Multilingual:           	no
+	CCR prefLabel@en:       	relation role
+	CCR URI:                	http://hdl.handle.net/11459/CCR_C-6570_90018537-4ab9-0cfe-c878-257b9b311993
+
+	VLO Facet: 					—
+	OLAC (DCMI):				Relation:dcterms:hasPart
+	DataCite:                	RelatedIdentifier:relationType:HasPart
+	IMDI Element:               —       
+	ELDP-CMDI Element:          —
+	IMDI-CMDI Element:			—
 
 [Back to Top](#blam-collection-repository) |  [Back to CollectionStructuralInfo](#collectionstructuralinfo)
