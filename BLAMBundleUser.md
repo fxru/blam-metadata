@@ -5,23 +5,23 @@
 
 Basic Language Archive Metadata (BLAM) is designed to provide basic metadata for language repositories. The metadata scheme maximises discoverability and user oriented information without a proliferation of data fields and work for the data producer. Basic Language Archive Metadata is a suite of [CMDI](https://www.clarin.eu/content/component-metadata) profiles and currently consist of two pairs of profiles: 
 
-* BLAM Bundle Repository: described in this document [below](#blam-bundle-repository)
-* BLAM Bundle User: [documentation](https://github.com/fxru/blam-metadata/blob/master/BLAMRepositoryUser.md)
+* BLAM Bundle Repository: [documentation](https://github.com/fxru/blam-metadata/blob/master/BLAMCollectionRepository.md)
+* BLAM Bundle User: described in this document [below](#blam-bundle-user)
 * BLAM Collection Repository: documentation  [(draft)](https://github.com/fxru/blam-metadata/blob/master/BLAMCollectionRepository.md)
 * BLAM Collection User: documentation  (to come)
 
-BLAM Bundle Repository contains information about bundles as provided by the repository. Data producers are asked to submit a subset of this information during ingest. The BLAM Bundle User profile defines this subset of 36 data fields of which 22 are obligatory. The separate definition of the BLAM Bundle User profile enhances the usability for data producers and can be validated independently from the more comprehensive BLAM Bundle Repository profile. The Basic Language Archive Metadata Bundle User profile is intended to be the primary source of user input for BLAM Bundle Repository. However, BLAM Bundle Repository is designed to allow automatic import of information from other metadata formats. The formats actively considered are: 
+BLAM Bundle contains information about bundles as provided by the repository. Data producers are asked to submit a subset of this information during ingest. The BLAM Bundle User profile defines this subset of 36 data fields of which 22 are obligatory. The separate definition of the BLAM Bundle User profile enhances the usability for data producers and can be validated independently from the more comprehensive BLAM Bundle Repository profile. The Basic Language Archive Metadata Bundle User profile is intended to be the primary source of user input for BLAM Bundle Repository. However, BLAM Bundle Repository is designed to allow automatic import of information from other metadata formats. The formats actively considered are: 
 
 * IMDI Metadata Format: [ISLE Meta Data Initative, Version 3.0.4 (2003)](https://tla.mpi.nl/imdi-metadata/)
 * CMDI imdi-session-profile: [clarin.eu:cr1:p_1271859438204](https://catalog.clarin.eu/ds/ComponentRegistry#/?itemId=clarin.eu%3Acr1%3Ap_1271859438204&registrySpace=public)
 * CMDI ELDP_Bundle: [clarin.eu:cr1:p_1407745711992](https://catalog.clarin.eu/ds/ComponentRegistry#/?itemId=clarin.eu%3Acr1%3Ap_1407745711992&registrySpace=public)
 * CMDI lat-session: [clarin.eu:cr1:p_1407745712035](https://catalog.clarin.eu/ds/ComponentRegistry#/?itemId=clarin.eu%3Acr1%3Ap_1407745712035&registrySpace=public)  
 
-The data fields that are transferred from BLAM Bundle User input are marked by &#x1F4A5; in this document. Obligatory data fields are indicated by &#x1F4CC; in this document.
+Obligatory data fields are indicated by &#x1F4CC; in this document.
 
-BLAM Bundle Repository is designed with a focus on discoverability and display. Data producers can submit additional metadata information to document their data and their research. The preferred format are other CMDI profiles or comparably standardized metadata formats.
+BLAM Bundle is designed with a focus on discoverability and display. Data producers can submit additional metadata information to document their data and their research. The preferred format are other CMDI profiles or comparably standardized metadata formats.
 
-The data fields of BLAM Bundle Repository were defined to facilitate interoperability with metacatalogues, in particular [DataCite](https://search.datacite.org/), [OLAC](http://search.language-archives.org/), and [VLO](https://vlo.clarin.eu/).
+The data fields of BLAM Bundle were defined to facilitate interoperability with metacatalogues, in particular [DataCite](https://search.datacite.org/), [OLAC](http://search.language-archives.org/), and [VLO](https://vlo.clarin.eu/).
 
 * OLAC metadata: [specifications](http://www.language-archives.org/OLAC/metadata.html), [usage](http://www.language-archives.org/NOTE/usage.html)
 * DataCite Metadata: [Schema 4.0](https://schema.datacite.org/meta/kernel-4.0/)
@@ -31,7 +31,7 @@ Recommended tools to create BLAM metadata are [CMDI Maker](http://cmdi-maker.uni
 
 BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 
-## BLAM-Bundle-Repository
+## BLAM-Bundle-User
 
 **Description:** The Basic Language Archive Metadata Bundle profile aims to provide a basic metadata profile for language repositories. The profiles cover fundamental domain specific, but project independent, descriptive metadata as well as basic administrative and structural metadata. BLAM Bundle focusses on discoverability and human-readable display without a proliferation of data fields and work for the data producer.
 
@@ -47,7 +47,6 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 
 	Number of occurrences:	1-1
 
-- [BundleID](#bundleid)
 - [BundleDisplayTitle](#bundledisplaytitle) &#x1F4A5;
 - [BundleDescription](#bundledescription) &#x1F4A5;
 - [BundleKeywords](#bundlekeywords)
@@ -55,47 +54,15 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 - [BundleObjectLanguages](#bundleobjectlanguages)
 	- [BundleObjectLanguage](#bundleobjectlanguage)
 		- [ObjectLanguageDisplayName](#objectlanguagedisplayname) &#x1F4A5;
-		- [ObjectLanguageName](#objectlanguagename)
-		- [ObjectLanguageISO639-3Code](#objectlanguageiso639-3code)
 		- [ObjectLanguageGlottologCode](#objectlanguageglottologcode) &#x1F4A5;
-		- [ObjectLanguageLanguageFamily](#objectlanguagelanguagefamily)
 - [BundleRecordingDate](#bundlerecordingdate) &#x1F4A5;
 - [BundleLocation](#bundlelocation)
 	- [BundleGeoLocation](#bundlegeolocation) &#x1F4A5;
 	- [BundleLocationDisplayName](#bundlelocationdisplayname) &#x1F4A5;
-	- [BundleLocationName](#bundlelocationname)
-	- [BundleRegionDisplayName](#bundleregiondisplayname) &#x1F4A5;
-	- [BundleRegionName](#bundleregionname) 
+	- [BundleRegionDisplayName](#bundleregiondisplayname) &#x1F4A5; 
 	- [BundleCountryDisplayName](#bundlecountrydisplayname)  &#x1F4A5;
-	- [BundleCountryName](#bundlecountryname)
-	- [BundleCountryCode](#bundlecountrycode) 
 
 [Back to Top](#blam-bundle-repository)
-
-#### BundleID
-**Description:** &#x1F4CC; The BundleID element contains an identifier that consistently and uniquely identifies the bundle described in the particular metadata token. The identifier should be generated by the repository during the ingest process.
-
-**Attribute:** *identifierType* **Values:** *DOI, Handle, URN, Other* The identifierType attribute determines the identifier type used. Recommended practice is to have a DOI and a Handle for each bundle.
-
-	Discovery:					no
-	Display:					no
-	User provided:				no
-
-	ValueScheme: 				anyURI
-	Number of occurrences:  	1-unbounded
-	Multilingual:           	no
-	CCR prefLabel@en:       	resource name
-	CCR URI:                	http://hdl.handle.net/11459/CCR_C-2573_ae7c2548-8a86-ab6e-7099-e28b7697d1a2
-	
-	VLO Facet: 					—
-	OLAC (DCMI):				—
-	DataCite:               	Identifier 
-	IMDI Element:				/METATRANSCRIPT/@ArchiveHandle
-	ELDP-CMDI Element:      	—
-	IMDI-CMDI Element:
-	lat-session:				
-
-[Back to Top](#blam-bundle-repository) | [Back to BundleGeneralInfo](#bundlegeneralinfo)
 
 #### BundleDisplayTitle 
 **Description:** &#x1F4A5; &#x1F4CC; The BundleDisplayTitle element provides a human readable name of the bundle. It should contain a meaningful and recognisable title for the bundle. The content of the BundleDisplayTitle element will be used as the human readable identifier in interfaces. Data producers can provide BundleDisplayTitle values for multiple interface languages. This field will be used as the human readable identifier for the bundle in citation and interfaces.
@@ -208,52 +175,6 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 
 [Back to Top](#blam-bundle-repository) | [Back to BundleGeneralInfo](#bundlegeneralinfo)
 
-#### ObjectLanguageName
-**Description:** The ObjectLanguageName element contains the name of the object language in the version as provided by services such as Glottolog or Ethnologue. 
-
-	Discovery:					searchable, browsing facet
-	Display:					no
-	User provided:				no
-
-	ValueScheme:				string
-	Number of occurrences:  	0-unbounded
-	Multilingual:           	yes
-	CCR prefLabel@en:       	Language Name
-	CCR URI:                	http://hdl.handle.net/11459/CCR_C-2484_669684e7-cb9e-ea96-59cb-a25fe89b9b9d
-
-	VLO Facet: 					languageCode
-	OLAC (DCMI):				http://purl.org/dc/terms/language
-	DataCite:        			Language
-	IMDI Element:               //Session/MDGroup/Content/Languages/Language/Name
-	ELDP-CMDI Element:          
-	IMDI-CMDI Element:
-	lat-session:				
-
-[Back to Top](#blam-bundle-repository) | [Back to BundleGeneralInfo](#bundlegeneralinfo)
-
-#### ObjectLanguageISO639-3Code
-**Description:**  &#x1F4CC; The ObjectLanguageISO639-3 element contains an ISO 639-3 language code for the object language.
-
-	Discovery:					no
-	Display:					page
-	User provided:				no
-
-	ValueScheme:				[a-z]{3}
-	Number of occurrences:  	1-1
-	Multilingual:           	no
-	CCR prefLabel@en:       	Language ID
-	CCR URI:                	http://hdl.handle.net/11459/CCR_C-2482_08eded24-4086-7e3f-88e5-e0807fb01e17
-
-	VLO Facet: 					languageCode
-	OLAC (DCMI):				http://purl.org/dc/terms/language
-	DataCite:        			Language
-	IMDI Element:               //Session/MDGroup/Content/Languages/Language/Id
-	ELDP-CMDI Element:          
-	IMDI-CMDI Element:
-	lat-session:				
-
-[Back to Top](#blam-bundle-repository) | [Back to BundleGeneralInfo](#bundlegeneralinfo)
-
 #### ObjectLanguageGlottologCode
 **Description:**  &#x1F4A5; &#x1F4CC; The ObjectLanguageGlottologCode element contains the Glottolog code for the object language as provided by glottolog.org.
 
@@ -270,29 +191,6 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 	VLO Facet: 
 	OLAC (DCMI):
 	DataCite:        
-	IMDI Element:               
-	ELDP-CMDI Element:          
-	IMDI-CMDI Element:
-	lat-session:				
-
-[Back to Top](#blam-bundle-repository) | [Back to BundleGeneralInfo](#bundlegeneralinfo)
-
-#### ObjectLanguageLanguageFamily
-**Description:** &#x1F4CC; The ObjectLanguageLanguageFamily element contains the name of the language family and sub-families or sub-groups the object language belongs to. The values are taken from Glottolog and given in the version as provided by this service. 
-
-	Discovery:					searchable, browsing facet
-	Display:					no
-	User provided:				no
-
-	ValueScheme:				string
-	Number of occurrences:  	1-unbounded
-	Multilingual:           	no
-	CCR prefLabel@en:       	Language Name
-	CCR URI:                	http://hdl.handle.net/11459/CCR_C-2484_669684e7-cb9e-ea96-59cb-a25fe89b9b9d
-
-	VLO Facet: 					languageCode
-	OLAC (DCMI):				http://purl.org/dc/terms/language
-	DataCite:        			Language
 	IMDI Element:               
 	ELDP-CMDI Element:          
 	IMDI-CMDI Element:
@@ -376,58 +274,12 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 
 [Back to Top](#blam-bundle-repository) | [Back to BundleGeneralInfo](#bundlegeneralinfo)
 
-#### BundleLocationName
-**Description:** The BundleLocationName element contains the name of a location provided by services such as GeoNames. This name is used to improve discoverability and to enhance the browsing and search experience. GeoNames field: *name* (or *toponymName*).
-
-	Discovery:					searchable
-	Display:					no
-	User provided:				no
-
-	ValueScheme:				string
-	Number of occurrences:  	0-unbounded
-	Multilingual:           	yes
-	CCR prefLabel@en:       	place name
-	CCR URI:                	http://hdl.handle.net/11459/CCR_C-5580_03e458f2-f873-8645-76eb-40e001b6c1ac
-
-	VLO Facet: 					—
-	OLAC (DCMI):				—
-	DataCite:        
-	IMDI Element:				//Session/MDGroup/Location/Address
-	ELDP-CMDI Element:          
-	IMDI-CMDI Element:
-	lat-session:				
-
-[Back to Top](#blam-bundle-repository) | [Back to BundleGeneralInfo](#bundlegeneralinfo)
-
 #### BundleRegionDisplayName
 **Description:** &#x1F4A5; The BundleRegionDisplayName element optionally contains the name of an administrative subdivision such as state, province, or any other culturally salient unit in the version recommended by the data producer. The data producer can decided which level of subdivision is relevant and will improve discoverability. Repositories should tread the name provided by this element as the primary location name when displaying the metadata in relation to this particular data set (e.g. collection or bundle). The repository may use alternative names provided by services such as GeoNames to improve discoverability and to enhance browsing and search experience. The repository may also translate the name into other languages if no RegionDisplayName value is given for a particular interface language.
 
 	Discovery:					searchable
 	Display:					page
 	User provided:				yes
-
-	ValueScheme:				string
-	Number of occurrences:  	0-unbounded
-	Multilingual:           	yes
-	CCR prefLabel@en:       	location region
-	CCR URI:                	http://hdl.handle.net/11459/CCR_C-2533_fa6e1812-e29b-3cf6-e15a-50aa34b9be68
-
-	VLO Facet: 					—
-	OLAC (DCMI):				—
-	DataCite:        			—
-	IMDI Element:               //Session/MDGroup/Location/Region
-	ELDP-CMDI Element:          
-	IMDI-CMDI Element:
-	lat-session:				
-
-[Back to Top](#blam-bundle-repository) | [Back to BundleGeneralInfo](#bundlegeneralinfo)
-
-#### BundleRegionName
-**Description:** The BundleRegionName element contains the name of an administrative subdivision provided by services such as GeoNames to improve discoverability and to enhance browsing and search experience. GeoNames field: *adminName1* 
-
-	Discovery:					searchable, browsing facet
-	Display:					no
-	User provided:				no
 
 	ValueScheme:				string
 	Number of occurrences:  	0-unbounded
@@ -468,52 +320,6 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 
 [Back to Top](#blam-bundle-repository) | [Back to BundleGeneralInfo](#bundlegeneralinfo)
 
-#### BundleCountryName
-**Description:** The BundleCountryName element contains the name of the country as provided by services such as GeoNames to improve discoverability and to enhance browsing and search experience. GeoNames field: *countryName*
-
-	Discovery:					searchable, browsing facet
-	Display:					no
-	User provided:				no	
-
-	ValueScheme:				string
-	Number of occurrences:  	0-unbounded
-	Multilingual:           	yes
-	CCR prefLabel@en:       	location country
-	CCR URI:                	http://hdl.handle.net/11459/CCR_C-2532_d004b0a6-fd1d-3ca3-abf1-1e6aeb3e37b2
-
-	VLO Facet: 					country
-	OLAC (DCMI):				—
-	DataCite:        			—
-	IMDI Element:               //Session/MDGroup/Location/Country
-	ELDP-CMDI Element:          
-	IMDI-CMDI Element:
-	lat-session:				
-
-[Back to Top](#blam-bundle-repository) | [Back to BundleGeneralInfo](#bundlegeneralinfo)
-
-#### BundleCountryCode
-**Description:** &#x1F4CC; The CountryCode element contains the ISO 3166-1 alpha 2 code of the country of the location as provided by services such as GeoNames GeoNames field: *countryCode*
-
-	Discovery:					no
-	Display:					no
-	User provided:				no
-
-	ValueScheme:				[A-Z]{2}
-	Number of occurrences:  	1-1
-	Multilingual:           	no
-	CCR prefLabel@en:       	country coding
-	CCR URI:                	http://hdl.handle.net/11459/CCR_C-2092_36cd7ca8-e412-9f29-7ea7-4a3ba4ba2c91
-
-	VLO Facet: 					—
-	OLAC (DCMI):				—
-	DataCite:        			—
-	IMDI Element:               —
-	ELDP-CMDI Element:          —
-	IMDI-CMDI Element:			—
-	lat-session:				
-
-[Back to Top](#blam-bundle-repository) | [Back to BundleGeneralInfo](#bundlegeneralinfo)
-
 ### BundlePublicationInfo
 **Description:** The BundlePublicationInfo component contains metadata pertaining the publication of the resource. The information provided in this component is used for display and in particular to generate bibliographical references to the resource.
 
@@ -525,7 +331,6 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 		- [CreatorNameIdentifier](#creatornameidentifier) &#x1F4A5;
 		- [CreatorAffiliation](#creatoraffiliation) &#x1F4A5;
 - [BundlePublicationYear](#bundlepublicationyear) &#x1F4A5;
-- [BundleDataProvider](#bundledataprovider)
 - [BundleContributors](#bundlecontributors)
 	- [BundleContributor](#bundlecontributor)
 		- [ContributorDisplayName](#contributordisplayname) &#x1F4A5;
@@ -633,28 +438,6 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 	DataCite:        			PublicationYear
 	IMDI Element:               —
 	ELDP-CMDI Element:          —
-	IMDI-CMDI Element:			—
-
-[Back to Top](#blam-bundle-repository) |  [Back to BundlePublicationInfo](#bundlepublicationinfo)
-
-#### BundleDataProvider
-**Description:** &#x1F4CC; BundleDataProvider contain the name of the data providing entity. The default value would be the name of the repository or its holding institution. The value of this field can be used to generate a bibliographical citation reference for the resource. 
-			
-	Discovery:					no
-	Display:					citation
-	User provided:				no
-
-	ValueScheme:				string
-	Number of occurrences:  	1-1
-	Multilingual:           	no
-	CCR prefLabel@en:       	publisher
-	CCR URI:                	http://hdl.handle.net/11459/CCR_C-6134_72c22724-2615-fd70-2eff-8cd3cb59e91d
-
-	VLO Facet: 					—
-	OLAC (DCMI):				Publisher
-	DataCite:        			Publisher
-	IMDI Element:               —
-	ELDP-CMDI Element:          	
 	IMDI-CMDI Element:			—
 
 [Back to Top](#blam-bundle-repository) |  [Back to BundlePublicationInfo](#bundlepublicationinfo)
@@ -923,7 +706,6 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 	- [TranscriptionType](#transcriptiontype) &#x1F4A5;
 - [TranslationLanguages](#translationlanguages) 
 	- [TranslationLanguage](#translationlanguage)
-		- [TranslationLanguageName](#translationlanguagename)
 		- [TranslationLanguageCode](#translationlanguagecode) &#x1F4A5;
 - [AnnotationTypes](#annotationtypes) 
 	- [AnnotationType](#annotationtype) &#x1F4A5; 
@@ -1006,28 +788,6 @@ Examples: `phonemic` `phonetic` `orthographic`
 
 [Back to Top](#blam-bundle-repository) | [Back to BundleDataInfo](#bundledatainfo)
 
-#### TranslationLanguageName
-**Description:** &#x1F4CC; The TranslationLanguageName element describes the annotation of the type translation. It contains the name of the language used in the translation. Data with no Translation metadata will be treated as not translated by the repository. Data with several Translation elements will be treated as having several translations.
-
-	Discovery:					searchable, browsing facet
-	Display:					page
-	User provided:				no
-
-	ValueScheme:				string
-	Number of occurrences:  	1-1
-	Multilingual:           	no
-	CCR prefLabel@en:       	—
-	CCR URI:                	—
-
-	VLO Facet: 					—
-	OLAC (DCMI):				—
-	DataCite:                	—
-	IMDI Element:               —   
-	ELDP-CMDI Element:          —
-	IMDI-CMDI Element:			—
-
-[Back to Top](#blam-bundle-repository) | [Back to BundleDataInfo](#bundledatainfo)
-
 #### TranslationLanguageCode
 **Description:** &#x1F4A5; &#x1F4CC; The TranslationLanguageCode element describes the annotation of the type translation. It contains a language code (ISO 639-3) which identifies the language used in the translation. Data with no TranslationLanguage metadata will be treated as not translated by the repository. Data with several TranslationLanguage elements will be treated as having several translations.
 
@@ -1089,10 +849,7 @@ Examples: `phonemic` `phonetic` `orthographic`
 - [BundleIsIdenticalTo](#bundleisidenticalto) &#x1F4A5;
 - [BundleIsDerivedFrom](#bundleisderivedfrom) &#x1F4A5;
 - [License](#license)
-	- [LicenseName](#licensename)
 	- [LicenseIdentifier](#licenseidentifier) &#x1F4A5;
-- [Access](#access) 
-- [AvailabilityDate](#availabilitydate)
 - [RightsHolder](#rightsholder)
 	- [RightsHolderName](#rightsholdername)  &#x1F4A5;
 	- [RightsHolderIdentifier](#rightsholderidentifier) &#x1F4A5;
@@ -1150,28 +907,6 @@ Examples: `phonemic` `phonetic` `orthographic`
 
 [Back to Top](#blam-bundle-repository) | [Back to BundleAdministrativeInfo](#bundleadministrativeinfo)
 
-#### LicenseName
-**Description:** &#x1F4CC; The LicenseName element should provide the complete human readable name of a license and include version information if applicable.
-
-	Discovery:					searchable, browsing facet
-	Display:					page	
-	User provided:				no
-
-	ValueScheme:				string
-	Number of occurrences:  	1-1
-	Multilingual:           	no
-	CCR prefLabel@en:       	license
-	CCR URI:                	http://hdl.handle.net/11459/CCR_C-2457_45bbaa1a-7002-2ecd-ab9d-57a189f694a6
-
-	VLO Facet: 					license
-	OLAC (DCMI):				dcterms:license
-	DataCite:                	Rights
-	IMDI Element:               	 
-	ELDP-CMDI Element:          
-	IMDI-CMDI Element:
-
-[Back to Top](#blam-bundle-repository) | [Back to BundleAdministrativeInfo](#bundleadministrativeinfo)
-
 #### LicenseIdentifier
 **Description:** &#x1F4A5; &#x1F4CC; The LicenseIdentifier provides a URI for the license.
 
@@ -1190,51 +925,6 @@ Examples: `phonemic` `phonetic` `orthographic`
 	DataCite:                	rightsURI
 	IMDI Element:               —
 	ELDP-CMDI Element:          	
-	IMDI-CMDI Element:			—
-
-[Back to Top](#blam-bundle-repository) | [Back to BundleAdministrativeInfo](#bundleadministrativeinfo)
-
-#### Access
-**Description:** &#x1F4CC; This element specifies the terms of availability of the resource in plain words. The  technical implementation of these terms depends on the repository.
-
-	Discovery:					searchable, browsing facet
-	Display:					page, list	
-	User provided:				no		
-
-	ValueScheme:				"open", "registration required", "request required" 
-	Number of occurrences:  	1-1
-	Multilingual:           	no
-	CCR prefLabel@en:       	availability
-	CCR URI:                	http://hdl.handle.net/11459/CCR_C-2453_1f0c3ea5-7966-ae11-d3c6-448424d4e6e8
-
-	VLO Facet: 					availability
-	OLAC (DCMI):				—
-	DataCite:                	—
-	IMDI Element:               —   
-	ELDP-CMDI Element:          	
-	IMDI-CMDI Element:
-
-[Back to Top](#blam-bundle-repository) | [Back to BundleAdministrativeInfo](#bundleadministrativeinfo)
-
-#### AvailabilityDate
-**Description:** &#x1F4CC; The AvailabilityDate element contains the date at which the bundle became or will become available. The date must be provided conforming to ISO 8601 in the form YYYY-MM-DD.
-
-
-	Discovery:					searchable, browsing facet
-	Display:					page	
-	User provided:				no	
-
-	ValueScheme:				date
-	Number of occurrences:  	1-1
-	Multilingual:           	no
-	CCR prefLabel@en:       	availability start date
-	CCR URI:                	http://hdl.handle.net/11459/CCR_C-6711_135e104e-9f0e-265a-0e6e-4e2325c8751e
-
-	VLO Facet: 					—
-	OLAC (DCMI):				—
-	DataCite:                	dateType:Available
-	IMDI Element:               —
-	ELDP-CMDI Element:          
 	IMDI-CMDI Element:			—
 
 [Back to Top](#blam-bundle-repository) | [Back to BundleAdministrativeInfo](#bundleadministrativeinfo)
@@ -1297,55 +987,21 @@ Examples: `phonemic` `phonetic` `orthographic`
 
 	Number of occurrences:		1-1
 
-- [BundleIsPartOfCollection](#bundleispartofcollection) 
 - [BundleAdditionalMetadataFile](#bundleadditionalmetadatafile)
 	- [FileName](#filename-metadatafile) &#x1F4A5; 
-	- [FilePID](#filepid-metadatafile) 
-	- [MimeType](#mimetype-metadatafile)
 	- [IsMetadataOf](#ismetadataof-metadatafile) &#x1F4A5;
 	- [FileDescription](#filedescription-metadatafile)  &#x1F4A5;
 - [BundleResources](#bundleresources)
 	- [MediaResource](#mediaresource)
 		- [FileName] (#filename-mediaresource) &#x1F4A5;
-		- [FilePID](#filepid-mediaresource) 
-		- [MimeType](#mimetype-mediaresource)
-		- [FileLength](#filelength-mediaresource)
 		- [FileDescription](#filedescription-mediaresource)  &#x1F4A5;
 	- [WrittenResource](#writtenresource)
 		- [FileName] (#filename-writtenresource) &#x1F4A5;
-		- [FilePID](#filepid-writtenresource) 
-		- [MimeType](#mimetype-writtenresource)
 		- [IsAnnotationOf](#isannotationof-writtenresource) &#x1F4A5;
 		- [FileDescription](#filedescription-writtenresource)  &#x1F4A5; 
 	- [OtherResource](#otherresource)
 		- [FileName] (#filename-otherresource) &#x1F4A5;
-		- [FilePID](#filepid-otherresource) 
-		- [MimeType](#mimetype-otherresource)
 		- [FileDescription](#filedescription-otherresource)  &#x1F4A5;
-
-[Back to Top](#blam-bundle-repository) |  [Back to BundleStructuralInfo](#bundlestructuralinfo)
-
-#### BundleIsPartOfCollection
-**Description:** &#x1F4CC; The BundleIsIPartOfCollection element contains a PID or DOI that uniquely identifies the collection the resource is part of.
-
-**Attribute:** *IdentifierType* **Values:** *DOI, Handle* The IdentifierType attribute determines the identifier type used.
-
-	Discovery:					no
-	Display:					page
-	User provided:				no
-
-	ValueScheme:				anyURI
-	Number of occurrences:  	1-unbounded
-	Multilingual:           	no
-	CCR prefLabel@en:       	relation role
-	CCR URI:                	http://hdl.handle.net/11459/CCR_C-6570_90018537-4ab9-0cfe-c878-257b9b311993
-
-	VLO Facet: 					—
-	OLAC (DCMI):				Relation:dcterms:isPartOf
-	DataCite:                	RelatedIdentifier:relationType:IsIPartOf
-	IMDI Element:               —       
-	ELDP-CMDI Element:          —
-	IMDI-CMDI Element:			—
 
 [Back to Top](#blam-bundle-repository) |  [Back to BundleStructuralInfo](#bundlestructuralinfo)
 
@@ -1358,26 +1014,6 @@ Examples: `phonemic` `phonetic` `orthographic`
 
 ##### FileName (MetadataFile)
 **Description:** &#x1F4A5; &#x1F4CC; The FileName element contains the name of the file as provided by the depositor.
-
-	Discovery:					no
-	Display:					page
-	User provided:				yes		
-
-	ValueScheme:				string
-	Number of occurrences:  	1-1
-	Multilingual:           	no
-	CCR prefLabel@en:       	—
-	CCR URI:                	—
-
-	VLO Facet: 					—
-	OLAC (DCMI):				—
-	DataCite:                	—
-	IMDI Element:               	       
-	ELDP-CMDI Element:          	
-	IMDI-CMDI Element:		
-
-##### FilePID (MetadataFile)
-**Description:** &#x1F4CC; The FileID element contains a PID that uniquely identifies the file described by this component.
 
 	Discovery:					no
 	Display:					page
@@ -1394,31 +1030,7 @@ Examples: `phonemic` `phonetic` `orthographic`
 	DataCite:                	—
 	IMDI Element:               	       
 	ELDP-CMDI Element:          	
-	IMDI-CMDI Element:			
-
-[Back to Top](#blam-bundle-repository) |  [Back to BundleStructuralInfo](#bundlestructuralinfo)
-
-##### MimeType (MetadataFile)
-**Description:** &#x1F4CC; Specification of the mime-type of the resource.
-
-	Discovery:					searchable, browsing facet
-	Display:					page, list
-	User provided:				no
-
-	ValueScheme:				string
-	Number of occurrences:  	1-1
-	Multilingual:           	no
-	CCR prefLabel@en:       	mime type
-	CCR URI:                	http://hdl.handle.net/11459/CCR_C-2571_2be2e583-e5af-34c2-3673-93359ec1f7df
-
-	VLO Facet: 					format
-	OLAC (DCMI):				Format
-	DataCite:                	Format
-	IMDI Element:               	       
-	ELDP-CMDI Element:          
-	IMDI-CMDI Element:
-
-[Back to Top](#blam-bundle-repository) |  [Back to BundleStructuralInfo](#bundlestructuralinfo)
+	IMDI-CMDI Element:		
 
 ##### IsMetadataOf (MetadataFile)
 **Description:** &#x1F4A5; &#x1F4CC; The IsMetadataOf element contains a PID that uniquely identifies the file described by the file described in this component.
@@ -1483,7 +1095,7 @@ Examples: `phonemic` `phonetic` `orthographic`
 
 	Discovery:					no
 	Display:					page
-	User provided:				yes		
+	User provided:				no		
 
 	ValueScheme:				string
 	Number of occurrences:  	1-1
@@ -1497,72 +1109,6 @@ Examples: `phonemic` `phonetic` `orthographic`
 	IMDI Element:               	       
 	ELDP-CMDI Element:          	
 	IMDI-CMDI Element:		
-
-###### FilePID (MediaResource)
-**Description:** &#x1F4CC; The FileID element contains a PID that uniquely identifies the file described by this component.
-
-	Discovery:					no
-	Display:					page
-	User provided:				no		
-
-	ValueScheme:				anyURI
-	Number of occurrences:  	1-1
-	Multilingual:           	no
-	CCR prefLabel@en:       	—
-	CCR URI:                	—
-
-	VLO Facet: 					—
-	OLAC (DCMI):				—
-	DataCite:                	—
-	IMDI Element:               	       
-	ELDP-CMDI Element:          	
-	IMDI-CMDI Element:			
-
-[Back to Top](#blam-bundle-repository) |  [Back to BundleStructuralInfo](#bundlestructuralinfo)
-
-###### MimeType (MediaResource)
-**Description:** &#x1F4CC; Specification of the mime-type of the resource.
-
-	Discovery:					browsing facet
-	Display:					page, list
-	User provided:				no
-
-	ValueScheme:				string
-	Number of occurrences:  	1-1
-	Multilingual:           	no
-	CCR prefLabel@en:       	mime type
-	CCR URI:                	http://hdl.handle.net/11459/CCR_C-2571_2be2e583-e5af-34c2-3673-93359ec1f7df
-
-	VLO Facet: 					format
-	OLAC (DCMI):				Format
-	DataCite:                	Format
-	IMDI Element:               	       
-	ELDP-CMDI Element:          
-	IMDI-CMDI Element:
-
-[Back to Top](#blam-bundle-repository) |  [Back to BundleStructuralInfo](#bundlestructuralinfo)
-
-###### FileLength (MediaResource)
-**Description:** &#x1F4CC; The FileLength element contains the length of a media file.
-
-	Discovery:					browsing facet
-	Display:					page, list
-	User provided:				no
-
-	ValueScheme:				string
-	Number of occurrences:  	1-1
-	Multilingual:           	no
-	CCR prefLabel@en:       	duration
-	CCR URI:                	http://hdl.handle.net/11459/CCR_C-2567_8e616d60-5708-c3d4-320b-661399ccda43
-
-	VLO Facet: 					—
-	OLAC (DCMI):				Format:dcterms:extent
-	DataCite:                	—
-	IMDI Element:               	       
-	ELDP-CMDI Element:          
-	IMDI-CMDI Element:
-
-[Back to Top](#blam-bundle-repository) |  [Back to BundleStructuralInfo](#bundlestructuralinfo)
 
 ###### FileDescription (MediaResource)
 **Description:** &#x1F4A5; The FileDescription contains a human readable, file specific description. This element should be used to provide file specific that cannot be added to the bundle description. Any information applicable to the whole bundle should be added to the BundleDescription element.
@@ -1598,29 +1144,9 @@ Examples: `phonemic` `phonetic` `orthographic`
 
 	Discovery:					no
 	Display:					page
-	User provided:				yes		
-
-	ValueScheme:				string
-	Number of occurrences:  	1-1
-	Multilingual:           	no
-	CCR prefLabel@en:       	—
-	CCR URI:                	—
-
-	VLO Facet: 					—
-	OLAC (DCMI):				—
-	DataCite:                	—
-	IMDI Element:               	       
-	ELDP-CMDI Element:          	
-	IMDI-CMDI Element:			
-
-###### FilePID (WrittenResource)
-**Description:** &#x1F4CC; The FileID element contains a PID that uniquely identifies the file described by this component.
-
-	Discovery:					no
-	Display:					page
 	User provided:				no		
 
-	ValueScheme:				anyURI
+	ValueScheme:				string
 	Number of occurrences:  	1-1
 	Multilingual:           	no
 	CCR prefLabel@en:       	—
@@ -1632,30 +1158,6 @@ Examples: `phonemic` `phonetic` `orthographic`
 	IMDI Element:               	       
 	ELDP-CMDI Element:          	
 	IMDI-CMDI Element:			
-
-[Back to Top](#blam-bundle-repository) |  [Back to BundleStructuralInfo](#bundlestructuralinfo)
-
-###### MimeType (WrittenResource)
-**Description:** &#x1F4CC; Specification of the mime-type of the resource.
-
-	Discovery:					browsing facet
-	Display:					page, list
-	User provided:				no
-
-	ValueScheme:				string
-	Number of occurrences:  	1-1
-	Multilingual:           	no
-	CCR prefLabel@en:       	mime type
-	CCR URI:                	http://hdl.handle.net/11459/CCR_C-2571_2be2e583-e5af-34c2-3673-93359ec1f7df
-
-	VLO Facet: 					format
-	OLAC (DCMI):				Format
-	DataCite:                	Format
-	IMDI Element:               	       
-	ELDP-CMDI Element:          
-	IMDI-CMDI Element:
-
-[Back to Top](#blam-bundle-repository) |  [Back to BundleStructuralInfo](#bundlestructuralinfo)
 
 ###### IsAnnotationOf (WrittenResource)
 **Description:** &#x1F4A5; The IsAnnotationOf element contains a PID that uniquely identifies the file annotated by the file described in this component.
@@ -1713,7 +1215,7 @@ Examples: `phonemic` `phonetic` `orthographic`
 
 	Discovery:					no
 	Display:					page
-	User provided:				yes		
+	User provided:				no		
 
 	ValueScheme:				string
 	Number of occurrences:  	1-1
@@ -1727,50 +1229,6 @@ Examples: `phonemic` `phonetic` `orthographic`
 	IMDI Element:               	       
 	ELDP-CMDI Element:          	
 	IMDI-CMDI Element:		
-
-###### FilePID (OtherResource)
-**Description:** &#x1F4CC; The FileID element contains a PID that uniquely identifies the file described by this component.
-
-	Discovery:					no
-	Display:					page
-	User provided:				no		
-
-	ValueScheme:				anyURI
-	Number of occurrences:  	1-1
-	Multilingual:           	no
-	CCR prefLabel@en:       	—
-	CCR URI:                	—
-
-	VLO Facet: 					—
-	OLAC (DCMI):				—
-	DataCite:                	—
-	IMDI Element:               	       
-	ELDP-CMDI Element:          	
-	IMDI-CMDI Element:			
-
-[Back to Top](#blam-bundle-repository) |  [Back to BundleStructuralInfo](#bundlestructuralinfo)
-
-###### MimeType (OtherResource)
-**Description:** &#x1F4CC; Specification of the mime-type of the resource.
-
-	Discovery:					no
-	Display:					page, list
-	User provided:				no
-
-	ValueScheme:				string
-	Number of occurrences:  	1-1
-	Multilingual:           	no
-	CCR prefLabel@en:       	mime type
-	CCR URI:                	http://hdl.handle.net/11459/CCR_C-2571_2be2e583-e5af-34c2-3673-93359ec1f7df
-
-	VLO Facet: 					format
-	OLAC (DCMI):				Format
-	DataCite:                	Format
-	IMDI Element:               	       
-	ELDP-CMDI Element:          
-	IMDI-CMDI Element:
-
-[Back to Top](#blam-bundle-repository) |  [Back to BundleStructuralInfo](#bundlestructuralinfo)
 
 ###### FileDescription (OtherResource)
 **Description:** &#x1F4A5; The FileDescription contains a human readable, file specific description. This element should be used to provide file specific that cannot be added to the bundle description. Any information applicable to the whole bundle should be added to the BundleDescription element.
