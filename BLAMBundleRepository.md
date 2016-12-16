@@ -66,8 +66,8 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 	- [BundleLocationName](#bundlelocationname)
 	- [BundleRegionDisplayName](#bundleregiondisplayname) &#x1F4A5;
 	- [BundleRegionName](#bundleregionname) 
-	- [BundleCountryDisplayName](#BundleCountryDisplayName)  &#x1F4A5;
-	- [BundleCountryName](#BundleCountryName)
+	- [BundleCountryDisplayName](#bundlecountrydisplayname)  &#x1F4A5;
+	- [BundleCountryName](#bundlecountryname)
 	- [BundleCountryCode](#bundlecountrycode) 
 
 [Back to Top](#blam-bundle-repository)
@@ -193,8 +193,8 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 	User provided:				yes		
 
 	ValueScheme:				string
-	Number of occurrences:  	1-1
-	Multilingual:           	no
+	Number of occurrences:  	1-unbounded
+	Multilingual:           	yes
 	CCR prefLabel@en:       	Language Name
 	CCR URI:                	http://hdl.handle.net/11459/CCR_C-2484_669684e7-cb9e-ea96-59cb-a25fe89b9b9d
 
@@ -361,8 +361,8 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 	User provided:				yes		
 
 	ValueScheme:				string
-	Number of occurrences:  	1-1
-	Multilingual:           	no
+	Number of occurrences:  	1-unbounded
+	Multilingual:           	yes
 	CCR prefLabel@en:       	place name
 	CCR URI:                	http://hdl.handle.net/11459/CCR_C-5580_03e458f2-f873-8645-76eb-40e001b6c1ac
 
@@ -407,8 +407,8 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 	User provided:				yes
 
 	ValueScheme:				string
-	Number of occurrences:  	0-1
-	Multilingual:           	no
+	Number of occurrences:  	0-unbounded
+	Multilingual:           	yes
 	CCR prefLabel@en:       	location region
 	CCR URI:                	http://hdl.handle.net/11459/CCR_C-2533_fa6e1812-e29b-3cf6-e15a-50aa34b9be68
 
@@ -453,8 +453,8 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 	User provided:				yes	
 
 	ValueScheme:				string
-	Number of occurrences:  	0-1
-	Multilingual:           	no
+	Number of occurrences:  	0-unbounded
+	Multilingual:           	yes
 	CCR prefLabel@en:       	location country
 	CCR URI:                	http://hdl.handle.net/11459/CCR_C-2532_d004b0a6-fd1d-3ca3-abf1-1e6aeb3e37b2
 
@@ -727,7 +727,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 
 	ValueScheme:				string
 	Number of occurrences:  	0-unbounded
-	Multilingual:           	no
+	Multilingual:           	yes
 	CCR prefLabel@en:       	—
 	CCR URI:                	—
 
@@ -772,8 +772,8 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 	User provided:				yes
 
 	ValueScheme:				string
-	Number of occurrences:  	1-1
-	Multilingual:           	no
+	Number of occurrences:  	1-unbounded
+	Multilingual:           	yes
 	CCR prefLabel@en:       	project name
 	CCR URI:                	http://hdl.handle.net/11459/CCR_C-2536_13fc5f10-c14a-1f64-a669-32736f6d3ef5
 
@@ -1452,8 +1452,8 @@ Examples: `phonemic` `phonetic` `orthographic`
 	ValueScheme:				string
 	Number of occurrences:  	0-unbounded
 	Multilingual:           	yes
-	CCR prefLabel@en:       	description
-	CCR URI:                	http://hdl.handle.net/11459/CCR_C-2520_9eeedfb4-47d3-ddee-cfcb-99ac634bf1db
+	CCR prefLabel@en:       	
+	CCR URI:                	
 
 	VLO Facet: 					description
 	OLAC (DCMI):				http://purl.org/dc/terms/description
@@ -1575,7 +1575,7 @@ Examples: `phonemic` `phonetic` `orthographic`
 	Number of occurrences:  	0-unbounded
 	Multilingual:           	yes
 	CCR prefLabel@en:       	description
-	CCR URI:                	http://hdl.handle.net/11459/CCR_C-2520_9eeedfb4-47d3-ddee-cfcb-99ac634bf1db
+	CCR URI:                	
 
 	VLO Facet: 					description
 	OLAC (DCMI):				http://purl.org/dc/terms/description
@@ -1690,7 +1690,7 @@ Examples: `phonemic` `phonetic` `orthographic`
 	Number of occurrences:  	0-unbounded
 	Multilingual:           	yes
 	CCR prefLabel@en:       	description
-	CCR URI:                	http://hdl.handle.net/11459/CCR_C-2520_9eeedfb4-47d3-ddee-cfcb-99ac634bf1db
+	CCR URI:                	
 
 	VLO Facet: 					description
 	OLAC (DCMI):				http://purl.org/dc/terms/description
@@ -1783,7 +1783,7 @@ Examples: `phonemic` `phonetic` `orthographic`
 	Number of occurrences:  	0-unbounded
 	Multilingual:           	yes
 	CCR prefLabel@en:       	description
-	CCR URI:                	http://hdl.handle.net/11459/CCR_C-2520_9eeedfb4-47d3-ddee-cfcb-99ac634bf1db
+	CCR URI:                	
 
 	VLO Facet: 					description
 	OLAC (DCMI):				http://purl.org/dc/terms/description
