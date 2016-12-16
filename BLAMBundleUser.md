@@ -10,14 +10,12 @@ Basic Language Archive Metadata (BLAM) is designed to provide basic metadata for
 * BLAM Collection Repository: documentation  [(draft)](https://github.com/fxru/blam-metadata/blob/master/BLAMCollectionRepository.md)
 * BLAM Collection User: documentation  (to come)
 
-BLAM Bundle contains information about bundles as provided by the repository. Data producers are asked to submit a subset of this information during ingest. The BLAM Bundle User profile defines this subset of 36 data fields of which 22 are obligatory. The separate definition of the BLAM Bundle User profile enhances the usability for data producers and can be validated independently from the more comprehensive BLAM Bundle Repository profile. The Basic Language Archive Metadata Bundle User profile is intended to be the primary source of user input for BLAM Bundle Repository. However, BLAM Bundle Repository is designed to allow automatic import of information from other metadata formats. The formats actively considered are: 
+BLAM Bundle contains information about bundles as provided by the repository. Data producers are asked to submit a subset of this information during ingest. The BLAM Bundle User profile defines this subset of 36 data fields. The separate definition of the BLAM Bundle User profile enhances the usability for data producers and can be validated independently from the more comprehensive BLAM Bundle Repository profile. The Basic Language Archive Metadata Bundle User profile is intended to be the primary source of user input for BLAM Bundle Repository. However, BLAM Bundle Repository is designed to allow automatic import of information from other metadata formats. The formats actively considered are: 
 
 * IMDI Metadata Format: [ISLE Meta Data Initative, Version 3.0.4 (2003)](https://tla.mpi.nl/imdi-metadata/)
 * CMDI imdi-session-profile: [clarin.eu:cr1:p_1271859438204](https://catalog.clarin.eu/ds/ComponentRegistry#/?itemId=clarin.eu%3Acr1%3Ap_1271859438204&registrySpace=public)
 * CMDI ELDP_Bundle: [clarin.eu:cr1:p_1407745711992](https://catalog.clarin.eu/ds/ComponentRegistry#/?itemId=clarin.eu%3Acr1%3Ap_1407745711992&registrySpace=public)
 * CMDI lat-session: [clarin.eu:cr1:p_1407745712035](https://catalog.clarin.eu/ds/ComponentRegistry#/?itemId=clarin.eu%3Acr1%3Ap_1407745712035&registrySpace=public)  
-
-Obligatory data fields are indicated by &#x1F4CC; in this document.
 
 BLAM Bundle is designed with a focus on discoverability and display. Data producers can submit additional metadata information to document their data and their research. The preferred format are other CMDI profiles or comparably standardized metadata formats.
 
@@ -65,7 +63,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 [Back to Top](#blam-bundle-repository)
 
 #### BundleDisplayTitle 
-**Description:** &#x1F4A5; &#x1F4CC; The BundleDisplayTitle element provides a human readable name of the bundle. It should contain a meaningful and recognisable title for the bundle. The content of the BundleDisplayTitle element will be used as the human readable identifier in interfaces. Data producers can provide BundleDisplayTitle values for multiple interface languages. This field will be used as the human readable identifier for the bundle in citation and interfaces.
+**Description:** &#x1F4A5; The BundleDisplayTitle element provides a human readable name of the bundle. It should contain a meaningful and recognisable title for the bundle. The content of the BundleDisplayTitle element will be used as the human readable identifier in interfaces. Data producers can provide BundleDisplayTitle values for multiple interface languages. This field will be used as the human readable identifier for the bundle in citation and interfaces.
 
 	Discovery:					searchable
 	Display:					page, list
@@ -88,7 +86,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 [Back to Top](#blam-bundle-repository) | [Back to BundleGeneralInfo](#bundlegeneralinfo)
 
 #### BundleDescription 
-**Description:** &#x1F4A5; &#x1F4CC; The BundleDescription element provides a human readable description of the bundle. It should contain a description of the content of the collection. The content of the BundleDescription element will be used as the human readable description in interfaces. Its content can be queried by repositories for free-text metadata search. Data producers can provide BundleDescription values for multiple interface languages.
+**Description:** &#x1F4A5; The BundleDescription element provides a human readable description of the bundle. It should contain a description of the content of the collection. The content of the BundleDescription element will be used as the human readable description in interfaces. Its content can be queried by repositories for free-text metadata search. Data producers can provide BundleDescription values for multiple interface languages.
 
 	Discovery:					searchable
 	Display:					page, list (excerpt)
@@ -153,7 +151,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 [Back to Top](#blam-bundle-repository) | [Back to BundleGeneralInfo](#bundlegeneralinfo)
 
 #### ObjectLanguageDisplayName
-**Description:** &#x1F4A5; &#x1F4CC; The ObjectLanguageDisplayName element contains the name of the object language in the version recommended by the data producer. Repositories should tread the name provided by this element as the primary language name when displaying the metadata in relation to this particular data set (e.g. collection or bundle). The repository may use alternative names provided by services such as Glottolog or Ethnologue to improve discoverability and to enhance browsing and search experience. The repository may also translate the name into other languages if no language name is given for a particular interface language. Data producers can provide LanguageDisplayName values for multiple interface languages. 
+**Description:** &#x1F4A5; The ObjectLanguageDisplayName element contains the name of the object language in the version recommended by the data producer. Repositories should tread the name provided by this element as the primary language name when displaying the metadata in relation to this particular data set (e.g. collection or bundle). The repository may use alternative names provided by services such as Glottolog or Ethnologue to improve discoverability and to enhance browsing and search experience. The repository may also translate the name into other languages if no language name is given for a particular interface language. Data producers can provide LanguageDisplayName values for multiple interface languages. 
 
 	Discovery:					searchable, browsing facet
 	Display:					page, list
@@ -176,7 +174,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 [Back to Top](#blam-bundle-repository) | [Back to BundleGeneralInfo](#bundlegeneralinfo)
 
 #### ObjectLanguageGlottologCode
-**Description:**  &#x1F4A5; &#x1F4CC; The ObjectLanguageGlottologCode element contains the Glottolog code for the object language as provided by glottolog.org.
+**Description:**  &#x1F4A5; The ObjectLanguageGlottologCode element contains the Glottolog code for the object language as provided by glottolog.org.
 
 	Discovery:					searchable
 	Display:					page
@@ -199,7 +197,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 [Back to Top](#blam-bundle-repository) | [Back to BundleGeneralInfo](#bundlegeneralinfo)
 
 #### BundleRecordingDate
-**Description:** &#x1F4A5; &#x1F4CC; The BundleRecordingDate element contains the date at which a recording occured. The date must be provided conforming to ISO 8601 in the form YYYY-MM-DD.
+**Description:** &#x1F4A5; The BundleRecordingDate element contains the date at which a recording occured. The date must be provided conforming to ISO 8601 in the form YYYY-MM-DD.
 
 	Discovery:					searchable, browsing facet (collection)
 	Display:					page
@@ -229,7 +227,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 [Back to Top](#blam-bundle-repository) | [Back to BundleGeneralInfo](#bundlegeneralinfo)
 
 #### BundleGeoLocation
-**Description:** &#x1F4A5; &#x1F4CC; The BundleGeoLocation element contains a geographical coordinates for a location point in the form *LATITUDE,LONGITUDE* as decimal degrees (e.g. 50.926735,6.930392).
+**Description:** &#x1F4A5; The BundleGeoLocation element contains a geographical coordinates for a location point in the form *LATITUDE,LONGITUDE* as decimal degrees (e.g. 50.926735,6.930392).
 
 	Discovery:					browsing facet (map)
 	Display:					page, list (both map)
@@ -252,7 +250,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 [Back to Top](#blam-bundle-repository) | [Back to BundleGeneralInfo](#bundlegeneralinfo)
 
 #### BundleLocationDisplayName
-**Description:** &#x1F4A5; &#x1F4CC; The BundleLocationDisplayName element contains the name of a location in the version recommended by the data producer. Repositories should treat the name provided by this element as the primary location name when displaying the metadata in relation to this particular data set (e.g. collection or bundle).The repository may use alternative names provided by services such as GeoNames to improve discoverability and to enhance the browsing and search experience. The repository may also translate the name into other languages if no BundleLocationDisplayName name is given for a particular interface language. 
+**Description:** &#x1F4A5; The BundleLocationDisplayName element contains the name of a location in the version recommended by the data producer. Repositories should treat the name provided by this element as the primary location name when displaying the metadata in relation to this particular data set (e.g. collection or bundle).The repository may use alternative names provided by services such as GeoNames to improve discoverability and to enhance the browsing and search experience. The repository may also translate the name into other languages if no BundleLocationDisplayName name is given for a particular interface language. 
 
 	Discovery:					searchable, browsing facet
 	Display:					page
@@ -354,7 +352,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 [Back to Top](#blam-bundle-repository) | [Back to BundlePublicationInfo](#bundlepublicationinfo)
 
 ###### CreatorDisplayName
-**Description:** &#x1F4A5; &#x1F4CC; The CreatorDisplayName element contains the name of the creator in a form that lends itself to alphabetical sorting. The value of this field can be used to generate a bibliographical citation reference for the resource. This usage should guide the formatting. The data producer determines what is the proper order of names for an alphabetically sorted list.
+**Description:** &#x1F4A5; The CreatorDisplayName element contains the name of the creator in a form that lends itself to alphabetical sorting. The value of this field can be used to generate a bibliographical citation reference for the resource. This usage should guide the formatting. The data producer determines what is the proper order of names for an alphabetically sorted list.
 
 	Discovery:					searchable
 	Display:					page
@@ -421,7 +419,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 [Back to Top](#blam-bundle-repository) |  [Back to BundlePublicationInfo](#bundlepublicationinfo)
 
 #### BundlePublicationYear
-**Description:** &#x1F4A5; &#x1F4CC; BundlePublicationYear contains the year of publication in the form YYYY conforming to ISO 8601. The default value is the ingest date into the repository unless an embargo has been set for the resource. In that case the end year of the embargo is taken as the year of publication. For legacy data, the  value of BundlePublicationDate can be set to a point before the ingest. The value of this field should be used to generate a bibliographical citation reference for the resource. 
+**Description:** &#x1F4A5; BundlePublicationYear contains the year of publication in the form YYYY conforming to ISO 8601. The default value is the ingest date into the repository unless an embargo has been set for the resource. In that case the end year of the embargo is taken as the year of publication. For legacy data, the  value of BundlePublicationDate can be set to a point before the ingest. The value of this field should be used to generate a bibliographical citation reference for the resource. 
 
 	Discovery:					searchable, browsing facet
 	Display:					page
@@ -457,7 +455,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 [Back to Top](#blam-bundle-repository) | [Back to BundlePublicationInfo](#bundlepublicationinfo)
 
 ###### ContributorDisplayName
-**Description:** &#x1F4A5; &#x1F4CC; The CreatorDisplayName element contains the name of the creator. The data producer determines what is the proper order of names.
+**Description:** &#x1F4A5; The CreatorDisplayName element contains the name of the creator. The data producer determines what is the proper order of names.
 
 	Discovery:					searchable
 	Display:					page
@@ -548,7 +546,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 [Back to Top](#blam-bundle-repository) | [Back to ProjectInfo](#projectinfo)
 
 #### ProjectDisplayName
-**Description:** &#x1F4A5; &#x1F4CC; The ProjectDisplayName element provides a human readable name of the project. The preferred form is the abbreviation by which the project is generally known. The long form is best placed in the project description.
+**Description:** &#x1F4A5; The ProjectDisplayName element provides a human readable name of the project. The preferred form is the abbreviation by which the project is generally known. The long form is best placed in the project description.
 
 	Discovery:					searchable, browsing facet
 	Display:					page
@@ -570,7 +568,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 [Back to Top](#blam-bundle-repository) | [Back to ProjectInfo](#projectinfo)
 
 #### ProjectDescription
-**Description:** &#x1F4A5; &#x1F4CC; The ProjectDescription element provides a human readable description of the project including full project name. It should contain a description of the project’s objective or activity. The content of the ProjectDescription element will be used as the human readable description in interfaces. Its content can be queried by repositories for free-text metadata search. Data producers can provide ProjectDescription values for multiple interface languages.
+**Description:** &#x1F4A5; The ProjectDescription element provides a human readable description of the project including full project name. It should contain a description of the project’s objective or activity. The content of the ProjectDescription element will be used as the human readable description in interfaces. Its content can be queried by repositories for free-text metadata search. Data producers can provide ProjectDescription values for multiple interface languages.
 
 	Discovery:					searchable
 	Display:					page
@@ -606,7 +604,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 [Back to Top](#blam-bundle-repository) | [Back to ProjectInfo](#projectinfo)
 
 #### FunderName
-**Description:** &#x1F4A5; &#x1F4CC; The FunderName element provides the name of the funding organisation. The preferred form is the abbreviation by with the funding agency is generally known. 
+**Description:** &#x1F4A5; The FunderName element provides the name of the funding organisation. The preferred form is the abbreviation by with the funding agency is generally known. 
 
 	Discovery:					searchable
 	Display:					page
@@ -789,7 +787,7 @@ Examples: `phonemic` `phonetic` `orthographic`
 [Back to Top](#blam-bundle-repository) | [Back to BundleDataInfo](#bundledatainfo)
 
 #### TranslationLanguageCode
-**Description:** &#x1F4A5; &#x1F4CC; The TranslationLanguageCode element describes the annotation of the type translation. It contains a language code (ISO 639-3) which identifies the language used in the translation. Data with no TranslationLanguage metadata will be treated as not translated by the repository. Data with several TranslationLanguage elements will be treated as having several translations.
+**Description:** &#x1F4A5; The TranslationLanguageCode element describes the annotation of the type translation. It contains a language code (ISO 639-3) which identifies the language used in the translation. Data with no TranslationLanguage metadata will be treated as not translated by the repository. Data with several TranslationLanguage elements will be treated as having several translations.
 
 	Discovery:					no
 	Display:					page, list
@@ -908,7 +906,7 @@ Examples: `phonemic` `phonetic` `orthographic`
 [Back to Top](#blam-bundle-repository) | [Back to BundleAdministrativeInfo](#bundleadministrativeinfo)
 
 #### LicenseIdentifier
-**Description:** &#x1F4A5; &#x1F4CC; The LicenseIdentifier provides a URI for the license.
+**Description:** &#x1F4A5; The LicenseIdentifier provides a URI for the license.
 
 	Discovery:					no
 	Display:					page
@@ -937,7 +935,7 @@ Examples: `phonemic` `phonetic` `orthographic`
 [Back to Top](#blam-bundle-repository) | [Back to BundleAdministrativeInfo](#bundleadministrativeinfo)
 
 #### RightsHolderName
-**Description:** &#x1F4A5; &#x1F4CC; The RightsHolderName contains the name of the individual or institution owning or managing the rights over the resource. 
+**Description:** &#x1F4A5; The RightsHolderName contains the name of the individual or institution owning or managing the rights over the resource. 
 
 	Discovery:					searchable
 	Display:					page
@@ -1013,7 +1011,7 @@ Examples: `phonemic` `phonetic` `orthographic`
 [Back to Top](#blam-bundle-repository) |  [Back to BundleStructuralInfo](#bundlestructuralinfo)
 
 ##### FileName (MetadataFile)
-**Description:** &#x1F4A5; &#x1F4CC; The FileName element contains the name of the file as provided by the depositor.
+**Description:** &#x1F4A5; The FileName element contains the name of the file as provided by the depositor.
 
 	Discovery:					no
 	Display:					page
@@ -1033,7 +1031,7 @@ Examples: `phonemic` `phonetic` `orthographic`
 	IMDI-CMDI Element:		
 
 ##### IsMetadataOf (MetadataFile)
-**Description:** &#x1F4A5; &#x1F4CC; The IsMetadataOf element contains a PID that uniquely identifies the file described by the file described in this component.
+**Description:** &#x1F4A5; The IsMetadataOf element contains a PID that uniquely identifies the file described by the file described in this component.
 
 	Discovery:					no
 	Display:					page
@@ -1091,7 +1089,7 @@ Examples: `phonemic` `phonetic` `orthographic`
 [Back to Top](#blam-bundle-repository) |  [Back to BundleStructuralInfo](#bundlestructuralinfo)
 
 ###### FileName (MediaResource)
-**Description:** &#x1F4A5; &#x1F4CC; The FileName element contains the name of the file as provided by the depositor.
+**Description:** &#x1F4A5; The FileName element contains the name of the file as provided by the depositor.
 
 	Discovery:					no
 	Display:					page
@@ -1140,7 +1138,7 @@ Examples: `phonemic` `phonetic` `orthographic`
 [Back to Top](#blam-bundle-repository) |  [Back to BundleStructuralInfo](#bundlestructuralinfo)
 
 ###### FileName (WrittenResource)
-**Description:** &#x1F4A5; &#x1F4CC; The FileName element contains the name of the file as provided by the depositor.
+**Description:** &#x1F4A5; The FileName element contains the name of the file as provided by the depositor.
 
 	Discovery:					no
 	Display:					page
@@ -1211,7 +1209,7 @@ Examples: `phonemic` `phonetic` `orthographic`
 [Back to Top](#blam-bundle-repository) |  [Back to BundleStructuralInfo](#bundlestructuralinfo)
 
 ###### FileName (OtherResource)
-**Description:** &#x1F4A5; &#x1F4CC; The FileName element contains the name of the file as provided by the depositor.
+**Description:** &#x1F4A5; The FileName element contains the name of the file as provided by the depositor.
 
 	Discovery:					no
 	Display:					page
