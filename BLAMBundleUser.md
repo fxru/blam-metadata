@@ -1,4 +1,4 @@
-# Basic Language Archive Metadata (Bundle Repository)
+# Basic Language Archive Metadata (Bundle User)
 
 > **Blam** The standard blasty noise. The power of the blam can sometimes be measured by the size of the word when it is written, or by the number of exclamation marks at the end of the word.
 > 			[urban dictionary](http://www.urbandictionary.com/define.php?term=blam&defid=305474)
