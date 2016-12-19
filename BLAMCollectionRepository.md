@@ -1,13 +1,13 @@
-# Basic Language Archive Metadata (Bundle Repository)
+# Basic Language Archive Metadata (Collection Repository)
 
 > **Blam** The standard blasty noise. The power of the blam can sometimes be measured by the size of the word when it is written, or by the number of exclamation marks at the end of the word.
 > 			[urban dictionary](http://www.urbandictionary.com/define.php?term=blam&defid=305474)
 
 Basic Language Archive Metadata (BLAM) is designed to provide basic metadata for language repositories. The metadata scheme maximises discoverability and user oriented information without a proliferation of data fields and work for the data producer. Basic Language Archive Metadata is a suite of [CMDI](https://www.clarin.eu/content/component-metadata) profiles and currently consist of two pairs of profiles: 
 
-* BLAM Bundle Repository: described in this document [below](#blam-bundle-repository)
+* BLAM Bundle Repository: described in this document [documentation](https://github.com/fxru/blam-metadata/blob/master/BLAMBundleRepository.md)
 * BLAM Bundle User: [documentation](https://github.com/fxru/blam-metadata/blob/master/BLAMBundleUser.md)
-* BLAM Collection Repository: documentation  [(draft)](https://github.com/fxru/blam-metadata/blob/master/BLAMCollectionRepository.md)
+* BLAM Collection Repository: documentation  [below](#blam-collection-repository)
 * BLAM Collection User: documentation  (to come)
 
 BLAM Bundle Repository contains information about bundles as provided by the repository. Data producers are asked to submit a subset of this information during ingest. The BLAM Bundle User profile defines this subset of 36 data fields. The separate definition of the BLAM Bundle User profile enhances the usability for data producers and can be validated independently from the more comprehensive BLAM Bundle Repository profile. The Basic Language Archive Metadata Bundle User profile is intended to be the primary source of user input for BLAM Bundle Repository. However, BLAM Bundle Repository is designed to allow automatic import of information from other metadata formats. The formats actively considered are: 
