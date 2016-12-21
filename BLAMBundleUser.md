@@ -848,9 +848,6 @@ Examples: `phonemic` `phonetic` `orthographic`
 - [BundleIsDerivedFrom](#bundleisderivedfrom) &#x1F4A5;
 - [License](#license)
 	- [LicenseIdentifier](#licenseidentifier) &#x1F4A5;
-- [RightsHolder](#rightsholder)
-	- [RightsHolderName](#rightsholdername)  &#x1F4A5;
-	- [RightsHolderIdentifier](#rightsholderidentifier) &#x1F4A5;
 
 [Back to Top](#blam-bundle-repository)
 
@@ -923,59 +920,6 @@ Examples: `phonemic` `phonetic` `orthographic`
 	DataCite:                	rightsURI
 	IMDI Element:               —
 	ELDP-CMDI Element:          	
-	IMDI-CMDI Element:			—
-
-[Back to Top](#blam-bundle-repository) | [Back to BundleAdministrativeInfo](#bundleadministrativeinfo)
-
-#### RightsHolder
-**Description:** The RightsHolder component contains information about the individual or institution owning or managing the rights in regard to the resource. 
-
-	Number of occurrences:		1-unbounded
-
-[Back to Top](#blam-bundle-repository) | [Back to BundleAdministrativeInfo](#bundleadministrativeinfo)
-
-#### RightsHolderName
-**Description:** &#x1F4A5; The RightsHolderName contains the name of the individual or institution owning or managing the rights over the resource. 
-
-	Discovery:					searchable
-	Display:					page
-	User provided:				yes	
-
-	ValueScheme:				string
-	Number of occurrences:  	1-1
-	Multilingual:           	no
-	CCR prefLabel@en:       	IPR Holder
-	CCR URI:                	http://hdl.handle.net/11459/CCR_C-6709_cb3572ed-ffd3-04f1-c145-b9c1f26bfc82
-
-	VLO Facet: 					rightsHolder
-	OLAC (DCMI):				dcterms:rightsHolder
-	DataCite:                	Contributor:contributorType:RightsHolder
-	IMDI Element:               	
-	ELDP-CMDI Element:          
-	IMDI-CMDI Element:
-
-[Back to Top](#blam-bundle-repository) | [Back to BundleAdministrativeInfo](#bundleadministrativeinfo)
-
-#### RightsHolderIdentifier
-**Description:** &#x1F4A5; The RightsHolderIdentifier contains a URI that uniquely identifies the rights holder. In the case of an individual, this should be achieved by using an established scheme. Best Practice: ORCID, ISNI If an individual cannot be referenced by an identifier an email address should be given (in the form of a mailto URI).
-
-**Attribute** *identifierType*: ORCID and ISNI are considered best practices. An email address in the form of a mailto URI is the recommended fallback. *Values*: ORCID, ISNI, Email, Other
-
-	Discovery:					searchable
-	Display:					page
-	User provided:				yes
-
-	ValueScheme:				anyURI
-	Number of occurrences:  	0-unbounded
-	Multilingual:           	no
-	CCR prefLabel@en:       	—
-	CCR URI:                	—
-
-	VLO Facet: 					—
-	OLAC (DCMI):				—
-	DataCite:					Contributor:contributorType:RightsHolder:Identifier
-	IMDI Element:               —      
-	ELDP-CMDI Element:          —
 	IMDI-CMDI Element:			—
 
 [Back to Top](#blam-bundle-repository) | [Back to BundleAdministrativeInfo](#bundleadministrativeinfo)
