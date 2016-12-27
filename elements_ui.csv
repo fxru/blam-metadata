@@ -1,0 +1,17 @@
+element,query,query,display,display
+BundleDisplayTitle,searchable,,page,list
+BundleDescription,searchable,,page,list
+BundleKeyword,searchable,facet,page,list
+ObjectLangugeDisplayName,searchable,facet,page,list
+ObjectLanguageName,searchable,facet,,
+ObjectLanguageISO639-3Code,,,page,
+ObjectLanguageGlottologCode,searchable,,page,
+ObjectLanguageLanguageFamily,searchable,facet,,
+BundleRecordingDate,searchable,facet,page,
+BundleGeoLocation,map,map,map,map
+BundleLocationDisplayName,searchable,facet,page,
+BundleLocationName,searchable,,,
+BundleRegionDisplayName,searchable,,page,
+BundleRegionName,searchable,facet,,
+BundleCountryDisplayName,searchable,,page,
+BundleCountryName,,,,
