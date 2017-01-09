@@ -56,9 +56,12 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 	- [BundleObjectLanguage](#bundleobjectlanguage)
 		- [ObjectLanguageDisplayName](#objectlanguagedisplayname) &#x1F4A5;
 		- [ObjectLanguageName](#objectlanguagename)
+		- [ObjectLanguageAlternativeNames](#objectlanguagealternativenames)
+			+ [ObjectLanguageAlternativeName](#objectlanguagealternativename)
 		- [ObjectLanguageISO639-3Code](#objectlanguageiso639-3code)
 		- [ObjectLanguageGlottologCode](#objectlanguageglottologcode) &#x1F4A5;
-		- [ObjectLanguageLanguageFamily](#objectlanguagelanguagefamily)
+		- [ObjectLanguageLanguageGenealogy](#objectlanguagelanguagegenealogy)
+			+ [ObjectLanguageLanguageFamily](#objectlanguagelanguagefamily)
 - [BundleRecordingDate](#bundlerecordingdate) &#x1F4A5;
 - [BundleLocation](#bundlelocation)
 	- [BundleGeoLocation](#bundlegeolocation) &#x1F4A5;
@@ -106,7 +109,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 
 	ValueScheme:				string
 	Number of occurrences:  	1-unbounded
-	Multilingual:           	yes
+	Multilingual:           	no
 	CCR prefLabel@en:       	resource title
 	CCR URI:                	http://hdl.handle.net/11459/CCR_C-2545_d873f2ab-2a2f-29d6-a9ab-260cde57f227
 
@@ -129,7 +132,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 
 	ValueScheme:				string
 	Number of occurrences:  	1-unbounded
-	Multilingual:           	yes
+	Multilingual:           	no
 	CCR prefLabel@en:       	description
 	CCR URI:                	http://hdl.handle.net/11459/CCR_C-2520_9eeedfb4-47d3-ddee-cfcb-99ac634bf1db
 
@@ -157,7 +160,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 
 	ValueScheme:				string
 	Number of occurrences:  	1-unbounded
-	Multilingual:           	yes
+	Multilingual:           	no
 	CCR prefLabel@en:       	metadata tag
 	CCR URI:               		http://hdl.handle.net/11459/CCR_C-5436_6ab57c2c-5f8d-3561-6db6-d75da23d2637
 
@@ -194,7 +197,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 
 	ValueScheme:				string
 	Number of occurrences:  	1-unbounded
-	Multilingual:           	yes
+	Multilingual:           	no
 	CCR prefLabel@en:       	Language Name
 	CCR URI:                	http://hdl.handle.net/11459/CCR_C-2484_669684e7-cb9e-ea96-59cb-a25fe89b9b9d
 
@@ -216,8 +219,8 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 	User provided:				no
 
 	ValueScheme:				string
-	Number of occurrences:  	0-unbounded
-	Multilingual:           	yes
+	Number of occurrences:  	1-1
+	Multilingual:           	no
 	CCR prefLabel@en:       	Language Name
 	CCR URI:                	http://hdl.handle.net/11459/CCR_C-2484_669684e7-cb9e-ea96-59cb-a25fe89b9b9d
 
@@ -225,6 +228,34 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 	OLAC (DCMI):				http://purl.org/dc/terms/language
 	DataCite:        			Language
 	IMDI Element:               //Session/MDGroup/Content/Languages/Language/Name
+	ELDP-CMDI Element:          
+	IMDI-CMDI Element:
+	lat-session:				
+
+[Back to Top](#blam-bundle-repository) | [Back to BundleGeneralInfo](#bundlegeneralinfo)
+
+#### ObjectAlternativeNames
+**Description:** The ObjectLanguageAlternativeNames component contains elements with alternative names for the object language as provided by services such as Glottolog or Ethnologue. 
+
+	Number of occurrences:  	0-1
+
+#### ObjectAlternativeName
+**Description:** The ObjectLanguageAlternativeName element contains an alternative name of the object language as provided by services such as Glottolog or Ethnologue. 
+
+	Discovery:					searchable
+	Display:					no
+	User provided:				no
+
+	ValueScheme:				string
+	Number of occurrences:  	1-unbounded
+	Multilingual:           	no
+	CCR prefLabel@en:       	
+	CCR URI:                	
+
+	VLO Facet: 					
+	OLAC (DCMI):				
+	DataCite:        			
+	IMDI Element:               
 	ELDP-CMDI Element:          
 	IMDI-CMDI Element:
 	lat-session:				
@@ -362,7 +393,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 
 	ValueScheme:				string
 	Number of occurrences:  	1-unbounded
-	Multilingual:           	yes
+	Multilingual:           	no
 	CCR prefLabel@en:       	place name
 	CCR URI:                	http://hdl.handle.net/11459/CCR_C-5580_03e458f2-f873-8645-76eb-40e001b6c1ac
 
@@ -385,7 +416,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 
 	ValueScheme:				string
 	Number of occurrences:  	0-unbounded
-	Multilingual:           	yes
+	Multilingual:           	no
 	CCR prefLabel@en:       	place name
 	CCR URI:                	http://hdl.handle.net/11459/CCR_C-5580_03e458f2-f873-8645-76eb-40e001b6c1ac
 
@@ -408,7 +439,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 
 	ValueScheme:				string
 	Number of occurrences:  	0-unbounded
-	Multilingual:           	yes
+	Multilingual:           	no
 	CCR prefLabel@en:       	location region
 	CCR URI:                	http://hdl.handle.net/11459/CCR_C-2533_fa6e1812-e29b-3cf6-e15a-50aa34b9be68
 
@@ -431,7 +462,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 
 	ValueScheme:				string
 	Number of occurrences:  	0-unbounded
-	Multilingual:           	yes
+	Multilingual:           	no
 	CCR prefLabel@en:       	location region
 	CCR URI:                	http://hdl.handle.net/11459/CCR_C-2533_fa6e1812-e29b-3cf6-e15a-50aa34b9be68
 
@@ -454,7 +485,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 
 	ValueScheme:				string
 	Number of occurrences:  	0-unbounded
-	Multilingual:           	yes
+	Multilingual:           	no
 	CCR prefLabel@en:       	location country
 	CCR URI:                	http://hdl.handle.net/11459/CCR_C-2532_d004b0a6-fd1d-3ca3-abf1-1e6aeb3e37b2
 
@@ -477,7 +508,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 
 	ValueScheme:				string
 	Number of occurrences:  	0-unbounded
-	Multilingual:           	yes
+	Multilingual:           	no
 	CCR prefLabel@en:       	location country
 	CCR URI:                	http://hdl.handle.net/11459/CCR_C-2532_d004b0a6-fd1d-3ca3-abf1-1e6aeb3e37b2
 
@@ -602,7 +633,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 
 	ValueScheme:				string
 	Number of occurrences:  	0-unbounded
-	Multilingual:           	yes
+	Multilingual:           	no
 	CCR prefLabel@en:       	—
 	CCR URI:                	—
 
@@ -727,7 +758,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 
 	ValueScheme:				string
 	Number of occurrences:  	0-unbounded
-	Multilingual:           	yes
+	Multilingual:           	no
 	CCR prefLabel@en:       	—
 	CCR URI:                	—
 
@@ -773,7 +804,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 
 	ValueScheme:				string
 	Number of occurrences:  	1-unbounded
-	Multilingual:           	yes
+	Multilingual:           	no
 	CCR prefLabel@en:       	project name
 	CCR URI:                	http://hdl.handle.net/11459/CCR_C-2536_13fc5f10-c14a-1f64-a669-32736f6d3ef5
 
@@ -795,7 +826,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 
 	ValueScheme:				string
 	Number of occurrences:  	1-unbounded
-	Multilingual:           	yes
+	Multilingual:           	no
 	CCR prefLabel@en:       	—
 	CCR URI:                	—
 
@@ -1451,7 +1482,7 @@ Examples: `phonemic` `phonetic` `orthographic`
 
 	ValueScheme:				string
 	Number of occurrences:  	0-unbounded
-	Multilingual:           	yes
+	Multilingual:           	no
 	CCR prefLabel@en:       	
 	CCR URI:                	
 
@@ -1573,7 +1604,7 @@ Examples: `phonemic` `phonetic` `orthographic`
 
 	ValueScheme:				string
 	Number of occurrences:  	0-unbounded
-	Multilingual:           	yes
+	Multilingual:           	no
 	CCR prefLabel@en:       	description
 	CCR URI:                	
 
@@ -1688,7 +1719,7 @@ Examples: `phonemic` `phonetic` `orthographic`
 
 	ValueScheme:				string
 	Number of occurrences:  	0-unbounded
-	Multilingual:           	yes
+	Multilingual:           	no
 	CCR prefLabel@en:       	description
 	CCR URI:                	
 
@@ -1781,7 +1812,7 @@ Examples: `phonemic` `phonetic` `orthographic`
 
 	ValueScheme:				string
 	Number of occurrences:  	0-unbounded
-	Multilingual:           	yes
+	Multilingual:           	no
 	CCR prefLabel@en:       	description
 	CCR URI:                	
 

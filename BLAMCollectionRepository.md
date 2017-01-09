@@ -105,7 +105,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 
 	ValueScheme:				string
 	Number of occurrences:  	1-unbounded
-	Multilingual:           	yes
+	Multilingual:           	no
 	CCR prefLabel@en:       	resource title
 	CCR URI:                	http://hdl.handle.net/11459/CCR_C-2545_d873f2ab-2a2f-29d6-a9ab-260cde57f227
 
@@ -128,7 +128,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 
 	ValueScheme:				string
 	Number of occurrences:  	1-unbounded
-	Multilingual:           	yes
+	Multilingual:           	no
 	CCR prefLabel@en:       	description
 	CCR URI:                	http://hdl.handle.net/11459/CCR_C-2520_9eeedfb4-47d3-ddee-cfcb-99ac634bf1db
 
@@ -156,7 +156,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 
 	ValueScheme:				string
 	Number of occurrences:  	1-unbounded
-	Multilingual:           	yes
+	Multilingual:           	no
 	CCR prefLabel@en:       	metadata tag
 	CCR URI:               		http://hdl.handle.net/11459/CCR_C-5436_6ab57c2c-5f8d-3561-6db6-d75da23d2637
 
@@ -185,7 +185,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 [Back to Top](#blam-collection-repository) | [Back to CollectionGeneralInfo](#collectiongeneralinfo)
 
 #### ObjectLanguageDisplayName
-**Description:** &#x1F4A5; The ObjectLanguageDisplayName element contains the name of the object language in the version recommended by the data producer. Repositories should treat the name provided by this element as the primary language name when displaying the metadata in relation to this particular data set (e.g. collection or collection). The repository may use alternative names provided by services such as Glottolog or Ethnologue to improve discoverability and to enhance browsing and search experience. The repository may also translate the name into other languages if no language name is given for a particular interface language. Data producers can provide LanguageDisplayName values for multiple interface languages. 
+**Description:** &#x1F4A5; The ObjectLanguageDisplayName element contains the name of the object language in the version recommended by the data producer. Repositories should treat the name provided by this element as the primary language name when displaying the metadata in relation to this particular data set (e.g. collection or collection). The repository may use alternative names provided by services such as Glottolog or Ethnologue to improve discoverability and to enhance browsing and search experience. The repository may also translate the name into other languages if no language name is given for a particular interface language. 
 
 	Discovery:					searchable, browsing facet
 	Display:					page, list
@@ -193,7 +193,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 
 	ValueScheme:				string
 	Number of occurrences:  	1-unbounded
-	Multilingual:           	yes
+	Multilingual:           	no
 	CCR prefLabel@en:       	Language Name
 	CCR URI:                	http://hdl.handle.net/11459/CCR_C-2484_669684e7-cb9e-ea96-59cb-a25fe89b9b9d
 
@@ -208,7 +208,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 [Back to Top](#blam-collection-repository) | [Back to CollectionGeneralInfo](#collectiongeneralinfo)
 
 #### ObjectLanguageName
-**Description:** The ObjectLanguageName element contains the name of the object language in the version as provided by services such as Glottolog or Ethnologue. 
+**Description:** The ObjectLanguageName element contains the preferred name of the object language in the version as provided by services such as Glottolog or Ethnologue. 
 
 	Discovery:					searchable, browsing facet
 	Display:					no
@@ -216,7 +216,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 
 	ValueScheme:				string
 	Number of occurrences:  	0-unbounded
-	Multilingual:           	yes
+	Multilingual:           	no
 	CCR prefLabel@en:       	Language Name
 	CCR URI:                	http://hdl.handle.net/11459/CCR_C-2484_669684e7-cb9e-ea96-59cb-a25fe89b9b9d
 
@@ -224,6 +224,33 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 	OLAC (DCMI):				http://purl.org/dc/terms/language
 	DataCite:        			Language
 	IMDI Element:               //Session/MDGroup/Content/Languages/Language/Name
+	ELDP-CMDI Element:          
+	IMDI-CMDI Element:
+	lat-session:				
+
+
+#### ObjectAlternativeNames
+**Description:** The ObjectLanguageAlternativeNames component contains elements with alternative names for the object language as provided by services such as Glottolog or Ethnologue. 
+
+	Number of occurrences:  	0-1
+
+#### ObjectAlternativeName
+**Description:** The ObjectLanguageAlternativeName element contains an alternative name of the object language as provided by services such as Glottolog or Ethnologue. 
+
+	Discovery:					searchable
+	Display:					no
+	User provided:				no
+
+	ValueScheme:				string
+	Number of occurrences:  	1-unbounded
+	Multilingual:           	no
+	CCR prefLabel@en:       	
+	CCR URI:                	
+
+	VLO Facet: 					
+	OLAC (DCMI):				
+	DataCite:        			
+	IMDI Element:               
 	ELDP-CMDI Element:          
 	IMDI-CMDI Element:
 	lat-session:				
@@ -338,7 +365,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 
 	ValueScheme:				string
 	Number of occurrences:  	1-unbounded
-	Multilingual:           	yes
+	Multilingual:           	no
 	CCR prefLabel@en:       	place name
 	CCR URI:                	http://hdl.handle.net/11459/CCR_C-5580_03e458f2-f873-8645-76eb-40e001b6c1ac
 
@@ -361,7 +388,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 
 	ValueScheme:				string
 	Number of occurrences:  	0-unbounded
-	Multilingual:           	yes
+	Multilingual:           	no
 	CCR prefLabel@en:       	place name
 	CCR URI:                	http://hdl.handle.net/11459/CCR_C-5580_03e458f2-f873-8645-76eb-40e001b6c1ac
 
@@ -384,7 +411,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 
 	ValueScheme:				string
 	Number of occurrences:  	0-unbounded
-	Multilingual:           	yes
+	Multilingual:           	no
 	CCR prefLabel@en:       	location region
 	CCR URI:                	http://hdl.handle.net/11459/CCR_C-2533_fa6e1812-e29b-3cf6-e15a-50aa34b9be68
 
@@ -407,7 +434,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 
 	ValueScheme:				string
 	Number of occurrences:  	0-unbounded
-	Multilingual:           	yes
+	Multilingual:           	no
 	CCR prefLabel@en:       	location region
 	CCR URI:                	http://hdl.handle.net/11459/CCR_C-2533_fa6e1812-e29b-3cf6-e15a-50aa34b9be68
 
@@ -430,7 +457,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 
 	ValueScheme:				string
 	Number of occurrences:  	0-unbounded
-	Multilingual:           	yes
+	Multilingual:           	no
 	CCR prefLabel@en:       	location country
 	CCR URI:                	http://hdl.handle.net/11459/CCR_C-2532_d004b0a6-fd1d-3ca3-abf1-1e6aeb3e37b2
 
@@ -453,7 +480,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 
 	ValueScheme:				string
 	Number of occurrences:  	0-unbounded
-	Multilingual:           	yes
+	Multilingual:           	no
 	CCR prefLabel@en:       	location country
 	CCR URI:                	http://hdl.handle.net/11459/CCR_C-2532_d004b0a6-fd1d-3ca3-abf1-1e6aeb3e37b2
 
@@ -578,7 +605,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 
 	ValueScheme:				string
 	Number of occurrences:  	0-unbounded
-	Multilingual:           	yes
+	Multilingual:           	no
 	CCR prefLabel@en:       	—
 	CCR URI:                	—
 
@@ -703,7 +730,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 
 	ValueScheme:				string
 	Number of occurrences:  	0-unbounded
-	Multilingual:           	yes
+	Multilingual:           	no
 	CCR prefLabel@en:       	—
 	CCR URI:                	—
 
@@ -749,7 +776,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 
 	ValueScheme:				string
 	Number of occurrences:  	1-unbounded
-	Multilingual:           	yes
+	Multilingual:           	no
 	CCR prefLabel@en:       	project name
 	CCR URI:                	http://hdl.handle.net/11459/CCR_C-2536_13fc5f10-c14a-1f64-a669-32736f6d3ef5
 
@@ -771,7 +798,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 
 	ValueScheme:				string
 	Number of occurrences:  	1-unbounded
-	Multilingual:           	yes
+	Multilingual:           	no
 	CCR prefLabel@en:       	—
 	CCR URI:                	—
 
@@ -1389,7 +1416,7 @@ Examples: `phonemic` `phonetic` `orthographic`
 
 	ValueScheme:				string
 	Number of occurrences:  	0-unbounded
-	Multilingual:           	yes
+	Multilingual:           	no
 	CCR prefLabel@en:       	
 	CCR URI:                	
 
@@ -1418,7 +1445,7 @@ Examples: `phonemic` `phonetic` `orthographic`
 
 	ValueScheme:				string
 	Number of occurrences:  	1-unbounded
-	Multilingual:           	yes
+	Multilingual:           	no
 	CCR prefLabel@en:       	metadata tag
 	CCR URI:               		http://hdl.handle.net/11459/CCR_C-5436_6ab57c2c-5f8d-3561-6db6-d75da23d2637
 
