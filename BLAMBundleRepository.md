@@ -101,14 +101,14 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 [Back to Top](#blam-bundle-repository) | [Back to BundleGeneralInfo](#bundlegeneralinfo)
 
 #### BundleDisplayTitle 
-**Description:** &#x1F4A5; The BundleDisplayTitle element provides a human readable name of the bundle. It should contain a meaningful and recognisable title for the bundle. The content of the BundleDisplayTitle element will be used as the human readable identifier in interfaces. Data producers can provide BundleDisplayTitle values for multiple interface languages. This field will be used as the human readable identifier for the bundle in citation and interfaces.
+**Description:** &#x1F4A5; The BundleDisplayTitle element provides a human readable name of the bundle. It should contain a meaningful and recognisable title for the bundle. The content of the BundleDisplayTitle element will be used as the human readable identifier in interfaces. This field will be used as the human readable identifier for the bundle in citation and interfaces.
 
 	Discovery:					searchable
 	Display:					page, list
 	User provided:				yes
 
 	ValueScheme:				string
-	Number of occurrences:  	1-unbounded
+	Number of occurrences:  	1-1
 	Multilingual:           	no
 	CCR prefLabel@en:       	resource title
 	CCR URI:                	http://hdl.handle.net/11459/CCR_C-2545_d873f2ab-2a2f-29d6-a9ab-260cde57f227
@@ -124,14 +124,14 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 [Back to Top](#blam-bundle-repository) | [Back to BundleGeneralInfo](#bundlegeneralinfo)
 
 #### BundleDescription 
-**Description:** &#x1F4A5; The BundleDescription element provides a human readable description of the bundle. It should contain a description of the content of the bundle. The content of the BundleDescription element will be used as the human readable description in interfaces. Its content can be queried by repositories for free-text metadata search. Data producers can provide BundleDescription values for multiple interface languages.
+**Description:** &#x1F4A5; The BundleDescription element provides a human readable description of the bundle. It should contain a description of the content of the bundle. The content of the BundleDescription element will be used as the human readable description in interfaces. Its content can be queried by repositories for free-text metadata search.
 
 	Discovery:					searchable
-	Display:					page, list (excerpt)
+	Display:					page, list (snippet)
 	User provided:				yes
 
 	ValueScheme:				string
-	Number of occurrences:  	1-unbounded
+	Number of occurrences:  	1-1
 	Multilingual:           	no
 	CCR prefLabel@en:       	description
 	CCR URI:                	http://hdl.handle.net/11459/CCR_C-2520_9eeedfb4-47d3-ddee-cfcb-99ac634bf1db
@@ -189,7 +189,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 [Back to Top](#blam-bundle-repository) | [Back to BundleGeneralInfo](#bundlegeneralinfo)
 
 #### ObjectLanguageDisplayName
-**Description:** &#x1F4A5; The ObjectLanguageDisplayName element contains the name of the object language in the version recommended by the data producer. Repositories should treat the name provided by this element as the primary language name when displaying the metadata in relation to this particular data set (e.g. collection or bundle). The repository may use alternative names provided by services such as Glottolog or Ethnologue to improve discoverability and to enhance browsing and search experience. The repository may also translate the name into other languages if no language name is given for a particular interface language. Data producers can provide LanguageDisplayName values for multiple interface languages. 
+**Description:** &#x1F4A5; The ObjectLanguageDisplayName element contains the name of the object language in the version recommended by the data producer. Repositories should treat the name provided by this element as the primary language name when displaying the metadata in relation to this particular data set (e.g. collection or bundle). The repository may use alternative names provided by services such as Glottolog or Ethnologue to improve discoverability and to enhance browsing and search experience.
 
 	Discovery:					searchable, browsing facet
 	Display:					page, list
@@ -215,7 +215,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 **Description:** The ObjectLanguageName element contains the name of the object language in the version as provided by services such as Glottolog or Ethnologue. 
 
 	Discovery:					searchable, browsing facet
-	Display:					no
+	Display:					page
 	User provided:				no
 
 	ValueScheme:				string
@@ -227,27 +227,27 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 	VLO Facet: 					languageCode
 	OLAC (DCMI):				http://purl.org/dc/terms/language
 	DataCite:        			Language
-	IMDI Element:               //Session/MDGroup/Content/Languages/Language/Name
+	IMDI Element:               
 	ELDP-CMDI Element:          
 	IMDI-CMDI Element:
 	lat-session:				
 
 [Back to Top](#blam-bundle-repository) | [Back to BundleGeneralInfo](#bundlegeneralinfo)
 
-#### ObjectAlternativeNames
+#### ObjectLanguageAlternativeNames
 **Description:** The ObjectLanguageAlternativeNames component contains elements with alternative names for the object language as provided by services such as Glottolog or Ethnologue. 
 
 	Number of occurrences:  	0-1
 
-#### ObjectAlternativeName
-**Description:** The ObjectLanguageAlternativeName element contains an alternative name of the object language as provided by services such as Glottolog or Ethnologue. 
+#### ObjectLanguageAlternativeName
+**Description:** The ObjectLanguageAlternativeName element contains an alternative name of the object language as provided by services such as Glottolog or Ethnologue.
 
 	Discovery:					searchable
 	Display:					no
 	User provided:				no
 
 	ValueScheme:				string
-	Number of occurrences:  	1-unbounded
+	Number of occurrences:  	0-unbounded
 	Multilingual:           	no
 	CCR prefLabel@en:       	
 	CCR URI:                	
@@ -321,9 +321,9 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 	CCR prefLabel@en:       	Language Name
 	CCR URI:                	http://hdl.handle.net/11459/CCR_C-2484_669684e7-cb9e-ea96-59cb-a25fe89b9b9d
 
-	VLO Facet: 					languageCode
-	OLAC (DCMI):				http://purl.org/dc/terms/language
-	DataCite:        			Language
+	VLO Facet: 					
+	OLAC (DCMI):				
+	DataCite:        			
 	IMDI Element:               
 	ELDP-CMDI Element:          
 	IMDI-CMDI Element:
@@ -355,7 +355,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 [Back to Top](#blam-bundle-repository) | [Back to BundleGeneralInfo](#bundlegeneralinfo)
 
 #### BundleLocation
-**Description:** BundleLocation contains information about the most relevant or salient location in relation to the data contained in the bundle. The default location would be the location of recording. However, any other location vowed as most relevant to the data can be set as the BundleLocation. The information provided in the component is intended for discoverability and display purposes. Detailed documentation of geographic information should be outsourced into an additional metadata file.
+**Description:** BundleLocation contains information about the most relevant or salient location in relation to the data contained in the bundle. The default location would be the location of recording. However, any other location regarded as the most relevant or salient location to the data can be set as the BundleLocation. The information provided in the component is intended for discoverability in map based browsing and keyword search as well as general display purposes. Detailed documentation of geographic information should be outsourced into an additional metadata file.
 
 	Number of occurrences:		1-1
 
@@ -385,7 +385,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 [Back to Top](#blam-bundle-repository) | [Back to BundleGeneralInfo](#bundlegeneralinfo)
 
 #### BundleLocationDisplayName
-**Description:** &#x1F4A5; The BundleLocationDisplayName element contains the name of a location in the version recommended by the data producer. Repositories should treat the name provided by this element as the primary location name when displaying the metadata in relation to this particular data set (e.g. collection or bundle).The repository may use alternative names provided by services such as GeoNames to improve discoverability and to enhance the browsing and search experience. The repository may also translate the name into other languages if no BundleLocationDisplayName name is given for a particular interface language. 
+**Description:** &#x1F4A5; The BundleLocationDisplayName element contains the name of a location in the version recommended by the data producer. Repositories should treat the name provided by this element as the primary location name when displaying the metadata in relation to this particular data set (e.g. collection or bundle). The repository may use alternative names provided by services such as GeoNames to improve discoverability and to enhance the browsing and search experience. The repository may also translate the name into other languages if no BundleLocationDisplayName name is given for a particular interface language. 
 
 	Discovery:					searchable, browsing facet
 	Display:					page
@@ -461,7 +461,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 	User provided:				no
 
 	ValueScheme:				string
-	Number of occurrences:  	0-unbounded
+	Number of occurrences:  	1-1
 	Multilingual:           	no
 	CCR prefLabel@en:       	location region
 	CCR URI:                	http://hdl.handle.net/11459/CCR_C-2533_fa6e1812-e29b-3cf6-e15a-50aa34b9be68
@@ -477,14 +477,14 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 [Back to Top](#blam-bundle-repository) | [Back to BundleGeneralInfo](#bundlegeneralinfo)
 
 #### BundleCountryDisplayName
-**Description:** &#x1F4A5; The BundleCountryDisplayName element contains the name of the country to which the location belongs in the version recommended by the data producer. Repositories should treat the name provided by this element as the primary country name when displaying the metadata in relation to this particular data set (e.g. collection or bundle). The repository may use alternative names provided by services such as GeoNames to improve discoverability and to enhance browsing and search experience. The repository may also translate the name into other languages if no BundleCountryDisplayName name is given for a particular interface language. Data producers can provide BundleCountryDisplayName values for multiple interface languages.  
+**Description:** &#x1F4A5; The BundleCountryDisplayName element contains the name of the country to which the location belongs in the version recommended by the data producer. Repositories should treat the name provided by this element as the primary country name when displaying the metadata in relation to this particular data set (e.g. collection or bundle). The repository may use alternative names provided by services such as GeoNames to improve discoverability and to enhance browsing and search experience. The repository may also translate the name into other languages if no BundleCountryDisplayName name is given for a particular interface language.  
 
 	Discovery:					searchable
 	Display:					page
 	User provided:				yes	
 
 	ValueScheme:				string
-	Number of occurrences:  	0-unbounded
+	Number of occurrences:  	0-1
 	Multilingual:           	no
 	CCR prefLabel@en:       	location country
 	CCR URI:                	http://hdl.handle.net/11459/CCR_C-2532_d004b0a6-fd1d-3ca3-abf1-1e6aeb3e37b2
@@ -507,7 +507,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 	User provided:				no	
 
 	ValueScheme:				string
-	Number of occurrences:  	0-unbounded
+	Number of occurrences:  	1-1
 	Multilingual:           	no
 	CCR prefLabel@en:       	location country
 	CCR URI:                	http://hdl.handle.net/11459/CCR_C-2532_d004b0a6-fd1d-3ca3-abf1-1e6aeb3e37b2
@@ -610,7 +610,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 	User provided:				yes
 
 	ValueScheme:				anyURI
-	Number of occurrences:  	0-1
+	Number of occurrences:  	0-unbounded
 	Multilingual:           	no
 	CCR prefLabel@en:       	—
 	CCR URI:                	—
@@ -735,7 +735,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 	User provided:				yes
 
 	ValueScheme:				anyURI
-	Number of occurrences:  	0-1
+	Number of occurrences:  	0-unbounded
 	Multilingual:           	no
 	CCR prefLabel@en:       	—
 	CCR URI:                	—
@@ -803,7 +803,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 	User provided:				yes
 
 	ValueScheme:				string
-	Number of occurrences:  	1-unbounded
+	Number of occurrences:  	1-1
 	Multilingual:           	no
 	CCR prefLabel@en:       	project name
 	CCR URI:                	http://hdl.handle.net/11459/CCR_C-2536_13fc5f10-c14a-1f64-a669-32736f6d3ef5
@@ -818,14 +818,14 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 [Back to Top](#blam-bundle-repository) | [Back to ProjectInfo](#projectinfo)
 
 #### ProjectDescription
-**Description:** &#x1F4A5; The ProjectDescription element provides a human readable description of the project including full project name. It should contain a description of the project’s objective or activity. The content of the ProjectDescription element will be used as the human readable description in interfaces. Its content can be queried by repositories for free-text metadata search. Data producers can provide ProjectDescription values for multiple interface languages.
+**Description:** &#x1F4A5; The ProjectDescription element provides a human readable description of the project including full project name. It should contain a description of the project’s objective or activity. The content of the ProjectDescription element will be used as the human readable description in interfaces. Its content can be queried by repositories for free-text metadata search.
 
 	Discovery:					searchable
 	Display:					page
 	User provided:				yes
 
 	ValueScheme:				string
-	Number of occurrences:  	1-unbounded
+	Number of occurrences:  	1-1
 	Multilingual:           	no
 	CCR prefLabel@en:       	—
 	CCR URI:                	—
@@ -885,7 +885,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 	User provided:				yes
 
 	ValueScheme:				anyURI
-	Number of occurrences:  	0-1
+	Number of occurrences:  	0-unbounded
 	Multilingual:           	no
 	CCR prefLabel@en:       	—
 	CCR URI:                	—
@@ -928,7 +928,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 	Display:					page	
 	User provided:				yes	
 
-	ValueScheme:				string
+	ValueScheme:				anyURI
 	Number of occurrences:  	0-1
 	Multilingual:           	no
 	CCR prefLabel@en:       	—
@@ -1251,7 +1251,7 @@ Examples: `phonemic` `phonetic` `orthographic`
 **Description:** The AvailabilityDate element contains the date at which the bundle became or will become available. The date must be provided conforming to ISO 8601 in the form YYYY-MM-DD.
 
 
-	Discovery:					searchable, browsing facet
+	Discovery:					no
 	Display:					page	
 	User provided:				no	
 
@@ -1366,7 +1366,7 @@ Examples: `phonemic` `phonetic` `orthographic`
 	User provided:				no
 
 	ValueScheme:				anyURI
-	Number of occurrences:  	1-unbounded
+	Number of occurrences:  	1-1
 	Multilingual:           	no
 	CCR prefLabel@en:       	relation role
 	CCR URI:                	http://hdl.handle.net/11459/CCR_C-6570_90018537-4ab9-0cfe-c878-257b9b311993
@@ -1481,7 +1481,7 @@ Examples: `phonemic` `phonetic` `orthographic`
 	User provided:				yes
 
 	ValueScheme:				string
-	Number of occurrences:  	0-unbounded
+	Number of occurrences:  	0-1
 	Multilingual:           	no
 	CCR prefLabel@en:       	
 	CCR URI:                	
@@ -1554,7 +1554,7 @@ Examples: `phonemic` `phonetic` `orthographic`
 ###### MimeType (MediaResource)
 **Description:** Specification of the mime-type of the resource.
 
-	Discovery:					browsing facet
+	Discovery:					searchable, browsing facet
 	Display:					page, list
 	User provided:				no
 
@@ -1603,7 +1603,7 @@ Examples: `phonemic` `phonetic` `orthographic`
 	User provided:				yes
 
 	ValueScheme:				string
-	Number of occurrences:  	0-unbounded
+	Number of occurrences:  	0-1
 	Multilingual:           	no
 	CCR prefLabel@en:       	description
 	CCR URI:                	
@@ -1669,7 +1669,7 @@ Examples: `phonemic` `phonetic` `orthographic`
 ###### MimeType (WrittenResource)
 **Description:** Specification of the mime-type of the resource.
 
-	Discovery:					browsing facet
+	Discovery:					searchable, browsing facet
 	Display:					page, list
 	User provided:				no
 
@@ -1718,7 +1718,7 @@ Examples: `phonemic` `phonetic` `orthographic`
 	User provided:				yes
 
 	ValueScheme:				string
-	Number of occurrences:  	0-unbounded
+	Number of occurrences:  	0-1
 	Multilingual:           	no
 	CCR prefLabel@en:       	description
 	CCR URI:                	
@@ -1784,7 +1784,7 @@ Examples: `phonemic` `phonetic` `orthographic`
 ###### MimeType (OtherResource)
 **Description:** Specification of the mime-type of the resource.
 
-	Discovery:					no
+	Discovery:					searchable, facet
 	Display:					page, list
 	User provided:				no
 
@@ -1811,7 +1811,7 @@ Examples: `phonemic` `phonetic` `orthographic`
 	User provided:				yes
 
 	ValueScheme:				string
-	Number of occurrences:  	0-unbounded
+	Number of occurrences:  	0-1
 	Multilingual:           	no
 	CCR prefLabel@en:       	description
 	CCR URI:                	
