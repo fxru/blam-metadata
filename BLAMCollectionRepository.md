@@ -56,6 +56,8 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 	- [CollectionObjectLanguage](#collectionobjectlanguage)
 		- [ObjectLanguageDisplayName](#objectlanguagedisplayname) &#x1F4A5;
 		- [ObjectLanguageName](#objectlanguagename)
+		- [ObjectLanguageAlternativeNames](#objectlanguagealternativenames)
+			+ [ObjectLanguageAlternativeName](#objectlanguagealternativename)
 		- [ObjectLanguageISO639-3Code](#objectlanguageiso639-3code)
 		- [ObjectLanguageGlottologCode](#objectlanguageglottologcode) &#x1F4A5;
 		- [ObjectLanguageLanguageFamily](#objectlanguagelanguagefamily)
@@ -228,21 +230,24 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 	IMDI-CMDI Element:
 	lat-session:				
 
+[Back to Top](#blam-collection-repository) | [Back to CollectionGeneralInfo](#collectiongeneralinfo)
 
-#### ObjectAlternativeNames
+#### ObjectLanguageAlternativeNames
 **Description:** The ObjectLanguageAlternativeNames component contains elements with alternative names for the object language as provided by services such as Glottolog or Ethnologue. 
 
 	Number of occurrences:  	0-1
 
-#### ObjectAlternativeName
-**Description:** The ObjectLanguageAlternativeName element contains an alternative name of the object language as provided by services such as Glottolog or Ethnologue. 
+[Back to Top](#blam-collection-repository) | [Back to CollectionGeneralInfo](#collectiongeneralinfo)
+
+#### ObjectLanguageAlternativeName
+**Description:** The ObjectLanguageAlternativeName element contains an alternative name of the object language as provided by services such as Glottolog or Ethnologue.
 
 	Discovery:					searchable
 	Display:					no
 	User provided:				no
 
 	ValueScheme:				string
-	Number of occurrences:  	1-unbounded
+	Number of occurrences:  	0-unbounded
 	Multilingual:           	no
 	CCR prefLabel@en:       	
 	CCR URI:                	

@@ -552,14 +552,18 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 
 - [BundleCreators](#bundlecreators) 
 	- [BundleCreator](#bundlecreator)
-		- [CreatorDisplayName](#creatordisplayname) &#x1F4A5;
+		- [CreatorName](#creatorname)
+			+ [CreatorFamilyName](#creatorfamilyname) &#x1F4A5;
+			+ [CreatorGivenName](#creatorgivenname) &#x1F4A5;
 		- [CreatorNameIdentifier](#creatornameidentifier) &#x1F4A5;
 		- [CreatorAffiliation](#creatoraffiliation) &#x1F4A5;
 - [BundlePublicationYear](#bundlepublicationyear) &#x1F4A5;
 - [BundleDataProvider](#bundledataprovider)
 - [BundleContributors](#bundlecontributors)
 	- [BundleContributor](#bundlecontributor)
-		- [ContributorDisplayName](#contributordisplayname) &#x1F4A5;
+		- [ContributorName](#contributorname)
+			+ [ContributorFamilyName](#contributorfamilyname) &#x1F4A5;
+			+ [ContributorGivenName](#contributorgivenname) &#x1F4A5;
 		- [ContributorNameIdentifier](#contributornameidentifier) &#x1F4A5;
 		- [ContributorAffiliation](#contributoraffiliation) &#x1F4A5;
 
@@ -579,8 +583,38 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 
 [Back to Top](#blam-bundle-repository) | [Back to BundlePublicationInfo](#bundlepublicationinfo)
 
-###### CreatorDisplayName
-**Description:** &#x1F4A5; The CreatorDisplayName element contains the name of the creator in a form that lends itself to alphabetical sorting. The value of this field can be used to generate a bibliographical citation reference for the resource. This usage should guide the formatting. The data producer determines what is the proper order of names for an alphabetically sorted list.
+###### CreatorName
+**Description:** The CreatorName component contains the name of the creator. The value of this field can be used to generate a bibliographical citation reference for the resource. This usage should guide the formatting.
+
+	CCR prefLabel@en:       	creator
+	CCR URI:                	http://hdl.handle.net/11459/CCR_C-6836_d35e73a8-ec72-d3c4-e39a-4b0fefd32cdc
+
+[Back to Top](#blam-bundle-repository) |  [Back to BundlePublicationInfo](#bundlepublicationinfo)
+
+###### CreatorFamilyName
+**Description:** &#x1F4A5; The CreatorFamilyName element contains the part of the name of the creator that should be treated as the family name when generating a citation for the resource. This usage should guide the decision.
+
+	Discovery:					searchable
+	Display:					page
+	User provided:				yes	
+
+	ValueScheme:				string
+	Number of occurrences:  	1-1
+	Multilingual:           	no
+	CCR prefLabel@en:       	creator
+	CCR URI:                	http://hdl.handle.net/11459/CCR_C-6836_d35e73a8-ec72-d3c4-e39a-4b0fefd32cdc
+
+	VLO Facet: 					—
+	OLAC (DCMI):				contributor
+	DataCite:        			creator
+	IMDI Element:               //Session/MDGroup/Actors/Actor/FullName[../Role/contains(text(), 'Researcher') or ../Role/contains(text(), 'Depositor')]
+	ELDP-CMDI Element:          
+	IMDI-CMDI Element:
+
+[Back to Top](#blam-bundle-repository) |  [Back to BundlePublicationInfo](#bundlepublicationinfo)
+
+###### CreatorGivenName
+**Description:** &#x1F4A5; The CreatorGivenName element contains the part of the name of the creator that should be treated as the given name when generating a citation for the resource. This usage should guide the decision.
 
 	Discovery:					searchable
 	Display:					page
@@ -704,8 +738,35 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 
 [Back to Top](#blam-bundle-repository) | [Back to BundlePublicationInfo](#bundlepublicationinfo)
 
-###### ContributorDisplayName
-**Description:** &#x1F4A5; The CreatorDisplayName element contains the name of the creator. The data producer determines what is the proper order of names.
+###### ContributorName
+**Description:** The ContributorName component contains the name of the creator. The value of this field may be used to generate a bibliographical citation reference for the resource. This usage should guide the formatting.
+
+[Back to Top](#blam-bundle-repository) |  [Back to BundlePublicationInfo](#bundlepublicationinfo)
+
+###### ContributorFamilyName
+**Description:** &#x1F4A5; The CreatorFamilyName element contains the part of the name of the creator that should be treated as the family name when generating a citation for the resource. This usage should guide the decision.
+
+	Discovery:					searchable
+	Display:					page
+	User provided:				yes	
+
+	ValueScheme:				string
+	Number of occurrences:  	1-1
+	Multilingual:           	no
+	CCR prefLabel@en:       	creator
+	CCR URI:                	http://hdl.handle.net/11459/CCR_C-6836_d35e73a8-ec72-d3c4-e39a-4b0fefd32cdc
+
+	VLO Facet: 					—
+	OLAC (DCMI):				contributor
+	DataCite:        			creator
+	IMDI Element:               //Session/MDGroup/Actors/Actor/FullName[../Role/contains(text(), 'Researcher') or ../Role/contains(text(), 'Depositor')]
+	ELDP-CMDI Element:          
+	IMDI-CMDI Element:
+
+[Back to Top](#blam-bundle-repository) |  [Back to BundlePublicationInfo](#bundlepublicationinfo)
+
+###### ContributorGivenName
+**Description:** &#x1F4A5; The CreatorGivenName element contains the part of the name of the creator that should be treated as the given name when generating a citation for the resource. This usage should guide the decision.
 
 	Discovery:					searchable
 	Display:					page
