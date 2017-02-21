@@ -10,18 +10,16 @@ Basic Language Archive Metadata (BLAM) is designed to provide basic metadata for
 * BLAM Collection Repository: documentation  [below](#blam-collection-repository)
 * BLAM Collection User: documentation  (to come)
 
-BLAM Bundle Repository contains information about bundles as provided by the repository. Data producers are asked to submit a subset of this information during ingest. The BLAM Bundle User profile defines this subset of 40 data fields. The separate definition of the BLAM Bundle User profile enhances the usability for data producers and can be validated independently from the more comprehensive BLAM Bundle Repository profile. The Basic Language Archive Metadata Bundle User profile is intended to be the primary source of user input for BLAM Bundle Repository. However, BLAM Bundle Repository is designed to allow automatic import of information from other metadata formats. The formats actively considered are: 
+BLAM Collection Repository contains information about Collections as provided by the repository. Data producers are asked to submit a subset of this information during the initialization of the collection. BLAM Collection Repository is also designed to allow automatic import of information from other metadata formats. The formats actively considered are: 
 
 * IMDI Metadata Format: [ISLE Meta Data Initative, Version 3.0.4 (2003)](https://tla.mpi.nl/imdi-metadata/)
-* CMDI imdi-session-profile: [clarin.eu:cr1:p_1271859438204](https://catalog.clarin.eu/ds/ComponentRegistry#/?itemId=clarin.eu%3Acr1%3Ap_1271859438204&registrySpace=public)
-* CMDI ELDP_Bundle: [clarin.eu:cr1:p_1407745711992](https://catalog.clarin.eu/ds/ComponentRegistry#/?itemId=clarin.eu%3Acr1%3Ap_1407745711992&registrySpace=public)
-* CMDI lat-session: [clarin.eu:cr1:p_1407745712035](https://catalog.clarin.eu/ds/ComponentRegistry#/?itemId=clarin.eu%3Acr1%3Ap_1407745712035&registrySpace=public)  
+* CMDI imdi-corpus-profile: [clarin.eu:cr1:p_1274880881885](https://catalog.clarin.eu/ds/ComponentRegistry#/?itemId=clarin.eu%3Acr1%3Ap_1274880881885&registrySpace=public)
+* CMDI ELDP_Project: [clarin.eu:cr1:p_1407745711991](https://catalog.clarin.eu/ds/ComponentRegistry#/?itemId=clarin.eu%3Acr1%3Ap_1407745711991&registrySpace=public)
+* CMDI lat-corpus: [clarin.eu:cr1:p_1407745712064](https://catalog.clarin.eu/ds/ComponentRegistry#/?itemId=clarin.eu%3Acr1%3Ap_1407745712064&registrySpace=public)  
 
-The data fields that are transferred from BLAM Bundle User input are marked by &#x1F4A5; in this document.
+BLAM Collection Repository is designed with a focus on discoverability and display. Data producers can submit additional metadata information to document their data and their research. The preferred format are other CMDI profiles or comparably standardized metadata formats.
 
-BLAM Bundle Repository is designed with a focus on discoverability and display. Data producers can submit additional metadata information to document their data and their research. The preferred format are other CMDI profiles or comparably standardized metadata formats.
-
-The data fields of BLAM Bundle Repository were defined to facilitate interoperability with metacatalogues, in particular [DataCite](https://search.datacite.org/), [OLAC](http://search.language-archives.org/), and [VLO](https://vlo.clarin.eu/).
+The data fields of BLAM Collection Repository were defined to facilitate interoperability with metacatalogues, in particular [DataCite](https://search.datacite.org/), [OLAC](http://search.language-archives.org/), and [VLO](https://vlo.clarin.eu/).
 
 * OLAC metadata: [specifications](http://www.language-archives.org/OLAC/metadata.html), [usage](http://www.language-archives.org/NOTE/usage.html)
 * DataCite Metadata: [Schema 4.0](https://schema.datacite.org/meta/kernel-4.0/)
@@ -33,12 +31,11 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 
 ## BLAM-Collection-Repository
 
-**Description:** The Basic Language Archive Metadata Collection profile aims to provide a basic metadata profile for language repositories. The profiles cover fundamental domain specific, but project independent, descriptive metadata as well as basic administrative and structural metadata. BLAM Collection focusses on discoverability and human-readable display without a proliferation of data fields and work for the data producer.
+**Description:** The Basic Language Archive Metadata Collection profile aims to provide a basic metadata profile for language repositories. The profiles cover fundamental domain specific, but project independent, descriptive metadata as well as basic administrative and structural metadata. BLAM Collection Repository focusses on discoverability and human-readable display without a proliferation of data fields and work for the data producer.
 
 * [CollectionGeneralInfo](#collectiongeneralinfo)
 * [CollectionPublicationInfo](#collectionpublicationinfo)
 * [ProjectInfo](#projectinfo)
-* [CollectionDataInfo](#collectiondatainfo)
 * [CollectionAdministrativeInfo](#collectionadministrativeinfo)
 * [CollectionStructuralInfo](#collectionstructuralinfo)
 
@@ -74,7 +71,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 [Back to Top](#blam-collection-repository)
 
 #### CollectionID
-**Description:** The CollectionID element contains an identifier that consistently and uniquely identifies the collection described in the particular metadata token. The identifier should be generated by the repository during the ingest process.
+**Description:** The CollectionID element contains an identifier that consistently and uniquely identifies the collection described in the particular metadata token. The identifier should be generated by the repository during the initialization process.
 
 **Attribute:** *identifierType* **Values:** *DOI, Handle, URN, Other* The identifierType attribute determines the identifier type used. Recommended practice is to have a DOI and a Handle for each collection.
 
@@ -122,7 +119,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 [Back to Top](#blam-collection-repository) | [Back to CollectionGeneralInfo](#collectiongeneralinfo)
 
 #### CollectionDescription 
-**Description:** &#x1F4A5; The CollectionDescription element provides a human readable description of the collection. It should contain a description of the content of the collection. The content of the CollectionDescription element will be used as the human readable description in interfaces. Its content can be queried by repositories for free-text metadata search. Data producers can provide CollectionDescription values for multiple interface languages.
+**Description:** &#x1F4A5; The CollectionDescription element provides a human readable description of the collection. It should contain a description of the content of the collection. The content of the CollectionDescription element will be used as the human readable description in interfaces. Its content can be queried by repositories for free-text metadata search.
 
 	Discovery:					searchable
 	Display:					page, list (excerpt)
@@ -143,14 +140,14 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 	lat-session:				
 
 #### CollectionKeywords
-**Description:** CollectionKeywords should be used to describe the content and nature of data to enhance the discoverability and facilitate finer granularity for searches and browsing of the data. Repositories can use keyword metadata to define meaningful subsets of the data and provide a better browsing experience. 
+**Description:** CollectionKeywords should be used to describe the content and nature of data to enhance the discoverability and facilitate finer granularity for searches and browsing of the data.
 
 								Number of occurrences:	0-1
 
 [Back to Top](#blam-collection-repository) | [Back to CollectionGeneralInfo](#collectiongeneralinfo)
 
 #### CollectionKeyword 
-**Description:** &#x1F4A5; CollectionKeyword should contain a single keyword or a keyphrase and should be used to describe the content and nature of data to enhance the discoverability and facilitate finer granularity for searches and browsing of the data. Repositories can use keyword metadata to define meaningful subsets of the data and provide a better browsing experience. 
+**Description:** &#x1F4A5; CollectionKeyword should contain a single keyword or a keyphrase and should be used to describe the content and nature of data to enhance the discoverability and facilitate finer granularity for searches and browsing of the data.
 
 	Discovery:					searchable, browsing facet
 	Display:					page, list
@@ -187,7 +184,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 [Back to Top](#blam-collection-repository) | [Back to CollectionGeneralInfo](#collectiongeneralinfo)
 
 #### ObjectLanguageDisplayName
-**Description:** &#x1F4A5; The ObjectLanguageDisplayName element contains the name of the object language in the version recommended by the data producer. Repositories should treat the name provided by this element as the primary language name when displaying the metadata in relation to this particular data set (e.g. collection or collection). The repository may use alternative names provided by services such as Glottolog or Ethnologue to improve discoverability and to enhance browsing and search experience. The repository may also translate the name into other languages if no language name is given for a particular interface language. 
+**Description:** &#x1F4A5; The ObjectLanguageDisplayName element contains the name of the object language in the version recommended by the data producer. Repositories should treat the name provided by this element as the primary language name when displaying the metadata in relation to this particular data set. The repository may use alternative names provided by services such as Glottolog or Ethnologue to improve discoverability and to enhance browsing and search experience. The repository may also translate the name into other languages if no language name is given for a particular interface language. 
 
 	Discovery:					searchable, browsing facet
 	Display:					page, list
@@ -332,7 +329,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 [Back to Top](#blam-collection-repository) | [Back to CollectionGeneralInfo](#collectiongeneralinfo)
 
 #### CollectionLocation
-**Description:** CollectionLocation contains information about the most relevant or salient location in relation to the data contained in the collection. The default location would be the location of recording. However, any other location vowed as most relevant to the data can be set as the CollectionLocation. The information provided in the component is intended for discoverability and display purposes. Detailed documentation of geographic information should be outsourced into an additional metadata file.
+**Description:** CollectionLocation contains information about the most relevant or salient location in relation to the data contained in the collection. The default location would be the main location of recording. However, any other location viewed as most relevant to the data can be set as the CollectionLocation. The information provided in the component is intended for discoverability and display purposes. Detailed documentation of geographic information should be outsourced into an additional metadata file.
 
 	Number of occurrences:		1-1
 
@@ -362,7 +359,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 [Back to Top](#blam-collection-repository) | [Back to CollectionGeneralInfo](#collectiongeneralinfo)
 
 #### CollectionLocationDisplayName
-**Description:** &#x1F4A5; The CollectionLocationDisplayName element contains the name of a location in the version recommended by the data producer. Repositories should treat the name provided by this element as the primary location name when displaying the metadata in relation to this particular data set (e.g. collection or collection).The repository may use alternative names provided by services such as GeoNames to improve discoverability and to enhance the browsing and search experience. The repository may also translate the name into other languages if no CollectionLocationDisplayName name is given for a particular interface language. 
+**Description:** &#x1F4A5; The CollectionLocationDisplayName element contains the name of a location in the version recommended by the data producer. Repositories should treat the name provided by this element as the primary location name when displaying the metadata in relation to this particular data set.The repository may use alternative names provided by services such as GeoNames to improve discoverability and to enhance the browsing and search experience.
 
 	Discovery:					searchable, browsing facet
 	Display:					page
@@ -408,7 +405,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 [Back to Top](#blam-collection-repository) | [Back to CollectionGeneralInfo](#collectiongeneralinfo)
 
 #### CollectionRegionDisplayName
-**Description:** &#x1F4A5; The CollectionRegionDisplayName element optionally contains the name of an administrative subdivision such as state, province, or any other culturally salient unit in the version recommended by the data producer. The data producer can decided which level of subdivision is relevant and will improve discoverability. Repositories should treat the name provided by this element as the primary location name when displaying the metadata in relation to this particular data set (e.g. collection or collection). The repository may use alternative names provided by services such as GeoNames to improve discoverability and to enhance browsing and search experience. The repository may also translate the name into other languages if no RegionDisplayName value is given for a particular interface language.
+**Description:** &#x1F4A5; The CollectionRegionDisplayName element optionally contains the name of an administrative subdivision such as state, province, or any other culturally salient unit in the version recommended by the data producer. The data producer can decided which level of subdivision is relevant and will improve discoverability. Repositories should treat the name provided by this element as the primary location name when displaying the metadata in relation to this particular data set (e.g. collection or collection). The repository may use alternative names provided by services such as GeoNames to improve discoverability and to enhance browsing and search experience.
 
 	Discovery:					searchable
 	Display:					page
@@ -454,7 +451,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 [Back to Top](#blam-collection-repository) | [Back to CollectionGeneralInfo](#collectiongeneralinfo)
 
 #### CollectionCountryDisplayName
-**Description:** &#x1F4A5; The CollectionCountryDisplayName element contains the name of the country to which the location belongs in the version recommended by the data producer. Repositories should treat the name provided by this element as the primary country name when displaying the metadata in relation to this particular data set (e.g. collection or collection). The repository may use alternative names provided by services such as GeoNames to improve discoverability and to enhance browsing and search experience. The repository may also translate the name into other languages if no CollectionCountryDisplayName name is given for a particular interface language. Data producers can provide CollectionCountryDisplayName values for multiple interface languages.  
+**Description:** &#x1F4A5; The CollectionCountryDisplayName element contains the name of the country to which the location belongs in the version recommended by the data producer. Repositories should treat the name provided by this element as the primary country name when displaying the metadata in relation to this particular data set (e.g. collection or collection). The repository may use alternative names provided by services such as GeoNames to improve discoverability and to enhance browsing and search experience.
 
 	Discovery:					searchable
 	Display:					page
@@ -523,13 +520,15 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 [Back to Top](#blam-collection-repository) | [Back to CollectionGeneralInfo](#collectiongeneralinfo)
 
 ### CollectionPublicationInfo
-**Description:** The CollectionPublicationInfo component contains metadata pertaining the publication of the resource. The information provided in this component is used for display and in particular to generate bibliographical references to the resource.
+**Description:** The CollectionPublicationInfo component contains metadata pertaining the publication of the resource. The information provided in this component is used in the interface of the repository and in particular to generate bibliographical references to the resource.
 
 	Number of occurrences:		1-1
 
 - [CollectionCreators](#collectioncreators) 
 	- [CollectionCreator](#collectioncreator)
-		- [CreatorDisplayName](#creatordisplayname) &#x1F4A5;
+		- [CreatorName](#creatorname)
+			+ [CreatorFamilyName](#creatorfamilyname) &#x1F4A5;
+			+ [CreatorGivenName](#creatorgivenname) &#x1F4A5;		
 		- [CreatorNameIdentifier](#creatornameidentifier) &#x1F4A5;
 		- [CreatorAffiliation](#creatoraffiliation) &#x1F4A5;
 - [CollectionPublicationYear](#collectionpublicationyear) &#x1F4A5;
@@ -539,6 +538,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 		- [ContributorDisplayName](#contributordisplayname) &#x1F4A5;
 		- [ContributorNameIdentifier](#contributornameidentifier) &#x1F4A5;
 		- [ContributorAffiliation](#contributoraffiliation) &#x1F4A5;
+		- [ContributorRole] (#contributorrole) &#x1F4A5;
 
 [Back to Top](#blam-collection-repository)
 
@@ -556,8 +556,38 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 
 [Back to Top](#blam-collection-repository) | [Back to CollectionPublicationInfo](#collectionpublicationinfo)
 
-###### CreatorDisplayName
-**Description:** &#x1F4A5; The CreatorDisplayName element contains the name of the creator in a form that lends itself to alphabetical sorting. The value of this field can be used to generate a bibliographical citation reference for the resource. This usage should guide the formatting. The data producer determines what is the proper order of names for an alphabetically sorted list.
+###### CreatorName
+**Description:** The CreatorName component contains the name of the creator. The value of this field can be used to generate a bibliographical citation reference for the resource. This usage should guide the formatting.
+
+	CCR prefLabel@en:       	creator
+	CCR URI:                	http://hdl.handle.net/11459/CCR_C-6836_d35e73a8-ec72-d3c4-e39a-4b0fefd32cdc
+
+[Back to Top](#blam-collection-repository) |  [Back to CollectionPublicationInfo](#collectionpublicationinfo)
+
+###### CreatorFamilyName
+**Description:** &#x1F4A5; The CreatorFamilyName element contains the part of the name of the creator that should be treated as the family name when generating a citation for the resource. This usage should guide the decision which part belongs into this field.
+
+	Discovery:					searchable
+	Display:					page
+	User provided:				yes	
+
+	ValueScheme:				string
+	Number of occurrences:  	1-1
+	Multilingual:           	no
+	CCR prefLabel@en:       	creator
+	CCR URI:                	http://hdl.handle.net/11459/CCR_C-6836_d35e73a8-ec72-d3c4-e39a-4b0fefd32cdc
+
+	VLO Facet: 					—
+	OLAC (DCMI):				contributor
+	DataCite:        			creator
+	IMDI Element:               //Session/MDGroup/Actors/Actor/FullName[../Role/contains(text(), 'Researcher') or ../Role/contains(text(), 'Depositor')]
+	ELDP-CMDI Element:          
+	IMDI-CMDI Element:
+
+[Back to Top](#blam-collection-repository) |  [Back to CollectionPublicationInfo](#collectionpublicationinfo)
+
+###### CreatorGivenName
+**Description:** &#x1F4A5; The CreatorGivenName element contains the part of the name of the creator that should be treated as the given name when generating a citation for the resource. This usage should guide the decision.
 
 	Discovery:					searchable
 	Display:					page
@@ -624,7 +654,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 [Back to Top](#blam-collection-repository) |  [Back to CollectionPublicationInfo](#collectionpublicationinfo)
 
 #### CollectionPublicationYear
-**Description:** &#x1F4A5; CollectionPublicationYear contains the year of publication in the form YYYY conforming to ISO 8601. The default value is the ingest date into the repository unless an embargo has been set for the resource. In that case the end year of the embargo is taken as the year of publication. For legacy data, the  value of CollectionPublicationDate can be set to a point before the ingest. The value of this field should be used to generate a bibliographical citation reference for the resource. 
+**Description:** &#x1F4A5; CollectionPublicationYear contains the year of publication in the form YYYY conforming to ISO 8601. The default value is the ingest date into the repository unless an embargo has been set for the resource. In that case, the end year of the embargo is taken as the year of publication. For legacy data, the  value of CollectionPublicationDate can be set to a point before the ingest. The value of this field should be used to generate a bibliographical citation reference for the resource. 
 
 	Discovery:					searchable, browsing facet
 	Display:					page
@@ -742,6 +772,28 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 	VLO Facet: 					—
 	OLAC (DCMI):				—
 	DataCite:        			Creator:affiliation
+	IMDI Element:               —
+	ELDP-CMDI Element:          	
+	IMDI-CMDI Element:			—
+
+[Back to Top](#blam-collection-repository) |  [Back to CollectionPublicationInfo](#collectionpublicationinfo)
+
+###### ContributorRole
+**Description:** &#x1F4A5; The ContributorRole contains the organisational or institutional affiliation of the contributor as provided by the depositor.
+
+	Discovery:					—
+	Display:					page
+	User provided:				yes
+
+	ValueScheme:				string
+	Number of occurrences:  	0-unbounded
+	Multilingual:           	no
+	CCR prefLabel@en:       	—
+	CCR URI:                	—
+
+	VLO Facet: 					—
+	OLAC (DCMI):				—
+	DataCite:        			Creator:contributorType
 	IMDI Element:               —
 	ELDP-CMDI Element:          	
 	IMDI-CMDI Element:			—
@@ -920,175 +972,6 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 
 [Back to Top](#blam-collection-repository) | [Back to ProjectInfo](#projectinfo)
 
-### CollectionDataInfo
-**Description:** CollectionDataInfo contains descriptive metadata about the annotation state of the data.
-
-	Number of occurrences:		0-1
-
-- [SegmentationUnits](#segmentationunits) 
-	- [SegmentationUnit](#segmentationunit) &#x1F4A5;
-- [TranscriptionTypes](#transcriptiontypes)
-	- [TranscriptionType](#transcriptiontype) &#x1F4A5;
-- [TranslationLanguages](#translationlanguages) 
-	- [TranslationLanguage](#translationlanguage)
-		- [TranslationLanguageName](#translationlanguagename)
-		- [TranslationLanguageCode](#translationlanguagecode) &#x1F4A5;
-- [AnnotationTypes](#annotationtypes) 
-	- [AnnotationType](#annotationtype) &#x1F4A5; 
-
-[Back to Top](#blam-collection-repository)
-
-#### SegmentationUnits
-**Description:** SegmentationUnits contains metadata about the criteria applied to segment the resource. 
-
-	Number of occurrences:		0-1
-
-[Back to Top](#blam-collection-repository) | [Back to CollectionDataInfo](#collectiondatainfo)
-
-#### SegmentationUnit
-**Description:** &#x1F4A5; SegmentationUnit describes the criteria applied to segment the resource. This element applies to annotations of audio-visual data and is intended to facilitate the identification of useful data for a specific research question. The best practice is to use keywords.
-
-Examples:  `clause` `intonation unit` 
-
-	Discovery:					searchable, browsing facet
-	Display:					page, list	
-	User provided:				yes	
-
-	ValueScheme:				string
-	Number of occurrences:  	1-unbounded
-	Multilingual:           	no
-	CCR prefLabel@en:       	segmentation unit
-	CCR URI:                	http://hdl.handle.net/11459/CCR_C-3819_833e225a-f7c9-2c41-4bd3-c55c81ef7559
-
-	VLO Facet: 					—
-	OLAC (DCMI):				—
-	DataCite:                	—
-	IMDI Element:               —       
-	ELDP-CMDI Element:          —
-	IMDI-CMDI Element:			—
-
-[Back to Top](#blam-collection-repository) | [Back to CollectionDataInfo](#collectiondatainfo)
-
-#### TranscriptionTypes
-**Description:** TranscriptionTypes contains metadata about the level of transcription of audio-visual data in the annotations. 
-
-	Number of occurrences:		0-1
-
-[Back to Top](#blam-collection-repository) | [Back to CollectionDataInfo](#collectiondatainfo)
-
-#### TranscriptionType
-**Description:** &#x1F4A5; TranscriptionType describes the level of transcription of audio-visual data in the annotations. Data with no TranscriptionType metadata will be treated as not transcribed by the repository.
-
-Examples: `phonemic` `phonetic` `orthographic`  
-
-	Discovery:					searchable, browsing facet
-	Display:					page, list	
-	User provided:				yes	
-
-	ValueScheme:				string
-	Number of occurrences:  	1-unbounded
-	Multilingual:           	no
-	CCR prefLabel@en:       	—
-	CCR URI:                	—
-
-	VLO Facet: 					—
-	OLAC (DCMI):				—
-	DataCite:                	—
-	IMDI Element:               —   
-	ELDP-CMDI Element:			—
-	IMDI-CMDI Element:			—
-
-[Back to Top](#blam-collection-repository) | [Back to CollectionDataInfo](#collectiondatainfo)
-
-#### TranslationLanguages
-**Description:** TranslationLanguages contains metadata about the languages used in translation of the data.
-
-	Number of occurrences:		0-1
-
-[Back to Top](#blam-collection-repository) | [Back to CollectionDataInfo](#collectiondatainfo)
-
-#### TranslationLanguage
-**Description:** TranslationLanguage contains metadata about a particular language used in translation of the data. Data with no TranslationLanguage metadata will be treated as not translated by the repository. Data with several TranslationLanguage elements will be treated as having several translations.
-
-	Number of occurrences:		1-unbounded
-
-[Back to Top](#blam-collection-repository) | [Back to CollectionDataInfo](#collectiondatainfo)
-
-#### TranslationLanguageName
-**Description:** The TranslationLanguageName element describes the annotation of the type translation. It contains the name of the language used in the translation. Data with no Translation metadata will be treated as not translated by the repository. Data with several Translation elements will be treated as having several translations.
-
-	Discovery:					searchable, browsing facet
-	Display:					page
-	User provided:				no
-
-	ValueScheme:				string
-	Number of occurrences:  	1-1
-	Multilingual:           	no
-	CCR prefLabel@en:       	—
-	CCR URI:                	—
-
-	VLO Facet: 					—
-	OLAC (DCMI):				—
-	DataCite:                	—
-	IMDI Element:               —   
-	ELDP-CMDI Element:          —
-	IMDI-CMDI Element:			—
-
-[Back to Top](#blam-collection-repository) | [Back to CollectionDataInfo](#collectiondatainfo)
-
-#### TranslationLanguageCode
-**Description:** &#x1F4A5; The TranslationLanguageCode element describes the annotation of the type translation. It contains a language code (ISO 639-3) which identifies the language used in the translation. Data with no TranslationLanguage metadata will be treated as not translated by the repository. Data with several TranslationLanguage elements will be treated as having several translations.
-
-	Discovery:					no
-	Display:					page, list
-	User provided:				yes
-
-	ValueScheme:				string
-	Number of occurrences:  	1-1
-	Multilingual:           	no
-	CCR prefLabel@en:       	—
-	CCR URI:                	—
-
-	VLO Facet: 					—
-	OLAC (DCMI):				—
-	DataCite:                	—
-	IMDI Element:               —   
-	ELDP-CMDI Element:  		—
-	IMDI-CMDI Element:			—
-
-[Back to Top](#blam-collection-repository) | [Back to CollectionDataInfo](#collectiondatainfo)
-
-#### AnnotationTypes
-**Description:** AnnotationTypes contains metadata describing the level and type of annotation of audio-visual data.
-
-	Number of occurrences:		0-1
-
-[Back to Top](#blam-collection-repository) | [Back to CollectionDataInfo](#collectiondatainfo)
-
-#### AnnotationType
-**Description:** &#x1F4A5; AnnotationType describes the level and type of annotation of audio-visual data in the annotations. Data with no annotation metadata will be treated as not annotated by the repository.
-
-**Examples:** `word-by-word` `GRAID` `PoS Tagging`  
-
-	Discovery:					searchable, browsing facet
-	Display:					page, list
-	User provided:				yes
-
-	ValueScheme:				string
-	Number of occurrences:  	1-unbounded
-	Multilingual:           	no
-	CCR prefLabel@en:       	—
-	CCR URI:                	—
-
-	VLO Facet: 					—
-	OLAC (DCMI):				—
-	DataCite:                	—
-	IMDI Element:               —   
-	ELDP-CMDI Element:          —
-	IMDI-CMDI Element:			—
-
-[Back to Top](#blam-collection-repository) | [Back to CollectionDataInfo](#collectiondatainfo)
-
 ### CollectionAdministrativeInfo
 **Description:** CollectionAdministrativeInfo contains administrative metadata that will be publicly communicated, especially in regard to metacatalogues and user interfaces.
 
@@ -1227,7 +1110,6 @@ Examples: `phonemic` `phonetic` `orthographic`
 #### AvailabilityDate
 **Description:** The AvailabilityDate element contains the date at which the collection became or will become available. The date must be provided conforming to ISO 8601 in the form YYYY-MM-DD.
 
-
 	Discovery:					searchable, browsing facet
 	Display:					page	
 	User provided:				no	
@@ -1309,7 +1191,6 @@ Examples: `phonemic` `phonetic` `orthographic`
 	- [FileName](#filename-metadatafile) &#x1F4A5; 
 	- [FilePID](#filepid-metadatafile) 
 	- [MimeType](#mimetype-metadatafile)
-	- [IsMetadataOf](#ismetadataof-metadatafile) &#x1F4A5;
 	- [FileDescription](#filedescription-metadatafile)  &#x1F4A5;
 - [CollectionTopics](#collectiontopics)
 	- [CollectionTopic](#collectiontopic)
@@ -1387,28 +1268,6 @@ Examples: `phonemic` `phonetic` `orthographic`
 	IMDI Element:               	       
 	ELDP-CMDI Element:          
 	IMDI-CMDI Element:
-
-[Back to Top](#blam-collection-repository) |  [Back to CollectionStructuralInfo](#collectionstructuralinfo)
-
-##### IsMetadataOf (MetadataFile)
-**Description:** &#x1F4A5; The IsMetadataOf element contains a PID that uniquely identifies the file described by the file described in this component.
-
-	Discovery:					no
-	Display:					page
-	User provided:				yes
-
-	ValueScheme:				anyURI
-	Number of occurrences:  	1-1
-	Multilingual:           	no
-	CCR prefLabel@en:       	—
-	CCR URI:                	—
-
-	VLO Facet: 					—
-	OLAC (DCMI):				—
-	DataCite:                	RelatedIdentifier:relationType:IsMetadataFor
-	IMDI Element:               —  
-	ELDP-CMDI Element:          —
-	IMDI-CMDI Element:			—
 
 [Back to Top](#blam-collection-repository) |  [Back to CollectionStructuralInfo](#collectionstructuralinfo)
 

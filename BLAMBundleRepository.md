@@ -566,6 +566,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 			+ [ContributorGivenName](#contributorgivenname) &#x1F4A5;
 		- [ContributorNameIdentifier](#contributornameidentifier) &#x1F4A5;
 		- [ContributorAffiliation](#contributoraffiliation) &#x1F4A5;
+		- [ContributorRole] (#contributorrole) &#x1F4A5;
 
 [Back to Top](#blam-bundle-repository)
 
@@ -592,7 +593,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 [Back to Top](#blam-bundle-repository) |  [Back to BundlePublicationInfo](#bundlepublicationinfo)
 
 ###### CreatorFamilyName
-**Description:** &#x1F4A5; The CreatorFamilyName element contains the part of the name of the creator that should be treated as the family name when generating a citation for the resource. This usage should guide the decision.
+**Description:** &#x1F4A5; The CreatorFamilyName element contains the part of the name of the creator that should be treated as the family name when generating a citation for the resource. This usage should guide the decision which part belongs into this field.
 
 	Discovery:					searchable
 	Display:					page
@@ -681,7 +682,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 [Back to Top](#blam-bundle-repository) |  [Back to BundlePublicationInfo](#bundlepublicationinfo)
 
 #### BundlePublicationYear
-**Description:** &#x1F4A5; BundlePublicationYear contains the year of publication in the form YYYY conforming to ISO 8601. The default value is the ingest date into the repository unless an embargo has been set for the resource. In that case the end year of the embargo is taken as the year of publication. For legacy data, the  value of BundlePublicationDate can be set to a point before the ingest. The value of this field should be used to generate a bibliographical citation reference for the resource. 
+**Description:** &#x1F4A5; BundlePublicationYear contains the year of publication in the form YYYY conforming to ISO 8601. The default value is the ingest date into the repository unless an embargo has been set for the resource. In that case, the end year of the embargo is taken as the year of publication. For legacy data, the  value of BundlePublicationDate can be set to a point before the ingest. The value of this field should be used to generate a bibliographical citation reference for the resource. 
 
 	Discovery:					searchable, browsing facet
 	Display:					page
@@ -826,6 +827,28 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 	VLO Facet: 					—
 	OLAC (DCMI):				—
 	DataCite:        			Creator:affiliation
+	IMDI Element:               —
+	ELDP-CMDI Element:          	
+	IMDI-CMDI Element:			—
+
+[Back to Top](#blam-bundle-repository) |  [Back to BundlePublicationInfo](#bundlepublicationinfo)
+
+###### ContributorRole
+**Description:** &#x1F4A5; The ContributorRole contains the organisational or institutional affiliation of the contributor as provided by the depositor.
+
+	Discovery:					—
+	Display:					page
+	User provided:				yes
+
+	ValueScheme:				string
+	Number of occurrences:  	0-unbounded
+	Multilingual:           	no
+	CCR prefLabel@en:       	—
+	CCR URI:                	—
+
+	VLO Facet: 					—
+	OLAC (DCMI):				—
+	DataCite:        			Creator:contributorType
 	IMDI Element:               —
 	ELDP-CMDI Element:          	
 	IMDI-CMDI Element:			—
