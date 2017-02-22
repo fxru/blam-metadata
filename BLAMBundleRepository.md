@@ -726,7 +726,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 [Back to Top](#blam-bundle-repository) |  [Back to BundlePublicationInfo](#bundlepublicationinfo)
 
 #### BundleContributors
-**Description:** The BundleContributors component contains information about the creator or creators of the resource. BundleCreators are treated as creators of the resource and thus similar to authors in respect to quotation, references, and metadata display. Other individuals involved in the production or processing of the resource should be added as [BundleContributors](bundlecontributors).
+**Description:** The BundleContributors component contains information about contributors to the resource. BundleContributors are not treated as authors in respect to quotation, references, and metadata display.
 
 	Number of occurrences:		0-1
 
@@ -745,7 +745,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 [Back to Top](#blam-bundle-repository) |  [Back to BundlePublicationInfo](#bundlepublicationinfo)
 
 ###### ContributorFamilyName
-**Description:** &#x1F4A5; The CreatorFamilyName element contains the part of the name of the creator that should be treated as the family name when generating a citation for the resource. This usage should guide the decision.
+**Description:** &#x1F4A5; The ContributorFamilyName element contains the part of the name of the contributor that should be treated as the family name when generating a citation for the resource. This usage should guide the decision.
 
 	Discovery:					searchable
 	Display:					page
@@ -767,7 +767,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 [Back to Top](#blam-bundle-repository) |  [Back to BundlePublicationInfo](#bundlepublicationinfo)
 
 ###### ContributorGivenName
-**Description:** &#x1F4A5; The CreatorGivenName element contains the part of the name of the creator that should be treated as the given name when generating a citation for the resource. This usage should guide the decision.
+**Description:** &#x1F4A5; The ContributorGivenName element contains the part of the name of the contributor that should be treated as the given name when generating a citation for the resource. This usage should guide the decision.
 
 	Discovery:					searchable
 	Display:					page

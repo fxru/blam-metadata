@@ -103,7 +103,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 	User provided:				yes
 
 	ValueScheme:				string
-	Number of occurrences:  	1-unbounded
+	Number of occurrences:  	1-1
 	Multilingual:           	no
 	CCR prefLabel@en:       	resource title
 	CCR URI:                	http://hdl.handle.net/11459/CCR_C-2545_d873f2ab-2a2f-29d6-a9ab-260cde57f227
@@ -126,7 +126,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 	User provided:				yes
 
 	ValueScheme:				string
-	Number of occurrences:  	1-unbounded
+	Number of occurrences:  	1-1
 	Multilingual:           	no
 	CCR prefLabel@en:       	description
 	CCR URI:                	http://hdl.handle.net/11459/CCR_C-2520_9eeedfb4-47d3-ddee-cfcb-99ac634bf1db
@@ -458,7 +458,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 	User provided:				yes	
 
 	ValueScheme:				string
-	Number of occurrences:  	0-unbounded
+	Number of occurrences:  	0-1
 	Multilingual:           	no
 	CCR prefLabel@en:       	location country
 	CCR URI:                	http://hdl.handle.net/11459/CCR_C-2532_d004b0a6-fd1d-3ca3-abf1-1e6aeb3e37b2
@@ -481,7 +481,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 	User provided:				no	
 
 	ValueScheme:				string
-	Number of occurrences:  	0-unbounded
+	Number of occurrences:  	1-1
 	Multilingual:           	no
 	CCR prefLabel@en:       	location country
 	CCR URI:                	http://hdl.handle.net/11459/CCR_C-2532_d004b0a6-fd1d-3ca3-abf1-1e6aeb3e37b2
@@ -550,7 +550,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 [Back to Top](#blam-collection-repository) | [Back to CollectionPublicationInfo](#collectionpublicationinfo)
 
 ##### CollectionCreator
-**Description:** The CollectionCreator component contains information about the creator of the resource. 
+**Description:** The CollectionCreator component contains information about the creator of the resource.
 
 	Number of occurrences:		1-unbounded
 
@@ -559,6 +559,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 ###### CreatorName
 **Description:** The CreatorName component contains the name of the creator. The value of this field can be used to generate a bibliographical citation reference for the resource. This usage should guide the formatting.
 
+	Number of occurrences:		1-1
 	CCR prefLabel@en:       	creator
 	CCR URI:                	http://hdl.handle.net/11459/CCR_C-6836_d35e73a8-ec72-d3c4-e39a-4b0fefd32cdc
 
@@ -617,7 +618,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 	User provided:				yes
 
 	ValueScheme:				anyURI
-	Number of occurrences:  	0-1
+	Number of occurrences:  	0-unbounded
 	Multilingual:           	no
 	CCR prefLabel@en:       	—
 	CCR URI:                	—
@@ -698,21 +699,28 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 [Back to Top](#blam-collection-repository) |  [Back to CollectionPublicationInfo](#collectionpublicationinfo)
 
 #### CollectionContributors
-**Description:** The CollectionContributors component contains information about the creator or creators of the resource. CollectionCreators are treated as creators of the resource and thus similar to authors in respect to quotation, references, and metadata display. Other individuals involved in the production or processing of the resource should be added as [CollectionContributors](collectioncontributors).
+**Description:** The CollectionContributors component contains information about contributors to the resource. CollectionContributors are not treated as authors in respect to quotation, references, and metadata display.
 
 	Number of occurrences:		0-1
 
 [Back to Top](#blam-collection-repository) | [Back to CollectionPublicationInfo](#collectionpublicationinfo)
 
 ##### CollectionContributor
-**Description:** The CollectionContributor component contains information about a contributor to the resource. 
+**Description:** The CollectionContributor component contains information about a contributor to the resource.
 
 	Number of occurrences:		1-unbounded
 
 [Back to Top](#blam-collection-repository) | [Back to CollectionPublicationInfo](#collectionpublicationinfo)
 
-###### ContributorDisplayName
-**Description:** &#x1F4A5; The CreatorDisplayName element contains the name of the creator. The data producer determines what is the proper order of names.
+###### ContributorName
+**Description:** The ContributorName component contains the name of the creator. The value of this field may be used to generate a bibliographical citation reference for the resource. This usage should guide the formatting.
+
+	Number of occurrences:		1-1
+
+[Back to Top](#blam-collection-repository) |  [Back to CollectionPublicationInfo](#collectionpublicationinfo)
+
+###### ContributorFamilyName
+**Description:** &#x1F4A5; The ContributorFamilyName element contains the part of the name of the creator that should be treated as the family name when generating a citation for the resource. This usage should guide the decision.
 
 	Discovery:					searchable
 	Display:					page
@@ -721,12 +729,34 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 	ValueScheme:				string
 	Number of occurrences:  	1-1
 	Multilingual:           	no
-	CCR prefLabel@en:       	creator
-	CCR URI:                	http://hdl.handle.net/11459/CCR_C-6836_d35e73a8-ec72-d3c4-e39a-4b0fefd32cdc
+	CCR prefLabel@en:       	
+	CCR URI:                	
 
 	VLO Facet: 					—
 	OLAC (DCMI):				contributor
 	DataCite:        			creator
+	IMDI Element:               //Session/MDGroup/Actors/Actor/FullName[../Role/contains(text(), 'Researcher') or ../Role/contains(text(), 'Depositor')]
+	ELDP-CMDI Element:          
+	IMDI-CMDI Element:
+
+[Back to Top](#blam-collection-repository) |  [Back to CollectionPublicationInfo](#collectionpublicationinfo)
+
+###### ContributorGivenName
+**Description:** &#x1F4A5; The CreatorGivenName element contains the part of the name of the contributor that should be treated as the given name when generating a citation for the resource. This usage should guide the decision.
+
+	Discovery:					searchable
+	Display:					page
+	User provided:				yes	
+
+	ValueScheme:				string
+	Number of occurrences:  	1-1
+	Multilingual:           	no
+	CCR prefLabel@en:       	
+	CCR URI:                	
+
+	VLO Facet: 					—
+	OLAC (DCMI):				contributor
+	DataCite:        			
 	IMDI Element:               //Session/MDGroup/Actors/Actor/FullName[../Role/contains(text(), 'Researcher') or ../Role/contains(text(), 'Depositor')]
 	ELDP-CMDI Element:          
 	IMDI-CMDI Element:
@@ -742,7 +772,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 	User provided:				yes
 
 	ValueScheme:				anyURI
-	Number of occurrences:  	0-1
+	Number of occurrences:  	0-unbounded
 	Multilingual:           	no
 	CCR prefLabel@en:       	—
 	CCR URI:                	—
@@ -832,7 +862,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 	User provided:				yes
 
 	ValueScheme:				string
-	Number of occurrences:  	1-unbounded
+	Number of occurrences:  	1-1
 	Multilingual:           	no
 	CCR prefLabel@en:       	project name
 	CCR URI:                	http://hdl.handle.net/11459/CCR_C-2536_13fc5f10-c14a-1f64-a669-32736f6d3ef5
@@ -854,7 +884,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 	User provided:				yes
 
 	ValueScheme:				string
-	Number of occurrences:  	1-unbounded
+	Number of occurrences:  	1-1
 	Multilingual:           	no
 	CCR prefLabel@en:       	—
 	CCR URI:                	—
@@ -957,7 +987,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 	Display:					page	
 	User provided:				yes	
 
-	ValueScheme:				string
+	ValueScheme:				anyURI
 	Number of occurrences:  	0-1
 	Multilingual:           	no
 	CCR prefLabel@en:       	—
@@ -1130,7 +1160,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 [Back to Top](#blam-collection-repository) | [Back to CollectionAdministrativeInfo](#collectionadministrativeinfo)
 
 #### RightsHolder
-**Description:** The RightsHolder component contains information about the individual or institution owning or managing the rights in regard to the resource. 
+**Description:** The RightsHolder component contains information about the individual or institution owning or managing the rights in regard to the resource.
 
 	Number of occurrences:		1-unbounded
 
@@ -1279,7 +1309,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 	User provided:				yes
 
 	ValueScheme:				string
-	Number of occurrences:  	0-unbounded
+	Number of occurrences:  	0-1
 	Multilingual:           	no
 	CCR prefLabel@en:       	
 	CCR URI:                	
@@ -1301,7 +1331,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 [Back to Top](#blam-collection-repository) | [Back to CollectionGeneralInfo](#collectiongeneralinfo)
 
 #### CollectionTopic
-**Description:** &#x1F4A5; A CollectionTopic element should contain a term that occurs as a BundleKeyword in a subset of bundles and defines a meaningful subsect of the collection.  
+**Description:** &#x1F4A5; A CollectionTopic element should contain a term that occurs as a BundleKeyword in a subset of bundles and defines a meaningful subsection of the collection. 
 
 	Discovery:					browsing facet
 	Display:					page, list
