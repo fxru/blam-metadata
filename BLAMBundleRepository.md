@@ -201,9 +201,9 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 	CCR prefLabel@en:       	Language Name
 	CCR URI:                	http://hdl.handle.net/11459/CCR_C-2484_669684e7-cb9e-ea96-59cb-a25fe89b9b9d
 
-	VLO Facet: 					languageCode
+	VLO Facet: 					
 	OLAC (DCMI):				http://purl.org/dc/terms/language
-	DataCite:        			Language
+	DataCite:        			
 	IMDI Element:               //Session/MDGroup/Content/Languages/Language/Name
 	ELDP-CMDI Element:          
 	IMDI-CMDI Element:
@@ -226,7 +226,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 
 	VLO Facet: 					languageCode
 	OLAC (DCMI):				http://purl.org/dc/terms/language
-	DataCite:        			Language
+	DataCite:        			
 	IMDI Element:               
 	ELDP-CMDI Element:          
 	IMDI-CMDI Element:
