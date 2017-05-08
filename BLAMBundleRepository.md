@@ -1421,19 +1421,19 @@ Examples: `phonemic` `phonetic` `orthographic`
 	- [FileDescription](#filedescription-metadatafile)  &#x1F4A5;
 - [BundleResources](#bundleresources)
 	- [MediaResource](#mediaresource)
-		- [FileName] (#filename-mediaresource) &#x1F4A5;
+		- [FileName](#filename-mediaresource) &#x1F4A5;
 		- [FilePID](#filepid-mediaresource) 
 		- [MimeType](#mimetype-mediaresource)
 		- [FileLength](#filelength-mediaresource)
 		- [FileDescription](#filedescription-mediaresource)  &#x1F4A5;
 	- [WrittenResource](#writtenresource)
-		- [FileName] (#filename-writtenresource) &#x1F4A5;
+		- [FileName](#filename-writtenresource) &#x1F4A5;
 		- [FilePID](#filepid-writtenresource) 
 		- [MimeType](#mimetype-writtenresource)
 		- [IsAnnotationOf](#isannotationof-writtenresource) &#x1F4A5;
 		- [FileDescription](#filedescription-writtenresource)  &#x1F4A5; 
 	- [OtherResource](#otherresource)
-		- [FileName] (#filename-otherresource) &#x1F4A5;
+		- [FileName](#filename-otherresource) &#x1F4A5;
 		- [FilePID](#filepid-otherresource) 
 		- [MimeType](#mimetype-otherresource)
 		- [FileDescription](#filedescription-otherresource)  &#x1F4A5;
