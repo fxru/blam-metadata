@@ -53,11 +53,12 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 	- [CollectionObjectLanguage](#collectionobjectlanguage)
 		- [ObjectLanguageDisplayName](#objectlanguagedisplayname) &#x1F4A5;
 		- [ObjectLanguageName](#objectlanguagename)
-		- [ObjectLanguageAlternativeNames](#objectlanguagealternativenames)
-			+ [ObjectLanguageAlternativeName](#objectlanguagealternativename)
 		- [ObjectLanguageISO639-3Code](#objectlanguageiso639-3code)
 		- [ObjectLanguageGlottologCode](#objectlanguageglottologcode) &#x1F4A5;
-		- [ObjectLanguageLanguageFamily](#objectlanguagelanguagefamily)
+		- [ObjectLanguageAlternativeNames](#objectlanguagealternativenames)
+			+ [ObjectLanguageAlternativeName](#objectlanguagealternativename)
+		- [ObjectLanguageTaxonomy](#objectlanguagetaxonomy)
+			+ [ObjectLanguageLanguageFamily](#objectlanguagelanguagefamily)
 - [CollectionLocation](#collectionlocation)
 	- [CollectionGeoLocation](#collectiongeolocation) &#x1F4A5;
 	- [CollectionLocationDisplayName](#collectionlocationdisplayname) &#x1F4A5;
@@ -229,35 +230,6 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 
 [Back to Top](#blam-collection-repository) | [Back to CollectionGeneralInfo](#collectiongeneralinfo)
 
-#### ObjectLanguageAlternativeNames
-**Description:** The ObjectLanguageAlternativeNames component contains elements with alternative names for the object language as provided by services such as Glottolog or Ethnologue. 
-
-	Number of occurrences:  	0-1
-
-[Back to Top](#blam-collection-repository) | [Back to CollectionGeneralInfo](#collectiongeneralinfo)
-
-#### ObjectLanguageAlternativeName
-**Description:** The ObjectLanguageAlternativeName element contains an alternative name of the object language as provided by services such as Glottolog or Ethnologue.
-
-	Discovery:					searchable
-	Display:					no
-	User provided:				no
-
-	ValueScheme:				string
-	Number of occurrences:  	0-unbounded
-	Multilingual:           	no
-	CCR prefLabel@en:       	
-	CCR URI:                	
-
-	VLO Facet: 					
-	OLAC (DCMI):				
-	DataCite:        			
-	IMDI Element:               
-	ELDP-CMDI Element:          
-	IMDI-CMDI Element:
-	lat-session:				
-
-[Back to Top](#blam-collection-repository) | [Back to CollectionGeneralInfo](#collectiongeneralinfo)
 
 #### ObjectLanguageISO639-3Code
 **Description:**  The ObjectLanguageISO639-3 element contains an ISO 639-3 language code for the object language.
@@ -305,6 +277,42 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 
 [Back to Top](#blam-collection-repository) | [Back to CollectionGeneralInfo](#collectiongeneralinfo)
 
+#### ObjectLanguageAlternativeNames
+**Description:** The ObjectLanguageAlternativeNames component contains elements with alternative names for the object language as provided by services such as Glottolog or Ethnologue. 
+
+	Number of occurrences:  	0-1
+
+[Back to Top](#blam-collection-repository) | [Back to CollectionGeneralInfo](#collectiongeneralinfo)
+
+#### ObjectLanguageAlternativeName
+**Description:** The ObjectLanguageAlternativeName element contains an alternative name of the object language as provided by services such as Glottolog or Ethnologue.
+
+	Discovery:					searchable
+	Display:					no
+	User provided:				no
+
+	ValueScheme:				string
+	Number of occurrences:  	0-unbounded
+	Multilingual:           	no
+	CCR prefLabel@en:       	
+	CCR URI:                	
+
+	VLO Facet: 					
+	OLAC (DCMI):				
+	DataCite:        			
+	IMDI Element:               
+	ELDP-CMDI Element:          
+	IMDI-CMDI Element:
+	lat-session:				
+
+[Back to Top](#blam-collection-repository) | [Back to CollectionGeneralInfo](#collectiongeneralinfo)
+
+#### ObjectLanguageTaxonomy
+
+**Description** The ObjectLanguageTaxonomy component contains elements with the name of the language family and sub-families or sub-groups the object language belongs to. The values are taken from Glottolog and given in the version as provided by this service. 
+
+	Number of occurrences:  	0-1
+
 #### ObjectLanguageLanguageFamily
 **Description:** The ObjectLanguageLanguageFamily element contains the name of the language family and sub-families or sub-groups the object language belongs to. The values are taken from Glottolog and given in the version as provided by this service. 
 
@@ -318,13 +326,13 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 	CCR prefLabel@en:       	Language Name
 	CCR URI:                	http://hdl.handle.net/11459/CCR_C-2484_669684e7-cb9e-ea96-59cb-a25fe89b9b9d
 
-	VLO Facet: 					languageCode
-	OLAC (DCMI):				http://purl.org/dc/terms/language
-	DataCite:        			Language
+	VLO Facet: 					
+	OLAC (DCMI):				
+	DataCite:        			
 	IMDI Element:               
 	ELDP-CMDI Element:          
 	IMDI-CMDI Element:
-	lat-session:				
+	lat-session:			
 
 [Back to Top](#blam-collection-repository) | [Back to CollectionGeneralInfo](#collectiongeneralinfo)
 

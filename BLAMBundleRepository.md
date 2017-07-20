@@ -7,8 +7,7 @@ Basic Language Archive Metadata (BLAM) is designed to provide basic metadata for
 
 * BLAM Bundle Repository: described in this document [below](#blam-bundle-repository)
 * BLAM Bundle User: [documentation](https://github.com/fxru/blam-metadata/blob/master/BLAMBundleUser.md)
-* BLAM Collection Repository: documentation  [(draft)](https://github.com/fxru/blam-metadata/blob/master/BLAMCollectionRepository.md)
-* BLAM Collection User: documentation  (to come)
+* BLAM Collection Repository: [documentation](https://github.com/fxru/blam-metadata/blob/master/BLAMCollectionRepository.md)
 
 BLAM Bundle Repository contains information about bundles as provided by the repository. Data producers are asked to submit a subset of this information during ingest. The BLAM Bundle User profile defines this subset of 40 data fields. The separate definition of the BLAM Bundle User profile enhances the usability for data producers and can be validated independently from the more comprehensive BLAM Bundle Repository profile. The Basic Language Archive Metadata Bundle User profile is intended to be the primary source of user input for BLAM Bundle Repository. However, BLAM Bundle Repository is designed to allow automatic import of information from other metadata formats. The formats actively considered are: 
 
@@ -56,11 +55,11 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 	- [BundleObjectLanguage](#bundleobjectlanguage)
 		- [ObjectLanguageDisplayName](#objectlanguagedisplayname) &#x1F4A5;
 		- [ObjectLanguageName](#objectlanguagename)
-		- [ObjectLanguageAlternativeNames](#objectlanguagealternativenames)
-			+ [ObjectLanguageAlternativeName](#objectlanguagealternativename)
 		- [ObjectLanguageISO639-3Code](#objectlanguageiso639-3code)
 		- [ObjectLanguageGlottologCode](#objectlanguageglottologcode) &#x1F4A5;
-		- [ObjectLanguageLanguageGenealogy](#objectlanguagelanguagegenealogy)
+		- [ObjectLanguageAlternativeNames](#objectlanguagealternativenames)
+			+ [ObjectLanguageAlternativeName](#objectlanguagealternativename)
+		- [ObjectLanguageTaxonomy](#objectlanguagetaxonomy)
 			+ [ObjectLanguageLanguageFamily](#objectlanguagelanguagefamily)
 - [BundleRecordingDate](#bundlerecordingdate) &#x1F4A5;
 - [BundleLocation](#bundlelocation)
@@ -234,34 +233,6 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 
 [Back to Top](#blam-bundle-repository) | [Back to BundleGeneralInfo](#bundlegeneralinfo)
 
-#### ObjectLanguageAlternativeNames
-**Description:** The ObjectLanguageAlternativeNames component contains elements with alternative names for the object language as provided by services such as Glottolog or Ethnologue. 
-
-	Number of occurrences:  	0-1
-
-#### ObjectLanguageAlternativeName
-**Description:** The ObjectLanguageAlternativeName element contains an alternative name of the object language as provided by services such as Glottolog or Ethnologue.
-
-	Discovery:					searchable
-	Display:					no
-	User provided:				no
-
-	ValueScheme:				string
-	Number of occurrences:  	0-unbounded
-	Multilingual:           	no
-	CCR prefLabel@en:       	
-	CCR URI:                	
-
-	VLO Facet: 					
-	OLAC (DCMI):				
-	DataCite:        			
-	IMDI Element:               
-	ELDP-CMDI Element:          
-	IMDI-CMDI Element:
-	lat-session:				
-
-[Back to Top](#blam-bundle-repository) | [Back to BundleGeneralInfo](#bundlegeneralinfo)
-
 #### ObjectLanguageISO639-3Code
 **Description:**  The ObjectLanguageISO639-3 element contains an ISO 639-3 language code for the object language.
 
@@ -307,6 +278,40 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 	lat-session:				
 
 [Back to Top](#blam-bundle-repository) | [Back to BundleGeneralInfo](#bundlegeneralinfo)
+
+#### ObjectLanguageAlternativeNames
+**Description:** The ObjectLanguageAlternativeNames component contains elements with alternative names for the object language as provided by services such as Glottolog or Ethnologue. 
+
+	Number of occurrences:  	0-1
+
+#### ObjectLanguageAlternativeName
+**Description:** The ObjectLanguageAlternativeName element contains an alternative name of the object language as provided by services such as Glottolog or Ethnologue.
+
+	Discovery:					searchable
+	Display:					no
+	User provided:				no
+
+	ValueScheme:				string
+	Number of occurrences:  	0-unbounded
+	Multilingual:           	no
+	CCR prefLabel@en:       	
+	CCR URI:                	
+
+	VLO Facet: 					
+	OLAC (DCMI):				
+	DataCite:        			
+	IMDI Element:               
+	ELDP-CMDI Element:          
+	IMDI-CMDI Element:
+	lat-session:				
+
+[Back to Top](#blam-bundle-repository) | [Back to BundleGeneralInfo](#bundlegeneralinfo)
+
+#### ObjectLanguageTaxonomy
+
+**Description** The ObjectLanguageTaxonomy component contains elements with the name of the language family and sub-families or sub-groups the object language belongs to. The values are taken from Glottolog and given in the version as provided by this service. 
+
+	Number of occurrences:  	0-1
 
 #### ObjectLanguageLanguageFamily
 **Description:** The ObjectLanguageLanguageFamily element contains the name of the language family and sub-families or sub-groups the object language belongs to. The values are taken from Glottolog and given in the version as provided by this service. 
