@@ -197,13 +197,13 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 [Back to Top](#blam-bundle-repository) | [Back to BundleGeneralInfo](#bundlegeneralinfo)
 
 #### BundleRecordingDate
-**Description:** &#x1F4A5; The BundleRecordingDate element contains the date at which a recording occured. The date must be provided conforming to ISO 8601 in the form YYYY-MM-DD.
+**Description:** &#x1F4A5; The BundleRecordingDate element contains the date at which a recording occured. The date must be provided conforming to ISO 8601 in the form YYYY-MM-DD, YYYY-MM, or YYYY.
 
 	Discovery:					searchable, browsing facet (collection)
 	Display:					page
 	User provided:				yes		
 
-	ValueScheme:				date
+	ValueScheme:				([0-9]{4}(-(0[1-9]|1[012])(-([0-2][0-9]|3[01]))?)?)|Unknown
 	Number of occurrences:  	1-1
 	Multilingual:           	no
 	CCR prefLabel@en:       	Date of Recording

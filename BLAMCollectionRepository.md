@@ -61,12 +61,12 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 			+ [ObjectLanguageLanguageFamily](#objectlanguagelanguagefamily)
 - [CollectionLocation](#collectionlocation)
 	- [CollectionGeoLocation](#collectiongeolocation) &#x1F4A5;
-	- [CollectionLocationDisplayName](#collectionlocationdisplayname) &#x1F4A5;
-	- [CollectionLocationName](#collectionlocationname)
-	- [CollectionRegionDisplayName](#collectionregiondisplayname) &#x1F4A5;
-	- [CollectionRegionName](#collectionregionname) 
-	- [CollectionCountryDisplayName](#collectioncountrydisplayname)  &#x1F4A5;
-	- [CollectionCountryName](#collectioncountryname)
+	- [CollectionLocationName](#collectionlocationname) &#x1F4A5;
+	- [CollectionLocationFacet](#collectionlocationfacet)
+	- [CollectionRegionName](#collectionregionname) &#x1F4A5;
+	- [CollectionRegionFacet](#collectionregionfacet) 
+	- [CollectionCountryName](#collectioncountryname)  &#x1F4A5;
+	- [CollectionCountryFacet](#collectioncountryfacet)
 	- [CollectionCountryCode](#collectioncountrycode) 
 
 [Back to Top](#blam-collection-repository)
@@ -344,7 +344,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 [Back to Top](#blam-collection-repository) | [Back to CollectionGeneralInfo](#collectiongeneralinfo)
 
 #### CollectionGeoLocation
-**Description:** &#x1F4A5; The CollectionGeoLocation element contains a geographical coordinates for a location point in the form *LATITUDE,LONGITUDE* as decimal degrees (e.g. 50.926735,6.930392).
+**Description:** &#x1F4A5; The CollectionGeoLocation element contains a geographical coordinates for a location point in the form *LATITUDE,LONGITUDE* as decimal degrees (e.g. 50.926735,6.930392 or -36.427925,150.076214).
 
 	Discovery:					browsing facet (map)
 	Display:					page, list (both map)
@@ -366,8 +366,8 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 
 [Back to Top](#blam-collection-repository) | [Back to CollectionGeneralInfo](#collectiongeneralinfo)
 
-#### CollectionLocationDisplayName
-**Description:** &#x1F4A5; The CollectionLocationDisplayName element contains the name of a location in the version recommended by the data producer. Repositories should treat the name provided by this element as the primary location name when displaying the metadata in relation to this particular data set.The repository may use alternative names provided by services such as GeoNames to improve discoverability and to enhance the browsing and search experience.
+#### CollectionLocationName
+**Description:** &#x1F4A5; The CollectionLocationName element contains the name of a location in the version recommended by the data producer. Repositories should treat the name provided by this element as the primary location name when displaying the metadata in relation to this particular data set.The repository may use alternative names provided by services such as GeoNames to improve discoverability and to enhance the browsing and search experience.
 
 	Discovery:					searchable, browsing facet
 	Display:					page
@@ -389,8 +389,8 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 
 [Back to Top](#blam-collection-repository) | [Back to CollectionGeneralInfo](#collectiongeneralinfo)
 
-#### CollectionLocationName
-**Description:** The CollectionLocationName element contains the name of a location provided by services such as GeoNames. This name is used to improve discoverability and to enhance the browsing and search experience. GeoNames field: *name* (or *toponymName*).
+#### CollectionLocationFacet
+**Description:** The CollectionLocationFacet element contains the name of a location provided by services such as GeoNames. This name is used to improve discoverability and to enhance the browsing and search experience. GeoNames field: *name* (or *toponymName*).
 
 	Discovery:					searchable
 	Display:					no
@@ -412,8 +412,8 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 
 [Back to Top](#blam-collection-repository) | [Back to CollectionGeneralInfo](#collectiongeneralinfo)
 
-#### CollectionRegionDisplayName
-**Description:** &#x1F4A5; The CollectionRegionDisplayName element optionally contains the name of an administrative subdivision such as state, province, or any other culturally salient unit in the version recommended by the data producer. The data producer can decided which level of subdivision is relevant and will improve discoverability. Repositories should treat the name provided by this element as the primary location name when displaying the metadata in relation to this particular data set (e.g. collection or collection). The repository may use alternative names provided by services such as GeoNames to improve discoverability and to enhance browsing and search experience.
+#### CollectionRegionName
+**Description:** &#x1F4A5; The CollectionRegionName element optionally contains the name of an administrative subdivision such as state, province, or any other culturally salient unit in the version recommended by the data producer. The data producer can decided which level of subdivision is relevant and will improve discoverability. Repositories should treat the name provided by this element as the primary location name when displaying the metadata in relation to this particular data set (e.g. collection or collection). The repository may use alternative names provided by services such as GeoNames to improve discoverability and to enhance browsing and search experience.
 
 	Discovery:					searchable
 	Display:					page
@@ -435,8 +435,8 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 
 [Back to Top](#blam-collection-repository) | [Back to CollectionGeneralInfo](#collectiongeneralinfo)
 
-#### CollectionRegionName
-**Description:** The CollectionRegionName element contains the name of an administrative subdivision provided by services such as GeoNames to improve discoverability and to enhance browsing and search experience. GeoNames field: *adminName1* 
+#### CollectionRegionFacet
+**Description:** The CollectionRegionFacet element contains the name of an administrative subdivision provided by services such as GeoNames to improve discoverability and to enhance browsing and search experience. GeoNames field: *adminName1* 
 
 	Discovery:					searchable, browsing facet
 	Display:					no
@@ -458,8 +458,8 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 
 [Back to Top](#blam-collection-repository) | [Back to CollectionGeneralInfo](#collectiongeneralinfo)
 
-#### CollectionCountryDisplayName
-**Description:** &#x1F4A5; The CollectionCountryDisplayName element contains the name of the country to which the location belongs in the version recommended by the data producer. Repositories should treat the name provided by this element as the primary country name when displaying the metadata in relation to this particular data set (e.g. collection or collection). The repository may use alternative names provided by services such as GeoNames to improve discoverability and to enhance browsing and search experience.
+#### CollectionCountryName
+**Description:** &#x1F4A5; The CollectionCountryName element contains the name of the country to which the location belongs in the version recommended by the data producer. Repositories should treat the name provided by this element as the primary country name when displaying the metadata in relation to this particular data set (e.g. collection or collection). The repository may use alternative names provided by services such as GeoNames to improve discoverability and to enhance browsing and search experience.
 
 	Discovery:					searchable
 	Display:					page
@@ -481,8 +481,8 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 
 [Back to Top](#blam-collection-repository) | [Back to CollectionGeneralInfo](#collectiongeneralinfo)
 
-#### CollectionCountryName
-**Description:** The CollectionCountryName element contains the name of the country as provided by services such as GeoNames to improve discoverability and to enhance browsing and search experience. GeoNames field: *countryName*
+#### CollectionCountryFacet
+**Description:** The CollectionCountryFacet element contains the name of the country as provided by services such as GeoNames to improve discoverability and to enhance browsing and search experience. GeoNames field: *countryName*
 
 	Discovery:					searchable, browsing facet
 	Display:					no

@@ -64,12 +64,12 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 - [BundleRecordingDate](#bundlerecordingdate) &#x1F4A5;
 - [BundleLocation](#bundlelocation)
 	- [BundleGeoLocation](#bundlegeolocation) &#x1F4A5;
-	- [BundleLocationDisplayName](#bundlelocationdisplayname) &#x1F4A5;
-	- [BundleLocationName](#bundlelocationname)
-	- [BundleRegionDisplayName](#bundleregiondisplayname) &#x1F4A5;
-	- [BundleRegionName](#bundleregionname) 
-	- [BundleCountryDisplayName](#bundlecountrydisplayname)  &#x1F4A5;
-	- [BundleCountryName](#bundlecountryname)
+	- [BundleLocationName](#bundlelocationame) &#x1F4A5;
+	- [BundleLocationFacet](#bundlelocationfacet)
+	- [BundleRegionName](#bundleregionname) &#x1F4A5;
+	- [BundleRegionFacet](#bundleregionfacet) 
+	- [BundleCountryName](#bundlecountryname)  &#x1F4A5;
+	- [BundleCountryFacet](#bundlecountryfacet)
 	- [BundleCountryCode](#bundlecountrycode) 
 
 [Back to Top](#blam-bundle-repository)
@@ -337,13 +337,13 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 [Back to Top](#blam-bundle-repository) | [Back to BundleGeneralInfo](#bundlegeneralinfo)
 
 #### BundleRecordingDate
-**Description:** &#x1F4A5; The BundleRecordingDate element contains the date at which a recording occured. The date must be provided conforming to ISO 8601 in the form YYYY-MM-DD.
+**Description:** &#x1F4A5; The BundleRecordingDate element contains the date at which a recording occured. The date must be provided conforming to ISO 8601 in the form YYYY-MM-DD, YYYY-MM, or YYYY.
 
 	Discovery:					searchable, browsing facet (collection)
 	Display:					page
 	User provided:				yes		
 
-	ValueScheme:				date
+	ValueScheme:				([0-9]{4}(-(0[1-9]|1[012])(-([0-2][0-9]|3[01]))?)?)|Unknown
 	Number of occurrences:  	1-1
 	Multilingual:           	no
 	CCR prefLabel@en:       	Date of Recording
@@ -367,14 +367,14 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 [Back to Top](#blam-bundle-repository) | [Back to BundleGeneralInfo](#bundlegeneralinfo)
 
 #### BundleGeoLocation
-**Description:** &#x1F4A5; The BundleGeoLocation element contains a geographical coordinates for a location point in the form *LATITUDE,LONGITUDE* as decimal degrees (e.g. 50.926735,6.930392).
+**Description:** &#x1F4A5; The BundleGeoLocation element contains a geographical coordinates for a location point in the form *LATITUDE,LONGITUDE* as decimal degrees (e.g. 50.926735,6.930392 or -36.427925,150.076214).
 
 	Discovery:					browsing facet (map)
 	Display:					page, list (both map)
 	User provided:				yes				
 
 	ValueScheme:				string
-	Number of occurrences:  	1-1
+	Number of occurrences:  	0-1
 	Multilingual:           	no
 	CCR prefLabel@en:       	geographical coordinates
 	CCR URI:                	http://hdl.handle.net/11459/CCR_C-2523_283c7b54-06ed-3d6c-4bb0-c8a79a8236fd
@@ -389,15 +389,15 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 
 [Back to Top](#blam-bundle-repository) | [Back to BundleGeneralInfo](#bundlegeneralinfo)
 
-#### BundleLocationDisplayName
-**Description:** &#x1F4A5; The BundleLocationDisplayName element contains the name of a location in the version recommended by the data producer. Repositories should treat the name provided by this element as the primary location name when displaying the metadata in relation to this particular data set (e.g. collection or bundle). The repository may use alternative names provided by services such as GeoNames to improve discoverability and to enhance the browsing and search experience. The repository may also translate the name into other languages if no BundleLocationDisplayName name is given for a particular interface language. 
+#### BundleLocationName
+**Description:** &#x1F4A5; The BundleLocationName element contains the name of a location in the version recommended by the data producer. Repositories should treat the name provided by this element as the primary location name when displaying the metadata in relation to this particular data set (e.g. collection or bundle). The repository may use alternative names provided by services such as GeoNames to improve discoverability and to enhance the browsing and search experience.
 
-	Discovery:					searchable, browsing facet
+	Discovery:					searchable
 	Display:					page
 	User provided:				yes		
 
 	ValueScheme:				string
-	Number of occurrences:  	1-unbounded
+	Number of occurrences:  	0-1
 	Multilingual:           	no
 	CCR prefLabel@en:       	place name
 	CCR URI:                	http://hdl.handle.net/11459/CCR_C-5580_03e458f2-f873-8645-76eb-40e001b6c1ac
@@ -412,15 +412,15 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 
 [Back to Top](#blam-bundle-repository) | [Back to BundleGeneralInfo](#bundlegeneralinfo)
 
-#### BundleLocationName
-**Description:** The BundleLocationName element contains the name of a location provided by services such as GeoNames. This name is used to improve discoverability and to enhance the browsing and search experience. GeoNames field: *name* (or *toponymName*).
+#### BundleLocationFacet
+**Description:** The BundleLocationFacet element contains the name of a location provided by services such as GeoNames. This name is used to improve discoverability and to enhance the browsing and search experience. GeoNames field: *name* (or *toponymName*).
 
-	Discovery:					searchable
+	Discovery:					searchable, browsing facet
 	Display:					no
 	User provided:				no
 
 	ValueScheme:				string
-	Number of occurrences:  	0-unbounded
+	Number of occurrences:  	0-1
 	Multilingual:           	no
 	CCR prefLabel@en:       	place name
 	CCR URI:                	http://hdl.handle.net/11459/CCR_C-5580_03e458f2-f873-8645-76eb-40e001b6c1ac
@@ -435,15 +435,15 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 
 [Back to Top](#blam-bundle-repository) | [Back to BundleGeneralInfo](#bundlegeneralinfo)
 
-#### BundleRegionDisplayName
-**Description:** &#x1F4A5; The BundleRegionDisplayName element optionally contains the name of an administrative subdivision such as state, province, or any other culturally salient unit in the version recommended by the data producer. The data producer can decided which level of subdivision is relevant and will improve discoverability. Repositories should treat the name provided by this element as the primary location name when displaying the metadata in relation to this particular data set (e.g. collection or bundle). The repository may use alternative names provided by services such as GeoNames to improve discoverability and to enhance browsing and search experience. The repository may also translate the name into other languages if no RegionDisplayName value is given for a particular interface language.
+#### BundleRegionName
+**Description:** &#x1F4A5; The BundleRegionName element contains the name of an administrative subdivision such as state, province, or any other politically salient administrative unit in the version recommended by the data producer. The data producer can decided which level of subdivision is relevant and will improve discoverability. Repositories should treat the name provided by this element as the primary location name when displaying the metadata in relation to this particular data set (e.g. collection or bundle). The repository may use alternative names provided by services such as GeoNames to improve discoverability and to enhance browsing and search experience.
 
 	Discovery:					searchable
 	Display:					page
 	User provided:				yes
 
 	ValueScheme:				string
-	Number of occurrences:  	0-unbounded
+	Number of occurrences:  	1-1
 	Multilingual:           	no
 	CCR prefLabel@en:       	location region
 	CCR URI:                	http://hdl.handle.net/11459/CCR_C-2533_fa6e1812-e29b-3cf6-e15a-50aa34b9be68
@@ -458,8 +458,8 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 
 [Back to Top](#blam-bundle-repository) | [Back to BundleGeneralInfo](#bundlegeneralinfo)
 
-#### BundleRegionName
-**Description:** The BundleRegionName element contains the name of an administrative subdivision provided by services such as GeoNames to improve discoverability and to enhance browsing and search experience. GeoNames field: *adminName1* 
+#### BundleRegionFacet
+**Description:** The BundleRegionFacet element contains the name of an administrative subdivision provided by services such as GeoNames to improve discoverability and to enhance browsing and search experience. GeoNames field: *adminName1* 
 
 	Discovery:					searchable, browsing facet
 	Display:					no
@@ -481,15 +481,15 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 
 [Back to Top](#blam-bundle-repository) | [Back to BundleGeneralInfo](#bundlegeneralinfo)
 
-#### BundleCountryDisplayName
-**Description:** &#x1F4A5; The BundleCountryDisplayName element contains the name of the country to which the location belongs in the version recommended by the data producer. Repositories should treat the name provided by this element as the primary country name when displaying the metadata in relation to this particular data set (e.g. collection or bundle). The repository may use alternative names provided by services such as GeoNames to improve discoverability and to enhance browsing and search experience. The repository may also translate the name into other languages if no BundleCountryDisplayName name is given for a particular interface language.  
+#### BundleCountryName
+**Description:** &#x1F4A5; The BundleCountryName element contains the name of the country to which the location belongs in the version recommended by the data producer. Repositories should treat the name provided by this element as the primary country name when displaying the metadata in relation to this particular data set (e.g. collection or bundle). The repository may use alternative names provided by services such as GeoNames to improve discoverability and to enhance browsing and search experience. The repository may also translate the name into other languages if no BundleCountryName name is given for a particular interface language.  
 
 	Discovery:					searchable
 	Display:					page
 	User provided:				yes	
 
 	ValueScheme:				string
-	Number of occurrences:  	0-1
+	Number of occurrences:  	1-1
 	Multilingual:           	no
 	CCR prefLabel@en:       	location country
 	CCR URI:                	http://hdl.handle.net/11459/CCR_C-2532_d004b0a6-fd1d-3ca3-abf1-1e6aeb3e37b2
@@ -504,8 +504,8 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 
 [Back to Top](#blam-bundle-repository) | [Back to BundleGeneralInfo](#bundlegeneralinfo)
 
-#### BundleCountryName
-**Description:** The BundleCountryName element contains the name of the country as provided by services such as GeoNames to improve discoverability and to enhance browsing and search experience. GeoNames field: *countryName*
+#### BundleCountryFacet
+**Description:** The BundleCountryFacet element contains the name of the country as provided by services such as GeoNames to improve discoverability and to enhance browsing and search experience. GeoNames field: *countryName*
 
 	Discovery:					searchable, browsing facet
 	Display:					no
