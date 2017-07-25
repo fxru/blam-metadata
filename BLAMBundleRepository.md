@@ -873,7 +873,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 			- [FunderName](#fundername) &#x1F4A5;
 			- [FunderIdentifier](#funderidentifier) &#x1F4A5;
 			- [GrantIdentifier](#grantidentifier) &#x1F4A5;
-			- [GrantURI](#Granturi) &#x1F4A5;
+			- [GrantURI](#granturi) &#x1F4A5;
 
 [Back to Top](#blam-bundle-repository)
 
@@ -1207,7 +1207,7 @@ Examples: `phonemic` `phonetic` `orthographic`
 	Number of occurrences:		1-1
 
 - [BundleIsIdenticalTo](#bundleisidenticalto) &#x1F4A5;
-- [BundleIsDerivedFrom](#bundleisderivedfrom) &#x1F4A5;
+- [BundleIsDerivationOf](#bundleisderivationof) &#x1F4A5;
 - [License](#license)
 	- [LicenseName](#licensename)
 	- [LicenseIdentifier](#licenseidentifier) &#x1F4A5;
@@ -1220,7 +1220,7 @@ Examples: `phonemic` `phonetic` `orthographic`
 [Back to Top](#blam-bundle-repository)
 
 #### BundleIsIdenticalTo
-**Description:** &#x1F4A5; The BundleIsIdenticalTo element contains an URI that uniquely identifies an identical resource. This element should only be used if it can be ascertained that the identified resource and the current resource will remain identical; else BundleIsDerivedFrom should be used.
+**Description:** &#x1F4A5; The BundleIsIdenticalTo element contains an URI that uniquely identifies an identical resource. This element should only be used if it can be ascertained that the identified resource and the current resource will remain identical; else BundleIsDerivationOf should be used.
 
 	Discovery:					no
 	Display:					page
@@ -1241,8 +1241,8 @@ Examples: `phonemic` `phonetic` `orthographic`
 
 [Back to Top](#blam-bundle-repository) | [Back to BundleAdministrativeInfo](#bundleadministrativeinfo)
 
-#### BundleIsDerivedFrom
-**Description:** &#x1F4A5; The BundleIsDerivedFrom element contains an URI that uniquely identifies the resource from which the current resource is derived.
+#### BundleIsDerivationOf
+**Description:** &#x1F4A5; The BundleIsDerivationOf element contains an URI that uniquely identifies the resource from which the current resource is derived. The BundleIsDerivationOf relationship is based on the `isDerivationOf` relationship of the [Fedora Relationship Ontology](http://www.fedora.info/definitions/1/0/fedora-relsext-ontology.rdfs).
 
 	Discovery:					no
 	Display:					page
@@ -1417,12 +1417,12 @@ Examples: `phonemic` `phonetic` `orthographic`
 
 	Number of occurrences:		1-1
 
-- [BundleIsPartOfCollection](#bundleispartofcollection) 
+- [BundleIsMemberOfCollection](#bundleismemberofcollection) 
 - [BundleAdditionalMetadataFile](#bundleadditionalmetadatafile)
 	- [FileName](#filename-metadatafile) &#x1F4A5; 
 	- [FilePID](#filepid-metadatafile) 
 	- [MimeType](#mimetype-metadatafile)
-	- [IsMetadataOf](#ismetadataof-metadatafile) &#x1F4A5;
+	- [IsMetadataFor](#ismetadatafor-metadatafile) &#x1F4A5;
 	- [FileDescription](#filedescription-metadatafile)  &#x1F4A5;
 - [BundleResources](#bundleresources)
 	- [MediaResource](#mediaresource)
@@ -1445,8 +1445,8 @@ Examples: `phonemic` `phonetic` `orthographic`
 
 [Back to Top](#blam-bundle-repository) |  [Back to BundleStructuralInfo](#bundlestructuralinfo)
 
-#### BundleIsPartOfCollection
-**Description:** The BundleIsIPartOfCollection element contains a PID or DOI that uniquely identifies the collection the resource is part of.
+#### BundleIsMemberOfCollection
+**Description:** The BundleIsIPartOfCollection element contains a PID or DOI that uniquely identifies the collection the resource is part of. The BundleIsMemberOfCollection relationship is based on the `isMemberOfCollection` relationship of the [Fedora Relationship Ontology](http://www.fedora.info/definitions/1/0/fedora-relsext-ontology.rdfs).
 
 **Attribute:** *IdentifierType* **Values:** *DOI, Handle* The IdentifierType attribute determines the identifier type used.
 
@@ -1540,8 +1540,8 @@ Examples: `phonemic` `phonetic` `orthographic`
 
 [Back to Top](#blam-bundle-repository) |  [Back to BundleStructuralInfo](#bundlestructuralinfo)
 
-##### IsMetadataOf (MetadataFile)
-**Description:** &#x1F4A5; The IsMetadataOf element contains a PID that uniquely identifies the file described by the file described in this component.
+##### IsMetadataFor (MetadataFile)
+**Description:** &#x1F4A5; The IsMetadataFor element contains a PID that uniquely identifies the file described by the file described in this component. The IsMetadataFor relationship is based on the `isMetadataFor` relationship of the [Fedora Relationship Ontology](http://www.fedora.info/definitions/1/0/fedora-relsext-ontology.rdfs).
 
 	Discovery:					no
 	Display:					page
@@ -1778,7 +1778,7 @@ Examples: `phonemic` `phonetic` `orthographic`
 [Back to Top](#blam-bundle-repository) |  [Back to BundleStructuralInfo](#bundlestructuralinfo)
 
 ###### IsAnnotationOf (WrittenResource)
-**Description:** &#x1F4A5; The IsAnnotationOf element contains a PID that uniquely identifies the file annotated by the file described in this component.
+**Description:** &#x1F4A5; The IsAnnotationOf element contains a PID that uniquely identifies the file annotated by the file described in this component. The IsAnnotationOf relationship is based on the `isAnnotationOf` relationship of the [Fedora Relationship Ontology](http://www.fedora.info/definitions/1/0/fedora-relsext-ontology.rdfs).
 
 	Discovery:					no
 	Display:					page

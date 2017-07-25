@@ -351,7 +351,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 	User provided:				yes				
 
 	ValueScheme:				string
-	Number of occurrences:  	1-1
+	Number of occurrences:  	0-1
 	Multilingual:           	no
 	CCR prefLabel@en:       	geographical coordinates
 	CCR URI:                	http://hdl.handle.net/11459/CCR_C-2523_283c7b54-06ed-3d6c-4bb0-c8a79a8236fd
@@ -374,7 +374,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 	User provided:				yes		
 
 	ValueScheme:				string
-	Number of occurrences:  	1-unbounded
+	Number of occurrences:  	0-1
 	Multilingual:           	no
 	CCR prefLabel@en:       	place name
 	CCR URI:                	http://hdl.handle.net/11459/CCR_C-5580_03e458f2-f873-8645-76eb-40e001b6c1ac
@@ -397,7 +397,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 	User provided:				no
 
 	ValueScheme:				string
-	Number of occurrences:  	0-unbounded
+	Number of occurrences:  	0-1
 	Multilingual:           	no
 	CCR prefLabel@en:       	place name
 	CCR URI:                	http://hdl.handle.net/11459/CCR_C-5580_03e458f2-f873-8645-76eb-40e001b6c1ac
@@ -413,14 +413,14 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 [Back to Top](#blam-collection-repository) | [Back to CollectionGeneralInfo](#collectiongeneralinfo)
 
 #### CollectionRegionName
-**Description:** &#x1F4A5; The CollectionRegionName element optionally contains the name of an administrative subdivision such as state, province, or any other culturally salient unit in the version recommended by the data producer. The data producer can decided which level of subdivision is relevant and will improve discoverability. Repositories should treat the name provided by this element as the primary location name when displaying the metadata in relation to this particular data set (e.g. collection or collection). The repository may use alternative names provided by services such as GeoNames to improve discoverability and to enhance browsing and search experience.
+**Description:** &#x1F4A5; The CollectionRegionName element optionally contains the name of an administrative subdivision such as state, province, or any other politically salient unit in the version recommended by the data producer. The data producer can decided which level of subdivision is relevant and will improve discoverability. Repositories should treat the name provided by this element as the primary location name when displaying the metadata in relation to this particular data set (e.g. collection or collection). The repository may use alternative names provided by services such as GeoNames to improve discoverability and to enhance browsing and search experience.
 
 	Discovery:					searchable
 	Display:					page
 	User provided:				yes
 
 	ValueScheme:				string
-	Number of occurrences:  	0-unbounded
+	Number of occurrences:  	0-1
 	Multilingual:           	no
 	CCR prefLabel@en:       	location region
 	CCR URI:                	http://hdl.handle.net/11459/CCR_C-2533_fa6e1812-e29b-3cf6-e15a-50aa34b9be68
@@ -443,7 +443,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 	User provided:				no
 
 	ValueScheme:				string
-	Number of occurrences:  	0-unbounded
+	Number of occurrences:  	0-1
 	Multilingual:           	no
 	CCR prefLabel@en:       	location region
 	CCR URI:                	http://hdl.handle.net/11459/CCR_C-2533_fa6e1812-e29b-3cf6-e15a-50aa34b9be68
@@ -466,7 +466,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 	User provided:				yes	
 
 	ValueScheme:				string
-	Number of occurrences:  	0-1
+	Number of occurrences:  	1-1
 	Multilingual:           	no
 	CCR prefLabel@en:       	location country
 	CCR URI:                	http://hdl.handle.net/11459/CCR_C-2532_d004b0a6-fd1d-3ca3-abf1-1e6aeb3e37b2
@@ -851,7 +851,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 			- [FunderName](#fundername) &#x1F4A5;
 			- [FunderIdentifier](#funderidentifier) &#x1F4A5;
 			- [GrantIdentifier](#grantidentifier) &#x1F4A5;
-			- [GrantURI](#Granturi) &#x1F4A5;
+			- [GrantURI](#granturi) &#x1F4A5;
 
 [Back to Top](#blam-collection-repository)
 
@@ -1016,7 +1016,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 	Number of occurrences:		1-1
 
 - [CollectionIsIdenticalTo](#collectionisidenticalto) &#x1F4A5;
-- [CollectionIsDerivedFrom](#collectionisderivedfrom) &#x1F4A5;
+- [CollectionIsDerivationOfcollectionisderivationof) &#x1F4A5;
 - [License](#license)
 	- [LicenseName](#licensename)
 	- [LicenseIdentifier](#licenseidentifier) &#x1F4A5;
@@ -1029,7 +1029,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 [Back to Top](#blam-collection-repository)
 
 #### CollectionIsIdenticalTo
-**Description:** &#x1F4A5; The CollectionIsIdenticalTo element contains an URI that uniquely identifies an identical resource. This element should only be used if it can be ascertained that the identified resource and the current resource will remain identical; else CollectionIsDerivedFrom should be used.
+**Description:** &#x1F4A5; The CollectionIsIdenticalTo element contains an URI that uniquely identifies an identical resource. This element should only be used if it can be ascertained that the identified resource and the current resource will remain identical; else CollectionIsDerivationOf should be used. The CollectionIsIdenticalTo relationship is based on the `hasEquivalent` relationship of the [Fedora Relationship Ontology](http://www.fedora.info/definitions/1/0/fedora-relsext-ontology.rdfs).
 
 	Discovery:					no
 	Display:					page
@@ -1050,8 +1050,8 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 
 [Back to Top](#blam-collection-repository) | [Back to CollectionAdministrativeInfo](#collectionadministrativeinfo)
 
-#### CollectionIsDerivedFrom
-**Description:** &#x1F4A5; The CollectionIsDerivedFrom element contains an URI that uniquely identifies the resource from which the current resource is derived.
+#### CollectionIsDerivationOf
+**Description:** &#x1F4A5; The CollectionIsDerivationOf element contains an URI that uniquely identifies the resource from which the current resource is derived. The CollectionIsDerivationOf relationship is based on the `isDerivationOf` relationship of the [Fedora Relationship Ontology](http://www.fedora.info/definitions/1/0/fedora-relsext-ontology.rdfs).
 
 	Discovery:					no
 	Display:					page
@@ -1229,11 +1229,12 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 	- [FileName](#filename-metadatafile) &#x1F4A5; 
 	- [FilePID](#filepid-metadatafile) 
 	- [MimeType](#mimetype-metadatafile)
+	- [IsMetadataFor](#ismetadatafor-metadatafile)
 	- [FileDescription](#filedescription-metadatafile)  &#x1F4A5;
 - [CollectionTopics](#collectiontopics)
 	- [CollectionTopic](#collectiontopic)
-- [CollectionParts](#collectionparts) 
-	- [CollectionPart](#collectionpart)
+- [CollectionMembers](#collectionmembers) 
+	- [CollectionHasCollectionMember](#collectionhascollectionmember)
 
 
 [Back to Top](#blam-collection-repository) |  [Back to CollectionStructuralInfo](#collectionstructuralinfo)
@@ -1309,6 +1310,28 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 
 [Back to Top](#blam-collection-repository) |  [Back to CollectionStructuralInfo](#collectionstructuralinfo)
 
+##### IsMetadataFor (MetadataFile)
+**Description:** The IsMetadataFor element contains a PID that uniquely identifies the file described by the file described in this component. The IsMetadataFor relationship is based on the `isMetadataFor` relationship of the [Fedora Relationship Ontology](http://www.fedora.info/definitions/1/0/fedora-relsext-ontology.rdfs).
+
+	Discovery:					no
+	Display:					page
+	User provided:				yes
+
+	ValueScheme:				anyURI
+	Number of occurrences:  	1-1
+	Multilingual:           	no
+	CCR prefLabel@en:       	—
+	CCR URI:                	—
+
+	VLO Facet: 					—
+	OLAC (DCMI):				—
+	DataCite:                	RelatedIdentifier:relationType:IsMetadataFor
+	IMDI Element:               —  
+	ELDP-CMDI Element:          —
+	IMDI-CMDI Element:			—
+
+[Back to Top](#blam-collection-repository) |  [Back to CollectionStructuralInfo](#collectionstructuralinfo)
+
 ##### FileDescription (MetadataFile)
 **Description:** &#x1F4A5; The FileDescription contains a human readable, file specific description. This element should be used to provide file specific that cannot be added to the collection description. Any information applicable to the whole collection should be added to the CollectionDescription element.
 
@@ -1361,15 +1384,15 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 
 [Back to Top](#blam-collection-repository) | [Back to CollectionGeneralInfo](#collectiongeneralinfo)
 
-#### CollectionParts
-**Description:** The CollectionParts component contains elements referencing the bundles of the collection.
+#### CollectionMembers
+**Description:** The CollectionMembers component contains elements referencing the bundles of the collection.
 
 	Number of occurrences:		1-1
 
 [Back to Top](#blam-collection-repository) |  [Back to CollectionStructuralInfo](#collectionstructuralinfo)
 
-##### CollectionPart
-**Description:** The CollectionPart element contains references to a bundle contained in the collection.
+##### CollectionHasCollectionMember
+**Description:** The CollectionHasCollectionMember element contains references to a bundle contained in the collection. The CollectionHasCollectionMember relationship is based on the `hasCollectionMember` relationship of the [Fedora Relationship Ontology](http://www.fedora.info/definitions/1/0/fedora-relsext-ontology.rdfs).
 
 **Attribute:** *IdentifierType* **Values:** *DOI, Handle* The IdentifierType attribute determines the identifier type used.
 
