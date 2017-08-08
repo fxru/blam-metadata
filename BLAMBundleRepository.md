@@ -709,7 +709,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 [Back to Top](#blam-bundle-repository) |  [Back to BundlePublicationInfo](#bundlepublicationinfo)
 
 #### BundleDataProvider
-**Description:** BundleDataProvider contain the name of the data providing entity. The default value would be the name of the repository or its holding institution. The value of this field can be used to generate a bibliographical citation reference for the resource. 
+**Description:** BundleDataProvider contains the name of the data providing entity. The default value would be the name of the repository or its holding institution. The value of this field can be used to generate a bibliographical citation reference for the resource. 
 			
 	Discovery:					no
 	Display:					citation
