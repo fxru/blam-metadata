@@ -5,9 +5,9 @@
 
 Basic Language Archive Metadata (BLAM) is designed to provide basic metadata for language repositories. The metadata scheme maximises discoverability and user oriented information without a proliferation of data fields and work for the data producer. Basic Language Archive Metadata is a suite of [CMDI](https://www.clarin.eu/content/component-metadata) profiles and currently consist of two pairs of profiles: 
 
-* BLAM Bundle Repository: [documentation](https://github.com/fxru/blam-metadata/blob/master/BLAMBundleRepository.md)
-* BLAM Bundle User:  [documentation](https://github.com/fxru/blam-metadata/blob/master/BLAMBundleUser.md)
-* BLAM Collection Repository: [documentation](https://github.com/fxru/blam-metadata/blob/master/BLAMCollectionRepository.md)
+* BLAM Bundle Repository: [documentation](https://github.com/fxru/blam-metadata/blob/master/BLAMBundleRepository.md), [profile](https://catalog.clarin.eu/ds/ComponentRegistry#/?itemId=clarin.eu%3Acr1%3Ap_1475136016193&registrySpace=public)
+* BLAM Bundle User:  [documentation](https://github.com/fxru/blam-metadata/blob/master/BLAMBundleUser.md) (outdated)
+* BLAM Collection Repository: [documentation](https://github.com/fxru/blam-metadata/blob/master/BLAMCollectionRepository.md), [profile](https://catalog.clarin.eu/ds/ComponentRegistry#/?itemId=clarin.eu%3Acr1%3Ap_1487686159207&registrySpace=public)
 
 BLAM is designed with a focus on discoverability and display. Data producers can submit additional metadata information to document their data and their research. The preferred format are other CMDI profiles or comparably standardized metadata formats.
 

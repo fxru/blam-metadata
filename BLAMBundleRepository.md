@@ -5,9 +5,9 @@
 
 Basic Language Archive Metadata (BLAM) is designed to provide basic metadata for language repositories. The metadata scheme maximises discoverability and user oriented information without a proliferation of data fields or work for the data producer. Basic Language Archive Metadata is a suite of [CMDI](https://www.clarin.eu/content/component-metadata) profiles and currently consist of two pairs of profiles: 
 
-* BLAM Bundle Repository: described in this document [below](#blam-bundle-repository)
-* BLAM Bundle User: [documentation](https://github.com/fxru/blam-metadata/blob/master/BLAMBundleUser.md)
-* BLAM Collection Repository: [documentation](https://github.com/fxru/blam-metadata/blob/master/BLAMCollectionRepository.md)
+* BLAM Bundle Repository: described in this document [below](#blam-bundle-repository), [profile](https://catalog.clarin.eu/ds/ComponentRegistry#/?itemId=clarin.eu%3Acr1%3Ap_1475136016193&registrySpace=public)
+* BLAM Bundle User:  [documentation](https://github.com/fxru/blam-metadata/blob/master/BLAMBundleUser.md) (outdated)
+* BLAM Collection Repository: [documentation](https://github.com/fxru/blam-metadata/blob/master/BLAMCollectionRepository.md), [profile](https://catalog.clarin.eu/ds/ComponentRegistry#/?itemId=clarin.eu%3Acr1%3Ap_1487686159207&registrySpace=public)
 
 BLAM Bundle Repository contains information about bundles as provided by the repository. Data producers are asked to submit a subset of this information during ingest. The BLAM Bundle User profile defines this subset of 40 data fields. The separate definition of the BLAM Bundle User profile enhances the usability for data producers and can be validated independently from the more comprehensive BLAM Bundle Repository profile. The Basic Language Archive Metadata Bundle User profile is intended to be the primary source of user input for BLAM Bundle Repository. However, BLAM Bundle Repository is designed to allow automatic import of information from other metadata formats. The formats actively considered are: 
 
