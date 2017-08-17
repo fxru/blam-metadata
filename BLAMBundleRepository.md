@@ -1220,7 +1220,7 @@ Examples: `phonemic` `phonetic` `orthographic`
 [Back to Top](#blam-bundle-repository)
 
 #### BundleIsIdenticalTo
-**Description:** &#x1F4A5; The BundleIsIdenticalTo element contains an URI that uniquely identifies an identical resource. This element should only be used if it can be ascertained that the identified resource and the current resource will remain identical; else BundleIsDerivationOf should be used.
+**Description:** &#x1F4A5; The BundleIsIdenticalTo element contains an URI that uniquely identifies an identical resource. This element should only be used if it can be ascertained that the identified resource and the current resource will remain identical; else BundleIsDerivationOf should be used. The BundleIsIdenticalTo relationship is based on the `hasEquivalent` relationship of the [Fedora Relationship Ontology](http://www.fedora.info/definitions/1/0/fedora-relsext-ontology.rdfs).
 
 	Discovery:					no
 	Display:					page
