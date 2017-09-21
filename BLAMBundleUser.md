@@ -374,7 +374,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 
 ###### CreatorNameIdentifier
 **Description:** &#x1F4A5; The CreatorNameIdentifier contains an URI that uniquely identifies the creator according to an established scheme. ORCID and INSI are considered best practices. An email address in the form of an mailto URI is a fallback.
-**Attribute** *identifierType*: ORCID and ISNI are considered best practices. An email address in the form of an mailto URI is a fallback. *Values*: ORCID, ISNI, Email, Other
+**Attribute** *IdentifierType*: ORCID and ISNI are considered best practices. An email address in the form of an mailto URI is a fallback. *Values*: ORCID, ISNI, Email, Other
 
 	Discovery:					searchable
 	Display:					page
@@ -477,7 +477,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 
 ###### ContributorNameIdentifier
 **Description:** &#x1F4A5; The ContributorNameIdentifier contains an URI that uniquely identifies the contributor according to an established scheme. ORCID and INSI are considered best practices. An email address in the form of an mailto URI is a fallback.
-**Attribute** *identifierType*: ORCID and ISNI are considered best practices. An email address in the form of an mailto URI is a fallback. *Values*: ORCID, ISNI, Email, Other
+**Attribute** *IdentifierType*: ORCID and ISNI are considered best practices. An email address in the form of an mailto URI is a fallback. *Values*: ORCID, ISNI, Email, Other
 
 	Discovery:					searchable
 	Display:					page
@@ -627,7 +627,7 @@ BLAM! &#x1F4A5; That’s it, enjoy documenting your data!
 #### FunderIdentifier
 **Description:** &#x1F4A5; The FunderIdentifier contains an URI that uniquely identifies the funding body according to an established scheme.
 
-**Attribute** *FunderIdentifierType*: The FunderIdentifierType attribute determines the identifier type used. *Values:* CrossrefFunder, ISNI, GRID,  Other
+**Attribute** *IdentifierType*: The IdentifierType attribute determines the identifier type used. *Values:* CrossrefFunder, ISNI, GRID,  Other
 
 	Discovery:					searchable
 	Display:					page	
