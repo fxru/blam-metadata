@@ -1,5 +1,5 @@
-BLAM-BR,IMDI (Import),DataCite,OLAC,VLO-Facet,ELDP,lat-session
-BLAM-BR,IMDI (Import),DataCite,OLAC,VLO-Facet,ELDP,lat-session
+BLAM-BR,IMDI (Import),DataCite,OLAC,VLO-Facet,ELDP,lat-session,
+BLAM-BR,IMDI (Import),DataCite,OLAC,VLO-Facet,ELDP,lat-session,
 BundleID,/METATRANSCRIPT/@ArchiveHandle,Identifier,—,—,,
 BundleDisplayTitle,//Session/Title,Title,http://purl.org/dc/terms/title,name,ELDP_Bundle:Title,
 BundleDescription,//Session/Description,Description,http://purl.org/dc/terms/description,,ELDP_Bundle:Description,
